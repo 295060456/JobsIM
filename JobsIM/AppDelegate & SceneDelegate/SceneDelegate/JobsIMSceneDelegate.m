@@ -1,25 +1,25 @@
 //
-//  SceneDelegate.m
+//  JobsIMSceneDelegate.m
 //  JobsIM
 //
 //  Created by Jobs on 2020/11/10.
 //
 
-#import "SceneDelegate.h"
-#import "AppDelegate.h"
-#import "AppDelegate+PopupView.h"
+#import "JobsIMSceneDelegate.h"
+#import "JobsIMAppDelegate.h"
+#import "JobsIMAppDelegate+PopupView.h"
 
-@interface SceneDelegate ()
+@interface JobsIMSceneDelegate ()
 
 @end
 
-@implementation SceneDelegate
+@implementation JobsIMSceneDelegate
 
-static SceneDelegate *static_sceneDelegate = nil;
+static JobsIMSceneDelegate *static_sceneDelegate = nil;
 +(instancetype)sharedInstance{
     @synchronized(self){
         if (!static_sceneDelegate) {
-            static_sceneDelegate = SceneDelegate.new;
+            static_sceneDelegate = JobsIMSceneDelegate.new;
         }
     }return static_sceneDelegate;
 }
@@ -48,7 +48,7 @@ willConnectToSession:(UISceneSession *)session
         XHLaunchAd * ad = [XHLaunchAd setWaitDataDuration:10];
         [ad scene:self.windowScene];
         self.window.alpha = 1;
-        [[AppDelegate sharedInstance] Popupview];// 弹出框
+        [[JobsIMAppDelegate sharedInstance] Popupview];// 弹出框
     }
 }
 
@@ -75,12 +75,12 @@ willConnectToSession:(UISceneSession *)session
 
 - (void)sceneDidEnterBackground:(UIScene *)scene {
     NSLog(@"---applicationDidEnterBackground----"); //进入后台
-    [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
+    [(JobsIMAppDelegate *)UIApplication.sharedApplication.delegate saveContext];
     [[NSNotificationCenter defaultCenter] postNotificationName:UBLEnterBackgroundStopPlayer object:nil];
 }
 #pragma mark —— lazyLoad
 -(UIWindow *)window{
-    [_window setRootViewController:AppDelegate.sharedInstance.tabbarVC];
+    [_window setRootViewController:JobsIMAppDelegate.sharedInstance.tabbarVC];
     [_window makeKeyAndVisible];
     return _window;
 }

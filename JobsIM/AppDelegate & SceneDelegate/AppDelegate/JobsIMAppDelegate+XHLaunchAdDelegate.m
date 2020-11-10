@@ -1,13 +1,13 @@
 //
-//  AppDelegate+XHLaunchAdDelegate.m
+//  JobsIMAppDelegate+XHLaunchAdDelegate.m
 //  UBallLive
 //
 //  Created by Jobs on 2020/10/11.
 //
 
-#import "AppDelegate+XHLaunchAdDelegate.h"
+#import "JobsIMAppDelegate+XHLaunchAdDelegate.h"
 
-@implementation AppDelegate (XHLaunchAdDelegate)
+@implementation JobsIMAppDelegate (XHLaunchAdDelegate)
 
 /// 广告点击回调
 /// @param launchAd  launchAd

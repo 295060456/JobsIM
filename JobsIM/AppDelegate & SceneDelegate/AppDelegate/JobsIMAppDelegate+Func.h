@@ -1,15 +1,15 @@
 //
-//  AppDelegate+Func.h
+//  JobsIMAppDelegate+Func.h
 //  UBallLive
 //
 //  Created by Jobs on 2020/10/11.
 //
 
-#import "AppDelegate.h"
+#import "JobsIMAppDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AppDelegate (Func)
+@interface JobsIMAppDelegate (Func)
 
 #pragma mark —— 全局配置键盘
 -(void)makeIQKeyboardManagerConfigure;

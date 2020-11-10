@@ -58,9 +58,9 @@
 		C5C40281255A66D2002F407A /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40279255A66D2002F407A /* SuspendBtn.m */; };
 		C5C40282255A66D2002F407A /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4027D255A66D2002F407A /* SuspendLab.m */; };
 		C5C40283255A66D2002F407A /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4027F255A66D2002F407A /* SuspendView.m */; };
-		C5C4028F255A67C4002F407A /* AppDelegate+Func.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4028A255A67C4002F407A /* AppDelegate+Func.m */; };
-		C5C40290255A67C4002F407A /* AppDelegate+PopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4028B255A67C4002F407A /* AppDelegate+PopupView.m */; };
-		C5C40291255A67C4002F407A /* AppDelegate+XHLaunchAdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4028D255A67C4002F407A /* AppDelegate+XHLaunchAdDelegate.m */; };
+		C5C4028F255A67C4002F407A /* JobsIMAppDelegate+Func.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4028A255A67C4002F407A /* JobsIMAppDelegate+Func.m */; };
+		C5C40290255A67C4002F407A /* JobsIMAppDelegate+PopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4028B255A67C4002F407A /* JobsIMAppDelegate+PopupView.m */; };
+		C5C40291255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4028D255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.m */; };
 		C5C402A9255A6881002F407A /* iph_X.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C5C402A6255A6881002F407A /* iph_X.mp4 */; };
 		C5C402AA255A6881002F407A /* 启动页0922一版横版.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5C402A7255A6881002F407A /* 启动页0922一版横版.jpg */; };
 		C5C402AB255A6881002F407A /* 启动页SLOGAN.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C402A8255A6881002F407A /* 启动页SLOGAN.png */; };
@@ -93,8 +93,8 @@
 		C5C403A2255A6C26002F407A /* XHLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40389255A6C26002F407A /* XHLaunchAdConfiguration.m */; };
 		C5C403A3255A6C26002F407A /* XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4038B255A6C26002F407A /* XHLaunchAdCache.m */; };
 		C5C403A4255A6C26002F407A /* XHLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4038D255A6C26002F407A /* XHLaunchAdImageManager.m */; };
-		C5C4F50E255A5203002F407A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F50D255A5203002F407A /* AppDelegate.m */; };
-		C5C4F511255A5203002F407A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F510255A5203002F407A /* SceneDelegate.m */; };
+		C5C4F50E255A5203002F407A /* JobsIMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F50D255A5203002F407A /* JobsIMAppDelegate.m */; };
+		C5C4F511255A5203002F407A /* JobsIMSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F510255A5203002F407A /* JobsIMSceneDelegate.m */; };
 		C5C4F517255A5203002F407A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F515255A5203002F407A /* Main.storyboard */; };
 		C5C4F51A255A5203002F407A /* JobsIM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F518255A5203002F407A /* JobsIM.xcdatamodeld */; };
 		C5C4F51C255A5204002F407A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F51B255A5204002F407A /* Assets.xcassets */; };
@@ -301,12 +301,12 @@
 		C5C4027D255A66D2002F407A /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
 		C5C4027F255A66D2002F407A /* SuspendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendView.m; sourceTree = "<group>"; };
 		C5C40280255A66D2002F407A /* SuspendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendView.h; sourceTree = "<group>"; };
-		C5C40289255A67C4002F407A /* AppDelegate+Func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Func.h"; sourceTree = "<group>"; };
-		C5C4028A255A67C4002F407A /* AppDelegate+Func.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Func.m"; sourceTree = "<group>"; };
-		C5C4028B255A67C4002F407A /* AppDelegate+PopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PopupView.m"; sourceTree = "<group>"; };
-		C5C4028C255A67C4002F407A /* AppDelegate+XHLaunchAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+XHLaunchAdDelegate.h"; sourceTree = "<group>"; };
-		C5C4028D255A67C4002F407A /* AppDelegate+XHLaunchAdDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+XHLaunchAdDelegate.m"; sourceTree = "<group>"; };
-		C5C4028E255A67C4002F407A /* AppDelegate+PopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PopupView.h"; sourceTree = "<group>"; };
+		C5C40289255A67C4002F407A /* JobsIMAppDelegate+Func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JobsIMAppDelegate+Func.h"; sourceTree = "<group>"; };
+		C5C4028A255A67C4002F407A /* JobsIMAppDelegate+Func.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JobsIMAppDelegate+Func.m"; sourceTree = "<group>"; };
+		C5C4028B255A67C4002F407A /* JobsIMAppDelegate+PopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JobsIMAppDelegate+PopupView.m"; sourceTree = "<group>"; };
+		C5C4028C255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JobsIMAppDelegate+XHLaunchAdDelegate.h"; sourceTree = "<group>"; };
+		C5C4028D255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JobsIMAppDelegate+XHLaunchAdDelegate.m"; sourceTree = "<group>"; };
+		C5C4028E255A67C4002F407A /* JobsIMAppDelegate+PopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JobsIMAppDelegate+PopupView.h"; sourceTree = "<group>"; };
 		C5C402A6255A6881002F407A /* iph_X.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iph_X.mp4; sourceTree = "<group>"; };
 		C5C402A7255A6881002F407A /* 启动页0922一版横版.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "启动页0922一版横版.jpg"; sourceTree = "<group>"; };
 		C5C402A8255A6881002F407A /* 启动页SLOGAN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页SLOGAN.png"; sourceTree = "<group>"; };
@@ -368,10 +368,10 @@
 		C5C4038D255A6C26002F407A /* XHLaunchAdImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdImageManager.m; sourceTree = "<group>"; };
 		C5C4038E255A6C26002F407A /* XHLaunchAdConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConst.h; sourceTree = "<group>"; };
 		C5C4F509255A5203002F407A /* JobsIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5C4F50C255A5203002F407A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C5C4F50D255A5203002F407A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C5C4F50F255A5203002F407A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		C5C4F510255A5203002F407A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C5C4F50C255A5203002F407A /* JobsIMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMAppDelegate.h; sourceTree = "<group>"; };
+		C5C4F50D255A5203002F407A /* JobsIMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMAppDelegate.m; sourceTree = "<group>"; };
+		C5C4F50F255A5203002F407A /* JobsIMSceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMSceneDelegate.h; sourceTree = "<group>"; };
+		C5C4F510255A5203002F407A /* JobsIMSceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMSceneDelegate.m; sourceTree = "<group>"; };
 		C5C4F516255A5203002F407A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5C4F519255A5203002F407A /* JobsIM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JobsIM.xcdatamodel; sourceTree = "<group>"; };
 		C5C4F51B255A5204002F407A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -913,14 +913,14 @@
 		C5C40287255A6707002F407A /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F50C255A5203002F407A /* AppDelegate.h */,
-				C5C4F50D255A5203002F407A /* AppDelegate.m */,
-				C5C40289255A67C4002F407A /* AppDelegate+Func.h */,
-				C5C4028A255A67C4002F407A /* AppDelegate+Func.m */,
-				C5C4028E255A67C4002F407A /* AppDelegate+PopupView.h */,
-				C5C4028B255A67C4002F407A /* AppDelegate+PopupView.m */,
-				C5C4028C255A67C4002F407A /* AppDelegate+XHLaunchAdDelegate.h */,
-				C5C4028D255A67C4002F407A /* AppDelegate+XHLaunchAdDelegate.m */,
+				C5C4F50C255A5203002F407A /* JobsIMAppDelegate.h */,
+				C5C4F50D255A5203002F407A /* JobsIMAppDelegate.m */,
+				C5C40289255A67C4002F407A /* JobsIMAppDelegate+Func.h */,
+				C5C4028A255A67C4002F407A /* JobsIMAppDelegate+Func.m */,
+				C5C4028E255A67C4002F407A /* JobsIMAppDelegate+PopupView.h */,
+				C5C4028B255A67C4002F407A /* JobsIMAppDelegate+PopupView.m */,
+				C5C4028C255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.h */,
+				C5C4028D255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -928,8 +928,8 @@
 		C5C40288255A6712002F407A /* SceneDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F50F255A5203002F407A /* SceneDelegate.h */,
-				C5C4F510255A5203002F407A /* SceneDelegate.m */,
+				C5C4F50F255A5203002F407A /* JobsIMSceneDelegate.h */,
+				C5C4F510255A5203002F407A /* JobsIMSceneDelegate.m */,
 			);
 			path = SceneDelegate;
 			sourceTree = "<group>";
@@ -1997,7 +1997,7 @@
 				C5C4017D255A6555002F407A /* BWShareView.m in Sources */,
 				C5C4023F255A6671002F407A /* TabBarControllerConfig.m in Sources */,
 				C5C40396255A6C26002F407A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				C5C4028F255A67C4002F407A /* AppDelegate+Func.m in Sources */,
+				C5C4028F255A67C4002F407A /* JobsIMAppDelegate+Func.m in Sources */,
 				C5C4F810255A5491002F407A /* ViewForTableViewHeader.m in Sources */,
 				C5C4F7D7255A5491002F407A /* UIImage+YBGIF.m in Sources */,
 				C5C403A3255A6C26002F407A /* XHLaunchAdCache.m in Sources */,
@@ -2023,7 +2023,7 @@
 				C5C4F7DC255A5491002F407A /* UIImage+Overlay.m in Sources */,
 				C5C4F816255A5491002F407A /* CALayer+Anim.m in Sources */,
 				C5C40283255A66D2002F407A /* SuspendView.m in Sources */,
-				C5C40291255A67C4002F407A /* AppDelegate+XHLaunchAdDelegate.m in Sources */,
+				C5C40291255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.m in Sources */,
 				C5C4025B255A6671002F407A /* TransitionAnimation.m in Sources */,
 				C5C40395255A6C26002F407A /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
 				C5C401AD255A65CF002F407A /* UIControl+XY.m in Sources */,
@@ -2036,7 +2036,7 @@
 				C5C4F800255A5491002F407A /* UIViewController+BackBtn.m in Sources */,
 				C5C4038F255A6C26002F407A /* WMZBannerFlowLayout.m in Sources */,
 				C5C403A4255A6C26002F407A /* XHLaunchAdImageManager.m in Sources */,
-				C5C4F50E255A5203002F407A /* AppDelegate.m in Sources */,
+				C5C4F50E255A5203002F407A /* JobsIMAppDelegate.m in Sources */,
 				C5C40391255A6C26002F407A /* WMZBannerView.m in Sources */,
 				C5C4F7FD255A5491002F407A /* UIViewController+Shake.m in Sources */,
 				C5C4F80B255A5491002F407A /* BaseTableViewer.m in Sources */,
@@ -2045,8 +2045,8 @@
 				C5C4F81C255A5491002F407A /* NSObject+Sound.m in Sources */,
 				C5C4F803255A5491002F407A /* UIViewController+TZImagePickerController.m in Sources */,
 				C5C4F806255A5491002F407A /* UIViewController+BaseVC.m in Sources */,
-				C5C40290255A67C4002F407A /* AppDelegate+PopupView.m in Sources */,
-				C5C4F511255A5203002F407A /* SceneDelegate.m in Sources */,
+				C5C40290255A67C4002F407A /* JobsIMAppDelegate+PopupView.m in Sources */,
+				C5C4F511255A5203002F407A /* JobsIMSceneDelegate.m in Sources */,
 				C5C402CE255A6A30002F407A /* ViewController@4.m in Sources */,
 				C5C4039F255A6C26002F407A /* XHLaunchAdController.m in Sources */,
 				C5C4F80C255A5491002F407A /* UITableView+WWFoldableTableView.m in Sources */,

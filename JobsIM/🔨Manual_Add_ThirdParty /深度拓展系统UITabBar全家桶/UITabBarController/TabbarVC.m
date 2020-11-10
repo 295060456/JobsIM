@@ -12,7 +12,7 @@
 #import "UITabBarItem+TLAnimation.h"
 #import "TransitionController.h"
 #import "TransitionAnimation.h"
-#import "AppDelegate.h"
+#import "JobsIMAppDelegate.h"
 
 TabbarVC *tabbarVC;
 
@@ -101,7 +101,7 @@ UIViewController *childViewController_customStyle(UIViewController *viewControll
     config.lottieName = lottieName;
     config.tag = tag;
     
-    [[AppDelegate sharedInstance].tabbarVC.tabBarControllerConfigMutArr addObject:config];
+    [[JobsIMAppDelegate sharedInstance].tabbarVC.tabBarControllerConfigMutArr addObject:config];
     
 //    setAnimation(viewController.tabBarItem, tag);//可选实现
     return viewController;

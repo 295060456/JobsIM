@@ -21,7 +21,7 @@
 
 #import "NoticePopupView.h"
 
-#import "SceneDelegate.h"
-#import "AppDelegate.h"
+#import "JobsIMSceneDelegate.h"
+#import "JobsIMAppDelegate.h"
 
 #endif /* Other_h */

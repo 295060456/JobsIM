@@ -1,13 +1,13 @@
 //
-//  AppDelegate+PopupView.m
+//  JobsIMAppDelegate+PopupView.m
 //  UBallLive
 //
 //  Created by Jobs on 2020/10/26.
 //
 
-#import "AppDelegate+PopupView.h"
+#import "JobsIMAppDelegate+PopupView.h"
 
-@implementation AppDelegate (PopupView)
+@implementation JobsIMAppDelegate (PopupView)
 
 // 见 @implementation UIViewController (TFPopup)
 -(void)Popupview{

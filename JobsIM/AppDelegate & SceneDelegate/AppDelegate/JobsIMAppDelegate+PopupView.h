@@ -1,15 +1,15 @@
 //
-//  AppDelegate+PopupView.h
+//  JobsIMAppDelegate+PopupView.h
 //  UBallLive
 //
 //  Created by Jobs on 2020/10/26.
 //
 
-#import "AppDelegate.h"
+#import "JobsIMAppDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AppDelegate (PopupView)
+@interface JobsIMAppDelegate (PopupView)
 
 -(void)Popupview;
 

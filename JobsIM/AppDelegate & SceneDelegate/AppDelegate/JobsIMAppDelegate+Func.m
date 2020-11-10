@@ -1,13 +1,13 @@
 //
-//  AppDelegate+Func.m
+//  JobsIMAppDelegate+Func.m
 //  UBallLive
 //
 //  Created by Jobs on 2020/10/11.
 //
 
-#import "AppDelegate+Func.h"
+#import "JobsIMAppDelegate+Func.h"
 
-@implementation AppDelegate (Func)
+@implementation JobsIMAppDelegate (Func)
 
 -(void)reachabilityChanged:(NSNotification *)notify{
     

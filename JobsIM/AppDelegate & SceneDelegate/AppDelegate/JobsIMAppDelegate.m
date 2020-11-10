@@ -1,26 +1,26 @@
 //
-//  AppDelegate.m
+//  JobsIMAppDelegate.m
 //  JobsIM
 //
 //  Created by Jobs on 2020/11/10.
 //
 
-#import "AppDelegate.h"
-#import "AppDelegate+XHLaunchAdDelegate.h"
-#import "AppDelegate+Func.h"
-#import "AppDelegate+PopupView.h"
+#import "JobsIMAppDelegate.h"
+#import "JobsIMAppDelegate+XHLaunchAdDelegate.h"
+#import "JobsIMAppDelegate+Func.h"
+#import "JobsIMAppDelegate+PopupView.h"
 
-@interface AppDelegate ()
+@interface JobsIMAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation JobsIMAppDelegate
 
-static AppDelegate *static_appDelegate = nil;
+static JobsIMAppDelegate *static_appDelegate = nil;
 +(instancetype)sharedInstance{
     @synchronized(self){
         if (!static_appDelegate) {
-            static_appDelegate = AppDelegate.new;
+            static_appDelegate = JobsIMAppDelegate.new;
         }
     }return static_appDelegate;
 }
@@ -66,7 +66,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     if (HDDeviceSystemVersion.floatValue < 13.0) {
         self.window.alpha = 1;
-        [[AppDelegate sharedInstance] Popupview];// 弹出框
+        [[JobsIMAppDelegate sharedInstance] Popupview];// 弹出框
     }return YES;
 }
 //系统版本低于iOS13.0的设备
