@@ -13,7 +13,11 @@ static inline CGFloat JobsIMChatInfoTBVDefaultCellHeight(){
 }
 
 static inline CGFloat JobsIMChatInfoTBVChatContentLabWidth(){
-    return MAINSCREEN_WIDTH - 80 - (JobsIMChatInfoTBVDefaultCellHeight() - 5) - 20;;
+    return MAINSCREEN_WIDTH - 80 - (JobsIMChatInfoTBVDefaultCellHeight() - 5) - 20;
+}
+
+static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
+    return 100;
 }
 
 @interface JobsIMChatInfoTBVCell ()
@@ -30,7 +34,8 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabWidth(){
 @property(nonatomic,strong)NSString *chatTextTimeStr;//该聊天的时间戳
 @property(nonatomic,strong)UIImage *chatUserIconIMG;//该聊天的用户头像
 @property(nonatomic,strong)NSString *identification;//该聊天对应的数据库坐标ID
-@property(nonatomic,assign)CGFloat cellHeight;
+@property(nonatomic,assign)CGFloat contentHeight;//内容高
+@property(nonatomic,assign)CGFloat contentWidth;//内容宽
 
 @end
 
@@ -54,7 +59,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabWidth(){
                                                                                        font:NULL
                                                                boundingRectWithHeight_Width:JobsIMChatInfoTBVChatContentLabWidth()];
         NSLog(@"%f",CellHeight);
-        return CellHeight < JobsIMChatInfoTBVDefaultCellHeight() ? JobsIMChatInfoTBVDefaultCellHeight() : CellHeight;
+        return (CellHeight < JobsIMChatInfoTBVDefaultCellHeight() ? JobsIMChatInfoTBVDefaultCellHeight() : CellHeight) + (JobsIMChatInfoTBVDefaultCellHeight() - 5);
     }else{
         return 0;
     }
@@ -75,12 +80,26 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabWidth(){
         self.chatTextTimeStr = chatInfoModel.chatTextTimeStr;
         self.chatUserIconIMG = chatInfoModel.chatUserIconIMG;
         self.identification = chatInfoModel.identification;
-        self.cellHeight = [NSString getContentHeightOrWidthWithParagraphStyleLineSpacing:0
+        
+        //先定宽，再定高
+        
+        CGFloat contentWidthTemp = [NSString getContentHeightOrWidthWithParagraphStyleLineSpacing:0
+                                                                            calcLabelHeight_Width:CalcLabelWidth
+                                                                                     effectString:self.chatTextStr
+                                                                                             font:NULL
+                                                                     boundingRectWithHeight_Width:JobsIMChatInfoTBVDefaultCellHeight()];
+        //保证最小宽度 且 小于最大宽度
+        self.contentWidth = MIN(JobsIMChatInfoTBVChatContentLabWidth(), MAX(JobsIMChatInfoTBVChatContentLabDefaultWidth(), contentWidthTemp));
+        
+        self.contentHeight = [NSString getContentHeightOrWidthWithParagraphStyleLineSpacing:0
                                                                    calcLabelHeight_Width:CalcLabelHeight
                                                                             effectString:self.chatTextStr
                                                                                     font:NULL
-                                                            boundingRectWithHeight_Width:JobsIMChatInfoTBVChatContentLabWidth()];
-        NSLog(@"%f",self.cellHeight);
+                                                            boundingRectWithHeight_Width:self.contentWidth];
+        
+
+        NSLog(@"contentHeight = %f",self.contentHeight);
+        NSLog(@"contentWidth = %f",self.contentWidth);
         
         self.iconIMGV.alpha = 1;
         self.chatBubbleIMGV.alpha = 1;
@@ -132,15 +151,15 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabWidth(){
             
             make.top.equalTo(self.iconIMGV.mas_centerY);
             make.bottom.equalTo(self.contentView).offset(-5);
+            make.width.mas_equalTo(self.contentWidth);
             
             switch (self.infoLocation) {
                 case InfoLocation_Left:{
                     make.left.equalTo(self.iconIMGV.mas_right).offset(5);
-                    make.right.equalTo(self.contentView).offset(-90);
+                    
                 }break;
                 case InfoLocation_Right:{
                     make.right.equalTo(self.iconIMGV.mas_left).offset(-5);
-                    make.left.equalTo(self.contentView).offset(90);
                 }break;
                 default:
                     break;
@@ -172,6 +191,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabWidth(){
         _timeLab.text = self.chatTextTimeStr;
         _timeLab.textColor = kWhiteColor;
         _timeLab.backgroundColor = KLightGrayColor;
+        [_timeLab sizeToFit];
         
         [self.contentView addSubview:_timeLab];
         [_timeLab mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -182,11 +202,9 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabWidth(){
             switch (self.infoLocation) {
                 case InfoLocation_Left:{
                     make.left.equalTo(self.chatBubbleIMGV.mas_right).offset(5);
-                    make.right.equalTo(self.contentView).offset(-5);
                 }break;
                 case InfoLocation_Right:{
                     make.right.equalTo(self.chatBubbleIMGV.mas_left).offset(-5);
-                    make.left.equalTo(self.contentView).offset(5);
                 }break;
                 default:
                     break;
