@@ -95,7 +95,6 @@
 		C5C403A4255A6C26002F407A /* XHLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4038D255A6C26002F407A /* XHLaunchAdImageManager.m */; };
 		C5C4F50E255A5203002F407A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F50D255A5203002F407A /* AppDelegate.m */; };
 		C5C4F511255A5203002F407A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F510255A5203002F407A /* SceneDelegate.m */; };
-		C5C4F514255A5203002F407A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F513255A5203002F407A /* ViewController.m */; };
 		C5C4F517255A5203002F407A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F515255A5203002F407A /* Main.storyboard */; };
 		C5C4F51A255A5203002F407A /* JobsIM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F518255A5203002F407A /* JobsIM.xcdatamodeld */; };
 		C5C4F51C255A5204002F407A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F51B255A5204002F407A /* Assets.xcassets */; };
@@ -373,8 +372,6 @@
 		C5C4F50D255A5203002F407A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C5C4F50F255A5203002F407A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		C5C4F510255A5203002F407A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		C5C4F512255A5203002F407A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C5C4F513255A5203002F407A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C5C4F516255A5203002F407A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5C4F519255A5203002F407A /* JobsIM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JobsIM.xcdatamodel; sourceTree = "<group>"; };
 		C5C4F51B255A5204002F407A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1140,8 +1137,6 @@
 				C5C4F70F255A5490002F407A /* BaseCustomizeUIKit */,
 				C5C402B4255A69BC002F407A /* 🇨🇳ServiceLogic */,
 				C5C4035E255A6C26002F407A /* Pod 不进去的 */,
-				C5C4F512255A5203002F407A /* ViewController.h */,
-				C5C4F513255A5203002F407A /* ViewController.m */,
 				C5C4F520255A5204002F407A /* Info.plist */,
 			);
 			path = JobsIM;
@@ -1780,6 +1775,7 @@
 		C5C4F501255A5203002F407A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JobsIM;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					C5C4F508255A5203002F407A = {
@@ -2040,7 +2036,6 @@
 				C5C4F800255A5491002F407A /* UIViewController+BackBtn.m in Sources */,
 				C5C4038F255A6C26002F407A /* WMZBannerFlowLayout.m in Sources */,
 				C5C403A4255A6C26002F407A /* XHLaunchAdImageManager.m in Sources */,
-				C5C4F514255A5203002F407A /* ViewController.m in Sources */,
 				C5C4F50E255A5203002F407A /* AppDelegate.m in Sources */,
 				C5C40391255A6C26002F407A /* WMZBannerView.m in Sources */,
 				C5C4F7FD255A5491002F407A /* UIViewController+Shake.m in Sources */,
