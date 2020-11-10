@@ -45,7 +45,7 @@ UITableViewDelegate
 
 -(void)simulateServer{
     JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
-    chatInfoModel.chatTextStr = @"我是马化腾";
+    chatInfoModel.chatTextStr = @"我是马化腾,明天来上班";//tony马，明天我可以来上班吗？
     chatInfoModel.chatTextTimeStr = [NSString getSysTimeStamp];
     chatInfoModel.chatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
     chatInfoModel.identification = @"我是服务器";
@@ -96,6 +96,9 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                 
                 [self.chatInfoModelMutArr addObject:chatInfoModel];
                 [self.tableView reloadData];
+                
+                [self simulateServer];
+                
             }else{}
         }];
         [self.view addSubview:_inputview];
