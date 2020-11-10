@@ -163,7 +163,7 @@ replacementString:(NSString *)string{
         [[_sendBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIButton * _Nullable x) {
             @strongify(self)
             if (self.jobsIMInputviewBlock) {
-                self.jobsIMInputviewBlock(x);
+                self.jobsIMInputviewBlock(self.inputTextField);
             }
             x.selected = NO;
         }];

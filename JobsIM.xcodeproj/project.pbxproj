@@ -13,6 +13,11 @@
 		C531CF4E255A83BD005304F6 /* 12345.json in Resources */ = {isa = PBXBuildFile; fileRef = C531CF49255A83BD005304F6 /* 12345.json */; };
 		C531CF4F255A83BD005304F6 /* MJRefreshComponent+Lottie.m in Sources */ = {isa = PBXBuildFile; fileRef = C531CF4A255A83BD005304F6 /* MJRefreshComponent+Lottie.m */; };
 		C531CFAA255A840B005304F6 /* 1234.json in Resources */ = {isa = PBXBuildFile; fileRef = C531CFA9255A840B005304F6 /* 1234.json */; };
+		C531D018255AA728005304F6 /* JobsIMChatInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C531D017255AA728005304F6 /* JobsIMChatInfoModel.m */; };
+		C531D021255AB570005304F6 /* 右气泡@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C531D01D255AB56F005304F6 /* 右气泡@2x.png */; };
+		C531D022255AB570005304F6 /* 右气泡@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C531D01E255AB56F005304F6 /* 右气泡@3x.png */; };
+		C531D023255AB570005304F6 /* 左气泡@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C531D01F255AB570005304F6 /* 左气泡@2x.png */; };
+		C531D024255AB570005304F6 /* 左气泡@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C531D020255AB570005304F6 /* 左气泡@3x.png */; };
 		C5341587255A77D900DFAFE4 /* JobsIMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5341586255A77D900DFAFE4 /* JobsIMVC.m */; };
 		C5341659255A78A200DFAFE4 /* JobsIMInputview.m in Sources */ = {isa = PBXBuildFile; fileRef = C5341658255A78A200DFAFE4 /* JobsIMInputview.m */; };
 		C53416B3255A7CFB00DFAFE4 /* 输入@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */; };
@@ -231,6 +236,12 @@
 		C531CF49255A83BD005304F6 /* 12345.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 12345.json; sourceTree = "<group>"; };
 		C531CF4A255A83BD005304F6 /* MJRefreshComponent+Lottie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MJRefreshComponent+Lottie.m"; sourceTree = "<group>"; };
 		C531CFA9255A840B005304F6 /* 1234.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1234.json; sourceTree = "<group>"; };
+		C531D016255AA728005304F6 /* JobsIMChatInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMChatInfoModel.h; sourceTree = "<group>"; };
+		C531D017255AA728005304F6 /* JobsIMChatInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMChatInfoModel.m; sourceTree = "<group>"; };
+		C531D01D255AB56F005304F6 /* 右气泡@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "右气泡@2x.png"; sourceTree = "<group>"; };
+		C531D01E255AB56F005304F6 /* 右气泡@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "右气泡@3x.png"; sourceTree = "<group>"; };
+		C531D01F255AB570005304F6 /* 左气泡@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左气泡@2x.png"; sourceTree = "<group>"; };
+		C531D020255AB570005304F6 /* 左气泡@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左气泡@3x.png"; sourceTree = "<group>"; };
 		C5341585255A77D900DFAFE4 /* JobsIMVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMVC.h; sourceTree = "<group>"; };
 		C5341586255A77D900DFAFE4 /* JobsIMVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMVC.m; sourceTree = "<group>"; };
 		C5341657255A78A200DFAFE4 /* JobsIMInputview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMInputview.h; sourceTree = "<group>"; };
@@ -656,12 +667,43 @@
 			path = "Lottie资源文件";
 			sourceTree = "<group>";
 		};
+		C531CFBE255A9635005304F6 /* Inputview */ = {
+			isa = PBXGroup;
+			children = (
+				C5341657255A78A200DFAFE4 /* JobsIMInputview.h */,
+				C5341658255A78A200DFAFE4 /* JobsIMInputview.m */,
+			);
+			path = Inputview;
+			sourceTree = "<group>";
+		};
+		C531CFBF255A963D005304F6 /* 相关资源文件 */ = {
+			isa = PBXGroup;
+			children = (
+				C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */,
+				C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */,
+			);
+			path = "相关资源文件";
+			sourceTree = "<group>";
+		};
+		C531D01C255AB563005304F6 /* 聊天气泡 */ = {
+			isa = PBXGroup;
+			children = (
+				C531D01D255AB56F005304F6 /* 右气泡@2x.png */,
+				C531D01E255AB56F005304F6 /* 右气泡@3x.png */,
+				C531D01F255AB570005304F6 /* 左气泡@2x.png */,
+				C531D020255AB570005304F6 /* 左气泡@3x.png */,
+			);
+			path = "聊天气泡";
+			sourceTree = "<group>";
+		};
 		C5341607255A784A00DFAFE4 /* JobsIMCore */ = {
 			isa = PBXGroup;
 			children = (
 				C5341608255A786100DFAFE4 /* JobsIMCoreView */,
 				C5341585255A77D900DFAFE4 /* JobsIMVC.h */,
 				C5341586255A77D900DFAFE4 /* JobsIMVC.m */,
+				C531D016255AA728005304F6 /* JobsIMChatInfoModel.h */,
+				C531D017255AA728005304F6 /* JobsIMChatInfoModel.m */,
 			);
 			path = JobsIMCore;
 			sourceTree = "<group>";
@@ -670,11 +712,9 @@
 			isa = PBXGroup;
 			children = (
 				C534165D255A7AD100DFAFE4 /* README.md */,
-				C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */,
-				C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */,
+				C531CFBF255A963D005304F6 /* 相关资源文件 */,
+				C531CFBE255A9635005304F6 /* Inputview */,
 				C534179D255A7F7500DFAFE4 /* TableViewCell */,
-				C5341657255A78A200DFAFE4 /* JobsIMInputview.h */,
-				C5341658255A78A200DFAFE4 /* JobsIMInputview.m */,
 			);
 			path = JobsIMCoreView;
 			sourceTree = "<group>";
@@ -682,6 +722,7 @@
 		C534179D255A7F7500DFAFE4 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				C531D01C255AB563005304F6 /* 聊天气泡 */,
 				C534179E255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.h */,
 				C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */,
 			);
@@ -1510,8 +1551,8 @@
 		C5C4F75C255A5490002F407A /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F75D255A5490002F407A /* NSString+Extras.m */,
 				C5C4F75E255A5490002F407A /* NSString+Extras.h */,
+				C5C4F75D255A5490002F407A /* NSString+Extras.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1921,6 +1962,7 @@
 				C5C401C3255A6608002F407A /* Sound.wav in Resources */,
 				C5C40241255A6671002F407A /* home_priase_animation.json in Resources */,
 				C531CF4B255A83BD005304F6 /* 123.json in Resources */,
+				C531D021255AB570005304F6 /* 右气泡@2x.png in Resources */,
 				C5C4F7E5255A5491002F407A /* 高度自定义的按钮.md in Resources */,
 				C5C40251255A6671002F407A /* huiyuan.json in Resources */,
 				C5C40242255A6671002F407A /* 主页.json in Resources */,
@@ -1947,10 +1989,13 @@
 				C531CFAA255A840B005304F6 /* 1234.json in Resources */,
 				C5C40247255A6671002F407A /* green_lottie_tab_home.json in Resources */,
 				C53416B4255A7CFB00DFAFE4 /* 输入@2x.png in Resources */,
+				C531D023255AB570005304F6 /* 左气泡@2x.png in Resources */,
 				C5C402AB255A6881002F407A /* 启动页SLOGAN.png in Resources */,
 				C5C40249255A6671002F407A /* tab_me_animate.json in Resources */,
 				C5C4F517255A5203002F407A /* Main.storyboard in Resources */,
 				C5C40248255A6671002F407A /* 我的.json in Resources */,
+				C531D022255AB570005304F6 /* 右气泡@3x.png in Resources */,
+				C531D024255AB570005304F6 /* 左气泡@3x.png in Resources */,
 				C5C40246255A6671002F407A /* dingdan.json in Resources */,
 				C5C40397255A6C26002F407A /* ZZCircleProgress.bundle in Resources */,
 				C531CF4E255A83BD005304F6 /* 12345.json in Resources */,
@@ -2081,6 +2126,7 @@
 				C5C40256255A6671002F407A /* TabbarVC.m in Sources */,
 				C5C4F7F0255A5491002F407A /* DeleteSystemUITabBarButton.m in Sources */,
 				C5341659255A78A200DFAFE4 /* JobsIMInputview.m in Sources */,
+				C531D018255AA728005304F6 /* JobsIMChatInfoModel.m in Sources */,
 				C5C402BC255A6A11002F407A /* ViewController@1.m in Sources */,
 				C5C4F819255A5491002F407A /* NSObject+AFNReachability.m in Sources */,
 				C5C4F7FB255A5491002F407A /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,

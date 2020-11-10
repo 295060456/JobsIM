@@ -10,6 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/** 消息显示位置 */
+typedef NS_ENUM(NSInteger,InfoLocation) {
+    InfoLocation_Unknown = 0,
+    InfoLocation_Left = 1,
+    InfoLocation_Right = 2
+};
+
 @interface JobsIMChatInfoTBVCell : TBVCell_style_02
 
 +(instancetype)cellWith:(UITableView *)tableView;
