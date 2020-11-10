@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		200BAB0C1F3E4CD223040998 /* Pods_JobsIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6201BCF2BE09176745E0DFD7 /* Pods_JobsIM.framework */; };
+		C531CF4B255A83BD005304F6 /* 123.json in Resources */ = {isa = PBXBuildFile; fileRef = C531CF44255A83BD005304F6 /* 123.json */; };
+		C531CF4C255A83BD005304F6 /* MJRefreshWithLottieTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C531CF45255A83BD005304F6 /* MJRefreshWithLottieTableViewHeader.m */; };
+		C531CF4E255A83BD005304F6 /* 12345.json in Resources */ = {isa = PBXBuildFile; fileRef = C531CF49255A83BD005304F6 /* 12345.json */; };
+		C531CF4F255A83BD005304F6 /* MJRefreshComponent+Lottie.m in Sources */ = {isa = PBXBuildFile; fileRef = C531CF4A255A83BD005304F6 /* MJRefreshComponent+Lottie.m */; };
+		C531CFAA255A840B005304F6 /* 1234.json in Resources */ = {isa = PBXBuildFile; fileRef = C531CFA9255A840B005304F6 /* 1234.json */; };
+		C5341587255A77D900DFAFE4 /* JobsIMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5341586255A77D900DFAFE4 /* JobsIMVC.m */; };
+		C5341659255A78A200DFAFE4 /* JobsIMInputview.m in Sources */ = {isa = PBXBuildFile; fileRef = C5341658255A78A200DFAFE4 /* JobsIMInputview.m */; };
+		C53416B3255A7CFB00DFAFE4 /* 输入@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */; };
+		C53416B4255A7CFB00DFAFE4 /* 输入@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */; };
+		C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */; };
 		C5C4017B255A6554002F407A /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40176255A6554002F407A /* BWItemModel.m */; };
 		C5C4017C255A6555002F407A /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40177255A6554002F407A /* BWItemCollectionViewCell.m */; };
 		C5C4017D255A6555002F407A /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40179255A6554002F407A /* BWShareView.m */; };
@@ -214,6 +224,22 @@
 		9DE6BCACBB2D2BE939D0B7BA /* Pods_JobsIMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsIMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14DBBA91B303DE4604152DA /* Pods-JobsIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsIM.debug.xcconfig"; path = "Target Support Files/Pods-JobsIM/Pods-JobsIM.debug.xcconfig"; sourceTree = "<group>"; };
 		C35841477C0FA4BF69AAF156 /* Pods-JobsIMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsIMTests.release.xcconfig"; path = "Target Support Files/Pods-JobsIMTests/Pods-JobsIMTests.release.xcconfig"; sourceTree = "<group>"; };
+		C531CF44255A83BD005304F6 /* 123.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 123.json; sourceTree = "<group>"; };
+		C531CF45255A83BD005304F6 /* MJRefreshWithLottieTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshWithLottieTableViewHeader.m; sourceTree = "<group>"; };
+		C531CF47255A83BD005304F6 /* MJRefreshComponent+Lottie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJRefreshComponent+Lottie.h"; sourceTree = "<group>"; };
+		C531CF48255A83BD005304F6 /* MJRefreshWithLottieTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshWithLottieTableViewHeader.h; sourceTree = "<group>"; };
+		C531CF49255A83BD005304F6 /* 12345.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 12345.json; sourceTree = "<group>"; };
+		C531CF4A255A83BD005304F6 /* MJRefreshComponent+Lottie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MJRefreshComponent+Lottie.m"; sourceTree = "<group>"; };
+		C531CFA9255A840B005304F6 /* 1234.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1234.json; sourceTree = "<group>"; };
+		C5341585255A77D900DFAFE4 /* JobsIMVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMVC.h; sourceTree = "<group>"; };
+		C5341586255A77D900DFAFE4 /* JobsIMVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMVC.m; sourceTree = "<group>"; };
+		C5341657255A78A200DFAFE4 /* JobsIMInputview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMInputview.h; sourceTree = "<group>"; };
+		C5341658255A78A200DFAFE4 /* JobsIMInputview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMInputview.m; sourceTree = "<group>"; };
+		C534165D255A7AD100DFAFE4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入@3x.png"; sourceTree = "<group>"; };
+		C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入@2x.png"; sourceTree = "<group>"; };
+		C534179E255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMChatInfoTBVCell.h; sourceTree = "<group>"; };
+		C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMChatInfoTBVCell.m; sourceTree = "<group>"; };
 		C5C40174255A6554002F407A /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
 		C5C40175255A6554002F407A /* BWItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemCollectionViewCell.h; sourceTree = "<group>"; };
 		C5C40176255A6554002F407A /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
@@ -608,9 +634,82 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C531CF43255A83BD005304F6 /* MJRefresh + Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				C531CF53255A83C7005304F6 /* Lottie资源文件 */,
+				C531CF47255A83BD005304F6 /* MJRefreshComponent+Lottie.h */,
+				C531CF4A255A83BD005304F6 /* MJRefreshComponent+Lottie.m */,
+				C531CF48255A83BD005304F6 /* MJRefreshWithLottieTableViewHeader.h */,
+				C531CF45255A83BD005304F6 /* MJRefreshWithLottieTableViewHeader.m */,
+			);
+			path = "MJRefresh + Lottie";
+			sourceTree = "<group>";
+		};
+		C531CF53255A83C7005304F6 /* Lottie资源文件 */ = {
+			isa = PBXGroup;
+			children = (
+				C531CF44255A83BD005304F6 /* 123.json */,
+				C531CFA9255A840B005304F6 /* 1234.json */,
+				C531CF49255A83BD005304F6 /* 12345.json */,
+			);
+			path = "Lottie资源文件";
+			sourceTree = "<group>";
+		};
+		C5341607255A784A00DFAFE4 /* JobsIMCore */ = {
+			isa = PBXGroup;
+			children = (
+				C5341608255A786100DFAFE4 /* JobsIMCoreView */,
+				C5341585255A77D900DFAFE4 /* JobsIMVC.h */,
+				C5341586255A77D900DFAFE4 /* JobsIMVC.m */,
+			);
+			path = JobsIMCore;
+			sourceTree = "<group>";
+		};
+		C5341608255A786100DFAFE4 /* JobsIMCoreView */ = {
+			isa = PBXGroup;
+			children = (
+				C534165D255A7AD100DFAFE4 /* README.md */,
+				C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */,
+				C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */,
+				C534179D255A7F7500DFAFE4 /* TableViewCell */,
+				C5341657255A78A200DFAFE4 /* JobsIMInputview.h */,
+				C5341658255A78A200DFAFE4 /* JobsIMInputview.m */,
+			);
+			path = JobsIMCoreView;
+			sourceTree = "<group>";
+		};
+		C534179D255A7F7500DFAFE4 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C534179E255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.h */,
+				C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		C53417A7255A7FB100DFAFE4 /* TBVCell_style_01 */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F72B255A5490002F407A /* TBVCell_style_01.h */,
+				C5C4F727255A5490002F407A /* TBVCell_style_01.m */,
+			);
+			path = TBVCell_style_01;
+			sourceTree = "<group>";
+		};
+		C53417A8255A7FBA00DFAFE4 /* TBVCell_style_02 */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F729255A5490002F407A /* TBVCell_style_02.h */,
+				C5C4F724255A5490002F407A /* TBVCell_style_02.m */,
+			);
+			path = TBVCell_style_02;
+			sourceTree = "<group>";
+		};
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C531CF43255A83BD005304F6 /* MJRefresh + Lottie */,
 				C5C40277255A66D2002F407A /* Suspend */,
 				C5C401FE255A6671002F407A /* 深度拓展系统UITabBar全家桶 */,
 				C5C401CE255A6629002F407A /* 文件夹操作 */,
@@ -957,6 +1056,7 @@
 		C5C402B4255A69BC002F407A /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
+				C5341607255A784A00DFAFE4 /* JobsIMCore */,
 				C5C402E0255A6ADD002F407A /* 广告或者公示弹出框 */,
 				C5C402B5255A69DF002F407A /* ViewController@1 */,
 				C5C402B6255A69E8002F407A /* ViewController@2 */,
@@ -1129,10 +1229,10 @@
 		C5C4F50B255A5203002F407A /* JobsIM */ = {
 			isa = PBXGroup;
 			children = (
+				C5C4F6F6255A5418002F407A /* 🌹Macro */,
 				C5C402A4255A6876002F407A /* 资源文件管理 */,
 				C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */,
 				C5C4F70A255A5454002F407A /* Others */,
-				C5C4F6F6255A5418002F407A /* 🌹Macro */,
 				C5C4F70E255A5484002F407A /* AppDelegate & SceneDelegate */,
 				C5C4F70F255A5490002F407A /* BaseCustomizeUIKit */,
 				C5C402B4255A69BC002F407A /* 🇨🇳ServiceLogic */,
@@ -1189,8 +1289,8 @@
 			isa = PBXGroup;
 			children = (
 				C5C4F702255A5418002F407A /* MacroDef_Cor.h */,
-				C5C4F703255A5418002F407A /* MacroDef_Size.h */,
 				C5C4F704255A5418002F407A /* MacroDef_Func.h */,
+				C5C4F703255A5418002F407A /* MacroDef_Size.h */,
 				C5C4F705255A5418002F407A /* MacroDef_Sys.h */,
 			);
 			path = "各项宏定义";
@@ -1250,19 +1350,19 @@
 		C5C4F710255A5490002F407A /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F711255A5490002F407A /* UIImage+YBGIF.m */,
-				C5C4F712255A5490002F407A /* UIImage+SYS.h */,
-				C5C4F713255A5490002F407A /* UIImage+Tailor.m */,
-				C5C4F714255A5490002F407A /* UIImage+Overlay.h */,
-				C5C4F715255A5490002F407A /* UIImage+screenshot.m */,
-				C5C4F716255A5490002F407A /* UIImage+Extras.m */,
 				C5C4F717255A5490002F407A /* LoadingImage.h */,
-				C5C4F718255A5490002F407A /* UIImage+SYS.m */,
-				C5C4F719255A5490002F407A /* UIImage+Tailor.h */,
-				C5C4F71A255A5490002F407A /* UIImage+YBGIF.h */,
 				C5C4F71B255A5490002F407A /* UIImage+Extras.h */,
+				C5C4F716255A5490002F407A /* UIImage+Extras.m */,
+				C5C4F714255A5490002F407A /* UIImage+Overlay.h */,
 				C5C4F71C255A5490002F407A /* UIImage+Overlay.m */,
 				C5C4F71D255A5490002F407A /* UIImage+screenshot.h */,
+				C5C4F715255A5490002F407A /* UIImage+screenshot.m */,
+				C5C4F712255A5490002F407A /* UIImage+SYS.h */,
+				C5C4F718255A5490002F407A /* UIImage+SYS.m */,
+				C5C4F719255A5490002F407A /* UIImage+Tailor.h */,
+				C5C4F713255A5490002F407A /* UIImage+Tailor.m */,
+				C5C4F71A255A5490002F407A /* UIImage+YBGIF.h */,
+				C5C4F711255A5490002F407A /* UIImage+YBGIF.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1281,14 +1381,12 @@
 		C5C4F723255A5490002F407A /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F724255A5490002F407A /* TBVCell_style_02.m */,
+				C53417A7255A7FB100DFAFE4 /* TBVCell_style_01 */,
+				C53417A8255A7FBA00DFAFE4 /* TBVCell_style_02 */,
 				C5C4F725255A5490002F407A /* UITableViewCell+WhiteArrows.h */,
-				C5C4F726255A5490002F407A /* WhiteRightArrow@2x.png */,
-				C5C4F727255A5490002F407A /* TBVCell_style_01.m */,
-				C5C4F728255A5490002F407A /* WhiteRightArrow@3x.png */,
-				C5C4F729255A5490002F407A /* TBVCell_style_02.h */,
 				C5C4F72A255A5490002F407A /* UITableViewCell+WhiteArrows.m */,
-				C5C4F72B255A5490002F407A /* TBVCell_style_01.h */,
+				C5C4F726255A5490002F407A /* WhiteRightArrow@2x.png */,
+				C5C4F728255A5490002F407A /* WhiteRightArrow@3x.png */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -1822,6 +1920,7 @@
 				C5C4024A255A6671002F407A /* upgrade.json in Resources */,
 				C5C401C3255A6608002F407A /* Sound.wav in Resources */,
 				C5C40241255A6671002F407A /* home_priase_animation.json in Resources */,
+				C531CF4B255A83BD005304F6 /* 123.json in Resources */,
 				C5C4F7E5255A5491002F407A /* 高度自定义的按钮.md in Resources */,
 				C5C40251255A6671002F407A /* huiyuan.json in Resources */,
 				C5C40242255A6671002F407A /* 主页.json in Resources */,
@@ -1835,6 +1934,7 @@
 				C5C4F80A255A5491002F407A /* 专治UITableView相应链断裂 in Resources */,
 				C5C4024D255A6671002F407A /* tab_search_animate.json in Resources */,
 				C5C4024B255A6671002F407A /* tab_home_animate.json in Resources */,
+				C53416B3255A7CFB00DFAFE4 /* 输入@3x.png in Resources */,
 				C5C4F51C255A5204002F407A /* Assets.xcassets in Resources */,
 				C5C40244255A6671002F407A /* 任务.json in Resources */,
 				C5C4024F255A6671002F407A /* music_animation.json in Resources */,
@@ -1844,13 +1944,16 @@
 				C5C4024C255A6671002F407A /* 社区.json in Resources */,
 				C5C402AA255A6881002F407A /* 启动页0922一版横版.jpg in Resources */,
 				C5C4F7F1255A5491002F407A /* 移除 系统自带的 UITabBarButton in Resources */,
+				C531CFAA255A840B005304F6 /* 1234.json in Resources */,
 				C5C40247255A6671002F407A /* green_lottie_tab_home.json in Resources */,
+				C53416B4255A7CFB00DFAFE4 /* 输入@2x.png in Resources */,
 				C5C402AB255A6881002F407A /* 启动页SLOGAN.png in Resources */,
 				C5C40249255A6671002F407A /* tab_me_animate.json in Resources */,
 				C5C4F517255A5203002F407A /* Main.storyboard in Resources */,
 				C5C40248255A6671002F407A /* 我的.json in Resources */,
 				C5C40246255A6671002F407A /* dingdan.json in Resources */,
 				C5C40397255A6C26002F407A /* ZZCircleProgress.bundle in Resources */,
+				C531CF4E255A83BD005304F6 /* 12345.json in Resources */,
 				C5C40245255A6671002F407A /* green_lottie_tab_news.json in Resources */,
 				C5C40254255A6671002F407A /* record_change.json in Resources */,
 				C5C4F7F2255A5491002F407A /* 我为什么要这么做 in Resources */,
@@ -1977,6 +2080,7 @@
 				C5C4019E255A65A6002F407A /* NSTimerManager.m in Sources */,
 				C5C40256255A6671002F407A /* TabbarVC.m in Sources */,
 				C5C4F7F0255A5491002F407A /* DeleteSystemUITabBarButton.m in Sources */,
+				C5341659255A78A200DFAFE4 /* JobsIMInputview.m in Sources */,
 				C5C402BC255A6A11002F407A /* ViewController@1.m in Sources */,
 				C5C4F819255A5491002F407A /* NSObject+AFNReachability.m in Sources */,
 				C5C4F7FB255A5491002F407A /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
@@ -2017,6 +2121,7 @@
 				C5C4F817255A5491002F407A /* CollectionReusableView.m in Sources */,
 				C5C4F822255A5491002F407A /* HQTextField.m in Sources */,
 				C5C4F7DE255A5491002F407A /* UILabel+Extra.m in Sources */,
+				C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */,
 				C5C4F807255A5491002F407A /* BaseNavigationVC.m in Sources */,
 				C5C4F7F8255A5491002F407A /* NSString+Extras.m in Sources */,
 				C5C4F7E3255A5491002F407A /* UITableViewCell+WhiteArrows.m in Sources */,
@@ -2039,6 +2144,7 @@
 				C5C4F50E255A5203002F407A /* JobsIMAppDelegate.m in Sources */,
 				C5C40391255A6C26002F407A /* WMZBannerView.m in Sources */,
 				C5C4F7FD255A5491002F407A /* UIViewController+Shake.m in Sources */,
+				C531CF4C255A83BD005304F6 /* MJRefreshWithLottieTableViewHeader.m in Sources */,
 				C5C4F80B255A5491002F407A /* BaseTableViewer.m in Sources */,
 				C5C4F808255A5491002F407A /* TableViewAnimationKit.m in Sources */,
 				C5C4F7FF255A5491002F407A /* UIViewController+GifImageView.m in Sources */,
@@ -2060,11 +2166,13 @@
 				C5C4F7D9255A5491002F407A /* UIImage+screenshot.m in Sources */,
 				C5C4039B255A6C26002F407A /* XHLaunchAdButton.m in Sources */,
 				C5C4017C255A6555002F407A /* BWItemCollectionViewCell.m in Sources */,
+				C5341587255A77D900DFAFE4 /* JobsIMVC.m in Sources */,
 				C5C4F818255A5491002F407A /* NSObject+Random.m in Sources */,
 				C5C403A1255A6C26002F407A /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 				C5C4F7FA255A5491002F407A /* UIViewController+BWShareView.m in Sources */,
 				C5C402D4255A6A3B002F407A /* ViewController@5.m in Sources */,
 				C5C4025F255A6671002F407A /* UITabBar+TLAnimation.m in Sources */,
+				C531CF4F255A83BD005304F6 /* MJRefreshComponent+Lottie.m in Sources */,
 				C5C4F7F5255A5491002F407A /* CollectionViewCell.m in Sources */,
 				C5C4F7EA255A5491002F407A /* UIView+Animation.m in Sources */,
 				C5C4F804255A5491002F407A /* UIViewController+NavigationBar.m in Sources */,

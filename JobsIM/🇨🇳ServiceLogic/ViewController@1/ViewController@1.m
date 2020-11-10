@@ -6,6 +6,7 @@
 //
 
 #import "ViewController@1.h"
+#import "JobsIMVC.h"
 
 @interface ViewController_1 ()
 
@@ -25,4 +26,16 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 }
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [UIViewController comingFromVC:self
+                              toVC:JobsIMVC.new
+                       comingStyle:ComingStyle_PUSH
+                 presentationStyle:UIModalPresentationAutomatic
+                     requestParams:@""
+                           success:^(id data) {}
+                          animated:YES];
+}
+
 @end
