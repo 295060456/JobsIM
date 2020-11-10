@@ -16,7 +16,7 @@
 @implementation SceneDelegate
 
 static SceneDelegate *static_sceneDelegate = nil;
-+(SceneDelegate *)sharedInstance{
++(instancetype)sharedInstance{
     @synchronized(self){
         if (!static_sceneDelegate) {
             static_sceneDelegate = SceneDelegate.new;
