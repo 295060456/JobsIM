@@ -162,8 +162,11 @@ replacementString:(NSString *)string{
         @weakify(self)
         [[_sendBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIButton * _Nullable x) {
             @strongify(self)
-            if (self.jobsIMInputviewBlock) {
-                self.jobsIMInputviewBlock(self.inputTextField);
+            [self.inputTextField endEditing:YES];
+            if (![NSString isNullString:self.inputTextField.text]) {
+                if (self.jobsIMInputviewBlock) {
+                    self.jobsIMInputviewBlock(self.inputTextField);
+                }
             }
             self.inputTextField.text = @"";
             x.selected = NO;

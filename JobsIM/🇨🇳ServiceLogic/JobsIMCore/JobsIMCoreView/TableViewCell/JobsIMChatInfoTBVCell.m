@@ -49,6 +49,8 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         cell = [[JobsIMChatInfoTBVCell alloc] initWithStyle:UITableViewCellStyleDefault
                                             reuseIdentifier:ReuseIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.contentView.backgroundColor = kClearColor;
+        cell.backgroundColor = kClearColor;
     }return cell;
 }
 

@@ -91,7 +91,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     JobsIMChatInfoTBVCell *cell = [JobsIMChatInfoTBVCell cellWith:tableView];
     cell.isShowChatUserName = YES;
-    cell.contentView.backgroundColor = kClearColor;
     cell.indexPath = indexPath;
     [cell richElementsInCellWithModel:self.chatInfoModelMutArr[indexPath.row]];
     return cell;
@@ -138,8 +137,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.delegate = self;
         _tableView.dataSource = self;
-//        _tableView.mj_footer.automaticallyHidden = NO;//默认根据数据来源 自动显示 隐藏footer，这个功能可以关闭
-//        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellId"];
         [self.view addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view).offset(Top());
@@ -148,9 +145,9 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         }];
         [self.view layoutIfNeeded];
         _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        _tableView.estimatedRowHeight = 0;
-        _tableView.estimatedSectionFooterHeight = 0;
-        _tableView.estimatedSectionHeaderHeight = 0 ;
+        _tableView.ly_emptyView = [LYEmptyView emptyViewWithImageStr:@"noData"
+                                                            titleStr:@"暂无数据"
+                                                           detailStr:@""];
         _tableView.mj_header = MJRefreshWithLottieTableViewHeader.new;
         _tableView.mj_footer.hidden = NO;
     }return _tableView;
