@@ -331,24 +331,6 @@
     NSString *dateString = [[NSString DateFormatter] stringFromDate:[NSString strToDate:timeStampString]];
     return dateString;
 }
-#pragma mark -限宽计算AttributeString与String的高度
-+(CGFloat)getAttributeContentHeightWithAttributeString:(NSAttributedString*)atributedString
-                                          withFontSize:(float)fontSize
-                                 boundingRectWithWidth:(CGFloat)width{
-    float height = 0;
-    CGSize lableSize = CGSizeZero;
-//    if(IS_IOS7)
-    if ([atributedString respondsToSelector:@selector(boundingRectWithSize:options:context:)]){
-        CGSize sizeTemp = [atributedString boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
-                                                        options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
-                           
-                                                        context:nil].size;
-        lableSize = CGSizeMake(ceilf(sizeTemp.width),
-                               ceilf(sizeTemp.height));
-    }
-    height = lableSize.height;
-    return height;
-}
 /// 根据字符串以及其对应的行宽（行高）、行高和字体字号，计算该文本占用的高度（宽度）
 /// @param lineSpacing 行与行之间的间距
 /// @param calcLabelHeight_Width 计算的结论是宽或者高

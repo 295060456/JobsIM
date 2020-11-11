@@ -82,7 +82,6 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         self.identification = chatInfoModel.identification;
         
         //先定宽，再定高
-        
         CGFloat contentWidthTemp = [NSString getContentHeightOrWidthWithParagraphStyleLineSpacing:0
                                                                             calcLabelHeight_Width:CalcLabelWidth
                                                                                      effectString:self.chatTextStr

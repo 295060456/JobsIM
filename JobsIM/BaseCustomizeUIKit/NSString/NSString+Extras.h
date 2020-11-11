@@ -67,11 +67,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param timeStampString 服务器返回的13位时间戳，毫秒
 /// iOS 生成的时间戳是10位
 +(NSString *)getTimeString:(NSString *)timeStampString;
-#pragma mark -限宽计算AttributeString与String的高度
-+(CGFloat)getAttributeContentHeightWithAttributeString:(NSAttributedString*)atributedString
-                                          withFontSize:(float)fontSize
-                                 boundingRectWithWidth:(CGFloat)width;
-
 /// 根据字符串以及其对应的行宽（行高）、行高和字体字号，计算该文本占用的高度（宽度）
 /// @param lineSpacing 行与行之间的间距
 /// @param calcLabelHeight_Width 计算的结论是宽或者高

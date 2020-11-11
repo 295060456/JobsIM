@@ -251,6 +251,7 @@
 		C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入@2x.png"; sourceTree = "<group>"; };
 		C534179E255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMChatInfoTBVCell.h; sourceTree = "<group>"; };
 		C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMChatInfoTBVCell.m; sourceTree = "<group>"; };
+		C5568B7E255BA79E005C1361 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C5C40174255A6554002F407A /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
 		C5C40175255A6554002F407A /* BWItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemCollectionViewCell.h; sourceTree = "<group>"; };
 		C5C40176255A6554002F407A /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
@@ -1248,6 +1249,7 @@
 		C5C4F500255A5203002F407A = {
 			isa = PBXGroup;
 			children = (
+				C5568B7E255BA79E005C1361 /* README.md */,
 				C5C4F50B255A5203002F407A /* JobsIM */,
 				C5C4F52A255A5204002F407A /* JobsIMTests */,
 				C5C4F535255A5204002F407A /* JobsIMUITests */,
