@@ -24,6 +24,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
 
 @property(nonatomic,strong)UIImageView *iconIMGV;//用户头像
 @property(nonatomic,strong)UIImageView *chatBubbleIMGV;//聊天气泡
+@property(nonatomic,strong)UILabel *chatUserNameLab;//用户名
 @property(nonatomic,strong)UILabel *chatContentLab;//聊天信息承接
 @property(nonatomic,strong)UILabel *timeLab;
 
@@ -32,6 +33,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
 //data
 @property(nonatomic,strong)NSString *senderChatTextStr;//该聊天的文本信息
 @property(nonatomic,strong)NSString *senderChatTextTimeStr;//该聊天的时间戳
+@property(nonatomic,strong)NSString *senderUserNameStr;//用户名
 @property(nonatomic,strong)UIImage *senderChatUserIconIMG;//该聊天的用户头像
 @property(nonatomic,strong)NSString *identification;//该聊天对应的数据库坐标ID
 @property(nonatomic,assign)CGFloat contentHeight;//内容高
@@ -59,7 +61,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
                                                                                        font:NULL
                                                                boundingRectWithHeight_Width:JobsIMChatInfoTBVChatContentLabWidth()];
         NSLog(@"%f",CellHeight);
-        return (CellHeight < JobsIMChatInfoTBVDefaultCellHeight() ? JobsIMChatInfoTBVDefaultCellHeight() : CellHeight) + (JobsIMChatInfoTBVDefaultCellHeight() - 5);
+        return (CellHeight < JobsIMChatInfoTBVDefaultCellHeight() ? JobsIMChatInfoTBVDefaultCellHeight() : CellHeight) + (JobsIMChatInfoTBVDefaultCellHeight() / 2 - 5);
     }else{
         return 0;
     }
@@ -79,6 +81,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         self.senderChatTextStr = chatInfoModel.senderChatTextStr;
         self.senderChatTextTimeStr = chatInfoModel.senderChatTextTimeStr;
         self.senderChatUserIconIMG = chatInfoModel.senderChatUserIconIMG;
+        self.senderUserNameStr = chatInfoModel.senderUserNameStr;
         self.identification = chatInfoModel.identification;
         
         //先定宽，再定高
@@ -96,11 +99,11 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
                                                                                     font:NULL
                                                             boundingRectWithHeight_Width:self.contentWidth];
         
-
         NSLog(@"contentHeight = %f",self.contentHeight);
         NSLog(@"contentWidth = %f",self.contentWidth);
         
         self.iconIMGV.alpha = 1;
+        self.chatUserNameLab.alpha = self.isShowChatUserName;
         self.chatBubbleIMGV.alpha = 1;
         self.chatContentLab.alpha = 1;
         self.timeLab.alpha= 1;
@@ -165,6 +168,33 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
             }
         }];
     }return _chatBubbleIMGV;
+}
+
+-(UILabel *)chatUserNameLab{
+    if (!_chatUserNameLab) {
+        _chatUserNameLab = UILabel.new;
+        _chatUserNameLab.textColor = kBlackColor;
+        _chatUserNameLab.font = [UIFont systemFontOfSize:10 weight:UIFontWeightRegular];
+        _chatUserNameLab.textAlignment = NSTextAlignmentCenter;
+        _chatUserNameLab.text = self.senderUserNameStr;
+        [_chatUserNameLab sizeToFit];
+        [self.contentView addSubview:_chatUserNameLab];
+        [_chatUserNameLab mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.iconIMGV);
+            make.bottom.equalTo(self.iconIMGV.mas_centerY).offset(-3);
+            switch (self.infoLocation) {
+                case InfoLocation_Left:{
+                    make.left.equalTo(self.iconIMGV.mas_right).offset(5);
+                    
+                }break;
+                case InfoLocation_Right:{
+                    make.right.equalTo(self.iconIMGV.mas_left).offset(-5);
+                }break;
+                default:
+                    break;
+            }
+        }];
+    }return _chatUserNameLab;
 }
 
 -(UILabel *)chatContentLab{

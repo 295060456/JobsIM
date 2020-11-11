@@ -287,7 +287,7 @@
 }
 /// 获取系统时间戳
 +(NSString *)getSysTimeStamp{
-    NSTimeInterval intervalSince1970 = [[NSDate date] timeIntervalSince1970];
+    NSTimeInterval intervalSince1970 = [NSDate.date timeIntervalSince1970];
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:intervalSince1970];
     NSString *sysTimeStamp = [NSString stringWithFormat:@"%@",date];
     return sysTimeStamp;

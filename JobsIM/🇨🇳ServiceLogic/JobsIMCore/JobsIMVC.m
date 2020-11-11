@@ -10,7 +10,7 @@
 #import "JobsIMChatInfoModel.h"
 
 static inline CGFloat JobsIMInputviewHeight(){
-    return 50;
+    return 60;
 }
 
 @interface JobsIMVC ()
@@ -23,6 +23,7 @@ UITableViewDelegate
 @property(nonatomic,strong)UITableView *tableView;//显示数据
 @property(nonatomic,strong)UIBarButtonItem *shareBtnItem;
 @property(nonatomic,strong)UIButton *shareBtn;
+@property(nonatomic,strong)UIColor *bgColour;
 //data
 @property(nonatomic,strong)NSMutableArray <JobsIMChatInfoModel *>*chatInfoModelMutArr;//聊天信息
 
@@ -36,11 +37,11 @@ UITableViewDelegate
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = RandomColor;
+    self.view.backgroundColor = kWhiteColor;
     
     if ([self.requestParams isKindOfClass:JobsIMChatInfoModel.class]) {
         JobsIMChatInfoModel *model = (JobsIMChatInfoModel *)self.requestParams;
-        self.gk_navTitle = model.senderUserName;
+        self.gk_navTitle = model.senderUserNameStr;
     }
     
     if (self.navigationController.viewControllers.count - 1) {//从上个页面推过来才有返回键，直接的个人中心是没有的
@@ -48,6 +49,7 @@ UITableViewDelegate
     }
     
     self.gk_navRightBarButtonItems = @[self.shareBtnItem];
+    self.gk_navBackgroundColor = KLightGrayColor;
 
     self.inputview.alpha = 1;
     self.tableView.alpha = 1;
@@ -63,6 +65,7 @@ UITableViewDelegate
     chatInfoModel.senderChatTextTimeStr = [NSString getSysTimeStamp];
     chatInfoModel.senderChatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
     chatInfoModel.identification = @"我是服务器";
+    chatInfoModel.senderUserNameStr = @"马化腾";
     
     [self.chatInfoModelMutArr addObject:chatInfoModel];
     [self.tableView reloadData];
@@ -87,7 +90,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     JobsIMChatInfoTBVCell *cell = [JobsIMChatInfoTBVCell cellWith:tableView];
-    cell.contentView.backgroundColor = RandomColor;
+    cell.isShowChatUserName = YES;
+    cell.contentView.backgroundColor = kClearColor;
     cell.indexPath = indexPath;
     [cell richElementsInCellWithModel:self.chatInfoModelMutArr[indexPath.row]];
     return cell;
@@ -107,6 +111,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                 chatInfoModel.senderChatTextTimeStr = [NSString getSysTimeStamp];
                 chatInfoModel.senderChatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_1");//我自己的头像
                 chatInfoModel.identification = @"我是我自己";
+                chatInfoModel.senderUserNameStr = @"Jobs";
                 
                 [self.chatInfoModelMutArr addObject:chatInfoModel];
                 [self.tableView reloadData];
@@ -127,7 +132,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 -(UITableView *)tableView{
     if (!_tableView) {
         _tableView = UITableView.new;
-        _tableView.backgroundColor = HEXCOLOR(0x242A37);
+        _tableView.backgroundColor = self.bgColour;
         _tableView.pagingEnabled = YES;//这个属性为YES会使得Tableview一格一格的翻动
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.showsVerticalScrollIndicator = NO;
@@ -167,6 +172,15 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         [UIView cornerCutToCircleWithView:_shareBtn AndCornerRadius:23 / 2];
         [[_shareBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             NSLog(@"分享功能");
+            [NSObject showSYSAlertViewTitle:@"正在研发中心..."
+                                    message:@"敬请期待"
+                            isSeparateStyle:NO
+                                btnTitleArr:@[@"好的"]
+                             alertBtnAction:@[@""]
+                                   targetVC:self
+                               alertVCBlock:^(id data) {
+                //DIY
+            }];
         }];
     }return _shareBtn;
 }
@@ -175,6 +189,12 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (!_shareBtnItem) {
         _shareBtnItem = [[UIBarButtonItem alloc] initWithCustomView:self.shareBtn];
     }return _shareBtnItem;
+}
+
+-(UIColor *)bgColour{
+    if (!_bgColour) {
+        _bgColour = [UIColor colorWithPatternImage:KBuddleIMG(@"⚽️PicResource", @"Telegram",nil, @"1")];
+    }return _bgColour;
 }
 
 @end

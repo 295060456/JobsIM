@@ -165,6 +165,7 @@ replacementString:(NSString *)string{
             if (self.jobsIMInputviewBlock) {
                 self.jobsIMInputviewBlock(self.inputTextField);
             }
+            self.inputTextField.text = @"";
             x.selected = NO;
         }];
         [self addSubview:_sendBtn];
