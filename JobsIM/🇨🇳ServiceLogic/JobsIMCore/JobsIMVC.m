@@ -151,6 +151,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                                                             titleStr:@"暂无数据"
                                                            detailStr:@""];
         _tableView.mj_header = MJRefreshWithLottieTableViewHeader.new;
+        _tableView.mj_header.jsonString = @"12345.json";
+        [_tableView.mj_header beginRefreshing];
         _tableView.mj_footer.hidden = NO;
     }return _tableView;
 }

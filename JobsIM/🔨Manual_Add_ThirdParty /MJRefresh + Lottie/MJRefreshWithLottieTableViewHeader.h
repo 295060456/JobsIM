@@ -7,6 +7,7 @@
 //
 
 #import "MJRefreshGifHeader.h"
+#import "MJRefreshComponent+Lottie.h"
 
 @interface MJRefreshWithLottieTableViewHeader : MJRefreshGifHeader
 

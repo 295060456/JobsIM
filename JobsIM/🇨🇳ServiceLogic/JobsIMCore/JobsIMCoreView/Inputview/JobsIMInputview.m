@@ -6,7 +6,6 @@
 //
 
 #import "JobsIMInputview.h"
-#import "UIImage+Extras.h"
 
 @interface JobsIMInputview ()
 <
@@ -157,13 +156,15 @@ replacementString:(NSString *)string{
         [_sendBtn setTitle:@"发送" forState:UIControlStateNormal];
         [_sendBtn setTitleColor:kBlackColor forState:UIControlStateNormal];
         [_sendBtn setTitleColor:kWhiteColor forState:UIControlStateDisabled];
-        [_sendBtn setBackgroundImage:[UIImage imageWithColor:kBlueColor] forState:UIControlStateNormal];
+        [_sendBtn setBackgroundImage:[UIImage imageWithColor:kCyanColor] forState:UIControlStateNormal];
         [_sendBtn setBackgroundImage:[UIImage imageWithColor:KLightGrayColor] forState:UIControlStateDisabled];
         @weakify(self)
         [[_sendBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIButton * _Nullable x) {
             @strongify(self)
             [self.inputTextField endEditing:YES];
             if (![NSString isNullString:self.inputTextField.text]) {
+                [PlaySound playSoundEffect:@"Sound"
+                                      type:@"wav"];
                 if (self.jobsIMInputviewBlock) {
                     self.jobsIMInputviewBlock(self.inputTextField);
                 }

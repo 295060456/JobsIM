@@ -8,16 +8,20 @@
 #import "JobsIMChatInfoTBVCell.h"
 #import "JobsIMChatInfoModel.h"
 
+static inline CGFloat JobsIMChatInfoTimeLabWidth(){
+    return 55;
+}
+
 static inline CGFloat JobsIMChatInfoTBVDefaultCellHeight(){
     return 50;
 }
 
 static inline CGFloat JobsIMChatInfoTBVChatContentLabWidth(){
-    return MAINSCREEN_WIDTH - 80 - (JobsIMChatInfoTBVDefaultCellHeight() - 5) - 20;
+    return MAINSCREEN_WIDTH - JobsIMChatInfoTimeLabWidth() - (JobsIMChatInfoTBVDefaultCellHeight() - 5) - 20;
 }
 
 static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
-    return 100;
+    return 30;
 }
 
 @interface JobsIMChatInfoTBVCell ()
@@ -205,7 +209,18 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         _chatContentLab.numberOfLines = 0;
         _chatContentLab.textColor = kBlackColor;
         _chatContentLab.font = [UIFont systemFontOfSize:10 weight:UIFontWeightRegular];
-        _chatContentLab.textAlignment = NSTextAlignmentCenter;
+        
+        switch (self.infoLocation) {
+            case InfoLocation_Left:{
+                _chatContentLab.textAlignment = NSTextAlignmentRight;
+            }break;
+            case InfoLocation_Right:{
+                _chatContentLab.textAlignment = NSTextAlignmentLeft;
+            }break;
+            default:
+                break;
+        }
+        
         _chatContentLab.text = self.senderChatTextStr;
         [self.chatBubbleIMGV addSubview:_chatContentLab];
         [_chatContentLab mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -228,7 +243,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         [_timeLab mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.bottom.equalTo(self.chatBubbleIMGV);
-            make.size.mas_equalTo(CGSizeMake(80, 20));
+            make.size.mas_equalTo(CGSizeMake(JobsIMChatInfoTimeLabWidth(), 20));
             
             switch (self.infoLocation) {
                 case InfoLocation_Left:{

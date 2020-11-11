@@ -7,7 +7,6 @@
 //
 
 #import "MJRefreshWithLottieTableViewHeader.h"
-#import "MJRefreshComponent+Lottie.h"
 
 @interface MJRefreshWithLottieTableViewHeader ()
 
