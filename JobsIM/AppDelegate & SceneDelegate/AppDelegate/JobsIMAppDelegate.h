@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-
+#import "TabbarVC.h"
 #import "NoticePopupView.h"
 
 @interface JobsIMAppDelegate : UIResponder <UIApplicationDelegate>

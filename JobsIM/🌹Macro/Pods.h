@@ -127,7 +127,7 @@
 #import "LYEmptyViewHeader.h"
 #endif
 
-#if __has_include(<Masonry/Masonry.h>)
+#if __has_include(<WHToast/WHToast.h>)
 #import <WHToast/WHToast.h>
 #else
 #import "WHToast.h"
@@ -140,7 +140,7 @@
 #import "GCDAsyncUdpSocket.h" // for UDP
 //MQTT
 #if __has_include(<MQTTClient/MQTTClient.h>)
-#import<MQTTClient/MQTTClient.h>
+#import <MQTTClient/MQTTClient.h>
 #else
 #import "MQTTClient.h"
 #endif

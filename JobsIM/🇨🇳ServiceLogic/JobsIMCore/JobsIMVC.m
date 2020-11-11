@@ -125,6 +125,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         [_inputview mas_makeConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(JobsIMInputviewHeight());
             make.left.right.equalTo(self.view);
+            NSLog(@"%f",BottomSafeAreaHeight());
             make.bottom.equalTo(self.view).offset(-BottomSafeAreaHeight());
         }];
     }return _inputview;
