@@ -33,7 +33,9 @@
     JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
     chatInfoModel.senderChatTextStr = @"我是马化腾,明天来上班";
     chatInfoModel.senderUserNameStr = @"马化腾";
-    chatInfoModel.senderChatTextTimeStr = [NSString getSysTimeStamp];
+    TimeModel *timeModel = TimeModel.new;
+    [timeModel makeSpecificTime];
+    chatInfoModel.senderChatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
     chatInfoModel.senderChatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
     chatInfoModel.identification = @"我是服务器";
     

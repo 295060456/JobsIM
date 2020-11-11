@@ -6,8 +6,6 @@
 //
 
 #import "JobsIMVC.h"
-#import "JobsIMInputview.h"
-#import "JobsIMChatInfoModel.h"
 
 static inline CGFloat JobsIMInputviewHeight(){
     return 60;
@@ -62,7 +60,9 @@ UITableViewDelegate
 -(void)simulateServer{
     JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
     chatInfoModel.senderChatTextStr = @"我是马化腾,明天来上班";//tony马，明天我可以来上班吗？
-    chatInfoModel.senderChatTextTimeStr = [NSString getSysTimeStamp];
+    TimeModel *timeModel = TimeModel.new;
+    [timeModel makeSpecificTime];
+    chatInfoModel.senderChatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
     chatInfoModel.senderChatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
     chatInfoModel.identification = @"我是服务器";
     chatInfoModel.senderUserNameStr = @"马化腾";
@@ -107,7 +107,9 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                 
                 JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
                 chatInfoModel.senderChatTextStr = tf.text;
-                chatInfoModel.senderChatTextTimeStr = [NSString getSysTimeStamp];
+                TimeModel *timeModel = TimeModel.new;
+                [timeModel makeSpecificTime];
+                chatInfoModel.senderChatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
                 chatInfoModel.senderChatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_1");//我自己的头像
                 chatInfoModel.identification = @"我是我自己";
                 chatInfoModel.senderUserNameStr = @"Jobs";
@@ -169,7 +171,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         [UIView cornerCutToCircleWithView:_shareBtn AndCornerRadius:23 / 2];
         [[_shareBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             NSLog(@"分享功能");
-            [NSObject showSYSAlertViewTitle:@"正在研发中心..."
+            [NSObject showSYSAlertViewTitle:@"正在研发中..."
                                     message:@"敬请期待"
                             isSeparateStyle:NO
                                 btnTitleArr:@[@"好的"]

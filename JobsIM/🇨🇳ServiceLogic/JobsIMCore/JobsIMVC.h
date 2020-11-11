@@ -8,6 +8,10 @@
 #import <UIKit/UIKit.h>
 #import "MJRefreshWithLottieTableViewHeader.h"
 #import "JobsIMChatInfoTBVCell.h"
+#import "JobsIMInputview.h"
+
+#import "JobsIMChatInfoModel.h"
+#import "TimeModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

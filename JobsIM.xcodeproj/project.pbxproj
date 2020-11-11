@@ -23,6 +23,8 @@
 		C53416B3255A7CFB00DFAFE4 /* 输入@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */; };
 		C53416B4255A7CFB00DFAFE4 /* 输入@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */; };
 		C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */; };
+		C5569363255BC520005C1361 /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569362255BC520005C1361 /* NSString+Time.m */; };
+		C55693B1255BC653005C1361 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C55693B0255BC653005C1361 /* TimeModel.m */; };
 		C5C4017B255A6554002F407A /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40176255A6554002F407A /* BWItemModel.m */; };
 		C5C4017C255A6555002F407A /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40177255A6554002F407A /* BWItemCollectionViewCell.m */; };
 		C5C4017D255A6555002F407A /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40179255A6554002F407A /* BWShareView.m */; };
@@ -252,6 +254,10 @@
 		C534179E255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMChatInfoTBVCell.h; sourceTree = "<group>"; };
 		C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMChatInfoTBVCell.m; sourceTree = "<group>"; };
 		C5568B7E255BA79E005C1361 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C5569361255BC520005C1361 /* NSString+Time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Time.h"; sourceTree = "<group>"; };
+		C5569362255BC520005C1361 /* NSString+Time.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
+		C55693AF255BC653005C1361 /* TimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeModel.h; sourceTree = "<group>"; };
+		C55693B0255BC653005C1361 /* TimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
 		C5C40174255A6554002F407A /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
 		C5C40175255A6554002F407A /* BWItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemCollectionViewCell.h; sourceTree = "<group>"; };
 		C5C40176255A6554002F407A /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
@@ -1555,6 +1561,10 @@
 			children = (
 				C5C4F75E255A5490002F407A /* NSString+Extras.h */,
 				C5C4F75D255A5490002F407A /* NSString+Extras.m */,
+				C5569361255BC520005C1361 /* NSString+Time.h */,
+				C5569362255BC520005C1361 /* NSString+Time.m */,
+				C55693AF255BC653005C1361 /* TimeModel.h */,
+				C55693B0255BC653005C1361 /* TimeModel.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -2172,6 +2182,7 @@
 				C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */,
 				C5C4F807255A5491002F407A /* BaseNavigationVC.m in Sources */,
 				C5C4F7F8255A5491002F407A /* NSString+Extras.m in Sources */,
+				C5569363255BC520005C1361 /* NSString+Time.m in Sources */,
 				C5C4F7E3255A5491002F407A /* UITableViewCell+WhiteArrows.m in Sources */,
 				C5C4F7DC255A5491002F407A /* UIImage+Overlay.m in Sources */,
 				C5C4F816255A5491002F407A /* CALayer+Anim.m in Sources */,
@@ -2213,6 +2224,7 @@
 				C5C4025C255A6671002F407A /* TransitionController.m in Sources */,
 				C5C4F7D9255A5491002F407A /* UIImage+screenshot.m in Sources */,
 				C5C4039B255A6C26002F407A /* XHLaunchAdButton.m in Sources */,
+				C55693B1255BC653005C1361 /* TimeModel.m in Sources */,
 				C5C4017C255A6555002F407A /* BWItemCollectionViewCell.m in Sources */,
 				C5341587255A77D900DFAFE4 /* JobsIMVC.m in Sources */,
 				C5C4F818255A5491002F407A /* NSObject+Random.m in Sources */,

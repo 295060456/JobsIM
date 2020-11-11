@@ -13,6 +13,7 @@
 
 //NSString
 #import "NSString+Extras.h"
+#import "NSString+Time.h"
 //UIFont
 #import "UIFont+Extras.h"
 //NSObject

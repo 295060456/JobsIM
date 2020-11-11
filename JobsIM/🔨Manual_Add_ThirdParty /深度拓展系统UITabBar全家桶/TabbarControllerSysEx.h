@@ -31,6 +31,7 @@
 #import "UIView+SuspendView.h"//悬浮的根
 //NSString
 #import "NSString+Extras.h"
+#import "NSString+Time.h"
 //NSObject
 #import "NSObject+Extras.h"
 #import "NSObject+Sound.h"
