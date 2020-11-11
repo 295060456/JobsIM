@@ -7,6 +7,7 @@
 
 #import "ViewController@1.h"
 #import "JobsIMVC.h"
+#import "JobsIMChatInfoModel.h"
 
 @interface ViewController_1 ()
 
@@ -29,11 +30,18 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
+    JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
+    chatInfoModel.senderChatTextStr = @"我是马化腾,明天来上班";
+    chatInfoModel.senderUserName = @"马化腾";
+    chatInfoModel.senderChatTextTimeStr = [NSString getSysTimeStamp];
+    chatInfoModel.senderChatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
+    chatInfoModel.identification = @"我是服务器";
+    
     [UIViewController comingFromVC:self
                               toVC:JobsIMVC.new
                        comingStyle:ComingStyle_PUSH
                  presentationStyle:UIModalPresentationAutomatic
-                     requestParams:@""
+                     requestParams:chatInfoModel
                            success:^(id data) {}
                           animated:YES];
 }

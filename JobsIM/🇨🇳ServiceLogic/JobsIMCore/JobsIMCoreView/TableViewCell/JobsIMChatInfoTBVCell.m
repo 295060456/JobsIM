@@ -30,9 +30,9 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
 @property(nonatomic,assign)InfoLocation infoLocation;
 @property(nonatomic,strong)NSMutableArray <UIImage *>*chatBubbleMutArr;
 //data
-@property(nonatomic,strong)NSString *chatTextStr;//该聊天的文本信息
-@property(nonatomic,strong)NSString *chatTextTimeStr;//该聊天的时间戳
-@property(nonatomic,strong)UIImage *chatUserIconIMG;//该聊天的用户头像
+@property(nonatomic,strong)NSString *senderChatTextStr;//该聊天的文本信息
+@property(nonatomic,strong)NSString *senderChatTextTimeStr;//该聊天的时间戳
+@property(nonatomic,strong)UIImage *senderChatUserIconIMG;//该聊天的用户头像
 @property(nonatomic,strong)NSString *identification;//该聊天对应的数据库坐标ID
 @property(nonatomic,assign)CGFloat contentHeight;//内容高
 @property(nonatomic,assign)CGFloat contentWidth;//内容宽
@@ -55,7 +55,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         JobsIMChatInfoModel *chatInfoModel = (JobsIMChatInfoModel *)model;
         CGFloat CellHeight = [NSString getContentHeightOrWidthWithParagraphStyleLineSpacing:0
                                                                       calcLabelHeight_Width:CalcLabelHeight
-                                                                               effectString:chatInfoModel.chatTextStr
+                                                                               effectString:chatInfoModel.senderChatTextStr
                                                                                        font:NULL
                                                                boundingRectWithHeight_Width:JobsIMChatInfoTBVChatContentLabWidth()];
         NSLog(@"%f",CellHeight);
@@ -76,15 +76,15 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
             self.infoLocation = InfoLocation_Unknown;
         }
         
-        self.chatTextStr = chatInfoModel.chatTextStr;
-        self.chatTextTimeStr = chatInfoModel.chatTextTimeStr;
-        self.chatUserIconIMG = chatInfoModel.chatUserIconIMG;
+        self.senderChatTextStr = chatInfoModel.senderChatTextStr;
+        self.senderChatTextTimeStr = chatInfoModel.senderChatTextTimeStr;
+        self.senderChatUserIconIMG = chatInfoModel.senderChatUserIconIMG;
         self.identification = chatInfoModel.identification;
         
         //先定宽，再定高
         CGFloat contentWidthTemp = [NSString getContentHeightOrWidthWithParagraphStyleLineSpacing:0
                                                                             calcLabelHeight_Width:CalcLabelWidth
-                                                                                     effectString:self.chatTextStr
+                                                                                     effectString:self.senderChatTextStr
                                                                                              font:NULL
                                                                      boundingRectWithHeight_Width:JobsIMChatInfoTBVDefaultCellHeight()];
         //保证最小宽度 且 小于最大宽度
@@ -92,7 +92,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         
         self.contentHeight = [NSString getContentHeightOrWidthWithParagraphStyleLineSpacing:0
                                                                    calcLabelHeight_Width:CalcLabelHeight
-                                                                            effectString:self.chatTextStr
+                                                                            effectString:self.senderChatTextStr
                                                                                     font:NULL
                                                             boundingRectWithHeight_Width:self.contentWidth];
         
@@ -110,7 +110,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
 -(UIImageView *)iconIMGV{
     if (!_iconIMGV) {
         _iconIMGV = UIImageView.new;
-        _iconIMGV.image = self.chatUserIconIMG;
+        _iconIMGV.image = self.senderChatUserIconIMG;
         [self.contentView addSubview:_iconIMGV];
         [_iconIMGV mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(JobsIMChatInfoTBVDefaultCellHeight() - 5, JobsIMChatInfoTBVDefaultCellHeight() - 5));
@@ -174,7 +174,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         _chatContentLab.textColor = kBlackColor;
         _chatContentLab.font = [UIFont systemFontOfSize:10 weight:UIFontWeightRegular];
         _chatContentLab.textAlignment = NSTextAlignmentCenter;
-        _chatContentLab.text = self.chatTextStr;
+        _chatContentLab.text = self.senderChatTextStr;
         [self.chatBubbleIMGV addSubview:_chatContentLab];
         [_chatContentLab mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.chatBubbleIMGV).with.insets(UIEdgeInsetsMake(5, 5, 5, 5));
@@ -187,7 +187,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         _timeLab = UILabel.new;
         _timeLab.font = [UIFont systemFontOfSize:10 weight:UIFontWeightRegular];
         _timeLab.textAlignment = NSTextAlignmentCenter;
-        _timeLab.text = self.chatTextTimeStr;
+        _timeLab.text = self.senderChatTextTimeStr;
         _timeLab.textColor = kWhiteColor;
         _timeLab.backgroundColor = KLightGrayColor;
         [_timeLab sizeToFit];

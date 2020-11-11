@@ -21,6 +21,8 @@ UITableViewDelegate
 
 @property(nonatomic,strong)JobsIMInputview *inputview;
 @property(nonatomic,strong)UITableView *tableView;//显示数据
+@property(nonatomic,strong)UIBarButtonItem *shareBtnItem;
+@property(nonatomic,strong)UIButton *shareBtn;
 //data
 @property(nonatomic,strong)NSMutableArray <JobsIMChatInfoModel *>*chatInfoModelMutArr;//聊天信息
 
@@ -35,8 +37,20 @@ UITableViewDelegate
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = RandomColor;
+    
+    if ([self.requestParams isKindOfClass:JobsIMChatInfoModel.class]) {
+        JobsIMChatInfoModel *model = (JobsIMChatInfoModel *)self.requestParams;
+        self.gk_navTitle = model.senderUserName;
+    }
+    
+    if (self.navigationController.viewControllers.count - 1) {//从上个页面推过来才有返回键，直接的个人中心是没有的
+        self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
+    }
+    
+    self.gk_navRightBarButtonItems = @[self.shareBtnItem];
+
     self.inputview.alpha = 1;
-    self.tableView.alpha= 1;
+    self.tableView.alpha = 1;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -45,9 +59,9 @@ UITableViewDelegate
 
 -(void)simulateServer{
     JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
-    chatInfoModel.chatTextStr = @"我是马化腾,明天来上班";//tony马，明天我可以来上班吗？
-    chatInfoModel.chatTextTimeStr = [NSString getSysTimeStamp];
-    chatInfoModel.chatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
+    chatInfoModel.senderChatTextStr = @"我是马化腾,明天来上班";//tony马，明天我可以来上班吗？
+    chatInfoModel.senderChatTextTimeStr = [NSString getSysTimeStamp];
+    chatInfoModel.senderChatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
     chatInfoModel.identification = @"我是服务器";
     
     [self.chatInfoModelMutArr addObject:chatInfoModel];
@@ -89,9 +103,9 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                 ZYTextField *tf = (ZYTextField *)data;
                 
                 JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
-                chatInfoModel.chatTextStr = tf.text;
-                chatInfoModel.chatTextTimeStr = [NSString getSysTimeStamp];
-                chatInfoModel.chatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_1");//我自己的头像
+                chatInfoModel.senderChatTextStr = tf.text;
+                chatInfoModel.senderChatTextTimeStr = [NSString getSysTimeStamp];
+                chatInfoModel.senderChatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_1");//我自己的头像
                 chatInfoModel.identification = @"我是我自己";
                 
                 [self.chatInfoModelMutArr addObject:chatInfoModel];
@@ -143,5 +157,24 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     }return _chatInfoModelMutArr;
 }
 
+-(UIButton *)shareBtn{
+    if (!_shareBtn) {
+        _shareBtn = UIButton.new;
+        _shareBtn.mj_w = 23;
+        _shareBtn.mj_h = 23;
+        [_shareBtn setImage:KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"分享") forState:UIControlStateNormal];
+        [_shareBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
+        [UIView cornerCutToCircleWithView:_shareBtn AndCornerRadius:23 / 2];
+        [[_shareBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            NSLog(@"分享功能");
+        }];
+    }return _shareBtn;
+}
+
+-(UIBarButtonItem *)shareBtnItem{
+    if (!_shareBtnItem) {
+        _shareBtnItem = [[UIBarButtonItem alloc] initWithCustomView:self.shareBtn];
+    }return _shareBtnItem;
+}
 
 @end
