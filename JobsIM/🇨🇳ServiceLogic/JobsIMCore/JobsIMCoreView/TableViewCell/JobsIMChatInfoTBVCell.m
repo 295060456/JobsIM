@@ -31,9 +31,12 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
 @property(nonatomic,strong)UILabel *chatUserNameLab;//用户名
 @property(nonatomic,strong)UILabel *chatContentLab;//聊天信息承接
 @property(nonatomic,strong)UILabel *timeLab;
+@property(nonatomic,strong)UILongPressGestureRecognizer *longPG;
 
 @property(nonatomic,assign)InfoLocation infoLocation;
 @property(nonatomic,strong)NSMutableArray <UIImage *>*chatBubbleMutArr;
+@property(nonatomic,strong)NSMutableArray <UIMenuItem *>*menuItemMutArr;
+
 //data
 @property(nonatomic,strong)NSString *senderChatTextStr;//该聊天的文本信息
 @property(nonatomic,strong)NSString *senderChatTextTimeStr;//该聊天的时间戳
@@ -47,7 +50,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
 
 @implementation JobsIMChatInfoTBVCell
 
-+(instancetype)cellWith:(UITableView *)tableView{
++(instancetype)cellWithTableView:(UITableView *)tableView{
     JobsIMChatInfoTBVCell *cell = (JobsIMChatInfoTBVCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     if (!cell) {
         cell = [[JobsIMChatInfoTBVCell alloc] initWithStyle:UITableViewCellStyleDefault
@@ -55,7 +58,60 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.contentView.backgroundColor = kClearColor;
         cell.backgroundColor = kClearColor;
+        
     }return cell;
+}
+
+-(instancetype)initWithStyle:(UITableViewCellStyle)style
+             reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style
+                    reuseIdentifier:reuseIdentifier]) {
+        self.longPG.enabled = YES;
+    }return self;
+}
+#pragma mark - 长按手势事件
+- (void)cellLongPress:(UIGestureRecognizer *)recognizer{
+    if (recognizer.state == UIGestureRecognizerStateBegan) {
+        JobsIMChatInfoTBVCell *cell = (JobsIMChatInfoTBVCell *)recognizer.view;
+        //这里把cell做为第一响应(cell默认是无法成为responder,需要重写canBecomeFirstResponder方法)
+        [cell becomeFirstResponder];
+        
+        UIMenuController *menuController = [UIMenuController sharedMenuController];
+        //控制箭头方向
+        menuController.arrowDirection = UIMenuControllerArrowDefault;
+        //自定义事件
+
+        [self.menuItemMutArr addObject:[[UIMenuItem alloc] initWithTitle:@"置顶" action:@selector(menuTopBtnPressed:)]];
+        [self.menuItemMutArr addObject:[[UIMenuItem alloc] initWithTitle:@"删除" action:@selector(menuDelBtnPressed:)]];
+        
+        [menuController setMenuItems:self.menuItemMutArr];
+        
+        if (@available(iOS 13.0, *)) {
+            [menuController showMenuFromView:self
+                                        rect:cell.chatBubbleIMGV.frame];
+        }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wdeprecated-declarations"
+            [menuController setTargetRect:cell.frame
+                                   inView:self];
+            [menuController setMenuVisible:YES
+                                  animated:YES];
+#pragma clang diagnostic pop
+        }
+    }
+}
+
+-(void)menuTopBtnPressed:(id)sender{
+    NSLog(@"123");
+}
+
+-(void)menuDelBtnPressed:(id)sender{
+    NSLog(@"456");
+}
+
+-(BOOL)canPerformAction:(SEL)action
+             withSender:(id)sender{
+    return action == @selector(menuDelBtnPressed:) || action == @selector(menuTopBtnPressed:);
 }
 
 +(CGFloat)cellHeightWithModel:(id _Nullable)model{
@@ -114,6 +170,10 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         self.chatContentLab.alpha = 1;
         self.timeLab.alpha= 1;
     }
+}
+
+- (BOOL)canBecomeFirstResponder{
+    return YES;
 }
 #pragma mark —— lazyLoad
 -(UIImageView *)iconIMGV{
@@ -266,6 +326,19 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         [_chatBubbleMutArr addObject:KIMG(@"左气泡")];//左气泡
         [_chatBubbleMutArr addObject:KIMG(@"右气泡")];//右气泡
     }return _chatBubbleMutArr;
+}
+
+-(UILongPressGestureRecognizer *)longPG{
+    if (!_longPG) {
+        _longPG = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(cellLongPress:)];
+        [self addGestureRecognizer:_longPG];
+    }return _longPG;
+}
+
+-(NSMutableArray<UIMenuItem *> *)menuItemMutArr{
+    if (!_menuItemMutArr) {
+        _menuItemMutArr = NSMutableArray.array;
+    }return _menuItemMutArr;
 }
 
 @end

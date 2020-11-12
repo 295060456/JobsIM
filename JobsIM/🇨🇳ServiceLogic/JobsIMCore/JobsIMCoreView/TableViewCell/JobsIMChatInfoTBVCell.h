@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger,InfoLocation) {
 
 @property(nonatomic,assign)BOOL isShowChatUserName;//是否显示每一个聊天的用户的用户名？默认不显示
 
-+(instancetype)cellWith:(UITableView *)tableView;
++(instancetype)cellWithTableView:(UITableView *)tableView;
 +(CGFloat)cellHeightWithModel:(id _Nullable)model;
 -(void)richElementsInCellWithModel:(id _Nullable)model;
 

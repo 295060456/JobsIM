@@ -89,7 +89,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    JobsIMChatInfoTBVCell *cell = [JobsIMChatInfoTBVCell cellWith:tableView];
+    JobsIMChatInfoTBVCell *cell = [JobsIMChatInfoTBVCell cellWithTableView:tableView];
     cell.isShowChatUserName = YES;
     cell.indexPath = indexPath;
     [cell richElementsInCellWithModel:self.chatInfoModelMutArr[indexPath.row]];
