@@ -1180,19 +1180,19 @@
 		C5C4035F255A6C26002F407A /* WMZBanner */ = {
 			isa = PBXGroup;
 			children = (
-				C5C40360255A6C26002F407A /* WMZBannerFlowLayout.m */,
-				C5C40361255A6C26002F407A /* WMZBannerControl.h */,
-				C5C40362255A6C26002F407A /* WMZBannerFadeLayout.h */,
-				C5C40363255A6C26002F407A /* WMZBannerParam.m */,
-				C5C40364255A6C26002F407A /* WMZBannerOverLayout.h */,
-				C5C40365255A6C26002F407A /* WMZBannerView.m */,
-				C5C40366255A6C26002F407A /* WMZBannerControl.m */,
-				C5C40367255A6C26002F407A /* WMZBannerFlowLayout.h */,
-				C5C40368255A6C26002F407A /* WMZBannerFadeLayout.m */,
 				C5C40369255A6C26002F407A /* WMZBannerConfig.h */,
-				C5C4036A255A6C26002F407A /* WMZBannerParam.h */,
-				C5C4036B255A6C26002F407A /* WMZBannerView.h */,
+				C5C40361255A6C26002F407A /* WMZBannerControl.h */,
+				C5C40366255A6C26002F407A /* WMZBannerControl.m */,
+				C5C40362255A6C26002F407A /* WMZBannerFadeLayout.h */,
+				C5C40368255A6C26002F407A /* WMZBannerFadeLayout.m */,
+				C5C40367255A6C26002F407A /* WMZBannerFlowLayout.h */,
+				C5C40360255A6C26002F407A /* WMZBannerFlowLayout.m */,
+				C5C40364255A6C26002F407A /* WMZBannerOverLayout.h */,
 				C5C4036C255A6C26002F407A /* WMZBannerOverLayout.m */,
+				C5C4036A255A6C26002F407A /* WMZBannerParam.h */,
+				C5C40363255A6C26002F407A /* WMZBannerParam.m */,
+				C5C4036B255A6C26002F407A /* WMZBannerView.h */,
+				C5C40365255A6C26002F407A /* WMZBannerView.m */,
 			);
 			path = WMZBanner;
 			sourceTree = "<group>";
@@ -1200,10 +1200,10 @@
 		C5C4036D255A6C26002F407A /* FDFullscreenPopGesture */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4036E255A6C26002F407A /* UIScrollView+FDFullscreenPopGesture.m */,
 				C5C4036F255A6C26002F407A /* UINavigationController+FDFullscreenPopGesture.h */,
-				C5C40370255A6C26002F407A /* UIScrollView+FDFullscreenPopGesture.h */,
 				C5C40371255A6C26002F407A /* UINavigationController+FDFullscreenPopGesture.m */,
+				C5C40370255A6C26002F407A /* UIScrollView+FDFullscreenPopGesture.h */,
+				C5C4036E255A6C26002F407A /* UIScrollView+FDFullscreenPopGesture.m */,
 			);
 			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
@@ -1223,28 +1223,28 @@
 		C5C40378255A6C26002F407A /* XHLaunchAd */ = {
 			isa = PBXGroup;
 			children = (
-				C5C40379255A6C26002F407A /* XHLaunchAdController.h */,
 				C5C4037A255A6C26002F407A /* XHLaunchAd.h */,
-				C5C4037B255A6C26002F407A /* XHLaunchAdDownloader.h */,
-				C5C4037C255A6C26002F407A /* XHLaunchAdView.m */,
-				C5C4037D255A6C26002F407A /* XHLaunchAdCache.h */,
-				C5C4037E255A6C26002F407A /* XHLaunchAdConfiguration.h */,
-				C5C4037F255A6C26002F407A /* XHLaunchAdButton.m */,
-				C5C40380255A6C26002F407A /* XHLaunchAdImageView+XHLaunchAdCache.h */,
-				C5C40381255A6C26002F407A /* XHLaunchImageView.m */,
-				C5C40382255A6C26002F407A /* XHLaunchAdConst.m */,
-				C5C40383255A6C26002F407A /* XHLaunchAdImageManager.h */,
 				C5C40384255A6C26002F407A /* XHLaunchAd.m */,
-				C5C40385255A6C26002F407A /* XHLaunchAdController.m */,
-				C5C40386255A6C26002F407A /* XHLaunchAdDownloader.m */,
-				C5C40387255A6C26002F407A /* XHLaunchImageView.h */,
-				C5C40388255A6C26002F407A /* XHLaunchAdImageView+XHLaunchAdCache.m */,
-				C5C40389255A6C26002F407A /* XHLaunchAdConfiguration.m */,
 				C5C4038A255A6C26002F407A /* XHLaunchAdButton.h */,
+				C5C4037F255A6C26002F407A /* XHLaunchAdButton.m */,
+				C5C4037D255A6C26002F407A /* XHLaunchAdCache.h */,
 				C5C4038B255A6C26002F407A /* XHLaunchAdCache.m */,
-				C5C4038C255A6C26002F407A /* XHLaunchAdView.h */,
-				C5C4038D255A6C26002F407A /* XHLaunchAdImageManager.m */,
+				C5C4037E255A6C26002F407A /* XHLaunchAdConfiguration.h */,
+				C5C40389255A6C26002F407A /* XHLaunchAdConfiguration.m */,
 				C5C4038E255A6C26002F407A /* XHLaunchAdConst.h */,
+				C5C40382255A6C26002F407A /* XHLaunchAdConst.m */,
+				C5C40379255A6C26002F407A /* XHLaunchAdController.h */,
+				C5C40385255A6C26002F407A /* XHLaunchAdController.m */,
+				C5C4037B255A6C26002F407A /* XHLaunchAdDownloader.h */,
+				C5C40386255A6C26002F407A /* XHLaunchAdDownloader.m */,
+				C5C40383255A6C26002F407A /* XHLaunchAdImageManager.h */,
+				C5C4038D255A6C26002F407A /* XHLaunchAdImageManager.m */,
+				C5C40380255A6C26002F407A /* XHLaunchAdImageView+XHLaunchAdCache.h */,
+				C5C40388255A6C26002F407A /* XHLaunchAdImageView+XHLaunchAdCache.m */,
+				C5C4038C255A6C26002F407A /* XHLaunchAdView.h */,
+				C5C4037C255A6C26002F407A /* XHLaunchAdView.m */,
+				C5C40387255A6C26002F407A /* XHLaunchImageView.h */,
+				C5C40381255A6C26002F407A /* XHLaunchImageView.m */,
 			);
 			path = XHLaunchAd;
 			sourceTree = "<group>";
@@ -1365,6 +1365,8 @@
 		C5C4F70F255A5490002F407A /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C5C4F77E255A5490002F407A /* UINavigationController */,
+				C5C4F759255A5490002F407A /* UINavigationBar */,
 				C5C4F710255A5490002F407A /* UIImage */,
 				C5C4F71E255A5490002F407A /* UILabel */,
 				C5C4F723255A5490002F407A /* UITableViewCell */,
@@ -1376,10 +1378,8 @@
 				C5C4F74D255A5490002F407A /* UICollectionView */,
 				C5C4F753255A5490002F407A /* UICollectionViewCell */,
 				C5C4F756255A5490002F407A /* UIImageView */,
-				C5C4F759255A5490002F407A /* UINavigationBar */,
 				C5C4F75C255A5490002F407A /* NSString */,
 				C5C4F75F255A5490002F407A /* UIViewController */,
-				C5C4F77E255A5490002F407A /* UINavigationController */,
 				C5C4F781255A5490002F407A /* UITableView */,
 				C5C4F790255A5490002F407A /* UIGestureRecognizer */,
 				C5C4F793255A5490002F407A /* NSArray */,
@@ -1545,8 +1545,8 @@
 		C5C4F759255A5490002F407A /* UINavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F75A255A5490002F407A /* NavigationBar.m */,
 				C5C4F75B255A5490002F407A /* NavigationBar.h */,
+				C5C4F75A255A5490002F407A /* NavigationBar.m */,
 			);
 			path = UINavigationBar;
 			sourceTree = "<group>";
@@ -1618,8 +1618,8 @@
 		C5C4F77E255A5490002F407A /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F77F255A5490002F407A /* BaseNavigationVC.m */,
 				C5C4F780255A5490002F407A /* BaseNavigationVC.h */,
+				C5C4F77F255A5490002F407A /* BaseNavigationVC.m */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";

@@ -80,10 +80,6 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         //控制箭头方向
         menuController.arrowDirection = UIMenuControllerArrowDefault;
         //自定义事件
-
-        [self.menuItemMutArr addObject:[[UIMenuItem alloc] initWithTitle:@"置顶" action:@selector(menuTopBtnPressed:)]];
-        [self.menuItemMutArr addObject:[[UIMenuItem alloc] initWithTitle:@"删除" action:@selector(menuDelBtnPressed:)]];
-        
         [menuController setMenuItems:self.menuItemMutArr];
         
         if (@available(iOS 13.0, *)) {
@@ -338,6 +334,8 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
 -(NSMutableArray<UIMenuItem *> *)menuItemMutArr{
     if (!_menuItemMutArr) {
         _menuItemMutArr = NSMutableArray.array;
+        [_menuItemMutArr addObject:[[UIMenuItem alloc] initWithTitle:@"置顶" action:@selector(menuTopBtnPressed:)]];
+        [_menuItemMutArr addObject:[[UIMenuItem alloc] initWithTitle:@"删除" action:@selector(menuDelBtnPressed:)]];
     }return _menuItemMutArr;
 }
 

@@ -55,6 +55,7 @@ UITableViewDelegate
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.isHiddenNavigationBar = YES;//禁用系统的导航栏
 }
 
 -(void)simulateServer{
