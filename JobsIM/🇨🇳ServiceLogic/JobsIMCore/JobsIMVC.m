@@ -6,6 +6,7 @@
 //
 
 #import "JobsIMVC.h"
+#define isAllowEdit YES// 编译期就要优先进去，所以不能用属性
 
 static inline CGFloat JobsIMInputviewHeight(){
     return 60;
@@ -96,6 +97,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [cell richElementsInCellWithModel:self.chatInfoModelMutArr[indexPath.row]];
     return cell;
 }
+#if isAllowEdit
 //右划
 -(nullable UISwipeActionsConfiguration *)tableView:(UITableView *)tableView
  leadingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -105,7 +107,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                                                                                     handler:^(UIContextualAction * _Nonnull action,
                                                                                               __kindof UIView * _Nonnull sourceView,
                                                                                               void (^ _Nonnull completionHandler)(BOOL)) {
-            NSLog(@"MMM");
+            [WHToast showErrorWithMessage:@"删除"
+                                 duration:2
+                            finishHandler:^{
+              
+            }];
         }];
         //设置图片，但是设置不了原图，都是被默认为白色了，字体也是
         UIImage *image = [KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"分享") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -117,7 +123,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                                                                                   handler:^(UIContextualAction * _Nonnull action,
                                                                                             __kindof UIView * _Nonnull sourceView,
                                                                                             void (^ _Nonnull completionHandler)(BOOL)) {
-            NSLog(@"KKK");
+            [WHToast showErrorWithMessage:@"编辑"
+                                 duration:2
+                            finishHandler:^{
+              
+            }];
         }];
         editRowAction.image = KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"删除");
         editRowAction.backgroundColor = [UIColor blueColor];
@@ -171,6 +181,11 @@ trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
                                                                           title:@"删除"
                                                                         handler:^(UITableViewRowAction * _Nonnull action,
                                                                                   NSIndexPath * _Nonnull indexPath) {
+            [WHToast showErrorWithMessage:@"删除"
+                                 duration:2
+                            finishHandler:^{
+              
+            }];
             // 点击删除按钮需要执行的方法
             [tableView setEditing:NO
                          animated:YES];
@@ -237,6 +252,8 @@ willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
     [button setImage:KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"删除") forState:UIControlStateNormal];
     [button setTitle:@"删除" forState:UIControlStateNormal];
 }
+#endif
+
 #pragma mark —— lazyLoad
 -(JobsIMInputview *)inputview{
     if (!_inputview) {
