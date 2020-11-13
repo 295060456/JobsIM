@@ -37,6 +37,8 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
 @property(nonatomic,strong)NSMutableArray <UIImage *>*chatBubbleMutArr;
 @property(nonatomic,strong)NSMutableArray <UIMenuItem *>*menuItemMutArr;
 
+@property(nonatomic,strong)NSMutableArray <MGSwipeButtonModel *>*leftBtnMutArr;
+@property(nonatomic,strong)NSMutableArray <MGSwipeButtonModel *>*rightBtnMutArr;
 //data
 @property(nonatomic,strong)NSString *senderChatTextStr;//该聊天的文本信息
 @property(nonatomic,strong)NSString *senderChatTextTimeStr;//该聊天的时间戳
@@ -58,7 +60,6 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.contentView.backgroundColor = kClearColor;
         cell.backgroundColor = kClearColor;
-        
     }return cell;
 }
 
@@ -67,7 +68,49 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
     if (self = [super initWithStyle:style
                     reuseIdentifier:reuseIdentifier]) {
         self.longPG.enabled = YES;
+        self.swipeBackgroundColor = kClearColor;
+        self.selectedBackgroundView = UIView.new;
+        self.selectedBackgroundView.backgroundColor = [KYellowColor colorWithAlphaComponent:0.3];
+        self.leftSwipeSettings.transition = MGSwipeTransitionBorder;
+        self.rightSwipeSettings.transition = MGSwipeTransitionDrag;
+        self.leftExpansion.buttonIndex = 0;
+        self.leftExpansion.fillOnTrigger = NO;
+        self.rightExpansion.buttonIndex = 0;
+        self.rightExpansion.fillOnTrigger = YES;
+        self.leftButtons = [self createLeftButtons];
+        self.rightButtons = [self createRightButtons];
     }return self;
+}
+
+-(NSArray *)createLeftButtons{
+    NSMutableArray * result = NSMutableArray.array;
+    for (MGSwipeButtonModel *model in self.leftBtnMutArr) {
+        MGSwipeButton * button = [MGSwipeButton buttonWithTitle:model.titleStr
+                                                           icon:model.IconIMG
+                                                backgroundColor:model.bgCor
+                                                        padding:15
+                                                       callback:^BOOL(MGSwipeTableCell * sender){
+            NSLog(@"Convenience callback received (left).");
+            return YES;
+        }];
+        [result addObject:button];
+    }return result;
+}
+
+
+-(NSArray *)createRightButtons{
+    NSMutableArray * result = NSMutableArray.array;
+    for (MGSwipeButtonModel *model in self.rightBtnMutArr) {
+        MGSwipeButton * button = [MGSwipeButton buttonWithTitle:model.titleStr
+                                                           icon:model.IconIMG
+                                                backgroundColor:model.bgCor
+                                                        padding:15
+                                                       callback:^BOOL(MGSwipeTableCell * sender){
+            NSLog(@"Convenience callback received (left).");
+            return YES;
+        }];
+        [result addObject:button];
+    }return result;
 }
 #pragma mark - 长按手势事件
 - (void)cellLongPress:(UIGestureRecognizer *)recognizer{
@@ -337,6 +380,53 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         [_menuItemMutArr addObject:[[UIMenuItem alloc] initWithTitle:@"置顶" action:@selector(menuTopBtnPressed:)]];
         [_menuItemMutArr addObject:[[UIMenuItem alloc] initWithTitle:@"删除" action:@selector(menuDelBtnPressed:)]];
     }return _menuItemMutArr;
+}
+
+-(NSMutableArray<MGSwipeButtonModel *> *)leftBtnMutArr{
+    if (!_leftBtnMutArr) {
+        _leftBtnMutArr = NSMutableArray.array;
+        MGSwipeButtonModel *model_1 = MGSwipeButtonModel.new;
+        model_1.titleStr = @"";
+        model_1.IconIMG = KIMG(@"Check");
+        model_1.bgCor = KGreenColor;
+        
+        MGSwipeButtonModel *model_2 = MGSwipeButtonModel.new;
+        model_2.titleStr = @"";
+        model_2.IconIMG = KIMG(@"Fav");
+        model_2.bgCor = RGBA_COLOR(0, 0x99, 0xcc, 1);
+        
+        MGSwipeButtonModel *model_3 = MGSwipeButtonModel.new;
+        model_3.titleStr = @"";
+        model_3.IconIMG = KIMG(@"Menu");
+        model_3.bgCor = RGBA_COLOR(0.59, 0.29, 0.08, 1);
+        
+        [_leftBtnMutArr addObject:model_1];
+        [_leftBtnMutArr addObject:model_2];
+        [_leftBtnMutArr addObject:model_3];
+        
+    }return _leftBtnMutArr;
+}
+
+-(NSMutableArray<MGSwipeButtonModel *> *)rightBtnMutArr{
+    if (!_rightBtnMutArr) {
+        _rightBtnMutArr = NSMutableArray.array;
+        
+        MGSwipeButtonModel *model_1 = MGSwipeButtonModel.new;
+        model_1.titleStr = @"";
+        model_1.IconIMG = KIMG(@"Class");
+        model_1.bgCor = KPurpleColor;
+        
+        MGSwipeButtonModel *model_2 = MGSwipeButtonModel.new;
+        model_2.titleStr = @"";
+        model_2.IconIMG = KIMG(@"Drop");
+        model_2.bgCor = KYellowColor;
+        
+        MGSwipeButtonModel *model_3 = MGSwipeButtonModel.new;
+        model_3.titleStr = @"";
+        model_3.IconIMG = KIMG(@"Header");
+        model_3.bgCor = kCyanColor;
+        
+    }return _rightBtnMutArr;
 }
 
 @end

@@ -6,7 +6,7 @@
 //
 
 #import "JobsIMVC.h"
-#define isAllowEdit YES// 编译期就要优先进去，所以不能用属性
+#define isAllowSysEdit NO// 编译期就要优先进去，所以不能用属性
 
 static inline CGFloat JobsIMInputviewHeight(){
     return 60;
@@ -16,6 +16,7 @@ static inline CGFloat JobsIMInputviewHeight(){
 <
 UITableViewDelegate
 ,UITableViewDataSource
+,MGSwipeTableCellDelegate
 >
 
 @property(nonatomic,strong)JobsIMInputview *inputview;
@@ -94,10 +95,12 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     JobsIMChatInfoTBVCell *cell = [JobsIMChatInfoTBVCell cellWithTableView:tableView];
     cell.isShowChatUserName = YES;
     cell.indexPath = indexPath;
+    cell.delegate = self;
+    cell.allowsMultipleSwipe = YES;
     [cell richElementsInCellWithModel:self.chatInfoModelMutArr[indexPath.row]];
     return cell;
 }
-#if isAllowEdit
+#if isAllowSysEdit
 //右划
 -(nullable UISwipeActionsConfiguration *)tableView:(UITableView *)tableView
  leadingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath{
