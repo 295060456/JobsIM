@@ -96,6 +96,147 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [cell richElementsInCellWithModel:self.chatInfoModelMutArr[indexPath.row]];
     return cell;
 }
+//右划
+-(nullable UISwipeActionsConfiguration *)tableView:(UITableView *)tableView
+ leadingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (@available(iOS 11.0, *)) {
+        UIContextualAction *deleteRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal
+                                                                                      title:@"删除"
+                                                                                    handler:^(UIContextualAction * _Nonnull action,
+                                                                                              __kindof UIView * _Nonnull sourceView,
+                                                                                              void (^ _Nonnull completionHandler)(BOOL)) {
+            NSLog(@"MMM");
+        }];
+        //设置图片，但是设置不了原图，都是被默认为白色了，字体也是
+        UIImage *image = [KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"分享") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        [deleteRowAction setImage:image];
+        deleteRowAction.backgroundColor = [UIColor redColor];
+
+        UIContextualAction *editRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal
+                                                                                    title:@"编辑"
+                                                                                  handler:^(UIContextualAction * _Nonnull action,
+                                                                                            __kindof UIView * _Nonnull sourceView,
+                                                                                            void (^ _Nonnull completionHandler)(BOOL)) {
+            NSLog(@"KKK");
+        }];
+        editRowAction.image = KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"删除");
+        editRowAction.backgroundColor = [UIColor blueColor];
+        UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[deleteRowAction,editRowAction]];
+        //设置全屏滑动时不自定响应事件
+        config.performsFirstActionWithFullSwipe = false;
+        return config;
+    }else{
+        return nil;
+    }
+}
+//左划
+-(UISwipeActionsConfiguration *)tableView:(UITableView *)tableView
+trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (@available(iOS 11.0, *)) {
+        UIContextualAction *deleteRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal
+                                                                                      title:@"删除"
+                                                                                    handler:^(UIContextualAction * _Nonnull action,
+                                                                                              __kindof UIView * _Nonnull sourceView,
+                                                                                              void (^ _Nonnull completionHandler)(BOOL)) {
+        }];
+        UIImage *image = [KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"分享")  imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        [deleteRowAction setImage:image];
+        deleteRowAction.backgroundColor = [UIColor redColor];
+        UIContextualAction *editRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal
+                                                                                    title:@"编辑"
+                                                                                  handler:^(UIContextualAction * _Nonnull action,
+                                                                                            __kindof UIView * _Nonnull sourceView,
+                                                                                            void (^ _Nonnull completionHandler)(BOOL)) {
+        }];
+        editRowAction.image = KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"删除");
+        editRowAction.backgroundColor = [UIColor blueColor];
+
+        UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[deleteRowAction,editRowAction]];
+        config.performsFirstActionWithFullSwipe = false;
+        return config;
+    }else{
+        return nil;
+    }
+}
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+#pragma clang diagnostic ignored "-Wdeprecated-implementations"
+-(NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView
+                 editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (@available(iOS 13.0, *)) {
+        //UITableViewRowAction' is deprecated: first deprecated in iOS 13.0 - Use UIContextualAction and related APIs instead.
+        return nil;
+    }else{
+        UITableViewRowAction *action = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal
+                                                                          title:@"删除"
+                                                                        handler:^(UITableViewRowAction * _Nonnull action,
+                                                                                  NSIndexPath * _Nonnull indexPath) {
+            // 点击删除按钮需要执行的方法
+            [tableView setEditing:NO
+                         animated:YES];
+        }];
+        // 修改背景颜色
+        action.backgroundColor = HEXCOLOR(0xEB1163);
+        return @[action];
+    }
+}
+#pragma clang diagnostic pop
+-(void)tableView:(UITableView *)tableView
+willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    // 在 iOS11 以下系统,因为方法线程问题,需要放到主线程执行, 不然没有效果
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self setupSlideBtnWithEditingIndexPath:indexPath];
+    });
+}
+//MARK: 设置左滑按钮的样式
+-(void)setupSlideBtnWithEditingIndexPath:(NSIndexPath *)editingIndexPath{
+    // 判断系统是否是 iOS13 及以上版本
+    if (@available(iOS 13.0, *)) {
+        for (UIView *subView in self.tableView.subviews) {
+            if ([subView isKindOfClass:NSClassFromString(@"_UITableViewCellSwipeContainerView")] && [subView.subviews count] >= 1) {
+                // 修改图片
+                UIView *remarkContentView = subView.subviews.firstObject;
+                [self setupRowActionView:remarkContentView];
+            }
+        }
+        return;
+    }
+    // 判断系统是否是 iOS11 及以上版本
+    if (@available(iOS 11.0, *)) {
+        for (UIView *subView in self.tableView.subviews) {
+            if ([subView isKindOfClass:NSClassFromString(@"UISwipeActionPullView")] && [subView.subviews count] >= 1) {
+                // 修改图片
+                UIView *remarkContentView = subView;
+                [self setupRowActionView:remarkContentView];
+            }
+        }
+        return;
+    }
+    // iOS11 以下的版本
+    JobsIMChatInfoTBVCell *cell = [self.tableView cellForRowAtIndexPath:editingIndexPath];
+    for (UIView *subView in cell.subviews) {
+        if ([subView isKindOfClass:NSClassFromString(@"UITableViewCellDeleteConfirmationView")] && [subView.subviews count] >= 1) {
+            // 修改图片
+            UIView *remarkContentView = subView;
+            [self setupRowActionView:remarkContentView];
+        }
+    }
+}
+
+-(void)setupRowActionView:(UIView *)rowActionView{
+    // 切割圆角
+    [UIView cornerCutToCircleWithView:rowActionView AndCornerRadius:20];
+    // 改变父 View 的frame，这句话是因为我在 contentView 里加了另一个 View，为了使划出的按钮能与其达到同一高度
+    CGRect frame = rowActionView.frame;
+    frame.origin.y += 7;
+    frame.size.height -= 13;
+    rowActionView.frame = frame;
+    // 拿到按钮,设置图片
+    UIButton *button = rowActionView.subviews.firstObject;
+    button.backgroundColor = kRedColor;
+    [button setImage:KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"删除") forState:UIControlStateNormal];
+    [button setTitle:@"删除" forState:UIControlStateNormal];
+}
 #pragma mark —— lazyLoad
 -(JobsIMInputview *)inputview{
     if (!_inputview) {
