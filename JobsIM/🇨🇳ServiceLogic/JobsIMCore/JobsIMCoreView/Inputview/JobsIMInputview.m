@@ -33,8 +33,8 @@ UITextFieldDelegate
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
     if (!self.isOK) {
-        self.inputTextField.alpha = 1;
         self.sendBtn.alpha = 1;
+        self.inputTextField.alpha = 1;
         self.isOK = YES;
     }
 }
@@ -113,41 +113,6 @@ replacementString:(NSString *)string{
     self.jobsIMInputviewBlock = jobsIMInputviewBlock;
 }
 #pragma mark —— lazyLoad
--(ZYTextField *)inputTextField{
-    if (!_inputTextField) {
-        _inputTextField = ZYTextField.new;
-        _inputTextField.placeholder = @"在此输入需要发送的信息";
-        _inputTextField.delegate = self;
-        _inputTextField.cj_delegate = self;
-        _inputTextField.leftView = self.imgView;
-        _inputTextField.ZYtextFont = [UIFont systemFontOfSize:12
-                                           weight:UIFontWeightMedium];
-        _inputTextField.leftViewMode = UITextFieldViewModeAlways;
-        _inputTextField.backgroundColor = HEXCOLOR(0xF4F4F4);
-        _inputTextField.keyboardAppearance = UIKeyboardAppearanceAlert;
-        _inputTextField.returnKeyType = UIReturnKeySearch;
-        [self addSubview:_inputTextField];
-        [_inputTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.equalTo(self);
-            make.top.equalTo(self).offset(11);
-            make.left.equalTo(self).offset(18);
-            make.width.mas_equalTo(298);
-        }];
-
-        [self layoutIfNeeded];
-        
-        [UIView cornerCutToCircleWithView:_inputTextField AndCornerRadius:_inputTextField.mj_h / 2];
-        [UIView colourToLayerOfView:_inputTextField WithColour:kWhiteColor AndBorderWidth:1];
-    }return _inputTextField;
-}
-
--(UIImageView *)imgView{
-    if (!_imgView) {
-        _imgView = UIImageView.new;
-        _imgView.image = KIMG(@"输入");
-    }return _imgView;
-}
-
 -(UIButton *)sendBtn{
     if (!_sendBtn) {
         _sendBtn = UIButton.new;
@@ -170,16 +135,55 @@ replacementString:(NSString *)string{
                 }
             }
             self.inputTextField.text = @"";
-            x.selected = NO;
+            x.enabled = NO;
         }];
         [self addSubview:_sendBtn];
         [_sendBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.bottom.equalTo(self.inputTextField);
-            make.left.equalTo(self.inputTextField.mas_right).offset(10);
+            make.top.equalTo(self).offset(11);
+            make.bottom.equalTo(self).offset(-11);
             make.right.equalTo(self).offset(-10);
+            make.width.mas_equalTo(50);
         }];
         [UIView cornerCutToCircleWithView:_sendBtn AndCornerRadius:3];
     }return _sendBtn;
+}
+
+-(ZYTextField *)inputTextField{
+    if (!_inputTextField) {
+        _inputTextField = ZYTextField.new;
+        _inputTextField.placeholder = @"在此输入需要发送的信息";
+        _inputTextField.delegate = self;
+        _inputTextField.cj_delegate = self;
+        _inputTextField.leftView = self.imgView;
+        _inputTextField.ZYtextFont = [UIFont systemFontOfSize:12
+                                           weight:UIFontWeightMedium];
+        _inputTextField.leftViewMode = UITextFieldViewModeAlways;
+        _inputTextField.backgroundColor = HEXCOLOR(0xF4F4F4);
+        _inputTextField.keyboardAppearance = UIKeyboardAppearanceAlert;
+//        UIView *v = UIView.new;
+//        v.frame = CGRectMake(0, 0, MAINSCREEN_WIDTH, 30);
+//        v.backgroundColor = kRedColor;
+//        _inputTextField.inputAccessoryView = v;
+        _inputTextField.returnKeyType = UIReturnKeySearch;
+        [self addSubview:_inputTextField];
+        [_inputTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.bottom.equalTo(self.sendBtn);
+            make.right.equalTo(self.sendBtn.mas_left).offset(-10);
+            make.left.equalTo(self).offset(10);
+        }];
+
+        [self layoutIfNeeded];
+        
+        [UIView cornerCutToCircleWithView:_inputTextField AndCornerRadius:_inputTextField.mj_h / 2];
+        [UIView colourToLayerOfView:_inputTextField WithColour:kWhiteColor AndBorderWidth:1];
+    }return _inputTextField;
+}
+
+-(UIImageView *)imgView{
+    if (!_imgView) {
+        _imgView = UIImageView.new;
+        _imgView.image = KIMG(@"输入");
+    }return _imgView;
 }
 
 @end

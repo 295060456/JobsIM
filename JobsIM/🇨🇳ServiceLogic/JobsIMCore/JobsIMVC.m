@@ -38,6 +38,8 @@ UITableViewDelegate
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = kWhiteColor;
+    [self keyboard];
+    [IQKeyboardManager sharedManager].enable = NO;//该页面禁用
     
     if ([self.requestParams isKindOfClass:JobsIMChatInfoModel.class]) {
         JobsIMChatInfoModel *model = (JobsIMChatInfoModel *)self.requestParams;
@@ -50,7 +52,7 @@ UITableViewDelegate
     
     self.gk_navRightBarButtonItems = @[self.shareBtnItem];
     self.gk_navBackgroundColor = KLightGrayColor;
-
+    
     self.inputview.alpha = 1;
     self.tableView.alpha = 1;
 }
@@ -60,9 +62,44 @@ UITableViewDelegate
     self.isHiddenNavigationBar = YES;//禁用系统的导航栏
 }
 
+-(void)keyboard{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillChangeFrameNotification:)
+                                                 name:UIKeyboardWillChangeFrameNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardDidChangeFrameNotification:)
+                                                 name:UIKeyboardDidChangeFrameNotification
+                                               object:nil];
+}
+//键盘 弹出 和 收回 走这个方法
+-(void)keyboardWillChangeFrameNotification:(NSNotification *)notification{
+    NSDictionary *userInfo = notification.userInfo;
+    CGRect beginFrame = [userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    CGRect endFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGFloat KeyboardOffsetY = beginFrame.origin.y - endFrame.origin.y;// 正则抬起 ，负值下降
+    NSLog(@"KeyboardOffsetY = %f",KeyboardOffsetY);
+    NSLog(@"BottomSafeAreaHeight = %f",BottomSafeAreaHeight());
+ 
+    if (KeyboardOffsetY > 0) {
+        NSLog(@"键盘抬起");
+        KeyboardOffsetY -= BottomSafeAreaHeight();
+    }else if(KeyboardOffsetY < 0){
+        NSLog(@"键盘收回");
+        KeyboardOffsetY += BottomSafeAreaHeight();
+    }else{
+        NSLog(@"键盘");
+    }
+    
+    self.inputview.mj_y -= KeyboardOffsetY;
+}
+
+-(void)keyboardDidChangeFrameNotification:(NSNotification *)notification{}
+
 -(void)simulateServer{
     JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
-    chatInfoModel.senderChatTextStr = @"我是马化腾,明天来上班";//tony马，明天我可以来上班吗？
+    chatInfoModel.senderChatTextStr = @"我是马化腾,明天来上班";//pony马，明天我可以来上班吗？
     TimeModel *timeModel = TimeModel.new;
     [timeModel makeSpecificTime];
     chatInfoModel.senderChatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
@@ -331,7 +368,8 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        [self.view addSubview:_tableView];
+//        [self.view addSubview:_tableView];
+        [self.view insertSubview:_tableView belowSubview:self.inputview];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view).offset(Top());
             make.left.right.equalTo(self.view);
