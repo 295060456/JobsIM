@@ -33,6 +33,9 @@ typedef NS_ENUM(NSInteger,InfoLocation) {
 +(CGFloat)cellHeightWithModel:(id _Nullable)model;
 -(void)richElementsInCellWithModel:(id _Nullable)model;
 
+-(NSArray *)createLeftButtons;
+-(NSArray *)createRightButtons;
+
 @end
 
 NS_ASSUME_NONNULL_END

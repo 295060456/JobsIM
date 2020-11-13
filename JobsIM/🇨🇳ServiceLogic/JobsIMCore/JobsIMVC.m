@@ -257,6 +257,29 @@ willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 #endif
 
+// USE_MG_DELEGATE
+//-(NSArray *)swipeTableCell:(JobsIMChatInfoTBVCell *)cell
+//  swipeButtonsForDirection:(MGSwipeDirection)direction
+//             swipeSettings:(MGSwipeSettings *)swipeSettings
+//         expansionSettings:(MGSwipeExpansionSettings *)expansionSettings{
+//    if (direction == MGSwipeDirectionLeftToRight) {
+//        return [cell createLeftButtons];
+//    }else {
+//        return [cell createRightButtons];
+//    }
+//}
+//
+//-(BOOL)swipeTableCell:(MGSwipeTableCell *)cell
+//  tappedButtonAtIndex:(NSInteger)index
+//            direction:(MGSwipeDirection)direction
+//        fromExpansion:(BOOL)fromExpansion{
+//    return YES;
+//}
+//
+//-(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+//    NSLog(@"Tapped accessory button");
+//}
+
 #pragma mark —— lazyLoad
 -(JobsIMInputview *)inputview{
     if (!_inputview) {

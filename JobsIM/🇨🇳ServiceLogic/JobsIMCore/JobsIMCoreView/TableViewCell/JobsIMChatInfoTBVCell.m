@@ -97,7 +97,6 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
     }return result;
 }
 
-
 -(NSArray *)createRightButtons{
     NSMutableArray * result = NSMutableArray.array;
     for (MGSwipeButtonModel *model in self.rightBtnMutArr) {
@@ -386,17 +385,17 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
     if (!_leftBtnMutArr) {
         _leftBtnMutArr = NSMutableArray.array;
         MGSwipeButtonModel *model_1 = MGSwipeButtonModel.new;
-        model_1.titleStr = @"";
+        model_1.titleStr = @"L1";
         model_1.IconIMG = KIMG(@"Check");
         model_1.bgCor = KGreenColor;
         
         MGSwipeButtonModel *model_2 = MGSwipeButtonModel.new;
-        model_2.titleStr = @"";
+        model_2.titleStr = @"L2";
         model_2.IconIMG = KIMG(@"Fav");
         model_2.bgCor = RGBA_COLOR(0, 0x99, 0xcc, 1);
         
         MGSwipeButtonModel *model_3 = MGSwipeButtonModel.new;
-        model_3.titleStr = @"";
+        model_3.titleStr = @"L3";
         model_3.IconIMG = KIMG(@"Menu");
         model_3.bgCor = RGBA_COLOR(0.59, 0.29, 0.08, 1);
         
@@ -412,19 +411,23 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         _rightBtnMutArr = NSMutableArray.array;
         
         MGSwipeButtonModel *model_1 = MGSwipeButtonModel.new;
-        model_1.titleStr = @"";
+        model_1.titleStr = @"R1";
         model_1.IconIMG = KIMG(@"Class");
         model_1.bgCor = KPurpleColor;
         
         MGSwipeButtonModel *model_2 = MGSwipeButtonModel.new;
-        model_2.titleStr = @"";
+        model_2.titleStr = @"R2";
         model_2.IconIMG = KIMG(@"Drop");
-        model_2.bgCor = KYellowColor;
+        model_2.bgCor = KDarkTextColor;
         
         MGSwipeButtonModel *model_3 = MGSwipeButtonModel.new;
-        model_3.titleStr = @"";
+        model_3.titleStr = @"R3";
         model_3.IconIMG = KIMG(@"Header");
         model_3.bgCor = kCyanColor;
+        
+        [_rightBtnMutArr addObject:model_1];
+        [_rightBtnMutArr addObject:model_2];
+        [_rightBtnMutArr addObject:model_3];
         
     }return _rightBtnMutArr;
 }
