@@ -268,18 +268,19 @@ willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
 //        return [cell createRightButtons];
 //    }
 //}
+// 点击了第几个滑动出现的按钮？
+-(BOOL)swipeTableCell:(MGSwipeTableCell *)cell
+  tappedButtonAtIndex:(NSInteger)index
+            direction:(MGSwipeDirection)direction
+        fromExpansion:(BOOL)fromExpansion{
+    NSLog(@"Delegate: button tapped, %@ position, index %d, from Expansion: %@",direction == MGSwipeDirectionLeftToRight ? @"left" : @"right", (int)index, fromExpansion ? @"YES" : @"NO");
+    return YES;
+}
 //
-//-(BOOL)swipeTableCell:(MGSwipeTableCell *)cell
-//  tappedButtonAtIndex:(NSInteger)index
-//            direction:(MGSwipeDirection)direction
-//        fromExpansion:(BOOL)fromExpansion{
-//    return YES;
-//}
-//
-//-(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
-//    NSLog(@"Tapped accessory button");
-//}
-
+-(void)tableView:(UITableView *)tableView
+accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"Tapped accessory button");
+}
 #pragma mark —— lazyLoad
 -(JobsIMInputview *)inputview{
     if (!_inputview) {

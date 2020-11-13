@@ -707,6 +707,8 @@
 		C531CFBF255A963D005304F6 /* 相关资源文件 */ = {
 			isa = PBXGroup;
 			children = (
+				C57A2EA3255E71A4002D39FB /* 左右滑动按钮图标 */,
+				C531D01C255AB563005304F6 /* 聊天气泡 */,
 				C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */,
 				C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */,
 			);
@@ -750,8 +752,6 @@
 		C534179D255A7F7500DFAFE4 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C57A2EA3255E71A4002D39FB /* 左右滑动按钮图标 */,
-				C531D01C255AB563005304F6 /* 聊天气泡 */,
 				C534179E255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.h */,
 				C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */,
 				C57A2ED0255EA22D002D39FB /* MGSwipeButtonModel.h */,
