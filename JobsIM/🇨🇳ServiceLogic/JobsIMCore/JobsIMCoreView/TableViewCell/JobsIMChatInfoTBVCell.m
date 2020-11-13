@@ -91,7 +91,6 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
                                                         padding:15
                                                        callback:^BOOL(MGSwipeTableCell * sender){
             NSLog(@"Convenience callback received (left).");
-            [NSObject feedbackGenerator];//震动反馈
             return YES;
         }];
         [result addObject:button];
@@ -107,7 +106,6 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
                                                         padding:15
                                                        callback:^BOOL(MGSwipeTableCell * sender){
             NSLog(@"Convenience callback received (left).");
-            [NSObject feedbackGenerator];//震动反馈
             return YES;
         }];
         [result addObject:button];
