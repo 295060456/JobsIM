@@ -23,6 +23,7 @@
 		C53416B3255A7CFB00DFAFE4 /* 输入@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */; };
 		C53416B4255A7CFB00DFAFE4 /* 输入@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */; };
 		C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */; };
+		C54AAF23255E57A5000A314D /* UITableViewCell+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */; };
 		C5569363255BC520005C1361 /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569362255BC520005C1361 /* NSString+Time.m */; };
 		C55693B1255BC653005C1361 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C55693B0255BC653005C1361 /* TimeModel.m */; };
 		C5C4017B255A6554002F407A /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40176255A6554002F407A /* BWItemModel.m */; };
@@ -128,9 +129,7 @@
 		C5C4F7DC255A5491002F407A /* UIImage+Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F71C255A5490002F407A /* UIImage+Overlay.m */; };
 		C5C4F7DD255A5491002F407A /* UILabel+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F71F255A5490002F407A /* UILabel+RichText.m */; };
 		C5C4F7DE255A5491002F407A /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F722255A5490002F407A /* UILabel+Extra.m */; };
-		C5C4F7DF255A5491002F407A /* TBVCell_style_02.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F724255A5490002F407A /* TBVCell_style_02.m */; };
 		C5C4F7E0255A5491002F407A /* WhiteRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F726255A5490002F407A /* WhiteRightArrow@2x.png */; };
-		C5C4F7E1255A5491002F407A /* TBVCell_style_01.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F727255A5490002F407A /* TBVCell_style_01.m */; };
 		C5C4F7E2255A5491002F407A /* WhiteRightArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F728255A5490002F407A /* WhiteRightArrow@3x.png */; };
 		C5C4F7E3255A5491002F407A /* UITableViewCell+WhiteArrows.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F72A255A5490002F407A /* UITableViewCell+WhiteArrows.m */; };
 		C5C4F7E5255A5491002F407A /* 高度自定义的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F730255A5490002F407A /* 高度自定义的按钮.md */; };
@@ -253,6 +252,8 @@
 		C534179E255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMChatInfoTBVCell.h; sourceTree = "<group>"; };
 		C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMChatInfoTBVCell.m; sourceTree = "<group>"; };
 		C53D60EE255C2120006C290D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C54AAF21255E57A5000A314D /* UITableViewCell+Margin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Margin.h"; sourceTree = "<group>"; };
+		C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Margin.m"; sourceTree = "<group>"; };
 		C5568B7E255BA79E005C1361 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C5569361255BC520005C1361 /* NSString+Time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Time.h"; sourceTree = "<group>"; };
 		C5569362255BC520005C1361 /* NSString+Time.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
@@ -457,14 +458,10 @@
 		C5C4F720255A5490002F407A /* UILabel+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extra.h"; sourceTree = "<group>"; };
 		C5C4F721255A5490002F407A /* UILabel+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RichText.h"; sourceTree = "<group>"; };
 		C5C4F722255A5490002F407A /* UILabel+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extra.m"; sourceTree = "<group>"; };
-		C5C4F724255A5490002F407A /* TBVCell_style_02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCell_style_02.m; sourceTree = "<group>"; };
 		C5C4F725255A5490002F407A /* UITableViewCell+WhiteArrows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+WhiteArrows.h"; sourceTree = "<group>"; };
 		C5C4F726255A5490002F407A /* WhiteRightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@2x.png"; sourceTree = "<group>"; };
-		C5C4F727255A5490002F407A /* TBVCell_style_01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCell_style_01.m; sourceTree = "<group>"; };
 		C5C4F728255A5490002F407A /* WhiteRightArrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@3x.png"; sourceTree = "<group>"; };
-		C5C4F729255A5490002F407A /* TBVCell_style_02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCell_style_02.h; sourceTree = "<group>"; };
 		C5C4F72A255A5490002F407A /* UITableViewCell+WhiteArrows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+WhiteArrows.m"; sourceTree = "<group>"; };
-		C5C4F72B255A5490002F407A /* TBVCell_style_01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCell_style_01.h; sourceTree = "<group>"; };
 		C5C4F72F255A5490002F407A /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
 		C5C4F730255A5490002F407A /* 高度自定义的按钮.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
 		C5C4F731255A5490002F407A /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
@@ -733,22 +730,24 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		C53417A7255A7FB100DFAFE4 /* TBVCell_style_01 */ = {
+		C54AAF2D255E5D9C000A314D /* 重设边距 */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F72B255A5490002F407A /* TBVCell_style_01.h */,
-				C5C4F727255A5490002F407A /* TBVCell_style_01.m */,
+				C54AAF21255E57A5000A314D /* UITableViewCell+Margin.h */,
+				C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */,
 			);
-			path = TBVCell_style_01;
+			path = "重设边距";
 			sourceTree = "<group>";
 		};
-		C53417A8255A7FBA00DFAFE4 /* TBVCell_style_02 */ = {
+		C54AAF2E255E5DAA000A314D /* 自定义右侧小箭头图标 */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F729255A5490002F407A /* TBVCell_style_02.h */,
-				C5C4F724255A5490002F407A /* TBVCell_style_02.m */,
+				C5C4F725255A5490002F407A /* UITableViewCell+WhiteArrows.h */,
+				C5C4F72A255A5490002F407A /* UITableViewCell+WhiteArrows.m */,
+				C5C4F726255A5490002F407A /* WhiteRightArrow@2x.png */,
+				C5C4F728255A5490002F407A /* WhiteRightArrow@3x.png */,
 			);
-			path = TBVCell_style_02;
+			path = "自定义右侧小箭头图标";
 			sourceTree = "<group>";
 		};
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
@@ -1427,12 +1426,8 @@
 		C5C4F723255A5490002F407A /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C53417A7255A7FB100DFAFE4 /* TBVCell_style_01 */,
-				C53417A8255A7FBA00DFAFE4 /* TBVCell_style_02 */,
-				C5C4F725255A5490002F407A /* UITableViewCell+WhiteArrows.h */,
-				C5C4F72A255A5490002F407A /* UITableViewCell+WhiteArrows.m */,
-				C5C4F726255A5490002F407A /* WhiteRightArrow@2x.png */,
-				C5C4F728255A5490002F407A /* WhiteRightArrow@3x.png */,
+				C54AAF2D255E5D9C000A314D /* 重设边距 */,
+				C54AAF2E255E5DAA000A314D /* 自定义右侧小箭头图标 */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -1567,26 +1562,26 @@
 		C5C4F75F255A5490002F407A /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F771255A5490002F407A /* UIViewController+TZImagePickerController */,
 				C5C4F763255A5490002F407A /* UIViewController+JXCategory */,
-				C5C4F760255A5490002F407A /* UIViewController+JPImageresizerView.m */,
+				C5C4F771255A5490002F407A /* UIViewController+TZImagePickerController */,
 				C5C4F761255A5490002F407A /* UIViewController+BackBtn.h */,
-				C5C4F762255A5490002F407A /* UIViewController+BWShareView.m */,
-				C5C4F768255A5490002F407A /* UIViewController+Shake.m */,
-				C5C4F769255A5490002F407A /* UIViewController+MJRefresh.h */,
-				C5C4F76A255A5490002F407A /* UIViewController+BaseVC.h */,
-				C5C4F76B255A5490002F407A /* UIViewController+NavigationBar.h */,
-				C5C4F76C255A5490002F407A /* UIViewController+BRPickerView.m */,
-				C5C4F76D255A5490002F407A /* UIViewController+GifImageView.m */,
 				C5C4F76E255A5490002F407A /* UIViewController+BackBtn.m */,
-				C5C4F76F255A5490002F407A /* UIViewController+JPImageresizerView.h */,
-				C5C4F770255A5490002F407A /* UIViewController+Shake.h */,
-				C5C4F778255A5490002F407A /* UIViewController+BWShareView.h */,
-				C5C4F779255A5490002F407A /* UIViewController+NavigationBar.m */,
-				C5C4F77A255A5490002F407A /* UIViewController+MJRefresh.m */,
+				C5C4F76A255A5490002F407A /* UIViewController+BaseVC.h */,
 				C5C4F77B255A5490002F407A /* UIViewController+BaseVC.m */,
 				C5C4F77C255A5490002F407A /* UIViewController+BRPickerView.h */,
+				C5C4F76C255A5490002F407A /* UIViewController+BRPickerView.m */,
+				C5C4F778255A5490002F407A /* UIViewController+BWShareView.h */,
+				C5C4F762255A5490002F407A /* UIViewController+BWShareView.m */,
 				C5C4F77D255A5490002F407A /* UIViewController+GifImageView.h */,
+				C5C4F76D255A5490002F407A /* UIViewController+GifImageView.m */,
+				C5C4F76F255A5490002F407A /* UIViewController+JPImageresizerView.h */,
+				C5C4F760255A5490002F407A /* UIViewController+JPImageresizerView.m */,
+				C5C4F769255A5490002F407A /* UIViewController+MJRefresh.h */,
+				C5C4F77A255A5490002F407A /* UIViewController+MJRefresh.m */,
+				C5C4F76B255A5490002F407A /* UIViewController+NavigationBar.h */,
+				C5C4F779255A5490002F407A /* UIViewController+NavigationBar.m */,
+				C5C4F770255A5490002F407A /* UIViewController+Shake.h */,
+				C5C4F768255A5490002F407A /* UIViewController+Shake.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -2186,7 +2181,6 @@
 				C5C4025B255A6671002F407A /* TransitionAnimation.m in Sources */,
 				C5C40395255A6C26002F407A /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
 				C5C401AD255A65CF002F407A /* UIControl+XY.m in Sources */,
-				C5C4F7E1255A5491002F407A /* TBVCell_style_01.m in Sources */,
 				C5C40282255A66D2002F407A /* SuspendLab.m in Sources */,
 				C5C40398255A6C26002F407A /* ZZCountingLabel.m in Sources */,
 				C5C4039A255A6C26002F407A /* XHLaunchAdView.m in Sources */,
@@ -2248,13 +2242,13 @@
 				C5C4F7E9255A5491002F407A /* UIView+Measure.m in Sources */,
 				C5C4F81B255A5491002F407A /* NSObject+SYSAlertController.m in Sources */,
 				C5C401D1255A6629002F407A /* FileFolderHandleTool.m in Sources */,
+				C54AAF23255E57A5000A314D /* UITableViewCell+Margin.m in Sources */,
 				C5C40259255A6671002F407A /* JobsPullListAutoSizeView.m in Sources */,
 				C5C4F7E8255A5491002F407A /* UIView+Chain.m in Sources */,
 				C5C4F827255A5491002F407A /* UITextField+Extend.m in Sources */,
 				C5C4F81E255A5491002F407A /* NSObject+Measure.m in Sources */,
 				C5C402E3255A6ADD002F407A /* NoticePopupView.m in Sources */,
 				C5C4F7EF255A5491002F407A /* UIFont+Extras.m in Sources */,
-				C5C4F7DF255A5491002F407A /* TBVCell_style_02.m in Sources */,
 				C5C4F811255A5491002F407A /* ViewForTableViewFooter.m in Sources */,
 				C5C4F809255A5491002F407A /* UITableView+XSAnimationKit.m in Sources */,
 				C5C402C2255A6A1A002F407A /* ViewController@2.m in Sources */,

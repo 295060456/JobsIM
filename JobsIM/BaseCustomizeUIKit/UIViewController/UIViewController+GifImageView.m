@@ -43,7 +43,6 @@ static char *BaseVC_GifImageView_image = "BaseVC_GifImageView_image";
                              gifImageView,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-
 #pragma mark —— @property(nonatomic,strong)NSString *path;
 -(NSString *)path{
     NSString *Path = objc_getAssociatedObject(self, BaseVC_GifImageView_path);

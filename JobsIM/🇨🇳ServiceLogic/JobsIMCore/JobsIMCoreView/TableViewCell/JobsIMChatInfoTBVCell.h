@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TBVCell_style_02.h"
+#import "UITableViewCell+Margin.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger,InfoLocation) {
     InfoLocation_Right = 2
 };
 
-@interface JobsIMChatInfoTBVCell : TBVCell_style_02
+@interface JobsIMChatInfoTBVCell : UITableViewCell
 
 @property(nonatomic,assign)BOOL isShowChatUserName;//是否显示每一个聊天的用户的用户名？默认不显示
 
