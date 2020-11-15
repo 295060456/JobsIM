@@ -39,6 +39,7 @@
 		C57A2ECB255E8AD3002D39FB /* Class@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57A2EC5255E8AD3002D39FB /* Class@3x.png */; };
 		C57A2ECC255E8AD3002D39FB /* Header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57A2EC6255E8AD3002D39FB /* Header@2x.png */; };
 		C57A2ED2255EA22D002D39FB /* MGSwipeButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C57A2ED1255EA22D002D39FB /* MGSwipeButtonModel.m */; };
+		C5BC5B38256155620071CEEE /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B37256155620071CEEE /* EmptyView.m */; };
 		C5C4017B255A6554002F407A /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40176255A6554002F407A /* BWItemModel.m */; };
 		C5C4017C255A6555002F407A /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40177255A6554002F407A /* BWItemCollectionViewCell.m */; };
 		C5C4017D255A6555002F407A /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40179255A6554002F407A /* BWShareView.m */; };
@@ -287,6 +288,8 @@
 		C57A2EC6255E8AD3002D39FB /* Header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Header@2x.png"; sourceTree = "<group>"; };
 		C57A2ED0255EA22D002D39FB /* MGSwipeButtonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGSwipeButtonModel.h; sourceTree = "<group>"; };
 		C57A2ED1255EA22D002D39FB /* MGSwipeButtonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButtonModel.m; sourceTree = "<group>"; };
+		C5BC5B36256155620071CEEE /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
+		C5BC5B37256155620071CEEE /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
 		C5C40174255A6554002F407A /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
 		C5C40175255A6554002F407A /* BWItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemCollectionViewCell.h; sourceTree = "<group>"; };
 		C5C40176255A6554002F407A /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
@@ -819,9 +822,20 @@
 			path = "右滑按钮图标";
 			sourceTree = "<group>";
 		};
+		C5BC5B35256155620071CEEE /* LYEmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				C5BC5B36256155620071CEEE /* EmptyView.h */,
+				C5BC5B37256155620071CEEE /* EmptyView.m */,
+			);
+			name = LYEmptyView;
+			path = ../../../commentList/commentList/3rd/LYEmptyView;
+			sourceTree = "<group>";
+		};
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5BC5B35256155620071CEEE /* LYEmptyView */,
 				C531CF43255A83BD005304F6 /* MJRefresh + Lottie */,
 				C5C40277255A66D2002F407A /* Suspend */,
 				C5C401FE255A6671002F407A /* 深度拓展系统UITabBar全家桶 */,
@@ -2330,6 +2344,7 @@
 				C5C401A0255A65A6002F407A /* Nanosecond_TimerManager.m in Sources */,
 				C5C4F7F7255A5491002F407A /* NavigationBar.m in Sources */,
 				C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */,
+				C5BC5B38256155620071CEEE /* EmptyView.m in Sources */,
 				C5C4F51A255A5203002F407A /* JobsIM.xcdatamodeld in Sources */,
 				C5C4F7E9255A5491002F407A /* UIView+Measure.m in Sources */,
 				C5C4F81B255A5491002F407A /* NSObject+SYSAlertController.m in Sources */,
