@@ -65,7 +65,7 @@ UITableViewDelegate
 -(void)viewWillLayoutSubviews{
     [super viewWillLayoutSubviews];
 }
-
+//必须这么写。在输入的时候会调用UIKeyboardWillChangeFrameNotification，只有在这里强制性的赋值
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     if (self.inputview.inputTextField.TFRiseHeight) {

@@ -161,7 +161,7 @@ replacementString:(NSString *)string{
         _inputTextField.leftViewMode = UITextFieldViewModeAlways;
         _inputTextField.backgroundColor = HEXCOLOR(0xF4F4F4);
         _inputTextField.keyboardAppearance = UIKeyboardAppearanceAlert;
-        _inputTextField.autocorrectionType = UITextAutocorrectionTypeNo;
+        _inputTextField.autocorrectionType = UITextAutocorrectionTypeNo;//自动纠错属性默认是yes，就会触发那个监听
 //        _inputTextField.inputAccessoryView = self.adNoticeView;
         _inputTextField.returnKeyType = UIReturnKeySearch;
         [self addSubview:_inputTextField];
