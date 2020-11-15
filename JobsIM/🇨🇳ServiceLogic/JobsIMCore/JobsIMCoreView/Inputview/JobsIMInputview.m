@@ -6,6 +6,7 @@
 //
 
 #import "JobsIMInputview.h"
+#import "JobsAdNoticeView.h"
 
 @interface JobsIMInputview ()
 <
@@ -14,6 +15,7 @@ UITextFieldDelegate
 >
 
 @property(nonatomic,strong)UIImageView *imgView;
+@property(nonatomic,strong)JobsAdNoticeView *adNoticeView;
 @property(nonatomic,strong)UIButton *sendBtn;
 @property(nonatomic,copy)MKDataBlock jobsIMInputviewBlock;
 @property(nonatomic,assign)BOOL isOK;
@@ -159,10 +161,8 @@ replacementString:(NSString *)string{
         _inputTextField.leftViewMode = UITextFieldViewModeAlways;
         _inputTextField.backgroundColor = HEXCOLOR(0xF4F4F4);
         _inputTextField.keyboardAppearance = UIKeyboardAppearanceAlert;
-//        UIView *v = UIView.new;
-//        v.frame = CGRectMake(0, 0, MAINSCREEN_WIDTH, 30);
-//        v.backgroundColor = kRedColor;
-//        _inputTextField.inputAccessoryView = v;
+        _inputTextField.autocorrectionType = UITextAutocorrectionTypeNo;
+//        _inputTextField.inputAccessoryView = self.adNoticeView;
         _inputTextField.returnKeyType = UIReturnKeySearch;
         [self addSubview:_inputTextField];
         [_inputTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -183,6 +183,13 @@ replacementString:(NSString *)string{
         _imgView = UIImageView.new;
         _imgView.image = KIMG(@"输入");
     }return _imgView;
+}
+
+-(JobsAdNoticeView *)adNoticeView{
+    if (!_adNoticeView) {
+        _adNoticeView = JobsAdNoticeView.new;
+        _adNoticeView.size = _adNoticeView.makeSize;
+    }return _adNoticeView;
 }
 
 @end

@@ -211,6 +211,7 @@
 		C5C4F825255A5491002F407A /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7D0255A5491002F407A /* ZYTextField.m */; };
 		C5C4F826255A5491002F407A /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7D1255A5491002F407A /* ZYTextField+HistoryDataList.m */; };
 		C5C4F827255A5491002F407A /* UITextField+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7D6255A5491002F407A /* UITextField+Extend.m */; };
+		C5F8390C2560FF45005C6FDA /* JobsAdNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F8390B2560FF45005C6FDA /* JobsAdNoticeView.m */; };
 		CE5F628AF75A6DEE5CEEA0D8 /* Pods_JobsIMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 536020E7D65D3736001C7ED1 /* Pods_JobsIMTests.framework */; };
 		E6A11A7466E5119AE41EAA5A /* Pods_JobsIMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE6BCACBB2D2BE939D0B7BA /* Pods_JobsIMUITests.framework */; };
 /* End PBXBuildFile section */
@@ -620,6 +621,8 @@
 		C5C4F7D3255A5491002F407A /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
 		C5C4F7D5255A5491002F407A /* UITextField+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extend.h"; sourceTree = "<group>"; };
 		C5C4F7D6255A5491002F407A /* UITextField+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extend.m"; sourceTree = "<group>"; };
+		C5F8390A2560FF45005C6FDA /* JobsAdNoticeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsAdNoticeView.h; sourceTree = "<group>"; };
+		C5F8390B2560FF45005C6FDA /* JobsAdNoticeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsAdNoticeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -741,6 +744,7 @@
 		C5341608255A786100DFAFE4 /* JobsIMCoreView */ = {
 			isa = PBXGroup;
 			children = (
+				C5F839092560FF07005C6FDA /* AdNoticeView */,
 				C534165D255A7AD100DFAFE4 /* README.md */,
 				C531CFBF255A963D005304F6 /* 相关资源文件 */,
 				C531CFBE255A9635005304F6 /* Inputview */,
@@ -1915,6 +1919,15 @@
 			path = "UITextField+Extend";
 			sourceTree = "<group>";
 		};
+		C5F839092560FF07005C6FDA /* AdNoticeView */ = {
+			isa = PBXGroup;
+			children = (
+				C5F8390A2560FF45005C6FDA /* JobsAdNoticeView.h */,
+				C5F8390B2560FF45005C6FDA /* JobsAdNoticeView.m */,
+			);
+			path = AdNoticeView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2202,6 +2215,7 @@
 				C5C4025E255A6671002F407A /* TLTabBarAnimation.m in Sources */,
 				C5C401C4255A6608002F407A /* SoundBtn.m in Sources */,
 				C5C4023E255A6671002F407A /* TabBarItem.m in Sources */,
+				C5F8390C2560FF45005C6FDA /* JobsAdNoticeView.m in Sources */,
 				C5C4019E255A65A6002F407A /* NSTimerManager.m in Sources */,
 				C5C40256255A6671002F407A /* TabbarVC.m in Sources */,
 				C5C4F7F0255A5491002F407A /* DeleteSystemUITabBarButton.m in Sources */,
