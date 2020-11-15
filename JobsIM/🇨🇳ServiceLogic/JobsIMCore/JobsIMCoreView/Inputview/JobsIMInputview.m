@@ -13,7 +13,6 @@ UITextFieldDelegate
 ,CJTextFieldDeleteDelegate
 >
 
-@property(nonatomic,strong)ZYTextField *inputTextField;
 @property(nonatomic,strong)UIImageView *imgView;
 @property(nonatomic,strong)UIButton *sendBtn;
 @property(nonatomic,copy)MKDataBlock jobsIMInputviewBlock;

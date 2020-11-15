@@ -62,6 +62,17 @@ UITableViewDelegate
     self.isHiddenNavigationBar = YES;//禁用系统的导航栏
 }
 
+-(void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    if (self.inputview.inputTextField.TFRiseHeight) {
+        self.inputview.mj_y = self.inputview.inputTextField.TFRiseHeight;
+    }
+}
+
 -(void)keyboard{
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillChangeFrameNotification:)
@@ -92,7 +103,9 @@ UITableViewDelegate
         NSLog(@"键盘");
     }
     
-    self.inputview.mj_y -= KeyboardOffsetY;
+    self.inputview.inputTextField.TFRiseHeight = self.inputview.mj_y;
+    self.inputview.inputTextField.TFRiseHeight -= KeyboardOffsetY;
+    self.inputview.mj_y = self.inputview.inputTextField.TFRiseHeight;
 }
 
 -(void)keyboardDidChangeFrameNotification:(NSNotification *)notification{}
