@@ -148,7 +148,7 @@ didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
     if (!_tabbarVC) {
         _tabbarVC = TabbarVC.new;
 //        _tabbarVC.isOpenScrollTabbar = NO;
-        _tabbarVC.myTabBar.offsetHeight = 5;
+        _tabbarVC.myTabBar.offsetHeight = 8;
         [_tabbarVC.childMutArr addObject:childViewController_customStyle(ViewController_1.new,
                                                                          @"直播",
                                                                          KBuddleIMG(@"资源文件", @"TabbaritemImage", nil, @"community_selected"),

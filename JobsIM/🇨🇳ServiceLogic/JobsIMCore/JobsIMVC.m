@@ -6,7 +6,7 @@
 //
 
 #import "JobsIMVC.h"
-#define isAllowEdit YES// 编译期就要优先进去，所以不能用属性
+#define isAllowSysEdit NO// 编译期就要优先进去，所以不能用属性
 
 static inline CGFloat JobsIMInputviewHeight(){
     return 60;
@@ -16,6 +16,7 @@ static inline CGFloat JobsIMInputviewHeight(){
 <
 UITableViewDelegate
 ,UITableViewDataSource
+,MGSwipeTableCellDelegate
 >
 
 @property(nonatomic,strong)JobsIMInputview *inputview;
@@ -37,6 +38,8 @@ UITableViewDelegate
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = kWhiteColor;
+    [self keyboard];
+    [IQKeyboardManager sharedManager].enable = NO;//该页面禁用
     
     if ([self.requestParams isKindOfClass:JobsIMChatInfoModel.class]) {
         JobsIMChatInfoModel *model = (JobsIMChatInfoModel *)self.requestParams;
@@ -49,7 +52,7 @@ UITableViewDelegate
     
     self.gk_navRightBarButtonItems = @[self.shareBtnItem];
     self.gk_navBackgroundColor = KLightGrayColor;
-
+    
     self.inputview.alpha = 1;
     self.tableView.alpha = 1;
 }
@@ -59,9 +62,57 @@ UITableViewDelegate
     self.isHiddenNavigationBar = YES;//禁用系统的导航栏
 }
 
+-(void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+}
+//必须这么写。在输入的时候会调用UIKeyboardWillChangeFrameNotification，只有在这里强制性的赋值
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    if (self.inputview.inputTextField.TFRiseHeight) {
+        self.inputview.mj_y = self.inputview.inputTextField.TFRiseHeight;
+    }
+}
+
+-(void)keyboard{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillChangeFrameNotification:)
+                                                 name:UIKeyboardWillChangeFrameNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardDidChangeFrameNotification:)
+                                                 name:UIKeyboardDidChangeFrameNotification
+                                               object:nil];
+}
+//键盘 弹出 和 收回 走这个方法
+-(void)keyboardWillChangeFrameNotification:(NSNotification *)notification{
+    NSDictionary *userInfo = notification.userInfo;
+    CGRect beginFrame = [userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    CGRect endFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGFloat KeyboardOffsetY = beginFrame.origin.y - endFrame.origin.y;// 正则抬起 ，负值下降
+    NSLog(@"KeyboardOffsetY = %f",KeyboardOffsetY);
+    NSLog(@"BottomSafeAreaHeight = %f",BottomSafeAreaHeight());
+ 
+    if (KeyboardOffsetY > 0) {
+        NSLog(@"键盘抬起");
+        KeyboardOffsetY -= BottomSafeAreaHeight();
+    }else if(KeyboardOffsetY < 0){
+        NSLog(@"键盘收回");
+        KeyboardOffsetY += BottomSafeAreaHeight();
+    }else{
+        NSLog(@"键盘");
+    }
+    
+    self.inputview.inputTextField.TFRiseHeight = self.inputview.mj_y;
+    self.inputview.inputTextField.TFRiseHeight -= KeyboardOffsetY;
+    self.inputview.mj_y = self.inputview.inputTextField.TFRiseHeight;
+}
+
+-(void)keyboardDidChangeFrameNotification:(NSNotification *)notification{}
+
 -(void)simulateServer{
     JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
-    chatInfoModel.senderChatTextStr = @"我是马化腾,明天来上班";//tony马，明天我可以来上班吗？
+    chatInfoModel.senderChatTextStr = @"我是马化腾,明天来上班";//pony马，明天我可以来上班吗？
     TimeModel *timeModel = TimeModel.new;
     [timeModel makeSpecificTime];
     chatInfoModel.senderChatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
@@ -94,10 +145,12 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     JobsIMChatInfoTBVCell *cell = [JobsIMChatInfoTBVCell cellWithTableView:tableView];
     cell.isShowChatUserName = YES;
     cell.indexPath = indexPath;
+    cell.delegate = self;
+    cell.allowsMultipleSwipe = YES;
     [cell richElementsInCellWithModel:self.chatInfoModelMutArr[indexPath.row]];
     return cell;
 }
-#if isAllowEdit
+#if isAllowSysEdit
 //右划
 -(nullable UISwipeActionsConfiguration *)tableView:(UITableView *)tableView
  leadingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -254,6 +307,35 @@ willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 #endif
 
+// USE_MG_DELEGATE
+//-(NSArray *)swipeTableCell:(JobsIMChatInfoTBVCell *)cell
+//  swipeButtonsForDirection:(MGSwipeDirection)direction
+//             swipeSettings:(MGSwipeSettings *)swipeSettings
+//         expansionSettings:(MGSwipeExpansionSettings *)expansionSettings{
+//    if (direction == MGSwipeDirectionLeftToRight) {
+//        return [cell createLeftButtons];
+//    }else {
+//        return [cell createRightButtons];
+//    }
+//}
+
+-(void)swipeTableCellWillBeginSwiping:(nonnull MGSwipeTableCell *)cell{
+    [NSObject feedbackGenerator];//震动反馈
+}
+
+// 点击了第几个滑动出现的按钮？
+-(BOOL)swipeTableCell:(MGSwipeTableCell *)cell
+  tappedButtonAtIndex:(NSInteger)index
+            direction:(MGSwipeDirection)direction
+        fromExpansion:(BOOL)fromExpansion{
+    NSLog(@"Delegate: button tapped, %@ position, index %d, from Expansion: %@",direction == MGSwipeDirectionLeftToRight ? @"left" : @"right", (int)index, fromExpansion ? @"YES" : @"NO");
+    return YES;
+}
+//
+-(void)tableView:(UITableView *)tableView
+accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"Tapped accessory button");
+}
 #pragma mark —— lazyLoad
 -(JobsIMInputview *)inputview{
     if (!_inputview) {
@@ -299,7 +381,7 @@ willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        [self.view addSubview:_tableView];
+        [self.view insertSubview:_tableView belowSubview:self.inputview];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view).offset(Top());
             make.left.right.equalTo(self.view);
