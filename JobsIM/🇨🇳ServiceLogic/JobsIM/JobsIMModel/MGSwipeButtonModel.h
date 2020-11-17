@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,strong)UIImage *IconIMG;
 @property(nonatomic,strong)UIColor *bgCor;
-@property(nonatomic,strong)NSString *titleStr;
+@property(nonatomic,copy)NSString *titleStr;
 
 @end
 

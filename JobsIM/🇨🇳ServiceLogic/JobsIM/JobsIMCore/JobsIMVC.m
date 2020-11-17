@@ -146,7 +146,6 @@ UITableViewDelegate
     [self.chatInfoModelMutArr addObject:chatInfoModel];
     [self.tableView reloadData];
 }
-
 #pragma mark —————————— UITableViewDelegate,UITableViewDataSource ——————————
 -(CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		200BAB0C1F3E4CD223040998 /* Pods_JobsIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6201BCF2BE09176745E0DFD7 /* Pods_JobsIM.framework */; };
+		C52C96012563FB180039EBFE /* 跳动的竖线.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FB2563FB180039EBFE /* 跳动的竖线.gif */; };
+		C52C96022563FB180039EBFE /* Bt9h.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FC2563FB180039EBFE /* Bt9h.gif */; };
+		C52C96032563FB180039EBFE /* 热度.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FD2563FB180039EBFE /* 热度.gif */; };
+		C52C96042563FB180039EBFE /* 动态头像_1 尺寸126.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FE2563FB180039EBFE /* 动态头像_1 尺寸126.gif */; };
+		C52C96052563FB180039EBFE /* 动态头像_1 尺寸84.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FF2563FB180039EBFE /* 动态头像_1 尺寸84.gif */; };
+		C52C96062563FB180039EBFE /* GIF大图.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C96002563FB180039EBFE /* GIF大图.gif */; };
+		C52C9651256408160039EBFE /* 动态头像_2 尺寸84.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C964F256408160039EBFE /* 动态头像_2 尺寸84.gif */; };
+		C52C9652256408160039EBFE /* 动态头像_2 尺寸126.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C9650256408160039EBFE /* 动态头像_2 尺寸126.gif */; };
 		C531CF4B255A83BD005304F6 /* 123.json in Resources */ = {isa = PBXBuildFile; fileRef = C531CF44255A83BD005304F6 /* 123.json */; };
 		C531CF4C255A83BD005304F6 /* MJRefreshWithLottieTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C531CF45255A83BD005304F6 /* MJRefreshWithLottieTableViewHeader.m */; };
 		C531CF4E255A83BD005304F6 /* 12345.json in Resources */ = {isa = PBXBuildFile; fileRef = C531CF49255A83BD005304F6 /* 12345.json */; };
@@ -39,6 +47,11 @@
 		C57A2ECB255E8AD3002D39FB /* Class@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57A2EC5255E8AD3002D39FB /* Class@3x.png */; };
 		C57A2ECC255E8AD3002D39FB /* Header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57A2EC6255E8AD3002D39FB /* Header@2x.png */; };
 		C57A2ED2255EA22D002D39FB /* MGSwipeButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C57A2ED1255EA22D002D39FB /* MGSwipeButtonModel.m */; };
+		C589BE842563CFF300323A2A /* JobsIMCore.md in Resources */ = {isa = PBXBuildFile; fileRef = C589BE832563CFF300323A2A /* JobsIMCore.md */; };
+		C589BE8D2563D03F00323A2A /* JobsIMListView.md in Resources */ = {isa = PBXBuildFile; fileRef = C589BE8C2563D03F00323A2A /* JobsIMListView.md */; };
+		C589BEDA2563D10400323A2A /* JobsIMListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C589BED92563D10400323A2A /* JobsIMListView.m */; };
+		C589BEE02563D33900323A2A /* JobsIMListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C589BEDF2563D33900323A2A /* JobsIMListTBVCell.m */; };
+		C589C11A2563F75900323A2A /* JobsIMListDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C589C1192563F75900323A2A /* JobsIMListDataModel.m */; };
 		C591EF202563C818005B78CC /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C591EF1E2563C818005B78CC /* JsonRes.bundle */; };
 		C591EF212563C818005B78CC /* CustomGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C591EF1F2563C818005B78CC /* CustomGifHeader.m */; };
 		C5BC5B38256155620071CEEE /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B37256155620071CEEE /* EmptyView.m */; };
@@ -246,6 +259,14 @@
 		9DE6BCACBB2D2BE939D0B7BA /* Pods_JobsIMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsIMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14DBBA91B303DE4604152DA /* Pods-JobsIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsIM.debug.xcconfig"; path = "Target Support Files/Pods-JobsIM/Pods-JobsIM.debug.xcconfig"; sourceTree = "<group>"; };
 		C35841477C0FA4BF69AAF156 /* Pods-JobsIMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsIMTests.release.xcconfig"; path = "Target Support Files/Pods-JobsIMTests/Pods-JobsIMTests.release.xcconfig"; sourceTree = "<group>"; };
+		C52C95FB2563FB180039EBFE /* 跳动的竖线.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "跳动的竖线.gif"; sourceTree = "<group>"; };
+		C52C95FC2563FB180039EBFE /* Bt9h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bt9h.gif; sourceTree = "<group>"; };
+		C52C95FD2563FB180039EBFE /* 热度.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "热度.gif"; sourceTree = "<group>"; };
+		C52C95FE2563FB180039EBFE /* 动态头像_1 尺寸126.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "动态头像_1 尺寸126.gif"; sourceTree = "<group>"; };
+		C52C95FF2563FB180039EBFE /* 动态头像_1 尺寸84.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "动态头像_1 尺寸84.gif"; sourceTree = "<group>"; };
+		C52C96002563FB180039EBFE /* GIF大图.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "GIF大图.gif"; sourceTree = "<group>"; };
+		C52C964F256408160039EBFE /* 动态头像_2 尺寸84.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "动态头像_2 尺寸84.gif"; sourceTree = "<group>"; };
+		C52C9650256408160039EBFE /* 动态头像_2 尺寸126.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "动态头像_2 尺寸126.gif"; sourceTree = "<group>"; };
 		C531CF44255A83BD005304F6 /* 123.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 123.json; sourceTree = "<group>"; };
 		C531CF45255A83BD005304F6 /* MJRefreshWithLottieTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshWithLottieTableViewHeader.m; sourceTree = "<group>"; };
 		C531CF47255A83BD005304F6 /* MJRefreshComponent+Lottie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJRefreshComponent+Lottie.h"; sourceTree = "<group>"; };
@@ -290,6 +311,14 @@
 		C57A2EC6255E8AD3002D39FB /* Header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Header@2x.png"; sourceTree = "<group>"; };
 		C57A2ED0255EA22D002D39FB /* MGSwipeButtonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGSwipeButtonModel.h; sourceTree = "<group>"; };
 		C57A2ED1255EA22D002D39FB /* MGSwipeButtonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButtonModel.m; sourceTree = "<group>"; };
+		C589BE832563CFF300323A2A /* JobsIMCore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = JobsIMCore.md; sourceTree = "<group>"; };
+		C589BE8C2563D03F00323A2A /* JobsIMListView.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = JobsIMListView.md; sourceTree = "<group>"; };
+		C589BED82563D10400323A2A /* JobsIMListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMListView.h; sourceTree = "<group>"; };
+		C589BED92563D10400323A2A /* JobsIMListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMListView.m; sourceTree = "<group>"; };
+		C589BEDE2563D33900323A2A /* JobsIMListTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMListTBVCell.h; sourceTree = "<group>"; };
+		C589BEDF2563D33900323A2A /* JobsIMListTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMListTBVCell.m; sourceTree = "<group>"; };
+		C589C1182563F75900323A2A /* JobsIMListDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMListDataModel.h; sourceTree = "<group>"; };
+		C589C1192563F75900323A2A /* JobsIMListDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMListDataModel.m; sourceTree = "<group>"; };
 		C591EF1D2563C818005B78CC /* CustomGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGifHeader.h; sourceTree = "<group>"; };
 		C591EF1E2563C818005B78CC /* JsonRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JsonRes.bundle; sourceTree = "<group>"; };
 		C591EF1F2563C818005B78CC /* CustomGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGifHeader.m; sourceTree = "<group>"; };
@@ -684,6 +713,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C52C95FA2563FB100039EBFE /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				C52C964E256407EB0039EBFE /* 动态头像 */,
+				C52C95FD2563FB180039EBFE /* 热度.gif */,
+				C52C95FB2563FB180039EBFE /* 跳动的竖线.gif */,
+				C52C95FC2563FB180039EBFE /* Bt9h.gif */,
+				C52C96002563FB180039EBFE /* GIF大图.gif */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
+		C52C964E256407EB0039EBFE /* 动态头像 */ = {
+			isa = PBXGroup;
+			children = (
+				C52C95FF2563FB180039EBFE /* 动态头像_1 尺寸84.gif */,
+				C52C95FE2563FB180039EBFE /* 动态头像_1 尺寸126.gif */,
+				C52C964F256408160039EBFE /* 动态头像_2 尺寸84.gif */,
+				C52C9650256408160039EBFE /* 动态头像_2 尺寸126.gif */,
+			);
+			path = "动态头像";
+			sourceTree = "<group>";
+		};
 		C531CF43255A83BD005304F6 /* MJRefresh + Lottie */ = {
 			isa = PBXGroup;
 			children = (
@@ -740,11 +792,10 @@
 		C5341607255A784A00DFAFE4 /* JobsIMCore */ = {
 			isa = PBXGroup;
 			children = (
+				C589BE832563CFF300323A2A /* JobsIMCore.md */,
 				C5341608255A786100DFAFE4 /* JobsIMCoreView */,
 				C5341585255A77D900DFAFE4 /* JobsIMVC.h */,
 				C5341586255A77D900DFAFE4 /* JobsIMVC.m */,
-				C531D016255AA728005304F6 /* JobsIMChatInfoModel.h */,
-				C531D017255AA728005304F6 /* JobsIMChatInfoModel.m */,
 			);
 			path = JobsIMCore;
 			sourceTree = "<group>";
@@ -766,8 +817,6 @@
 			children = (
 				C534179E255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.h */,
 				C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */,
-				C57A2ED0255EA22D002D39FB /* MGSwipeButtonModel.h */,
-				C57A2ED1255EA22D002D39FB /* MGSwipeButtonModel.m */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -825,6 +874,49 @@
 				C57A2EC3255E8AD3002D39FB /* Header@3x.png */,
 			);
 			path = "右滑按钮图标";
+			sourceTree = "<group>";
+		};
+		C589BE8B2563D02400323A2A /* JobsIMListView */ = {
+			isa = PBXGroup;
+			children = (
+				C589BEE42563D34F00323A2A /* TableViewCell */,
+				C589BED82563D10400323A2A /* JobsIMListView.h */,
+				C589BED92563D10400323A2A /* JobsIMListView.m */,
+				C589BE8C2563D03F00323A2A /* JobsIMListView.md */,
+			);
+			path = JobsIMListView;
+			sourceTree = "<group>";
+		};
+		C589BEE42563D34F00323A2A /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C589BEDE2563D33900323A2A /* JobsIMListTBVCell.h */,
+				C589BEDF2563D33900323A2A /* JobsIMListTBVCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		C589BEE52563D39C00323A2A /* JobsIM */ = {
+			isa = PBXGroup;
+			children = (
+				C589BEE62563D3C200323A2A /* JobsIMModel */,
+				C589BE8B2563D02400323A2A /* JobsIMListView */,
+				C5341607255A784A00DFAFE4 /* JobsIMCore */,
+			);
+			path = JobsIM;
+			sourceTree = "<group>";
+		};
+		C589BEE62563D3C200323A2A /* JobsIMModel */ = {
+			isa = PBXGroup;
+			children = (
+				C57A2ED0255EA22D002D39FB /* MGSwipeButtonModel.h */,
+				C57A2ED1255EA22D002D39FB /* MGSwipeButtonModel.m */,
+				C531D016255AA728005304F6 /* JobsIMChatInfoModel.h */,
+				C531D017255AA728005304F6 /* JobsIMChatInfoModel.m */,
+				C589C1182563F75900323A2A /* JobsIMListDataModel.h */,
+				C589C1192563F75900323A2A /* JobsIMListDataModel.m */,
+			);
+			path = JobsIMModel;
 			sourceTree = "<group>";
 		};
 		C591EF1C2563C818005B78CC /* CustomGifHeader */ = {
@@ -1179,6 +1271,7 @@
 		C5C402A4255A6876002F407A /* 资源文件管理 */ = {
 			isa = PBXGroup;
 			children = (
+				C52C95FA2563FB100039EBFE /* Gif */,
 				C5C4F51B255A5204002F407A /* Assets.xcassets */,
 				C5C402A5255A6881002F407A /* 启动资源 */,
 				C5C402AF255A68C1002F407A /* ⚽️PicResource */,
@@ -1199,7 +1292,7 @@
 		C5C402B4255A69BC002F407A /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
-				C5341607255A784A00DFAFE4 /* JobsIMCore */,
+				C589BEE52563D39C00323A2A /* JobsIM */,
 				C5C402E0255A6ADD002F407A /* 广告或者公示弹出框 */,
 				C5C402B5255A69DF002F407A /* ViewController@1 */,
 				C5C402B6255A69E8002F407A /* ViewController@2 */,
@@ -2065,16 +2158,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52C96032563FB180039EBFE /* 热度.gif in Resources */,
 				C57A2ECC255E8AD3002D39FB /* Header@2x.png in Resources */,
 				C5C4024E255A6671002F407A /* 上传与拍照.json in Resources */,
 				C5C4F51F255A5204002F407A /* LaunchScreen.storyboard in Resources */,
+				C52C96022563FB180039EBFE /* Bt9h.gif in Resources */,
 				C5C4F7E2255A5491002F407A /* WhiteRightArrow@3x.png in Resources */,
+				C589BE8D2563D03F00323A2A /* JobsIMListView.md in Resources */,
 				C5C4024A255A6671002F407A /* upgrade.json in Resources */,
 				C5C401C3255A6608002F407A /* Sound.wav in Resources */,
 				C591EF202563C818005B78CC /* JsonRes.bundle in Resources */,
+				C52C9652256408160039EBFE /* 动态头像_2 尺寸126.gif in Resources */,
 				C5C40241255A6671002F407A /* home_priase_animation.json in Resources */,
 				C531CF4B255A83BD005304F6 /* 123.json in Resources */,
 				C531D021255AB570005304F6 /* 右气泡@2x.png in Resources */,
+				C52C96042563FB180039EBFE /* 动态头像_1 尺寸126.gif in Resources */,
 				C57A2EB8255E86E2002D39FB /* Check@3x.png in Resources */,
 				C5C4F7E5255A5491002F407A /* 高度自定义的按钮.md in Resources */,
 				C5C40251255A6671002F407A /* huiyuan.json in Resources */,
@@ -2087,6 +2185,7 @@
 				C57A2EBD255E86E2002D39FB /* Menu@3x.png in Resources */,
 				C5C40243255A6671002F407A /* wode.json in Resources */,
 				C5C402A9255A6881002F407A /* iph_X.mp4 in Resources */,
+				C589BE842563CFF300323A2A /* JobsIMCore.md in Resources */,
 				C5C4F823255A5491002F407A /* ZYTextField.bundle in Resources */,
 				C5C40252255A6671002F407A /* fangzi.json in Resources */,
 				C5C4F80A255A5491002F407A /* 专治UITableView相应链断裂 in Resources */,
@@ -2098,13 +2197,16 @@
 				C5C40244255A6671002F407A /* 任务.json in Resources */,
 				C57A2EC7255E8AD3002D39FB /* Drop@3x.png in Resources */,
 				C5C4024F255A6671002F407A /* music_animation.json in Resources */,
+				C52C96012563FB180039EBFE /* 跳动的竖线.gif in Resources */,
 				C5C40250255A6671002F407A /* green_lottie_tab_mine.json in Resources */,
 				C57A2ECB255E8AD3002D39FB /* Class@3x.png in Resources */,
 				C5C40240255A6671002F407A /* TabbaritemImage.bundle in Resources */,
 				C57A2EC8255E8AD3002D39FB /* Class@2x.png in Resources */,
 				C5C40255255A6671002F407A /* tab_message_animate.json in Resources */,
+				C52C96062563FB180039EBFE /* GIF大图.gif in Resources */,
 				C5C4024C255A6671002F407A /* 社区.json in Resources */,
 				C5C402AA255A6881002F407A /* 启动页0922一版横版.jpg in Resources */,
+				C52C96052563FB180039EBFE /* 动态头像_1 尺寸84.gif in Resources */,
 				C5C4F7F1255A5491002F407A /* 移除 系统自带的 UITabBarButton in Resources */,
 				C531CFAA255A840B005304F6 /* 1234.json in Resources */,
 				C5C40247255A6671002F407A /* green_lottie_tab_home.json in Resources */,
@@ -2115,6 +2217,7 @@
 				C5C4F517255A5203002F407A /* Main.storyboard in Resources */,
 				C5C40248255A6671002F407A /* 我的.json in Resources */,
 				C531D022255AB570005304F6 /* 右气泡@3x.png in Resources */,
+				C52C9651256408160039EBFE /* 动态头像_2 尺寸84.gif in Resources */,
 				C531D024255AB570005304F6 /* 左气泡@3x.png in Resources */,
 				C5C40246255A6671002F407A /* dingdan.json in Resources */,
 				C5C40397255A6C26002F407A /* ZZCircleProgress.bundle in Resources */,
@@ -2244,6 +2347,7 @@
 				C5C40281255A66D2002F407A /* SuspendBtn.m in Sources */,
 				C5C403A2255A6C26002F407A /* XHLaunchAdConfiguration.m in Sources */,
 				C5C4025E255A6671002F407A /* TLTabBarAnimation.m in Sources */,
+				C589C11A2563F75900323A2A /* JobsIMListDataModel.m in Sources */,
 				C5C401C4255A6608002F407A /* SoundBtn.m in Sources */,
 				C5C4023E255A6671002F407A /* TabBarItem.m in Sources */,
 				C5F8390C2560FF45005C6FDA /* JobsAdNoticeView.m in Sources */,
@@ -2274,6 +2378,7 @@
 				C5C40396255A6C26002F407A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C5C4028F255A67C4002F407A /* JobsIMAppDelegate+Func.m in Sources */,
 				C5C4F810255A5491002F407A /* ViewForTableViewHeader.m in Sources */,
+				C589BEE02563D33900323A2A /* JobsIMListTBVCell.m in Sources */,
 				C5C4F7D7255A5491002F407A /* UIImage+YBGIF.m in Sources */,
 				C5C403A3255A6C26002F407A /* XHLaunchAdCache.m in Sources */,
 				C5C40260255A6671002F407A /* UITabBar+Ex.m in Sources */,
@@ -2287,6 +2392,7 @@
 				C5C4F801255A5491002F407A /* UIViewController+TZLocationManager.m in Sources */,
 				C5C4018B255A6588002F407A /* ECAuthorizationTools.m in Sources */,
 				C5C4F7F3255A5491002F407A /* CollectionView.m in Sources */,
+				C589BEDA2563D10400323A2A /* JobsIMListView.m in Sources */,
 				C5C4F7DB255A5491002F407A /* UIImage+SYS.m in Sources */,
 				C5C402C8255A6A26002F407A /* ViewController@3.m in Sources */,
 				C5C4F817255A5491002F407A /* CollectionReusableView.m in Sources */,
