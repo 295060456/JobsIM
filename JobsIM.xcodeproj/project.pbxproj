@@ -39,6 +39,8 @@
 		C57A2ECB255E8AD3002D39FB /* Class@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57A2EC5255E8AD3002D39FB /* Class@3x.png */; };
 		C57A2ECC255E8AD3002D39FB /* Header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57A2EC6255E8AD3002D39FB /* Header@2x.png */; };
 		C57A2ED2255EA22D002D39FB /* MGSwipeButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C57A2ED1255EA22D002D39FB /* MGSwipeButtonModel.m */; };
+		C591ECEA2563B962005B78CC /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C591ECE92563B962005B78CC /* JsonRes.bundle */; };
+		C591ECF32563B9AB005B78CC /* CustomGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C591ECF22563B9AB005B78CC /* CustomGifHeader.m */; };
 		C5BC5B38256155620071CEEE /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B37256155620071CEEE /* EmptyView.m */; };
 		C5C4017B255A6554002F407A /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40176255A6554002F407A /* BWItemModel.m */; };
 		C5C4017C255A6555002F407A /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40177255A6554002F407A /* BWItemCollectionViewCell.m */; };
@@ -288,6 +290,9 @@
 		C57A2EC6255E8AD3002D39FB /* Header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Header@2x.png"; sourceTree = "<group>"; };
 		C57A2ED0255EA22D002D39FB /* MGSwipeButtonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGSwipeButtonModel.h; sourceTree = "<group>"; };
 		C57A2ED1255EA22D002D39FB /* MGSwipeButtonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButtonModel.m; sourceTree = "<group>"; };
+		C591ECE92563B962005B78CC /* JsonRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JsonRes.bundle; sourceTree = "<group>"; };
+		C591ECF12563B9AB005B78CC /* CustomGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGifHeader.h; sourceTree = "<group>"; };
+		C591ECF22563B9AB005B78CC /* CustomGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGifHeader.m; sourceTree = "<group>"; };
 		C5BC5B36256155620071CEEE /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
 		C5BC5B37256155620071CEEE /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
 		C5C40174255A6554002F407A /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
@@ -747,8 +752,8 @@
 		C5341608255A786100DFAFE4 /* JobsIMCoreView */ = {
 			isa = PBXGroup;
 			children = (
-				C5F839092560FF07005C6FDA /* AdNoticeView */,
 				C534165D255A7AD100DFAFE4 /* README.md */,
+				C5F839092560FF07005C6FDA /* AdNoticeView */,
 				C531CFBF255A963D005304F6 /* 相关资源文件 */,
 				C531CFBE255A9635005304F6 /* Inputview */,
 				C534179D255A7F7500DFAFE4 /* TableViewCell */,
@@ -832,9 +837,20 @@
 			path = ../../../commentList/commentList/3rd/LYEmptyView;
 			sourceTree = "<group>";
 		};
+		C5C158FA256390C000285E2E /* CustomGifHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C591ECF12563B9AB005B78CC /* CustomGifHeader.h */,
+				C591ECF22563B9AB005B78CC /* CustomGifHeader.m */,
+				C591ECE92563B962005B78CC /* JsonRes.bundle */,
+			);
+			path = CustomGifHeader;
+			sourceTree = "<group>";
+		};
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5C158FA256390C000285E2E /* CustomGifHeader */,
 				C5BC5B35256155620071CEEE /* LYEmptyView */,
 				C531CF43255A83BD005304F6 /* MJRefresh + Lottie */,
 				C5C40277255A66D2002F407A /* Suspend */,
@@ -2055,6 +2071,7 @@
 				C5C4F7E2255A5491002F407A /* WhiteRightArrow@3x.png in Resources */,
 				C5C4024A255A6671002F407A /* upgrade.json in Resources */,
 				C5C401C3255A6608002F407A /* Sound.wav in Resources */,
+				C591ECEA2563B962005B78CC /* JsonRes.bundle in Resources */,
 				C5C40241255A6671002F407A /* home_priase_animation.json in Resources */,
 				C531CF4B255A83BD005304F6 /* 123.json in Resources */,
 				C531D021255AB570005304F6 /* 右气泡@2x.png in Resources */,
@@ -2345,6 +2362,7 @@
 				C5C4F7F7255A5491002F407A /* NavigationBar.m in Sources */,
 				C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */,
 				C5BC5B38256155620071CEEE /* EmptyView.m in Sources */,
+				C591ECF32563B9AB005B78CC /* CustomGifHeader.m in Sources */,
 				C5C4F51A255A5203002F407A /* JobsIM.xcdatamodeld in Sources */,
 				C5C4F7E9255A5491002F407A /* UIView+Measure.m in Sources */,
 				C5C4F81B255A5491002F407A /* NSObject+SYSAlertController.m in Sources */,

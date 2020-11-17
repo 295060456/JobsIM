@@ -97,6 +97,12 @@
 #import "JXPagerView.h"
 #endif
 
+#if __has_include(<lottie-ios/Lottie.h>)
+#import <lottie-ios/Lottie.h>
+#else
+#import "Lottie.h"
+#endif
+
 #if __has_include(<JPImageresizerView/JPImageresizerView.h>)
 #import <JPImageresizerView/JPImageresizerView.h>
 #else

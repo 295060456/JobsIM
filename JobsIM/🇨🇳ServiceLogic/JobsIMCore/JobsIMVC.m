@@ -72,6 +72,29 @@ UITableViewDelegate
         self.inputview.mj_y = self.inputview.inputTextField.TFRiseHeight;
     }
 }
+///下拉刷新
+-(void)pullToRefresh{
+    NSLog(@"下拉刷新");
+    [self.tableView.mj_header endRefreshing];
+//
+}
+///上拉加载更多
+- (void)loadMoreRefresh{
+    NSLog(@"上拉加载更多");
+//    [self.tableView reloadData];
+    //特别说明：pagingEnabled = YES 在此会影响Cell的偏移量，原作者希望我们在这里临时关闭一下，刷新完成以后再打开
+    self.tableView.pagingEnabled = NO;
+    [self performSelector:@selector(delayMethods)
+               withObject:nil
+               afterDelay:2];
+}
+
+-(void)delayMethods{
+    self.tableView.mj_footer.state = MJRefreshStateIdle;
+    self.tableView.mj_footer.hidden = YES;
+    self.tableView.pagingEnabled = YES;
+//    [self.mj_footer endRefreshingWithNoMoreData];
+}
 
 -(void)keyboard{
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -392,10 +415,25 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
         _tableView.ly_emptyView = [LYEmptyView emptyViewWithImageStr:@"noData"
                                                             titleStr:@"暂无数据"
                                                            detailStr:@""];
-        _tableView.mj_header = MJRefreshWithLottieTableViewHeader.new;
-        _tableView.mj_header.jsonString = @"12345.json";
-        [_tableView.mj_header beginRefreshing];
+        
+        if (self.chatInfoModelMutArr.count) {
+            [_tableView ly_hideEmptyView];
+        }else{
+            [_tableView ly_showEmptyView];
+        }
+        
+//        _tableView.mj_header = MJRefreshWithLottieTableViewHeader.new;
+//        _tableView.mj_header.jsonString = @"12345.json";
+//        [_tableView.mj_header beginRefreshing];
         _tableView.mj_footer.hidden = NO;
+        
+        @weakify(self)
+        _tableView.mj_header = [CustomGifHeader headerWithRefreshingBlock:^{
+            @strongify(self)
+            sleep(3);
+            [self pullToRefresh];
+        }];
+        
     }return _tableView;
 }
 
