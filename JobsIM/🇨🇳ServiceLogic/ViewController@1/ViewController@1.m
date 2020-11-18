@@ -64,7 +64,7 @@
         [self.view addSubview:_listView];
         [_listView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.bottom.equalTo(self.view);
-            if (self.gk_navBarAlpha) {
+            if (self.gk_navBarAlpha && !self.gk_navigationBar.hidden) {//显示
                 make.top.equalTo(self.gk_navigationBar.mas_bottom);
             }else{
                 make.top.equalTo(self.view.mas_top);

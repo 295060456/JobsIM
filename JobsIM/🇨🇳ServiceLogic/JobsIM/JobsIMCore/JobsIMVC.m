@@ -411,7 +411,12 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
         _tableView.dataSource = self;
         [self.view insertSubview:_tableView belowSubview:self.inputview];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.view).offset(Top());
+            if (self.gk_navBarAlpha && !self.gk_navigationBar.hidden) {//显示
+                make.top.equalTo(self.gk_navigationBar.mas_bottom);
+            }else{
+                make.top.equalTo(self.view.mas_top);
+            }
+//            make.top.equalTo(self.view).offset(Top());
             make.left.right.equalTo(self.view);
             make.bottom.equalTo(self.inputview.mas_top);
         }];
