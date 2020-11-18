@@ -74,6 +74,7 @@
     
     self.textLabel.text = self.usernameStr;
     self.detailTextLabel.text = self.contentStr;
+    self.detailTextLabel.textColor = KLightGrayColor;
     self.imageView.image = self.userHeaderIMG;
     self.timeLab.alpha = 1;
 }

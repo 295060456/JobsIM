@@ -26,7 +26,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = RandomColor;
     self.isHiddenNavigationBar = YES;//禁用系统的导航栏
-    self.gk_navTitle = @"JobIM";
+    self.gk_navTitle = @"JobsIM";
     self.gk_navTitleColor = kRedColor;
     self.gk_navRightBarButtonItems = @[self.shareBtnItem];
     [self hideNavLine];
