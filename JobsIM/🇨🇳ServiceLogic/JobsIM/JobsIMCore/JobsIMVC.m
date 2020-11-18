@@ -40,10 +40,11 @@ UITableViewDelegate
     self.view.backgroundColor = kWhiteColor;
     [self keyboard];
     [IQKeyboardManager sharedManager].enable = NO;//该页面禁用
-    
+
     if ([self.requestParams isKindOfClass:JobsIMChatInfoModel.class]) {
-        JobsIMChatInfoModel *model = (JobsIMChatInfoModel *)self.requestParams;
-        self.gk_navTitle = model.senderUserNameStr;
+        JobsIMChatInfoModel *chatInfoModel = (JobsIMChatInfoModel *)self.requestParams;
+        [self.chatInfoModelMutArr addObject:chatInfoModel];
+        self.gk_navTitle = chatInfoModel.senderUserNameStr;
     }
     
     if (self.navigationController.viewControllers.count - 1) {//从上个页面推过来才有返回键，直接的个人中心是没有的
@@ -134,17 +135,22 @@ UITableViewDelegate
 -(void)keyboardDidChangeFrameNotification:(NSNotification *)notification{}
 
 -(void)simulateServer{
-    JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
-    chatInfoModel.senderChatTextStr = @"我是马化腾,明天来上班";//pony马，明天我可以来上班吗？
-    TimeModel *timeModel = TimeModel.new;
-    [timeModel makeSpecificTime];
-    chatInfoModel.senderChatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
-    chatInfoModel.senderChatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
-    chatInfoModel.identification = @"我是服务器";
-    chatInfoModel.senderUserNameStr = @"马化腾";
     
-    [self.chatInfoModelMutArr addObject:chatInfoModel];
-    [self.tableView reloadData];
+    if ([self.requestParams isKindOfClass:JobsIMChatInfoModel.class]) {
+        JobsIMChatInfoModel *requestParamsChatInfoModel = (JobsIMChatInfoModel *)self.requestParams;
+        
+        JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
+        chatInfoModel.senderChatTextStr = @"有内鬼，取消交易";
+        TimeModel *timeModel = TimeModel.new;
+        [timeModel makeSpecificTime];
+        chatInfoModel.senderChatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
+        chatInfoModel.senderChatUserIconIMG = requestParamsChatInfoModel.senderChatUserIconIMG;//KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
+        chatInfoModel.identification = @"我是服务器";
+        chatInfoModel.senderUserNameStr = requestParamsChatInfoModel.senderUserNameStr;
+        
+        [self.chatInfoModelMutArr addObject:chatInfoModel];
+        [self.tableView reloadData];
+    }
 }
 #pragma mark —————————— UITableViewDelegate,UITableViewDataSource ——————————
 -(CGFloat)tableView:(UITableView *)tableView
