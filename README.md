@@ -10,6 +10,7 @@
 ![JobsIM【Outlines 09】](https://user-images.githubusercontent.com/13795605/99757917-030d8700-2b23-11eb-92a6-eb249ed5237d.png)
 ![JobsIM【Outlines 10】](https://user-images.githubusercontent.com/13795605/99757924-04d74a80-2b23-11eb-8830-a758b2c9423a.png)
 ![JobsIM【Outlines 11】](https://user-images.githubusercontent.com/13795605/99757926-056fe100-2b23-11eb-81ec-961dc23c1288.png)
+![JobsIM【Outlines 12】](https://user-images.githubusercontent.com/13795605/99758142-87f8a080-2b23-11eb-83b7-4356807bf167.png)
 
 亮点1、时间管理：
 关注类 @implementation NSString (Time) 和 @implementation NSString (Time)
