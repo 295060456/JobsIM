@@ -80,7 +80,7 @@ willConnectToSession:(UISceneSession *)session
 }
 #pragma mark —— lazyLoad
 -(UIWindow *)window{
-    [_window setRootViewController:JobsIMAppDelegate.sharedInstance.tabbarVC];
+    [_window setRootViewController:JobsIMAppDelegate.sharedInstance.tabBarVC];
     [_window makeKeyAndVisible];
     return _window;
 }
