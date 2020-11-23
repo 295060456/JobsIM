@@ -10,6 +10,7 @@
 
 #import "MacroDef_Sys.h"
 #import "JobsIMSceneDelegate.h"
+
 static inline UIWindow * getMainWindow(){
     UIWindow *window = nil;
     if (@available(iOS 13.0, *)) {
