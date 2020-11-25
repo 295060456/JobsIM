@@ -40,7 +40,6 @@ UITableViewDelegate
     self.view.backgroundColor = kWhiteColor;
     [self keyboard];
     [IQKeyboardManager sharedManager].enable = NO;//该页面禁用
-
     if ([self.requestParams isKindOfClass:JobsIMChatInfoModel.class]) {
         JobsIMChatInfoModel *chatInfoModel = (JobsIMChatInfoModel *)self.requestParams;
         [self.chatInfoModelMutArr addObject:chatInfoModel];
@@ -110,10 +109,6 @@ UITableViewDelegate
 }
 //键盘 弹出 和 收回 走这个方法
 -(void)keyboardWillChangeFrameNotification:(NSNotification *)notification{
-
-}
-
--(void)keyboardDidChangeFrameNotification:(NSNotification *)notification{
     NSDictionary *userInfo = notification.userInfo;
     CGRect beginFrame = [userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
     CGRect endFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
@@ -134,6 +129,10 @@ UITableViewDelegate
     self.inputview.inputTextField.TFRiseHeight = self.inputview.mj_y;
     self.inputview.inputTextField.TFRiseHeight -= KeyboardOffsetY;
     self.inputview.mj_y = self.inputview.inputTextField.TFRiseHeight;
+}
+
+-(void)keyboardDidChangeFrameNotification:(NSNotification *)notification{
+
 }
 
 -(void)simulateServer{
