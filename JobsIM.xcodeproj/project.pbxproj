@@ -156,7 +156,7 @@
 		C5C4F7DA255A5491002F407A /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F716255A5490002F407A /* UIImage+Extras.m */; };
 		C5C4F7DB255A5491002F407A /* UIImage+SYS.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F718255A5490002F407A /* UIImage+SYS.m */; };
 		C5C4F7DC255A5491002F407A /* UIImage+Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F71C255A5490002F407A /* UIImage+Overlay.m */; };
-		C5C4F7DD255A5491002F407A /* UILabel+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F71F255A5490002F407A /* UILabel+RichText.m */; };
+		C5C4F7DD255A5491002F407A /* NSObject+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F71F255A5490002F407A /* NSObject+RichText.m */; };
 		C5C4F7DE255A5491002F407A /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F722255A5490002F407A /* UILabel+Extra.m */; };
 		C5C4F7E0255A5491002F407A /* WhiteRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F726255A5490002F407A /* WhiteRightArrow@2x.png */; };
 		C5C4F7E2255A5491002F407A /* WhiteRightArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F728255A5490002F407A /* WhiteRightArrow@3x.png */; };
@@ -519,9 +519,9 @@
 		C5C4F71B255A5490002F407A /* UIImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extras.h"; sourceTree = "<group>"; };
 		C5C4F71C255A5490002F407A /* UIImage+Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Overlay.m"; sourceTree = "<group>"; };
 		C5C4F71D255A5490002F407A /* UIImage+screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+screenshot.h"; sourceTree = "<group>"; };
-		C5C4F71F255A5490002F407A /* UILabel+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RichText.m"; sourceTree = "<group>"; };
+		C5C4F71F255A5490002F407A /* NSObject+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RichText.m"; sourceTree = "<group>"; };
 		C5C4F720255A5490002F407A /* UILabel+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extra.h"; sourceTree = "<group>"; };
-		C5C4F721255A5490002F407A /* UILabel+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RichText.h"; sourceTree = "<group>"; };
+		C5C4F721255A5490002F407A /* NSObject+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RichText.h"; sourceTree = "<group>"; };
 		C5C4F722255A5490002F407A /* UILabel+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extra.m"; sourceTree = "<group>"; };
 		C5C4F725255A5490002F407A /* UITableViewCell+WhiteArrows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+WhiteArrows.h"; sourceTree = "<group>"; };
 		C5C4F726255A5490002F407A /* WhiteRightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@2x.png"; sourceTree = "<group>"; };
@@ -1607,9 +1607,7 @@
 		C5C4F71E255A5490002F407A /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F71F255A5490002F407A /* UILabel+RichText.m */,
 				C5C4F720255A5490002F407A /* UILabel+Extra.h */,
-				C5C4F721255A5490002F407A /* UILabel+RichText.h */,
 				C5C4F722255A5490002F407A /* UILabel+Extra.m */,
 			);
 			path = UILabel;
@@ -1960,6 +1958,8 @@
 		C5C4F7B1255A5490002F407A /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				C5C4F721255A5490002F407A /* NSObject+RichText.h */,
+				C5C4F71F255A5490002F407A /* NSObject+RichText.m */,
 				C5C4F7B2255A5490002F407A /* NSObject+Random.m */,
 				C5C4F7B3255A5490002F407A /* NSObject+AFNReachability.m */,
 				C5C4F7B4255A5490002F407A /* NSObject+Alert */,
@@ -2372,7 +2372,7 @@
 				C5C4F706255A5418002F407A /* YBNotificationManager.m in Sources */,
 				C5C4017B255A6554002F407A /* BWItemModel.m in Sources */,
 				C5C4F7D8255A5491002F407A /* UIImage+Tailor.m in Sources */,
-				C5C4F7DD255A5491002F407A /* UILabel+RichText.m in Sources */,
+				C5C4F7DD255A5491002F407A /* NSObject+RichText.m in Sources */,
 				C5C4017D255A6555002F407A /* BWShareView.m in Sources */,
 				C5C4023F255A6671002F407A /* TabBarControllerConfig.m in Sources */,
 				C5C40396255A6C26002F407A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
