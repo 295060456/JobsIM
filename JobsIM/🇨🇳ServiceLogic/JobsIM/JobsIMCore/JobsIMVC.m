@@ -110,6 +110,10 @@ UITableViewDelegate
 }
 //键盘 弹出 和 收回 走这个方法
 -(void)keyboardWillChangeFrameNotification:(NSNotification *)notification{
+
+}
+
+-(void)keyboardDidChangeFrameNotification:(NSNotification *)notification{
     NSDictionary *userInfo = notification.userInfo;
     CGRect beginFrame = [userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
     CGRect endFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
@@ -131,8 +135,6 @@ UITableViewDelegate
     self.inputview.inputTextField.TFRiseHeight -= KeyboardOffsetY;
     self.inputview.mj_y = self.inputview.inputTextField.TFRiseHeight;
 }
-
--(void)keyboardDidChangeFrameNotification:(NSNotification *)notification{}
 
 -(void)simulateServer{
     
