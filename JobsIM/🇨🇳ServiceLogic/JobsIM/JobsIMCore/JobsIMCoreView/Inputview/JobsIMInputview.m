@@ -27,7 +27,7 @@ UITextFieldDelegate
 
 -(instancetype)init{
     if (self = [super init]) {
-        
+        self.backgroundColor = kWhiteColor;
     }return self;
 }
 
@@ -152,6 +152,7 @@ replacementString:(NSString *)string{
 -(ZYTextField *)inputTextField{
     if (!_inputTextField) {
         _inputTextField = ZYTextField.new;
+        _inputTextField.placeHolderAlignment = PlaceHolderAlignmentCenter;
         _inputTextField.placeholder = @"在此输入需要发送的信息";
         _inputTextField.delegate = self;
         _inputTextField.cj_delegate = self;
