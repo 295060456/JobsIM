@@ -28,13 +28,15 @@
 		C531D024255AB570005304F6 /* 左气泡@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C531D020255AB570005304F6 /* 左气泡@3x.png */; };
 		C5341587255A77D900DFAFE4 /* JobsIMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5341586255A77D900DFAFE4 /* JobsIMVC.m */; };
 		C5341659255A78A200DFAFE4 /* JobsIMInputview.m in Sources */ = {isa = PBXBuildFile; fileRef = C5341658255A78A200DFAFE4 /* JobsIMInputview.m */; };
-		C53416B3255A7CFB00DFAFE4 /* 输入@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */; };
-		C53416B4255A7CFB00DFAFE4 /* 输入@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */; };
 		C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */; };
 		C54AAF23255E57A5000A314D /* UITableViewCell+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */; };
 		C553900325727F77008BB60F /* SocketIOTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C553900125727F77008BB60F /* SocketIOTools.m */; };
 		C5569363255BC520005C1361 /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569362255BC520005C1361 /* NSString+Time.m */; };
 		C55693B1255BC653005C1361 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C55693B0255BC653005C1361 /* TimeModel.m */; };
+		C5776FE2257285BA00B7DCAB /* 输入框无值@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */; };
+		C5776FE3257285BA00B7DCAB /* 输入框有值@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FDF257285BA00B7DCAB /* 输入框有值@3x.png */; };
+		C5776FE4257285BA00B7DCAB /* 输入框有值@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FE0257285BA00B7DCAB /* 输入框有值@2x.png */; };
+		C5776FE5257285BA00B7DCAB /* 输入框无值@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FE1257285BA00B7DCAB /* 输入框无值@3x.png */; };
 		C57A2EB8255E86E2002D39FB /* Check@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57A2EB2255E86E2002D39FB /* Check@3x.png */; };
 		C57A2EB9255E86E2002D39FB /* Menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57A2EB3255E86E2002D39FB /* Menu@2x.png */; };
 		C57A2EBA255E86E2002D39FB /* Fav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57A2EB4255E86E2002D39FB /* Fav@2x.png */; };
@@ -286,8 +288,6 @@
 		C5341657255A78A200DFAFE4 /* JobsIMInputview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMInputview.h; sourceTree = "<group>"; };
 		C5341658255A78A200DFAFE4 /* JobsIMInputview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMInputview.m; sourceTree = "<group>"; };
 		C534165D255A7AD100DFAFE4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入@3x.png"; sourceTree = "<group>"; };
-		C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入@2x.png"; sourceTree = "<group>"; };
 		C534179E255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMChatInfoTBVCell.h; sourceTree = "<group>"; };
 		C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMChatInfoTBVCell.m; sourceTree = "<group>"; };
 		C53D60EE255C2120006C290D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -303,6 +303,10 @@
 		C5569362255BC520005C1361 /* NSString+Time.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
 		C55693AF255BC653005C1361 /* TimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeModel.h; sourceTree = "<group>"; };
 		C55693B0255BC653005C1361 /* TimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
+		C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框无值@2x.png"; sourceTree = "<group>"; };
+		C5776FDF257285BA00B7DCAB /* 输入框有值@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框有值@3x.png"; sourceTree = "<group>"; };
+		C5776FE0257285BA00B7DCAB /* 输入框有值@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框有值@2x.png"; sourceTree = "<group>"; };
+		C5776FE1257285BA00B7DCAB /* 输入框无值@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框无值@3x.png"; sourceTree = "<group>"; };
 		C57A2EB2255E86E2002D39FB /* Check@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check@3x.png"; sourceTree = "<group>"; };
 		C57A2EB3255E86E2002D39FB /* Menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu@2x.png"; sourceTree = "<group>"; };
 		C57A2EB4255E86E2002D39FB /* Fav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fav@2x.png"; sourceTree = "<group>"; };
@@ -778,8 +782,10 @@
 			children = (
 				C57A2EA3255E71A4002D39FB /* 左右滑动按钮图标 */,
 				C531D01C255AB563005304F6 /* 聊天气泡 */,
-				C53416B2255A7CFB00DFAFE4 /* 输入@2x.png */,
-				C53416B1255A7CFB00DFAFE4 /* 输入@3x.png */,
+				C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */,
+				C5776FE1257285BA00B7DCAB /* 输入框无值@3x.png */,
+				C5776FE0257285BA00B7DCAB /* 输入框有值@2x.png */,
+				C5776FDF257285BA00B7DCAB /* 输入框有值@3x.png */,
 			);
 			path = "相关资源文件";
 			sourceTree = "<group>";
@@ -2187,8 +2193,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C52C96032563FB180039EBFE /* 热度.gif in Resources */,
+				C5776FE3257285BA00B7DCAB /* 输入框有值@3x.png in Resources */,
 				C57A2ECC255E8AD3002D39FB /* Header@2x.png in Resources */,
 				C5C4024E255A6671002F407A /* 上传与拍照.json in Resources */,
+				C5776FE2257285BA00B7DCAB /* 输入框无值@2x.png in Resources */,
 				C5C4F51F255A5204002F407A /* LaunchScreen.storyboard in Resources */,
 				C52C96022563FB180039EBFE /* Bt9h.gif in Resources */,
 				C5C4F7E2255A5491002F407A /* WhiteRightArrow@3x.png in Resources */,
@@ -2220,7 +2228,6 @@
 				C57A2EBC255E86E2002D39FB /* Fav@3x.png in Resources */,
 				C5C4024D255A6671002F407A /* tab_search_animate.json in Resources */,
 				C5C4024B255A6671002F407A /* tab_home_animate.json in Resources */,
-				C53416B3255A7CFB00DFAFE4 /* 输入@3x.png in Resources */,
 				C5C4F51C255A5204002F407A /* Assets.xcassets in Resources */,
 				C5C40244255A6671002F407A /* 任务.json in Resources */,
 				C57A2EC7255E8AD3002D39FB /* Drop@3x.png in Resources */,
@@ -2236,15 +2243,16 @@
 				C5C402AA255A6881002F407A /* 启动页0922一版横版.jpg in Resources */,
 				C52C96052563FB180039EBFE /* 动态头像_1 尺寸84.gif in Resources */,
 				C5C4F7F1255A5491002F407A /* 移除 系统自带的 UITabBarButton in Resources */,
+				C5776FE4257285BA00B7DCAB /* 输入框有值@2x.png in Resources */,
 				C531CFAA255A840B005304F6 /* 1234.json in Resources */,
 				C5C40247255A6671002F407A /* green_lottie_tab_home.json in Resources */,
-				C53416B4255A7CFB00DFAFE4 /* 输入@2x.png in Resources */,
 				C531D023255AB570005304F6 /* 左气泡@2x.png in Resources */,
 				C5C402AB255A6881002F407A /* 启动页SLOGAN.png in Resources */,
 				C5C40249255A6671002F407A /* tab_me_animate.json in Resources */,
 				C5C4F517255A5203002F407A /* Main.storyboard in Resources */,
 				C5C40248255A6671002F407A /* 我的.json in Resources */,
 				C531D022255AB570005304F6 /* 右气泡@3x.png in Resources */,
+				C5776FE5257285BA00B7DCAB /* 输入框无值@3x.png in Resources */,
 				C52C9651256408160039EBFE /* 动态头像_2 尺寸84.gif in Resources */,
 				C531D024255AB570005304F6 /* 左气泡@3x.png in Resources */,
 				C5C40246255A6671002F407A /* dingdan.json in Resources */,

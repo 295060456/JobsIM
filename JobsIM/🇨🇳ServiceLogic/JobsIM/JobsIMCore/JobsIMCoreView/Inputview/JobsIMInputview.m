@@ -94,11 +94,12 @@ replacementString:(NSString *)string{
     if (![NSString isNullString:resString]) {
         self.sendBtn.userInteractionEnabled = YES;
         self.sendBtn.enabled = YES;
+        self.imgView.image = KIMG(@"输入框有值");
     }else{
         self.sendBtn.userInteractionEnabled = NO;
         self.sendBtn.enabled = NO;
-    }
-    return YES;
+        self.imgView.image = KIMG(@"输入框无值");
+    }return YES;
 }
 //询问委托人是否应删除文本字段的当前内容
 //- (BOOL)textFieldShouldClear:(UITextField *)textField
@@ -164,7 +165,7 @@ replacementString:(NSString *)string{
         _inputTextField.keyboardAppearance = UIKeyboardAppearanceAlert;
         _inputTextField.autocorrectionType = UITextAutocorrectionTypeNo;//自动纠错属性默认是yes，就会触发那个监听
 //        _inputTextField.inputAccessoryView = self.adNoticeView;
-        _inputTextField.returnKeyType = UIReturnKeySearch;
+        _inputTextField.returnKeyType = UIReturnKeySend;
         [self addSubview:_inputTextField];
         [_inputTextField mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.equalTo(self.sendBtn);
@@ -182,7 +183,7 @@ replacementString:(NSString *)string{
 -(UIImageView *)imgView{
     if (!_imgView) {
         _imgView = UIImageView.new;
-        _imgView.image = KIMG(@"输入");
+        _imgView.image = KIMG(@"输入框无值");
     }return _imgView;
 }
 
