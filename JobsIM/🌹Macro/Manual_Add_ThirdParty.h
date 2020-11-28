@@ -89,4 +89,6 @@
 #import "WMZBannerView.h"
 #import "XHLaunchAd.h"
 
+#import "JobsIM-Bridging-Header.h"
+
 #endif /* Manual_Add_ThirdParty_h */

@@ -80,7 +80,10 @@ PODS:
     - SDWebImage/Core (= 5.9.0)
   - SDWebImage/Core (5.9.0)
   - Shimmer (1.0.2)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
   - SPAlertController (4.0.0)
+  - Starscream (3.1.1)
   - SZTextView (1.3.0)
   - TFPopup (1.3.0)
   - TXFileOperation (1.0)
@@ -114,6 +117,7 @@ DEPENDENCIES:
   - RQShineLabel
   - SDWebImage
   - Shimmer
+  - Socket.IO-Client-Swift (~> 15.2.0)
   - SPAlertController
   - SZTextView
   - TFPopup
@@ -150,7 +154,9 @@ SPEC REPOS:
     - RQShineLabel
     - SDWebImage
     - Shimmer
+    - Socket.IO-Client-Swift
     - SPAlertController
+    - Starscream
     - SZTextView
     - TFPopup
     - TXFileOperation
@@ -185,13 +191,15 @@ SPEC CHECKSUMS:
   RQShineLabel: ae66343d6c779a8efdf61241734ddcec5d79d351
   SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
   SPAlertController: b245d7a5e17d612da051f2612aca3703f21d108f
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SZTextView: 094dc6acc9beec537685c545d6e3e0d4975174e1
   TFPopup: e1396132337290244668fdd8a7faf8ff461c481b
   TXFileOperation: 99bc7e3763678fdea8e8c407e2b87fb18038385f
   TZImagePickerController: cc0b74d5f01ab4cddcc24dcdfc3c7d68e6261056
   WHToast: 11a17a3f09f5f733e32bd6f3338919a448cbb719
 
-PODFILE CHECKSUM: 9629fef7dd9c9345e3fb35660bd476230913d3f4
+PODFILE CHECKSUM: 81995fa7c408cd836f8f4900692543f31f91339d
 
 COCOAPODS: 1.10.0
