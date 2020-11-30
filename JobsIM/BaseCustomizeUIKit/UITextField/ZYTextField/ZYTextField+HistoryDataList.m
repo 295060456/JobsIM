@@ -22,7 +22,7 @@
 
 @implementation HistoryDataListTBVCell
 
-+(instancetype)cellWith:(UITableView *)tableView{
++(instancetype)cellWithTableView:(UITableView *)tableView{
     HistoryDataListTBVCell *cell = (HistoryDataListTBVCell *)[tableView dequeueReusableCellWithIdentifier:@"InfoTBVCell"];
     if (!cell) {
         cell = [[HistoryDataListTBVCell alloc]initWithStyle:UITableViewCellStyleSubtitle
@@ -47,9 +47,15 @@
 -(UIButton *)delBtn{
     if (!_delBtn) {
         _delBtn = UIButton.new;
-        [_delBtn setImage:KBuddleIMG(nil, @"ZYTextField", nil,@"登录注册关闭")
+        [_delBtn setImage:KBuddleIMG(nil,
+                                     @"ZYTextField",
+                                     nil,
+                                     @"登录注册关闭")
                  forState:UIControlStateNormal];
-        [_delBtn setImage:KBuddleIMG(nil,@"ZYTextField", nil, @"登录注册关闭")
+        [_delBtn setImage:KBuddleIMG(nil,
+                                     @"ZYTextField",
+                                     nil,
+                                     @"登录注册关闭")
                  forState:UIControlStateSelected];
         @weakify(self)
         [[_delBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
@@ -137,7 +143,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    HistoryDataListTBVCell *cell = [HistoryDataListTBVCell cellWith:tableView];
+    HistoryDataListTBVCell *cell = [HistoryDataListTBVCell cellWithTableView:tableView];
     cell.cellHeight = self.tableviewCellHeight;
     cell.cellWidth = self.mj_w;
     cell.index = indexPath.row;
