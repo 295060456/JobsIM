@@ -38,6 +38,18 @@ UITextFieldDelegate
         self.isOK = YES;
     }
 }
+//一些变化的UI
+-(void)someChangeUI:(NSString *)string{
+    if (![NSString isNullString:string]) {
+        self.sendBtn.userInteractionEnabled = YES;
+        self.sendBtn.enabled = YES;
+        self.imgView.image = KIMG(@"输入框有值");
+    }else{
+        self.sendBtn.userInteractionEnabled = NO;
+        self.sendBtn.enabled = NO;
+        self.imgView.image = KIMG(@"输入框无值");
+    }
+}
 #pragma mark —— UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑
 - (BOOL)textFieldShouldBeginEditing:(ZYTextField *)textField{
@@ -85,15 +97,8 @@ replacementString:(NSString *)string{
     }
 
     NSLog(@"resString = %@",resString);
-    if (![NSString isNullString:resString]) {
-        self.sendBtn.userInteractionEnabled = YES;
-        self.sendBtn.enabled = YES;
-        self.imgView.image = KIMG(@"输入框有值");
-    }else{
-        self.sendBtn.userInteractionEnabled = NO;
-        self.sendBtn.enabled = NO;
-        self.imgView.image = KIMG(@"输入框无值");
-    }return YES;
+    [self someChangeUI:resString];
+    return YES;
 }
 //询问委托人是否应删除文本字段的当前内容
 //- (BOOL)textFieldShouldClear:(UITextField *)textField
