@@ -157,7 +157,7 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
         JobsIMChatInfoModel *chatInfoModel = (JobsIMChatInfoModel *)model;
         CGFloat CellHeight = [NSString getContentHeightOrWidthWithParagraphStyleLineSpacing:0
                                                                       calcLabelHeight_Width:CalcLabelHeight
-                                                                               effectString:chatInfoModel.senderChatTextStr
+                                                                               effectString:chatInfoModel.chatTextStr
                                                                                        font:NULL
                                                                boundingRectWithHeight_Width:JobsIMChatInfoTBVChatContentLabWidth()];
         NSLog(@"%f",CellHeight);
@@ -178,10 +178,10 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
             self.infoLocation = InfoLocation_Unknown;
         }
         
-        self.senderChatTextStr = chatInfoModel.senderChatTextStr;
-        self.senderChatTextTimeStr = chatInfoModel.senderChatTextTimeStr;
-        self.senderChatUserIconIMG = chatInfoModel.senderChatUserIconIMG;
-        self.senderUserNameStr = chatInfoModel.senderUserNameStr;
+        self.senderChatTextStr = chatInfoModel.chatTextStr;
+        self.senderChatTextTimeStr = chatInfoModel.chatTextTimeStr;
+        self.senderChatUserIconIMG = chatInfoModel.userIconIMG;
+        self.senderUserNameStr = chatInfoModel.userNameStr;
         self.identification = chatInfoModel.identification;
         
         //先定宽，再定高

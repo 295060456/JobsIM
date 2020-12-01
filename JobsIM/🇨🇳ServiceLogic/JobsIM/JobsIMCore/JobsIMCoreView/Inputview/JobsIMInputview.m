@@ -11,7 +11,6 @@
 @interface JobsIMInputview ()
 <
 UITextFieldDelegate
-,CJTextFieldDeleteDelegate
 >
 
 @property(nonatomic,strong)UIImageView *imgView;
@@ -38,11 +37,6 @@ UITextFieldDelegate
         self.inputTextField.alpha = 1;
         self.isOK = YES;
     }
-}
-//删除的话：系统先走textField:shouldChangeCharactersInRange:replacementString: 再走cjTextFieldDeleteBackward:
-#pragma mark —— CJTextFieldDeleteDelegate
-- (void)cjTextFieldDeleteBackward:(CJTextField *)textField{
-
 }
 #pragma mark —— UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑
@@ -156,7 +150,6 @@ replacementString:(NSString *)string{
         _inputTextField.placeHolderAlignment = PlaceHolderAlignmentCenter;
         _inputTextField.placeholder = @"在此输入需要发送的信息";
         _inputTextField.delegate = self;
-        _inputTextField.cj_delegate = self;
         _inputTextField.leftView = self.imgView;
         _inputTextField.ZYtextFont = [UIFont systemFontOfSize:12
                                            weight:UIFontWeightMedium];

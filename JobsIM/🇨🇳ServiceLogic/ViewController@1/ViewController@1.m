@@ -45,12 +45,12 @@
             @strongify(self)
             
             JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
-            chatInfoModel.senderChatTextStr = data.contentStr;
-            chatInfoModel.senderUserNameStr = data.usernameStr;
+            chatInfoModel.chatTextStr = data.contentStr;
+            chatInfoModel.userNameStr = data.usernameStr;
             TimeModel *timeModel = TimeModel.new;
             [timeModel makeSpecificTime];
-            chatInfoModel.senderChatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
-            chatInfoModel.senderChatUserIconIMG = data.userHeaderIMG;
+            chatInfoModel.chatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
+            chatInfoModel.userIconIMG = data.userHeaderIMG;
             chatInfoModel.identification = @"我是服务器";
             
             [UIViewController comingFromVC:self

@@ -43,7 +43,7 @@ UITableViewDelegate
     if ([self.requestParams isKindOfClass:JobsIMChatInfoModel.class]) {
         JobsIMChatInfoModel *chatInfoModel = (JobsIMChatInfoModel *)self.requestParams;
         [self.chatInfoModelMutArr addObject:chatInfoModel];
-        self.gk_navTitle = chatInfoModel.senderUserNameStr;
+        self.gk_navTitle = chatInfoModel.userNameStr;
     }
     
     if (self.navigationController.viewControllers.count - 1) {//从上个页面推过来才有返回键，直接的个人中心是没有的
@@ -141,13 +141,13 @@ UITableViewDelegate
         JobsIMChatInfoModel *requestParamsChatInfoModel = (JobsIMChatInfoModel *)self.requestParams;
         
         JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
-        chatInfoModel.senderChatTextStr = @"有内鬼，取消交易";
+        chatInfoModel.chatTextStr = @"有内鬼，取消交易";
         TimeModel *timeModel = TimeModel.new;
         [timeModel makeSpecificTime];
-        chatInfoModel.senderChatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
-        chatInfoModel.senderChatUserIconIMG = requestParamsChatInfoModel.senderChatUserIconIMG;//KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
+        chatInfoModel.chatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
+        chatInfoModel.userIconIMG = requestParamsChatInfoModel.userIconIMG;//KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
         chatInfoModel.identification = @"我是服务器";
-        chatInfoModel.senderUserNameStr = requestParamsChatInfoModel.senderUserNameStr;
+        chatInfoModel.userNameStr = requestParamsChatInfoModel.userNameStr;
         
         [self.chatInfoModelMutArr addObject:chatInfoModel];
         [self.tableView reloadData];
@@ -376,13 +376,13 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
                 ZYTextField *tf = (ZYTextField *)data;
                 
                 JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
-                chatInfoModel.senderChatTextStr = tf.text;
+                chatInfoModel.chatTextStr = tf.text;
                 TimeModel *timeModel = TimeModel.new;
                 [timeModel makeSpecificTime];
-                chatInfoModel.senderChatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
-                chatInfoModel.senderChatUserIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_1");//我自己的头像
+                chatInfoModel.chatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
+                chatInfoModel.userIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_1");//我自己的头像
                 chatInfoModel.identification = @"我是我自己";
-                chatInfoModel.senderUserNameStr = @"Jobs";
+                chatInfoModel.userNameStr = @"Jobs";
                 
                 [self.chatInfoModelMutArr addObject:chatInfoModel];
                 [self.tableView reloadData];
