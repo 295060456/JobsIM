@@ -30,6 +30,7 @@
 		C5341659255A78A200DFAFE4 /* JobsIMInputview.m in Sources */ = {isa = PBXBuildFile; fileRef = C5341658255A78A200DFAFE4 /* JobsIMInputview.m */; };
 		C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */; };
 		C54AAF23255E57A5000A314D /* UITableViewCell+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */; };
+		C54FE1122576718100937C11 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54FE1112576718100937C11 /* BaseViewController.m */; };
 		C55164FE25751FD800FF5217 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C55164F125751FD700FF5217 /* HQTextField.m */; };
 		C55164FF25751FD800FF5217 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55164F225751FD700FF5217 /* ZYTextField.bundle */; };
 		C551650025751FD800FF5217 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C55164F425751FD800FF5217 /* CJTextField.m */; };
@@ -293,6 +294,8 @@
 		C53D60EE255C2120006C290D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C54AAF21255E57A5000A314D /* UITableViewCell+Margin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Margin.h"; sourceTree = "<group>"; };
 		C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Margin.m"; sourceTree = "<group>"; };
+		C54FE1102576718100937C11 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C54FE1112576718100937C11 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		C55164F025751FD700FF5217 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
 		C55164F125751FD700FF5217 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
 		C55164F225751FD700FF5217 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
@@ -851,6 +854,42 @@
 				C5C4F728255A5490002F407A /* WhiteRightArrow@3x.png */,
 			);
 			path = "自定义右侧小箭头图标";
+			sourceTree = "<group>";
+		};
+		C54FE10E2576716700937C11 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C54FE1102576718100937C11 /* BaseViewController.h */,
+				C54FE1112576718100937C11 /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		C54FE10F2576717000937C11 /* UIViewController+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F763255A5490002F407A /* UIViewController+JXCategory */,
+				C5C4F771255A5490002F407A /* UIViewController+TZImagePickerController */,
+				C5C4F761255A5490002F407A /* UIViewController+BackBtn.h */,
+				C5C4F76E255A5490002F407A /* UIViewController+BackBtn.m */,
+				C5C4F76A255A5490002F407A /* UIViewController+BaseVC.h */,
+				C5C4F77B255A5490002F407A /* UIViewController+BaseVC.m */,
+				C5C4F77C255A5490002F407A /* UIViewController+BRPickerView.h */,
+				C5C4F76C255A5490002F407A /* UIViewController+BRPickerView.m */,
+				C5C4F778255A5490002F407A /* UIViewController+BWShareView.h */,
+				C5C4F762255A5490002F407A /* UIViewController+BWShareView.m */,
+				C5C4F77D255A5490002F407A /* UIViewController+GifImageView.h */,
+				C5C4F76D255A5490002F407A /* UIViewController+GifImageView.m */,
+				C5C4F76F255A5490002F407A /* UIViewController+JPImageresizerView.h */,
+				C5C4F760255A5490002F407A /* UIViewController+JPImageresizerView.m */,
+				C5C4F769255A5490002F407A /* UIViewController+MJRefresh.h */,
+				C5C4F77A255A5490002F407A /* UIViewController+MJRefresh.m */,
+				C5C4F76B255A5490002F407A /* UIViewController+NavigationBar.h */,
+				C5C4F779255A5490002F407A /* UIViewController+NavigationBar.m */,
+				C5C4F770255A5490002F407A /* UIViewController+Shake.h */,
+				C5C4F768255A5490002F407A /* UIViewController+Shake.m */,
+			);
+			path = "UIViewController+Category";
 			sourceTree = "<group>";
 		};
 		C55164EF25751FD700FF5217 /* HQTextField */ = {
@@ -1824,26 +1863,8 @@
 		C5C4F75F255A5490002F407A /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F763255A5490002F407A /* UIViewController+JXCategory */,
-				C5C4F771255A5490002F407A /* UIViewController+TZImagePickerController */,
-				C5C4F761255A5490002F407A /* UIViewController+BackBtn.h */,
-				C5C4F76E255A5490002F407A /* UIViewController+BackBtn.m */,
-				C5C4F76A255A5490002F407A /* UIViewController+BaseVC.h */,
-				C5C4F77B255A5490002F407A /* UIViewController+BaseVC.m */,
-				C5C4F77C255A5490002F407A /* UIViewController+BRPickerView.h */,
-				C5C4F76C255A5490002F407A /* UIViewController+BRPickerView.m */,
-				C5C4F778255A5490002F407A /* UIViewController+BWShareView.h */,
-				C5C4F762255A5490002F407A /* UIViewController+BWShareView.m */,
-				C5C4F77D255A5490002F407A /* UIViewController+GifImageView.h */,
-				C5C4F76D255A5490002F407A /* UIViewController+GifImageView.m */,
-				C5C4F76F255A5490002F407A /* UIViewController+JPImageresizerView.h */,
-				C5C4F760255A5490002F407A /* UIViewController+JPImageresizerView.m */,
-				C5C4F769255A5490002F407A /* UIViewController+MJRefresh.h */,
-				C5C4F77A255A5490002F407A /* UIViewController+MJRefresh.m */,
-				C5C4F76B255A5490002F407A /* UIViewController+NavigationBar.h */,
-				C5C4F779255A5490002F407A /* UIViewController+NavigationBar.m */,
-				C5C4F770255A5490002F407A /* UIViewController+Shake.h */,
-				C5C4F768255A5490002F407A /* UIViewController+Shake.m */,
+				C54FE10F2576717000937C11 /* UIViewController+Category */,
+				C54FE10E2576716700937C11 /* BaseViewController */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -2433,6 +2454,7 @@
 				C5C4F7DB255A5491002F407A /* UIImage+SYS.m in Sources */,
 				C5C402C8255A6A26002F407A /* ViewController@3.m in Sources */,
 				C5C4F817255A5491002F407A /* CollectionReusableView.m in Sources */,
+				C54FE1122576718100937C11 /* BaseViewController.m in Sources */,
 				C5C4F7DE255A5491002F407A /* UILabel+Extra.m in Sources */,
 				C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */,
 				C5C4F807255A5491002F407A /* BaseNavigationVC.m in Sources */,

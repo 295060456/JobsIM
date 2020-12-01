@@ -52,14 +52,17 @@
             chatInfoModel.chatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
             chatInfoModel.userIconIMG = data.userHeaderIMG;
             chatInfoModel.identification = @"我是服务器";
-            
+
             [UIViewController comingFromVC:self
                                       toVC:JobsIMVC.new
                                comingStyle:ComingStyle_PUSH
-                         presentationStyle:UIModalPresentationAutomatic
-                             requestParams:chatInfoModel
-                                   success:^(id data) {}
-                                  animated:YES];
+                         presentationStyle:[UIDevice currentDevice].systemVersion.doubleValue >= 13.0 ? UIModalPresentationAutomatic : UIModalPresentationFullScreen
+                             requestParams:@""
+                  hidesBottomBarWhenPushed:YES
+                                  animated:YES
+                                   success:^(id data) {
+                
+            }];
         }];
         [self.view addSubview:_listView];
         [_listView mas_makeConstraints:^(MASConstraintMaker *make) {
