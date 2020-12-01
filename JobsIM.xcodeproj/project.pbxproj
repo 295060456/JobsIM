@@ -883,10 +883,11 @@
 		C55164F925751FD800FF5217 /* ZYTextField */ = {
 			isa = PBXGroup;
 			children = (
-				C55164FA25751FD800FF5217 /* ZYTextField.m */,
-				C55164FB25751FD800FF5217 /* ZYTextField+HistoryDataList.m */,
+				C55164F225751FD700FF5217 /* ZYTextField.bundle */,
 				C55164FC25751FD800FF5217 /* ZYTextField.h */,
+				C55164FA25751FD800FF5217 /* ZYTextField.m */,
 				C55164FD25751FD800FF5217 /* ZYTextField+HistoryDataList.h */,
+				C55164FB25751FD800FF5217 /* ZYTextField+HistoryDataList.m */,
 			);
 			path = ZYTextField;
 			sourceTree = "<group>";
@@ -2070,7 +2071,6 @@
 				C55164EF25751FD700FF5217 /* HQTextField */,
 				C55164F625751FD800FF5217 /* UITextField+Extend */,
 				C55164F925751FD800FF5217 /* ZYTextField */,
-				C55164F225751FD700FF5217 /* ZYTextField.bundle */,
 			);
 			path = UITextField;
 			sourceTree = "<group>";
