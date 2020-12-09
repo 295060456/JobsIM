@@ -897,6 +897,40 @@
 			path = "使用范例";
 			sourceTree = "<group>";
 		};
+		C555631C2580A438004DB33A /* NSObject+Others */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F7C3255A5490002F407A /* NSObject+AFNReachability.h */,
+				C5C4F7B3255A5490002F407A /* NSObject+AFNReachability.m */,
+				C5C4F7BA255A5490002F407A /* NSObject+Extras.h */,
+				C5C4F7C1255A5490002F407A /* NSObject+Extras.m */,
+				C5C4F7C6255A5490002F407A /* NSObject+Measure.h */,
+				C5C4F7BE255A5490002F407A /* NSObject+Measure.m */,
+				C5C4F7C5255A5490002F407A /* NSObject+OpenURL.h */,
+				C5C4F7BD255A5490002F407A /* NSObject+OpenURL.m */,
+				C5C4F7BF255A5490002F407A /* NSObject+Random.h */,
+				C5C4F7B2255A5490002F407A /* NSObject+Random.m */,
+				C5C4F721255A5490002F407A /* NSObject+RichText.h */,
+				C5C4F71F255A5490002F407A /* NSObject+RichText.m */,
+				C5C4F7B9255A5490002F407A /* NSObject+Shake.h */,
+				C5C4F7C2255A5490002F407A /* NSObject+Shake.m */,
+				C5C4F7C0255A5490002F407A /* NSObject+Sound.h */,
+				C5C4F7BB255A5490002F407A /* NSObject+Sound.m */,
+				C5C4F7BC255A5490002F407A /* NSObject+Time.h */,
+				C5C4F7C4255A5490002F407A /* NSObject+Time.m */,
+			);
+			path = "NSObject+Others";
+			sourceTree = "<group>";
+		};
+		C555631D2580A45A004DB33A /* TimeModel */ = {
+			isa = PBXGroup;
+			children = (
+				C55693AF255BC653005C1361 /* TimeModel.h */,
+				C55693B0255BC653005C1361 /* TimeModel.m */,
+			);
+			path = TimeModel;
+			sourceTree = "<group>";
+		};
 		C57A2EA3255E71A4002D39FB /* 左右滑动按钮图标 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1801,8 +1835,6 @@
 				C5C4F75D255A5490002F407A /* NSString+Extras.m */,
 				C5569361255BC520005C1361 /* NSString+Time.h */,
 				C5569362255BC520005C1361 /* NSString+Time.m */,
-				C55693AF255BC653005C1361 /* TimeModel.h */,
-				C55693B0255BC653005C1361 /* TimeModel.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1998,25 +2030,9 @@
 		C5C4F7B1255A5490002F407A /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F721255A5490002F407A /* NSObject+RichText.h */,
-				C5C4F71F255A5490002F407A /* NSObject+RichText.m */,
-				C5C4F7B2255A5490002F407A /* NSObject+Random.m */,
-				C5C4F7B3255A5490002F407A /* NSObject+AFNReachability.m */,
+				C555631D2580A45A004DB33A /* TimeModel */,
+				C555631C2580A438004DB33A /* NSObject+Others */,
 				C5C4F7B4255A5490002F407A /* NSObject+Alert */,
-				C5C4F7B9255A5490002F407A /* NSObject+Shake.h */,
-				C5C4F7BA255A5490002F407A /* NSObject+Extras.h */,
-				C5C4F7BB255A5490002F407A /* NSObject+Sound.m */,
-				C5C4F7BC255A5490002F407A /* NSObject+Time.h */,
-				C5C4F7BD255A5490002F407A /* NSObject+OpenURL.m */,
-				C5C4F7BE255A5490002F407A /* NSObject+Measure.m */,
-				C5C4F7BF255A5490002F407A /* NSObject+Random.h */,
-				C5C4F7C0255A5490002F407A /* NSObject+Sound.h */,
-				C5C4F7C1255A5490002F407A /* NSObject+Extras.m */,
-				C5C4F7C2255A5490002F407A /* NSObject+Shake.m */,
-				C5C4F7C3255A5490002F407A /* NSObject+AFNReachability.h */,
-				C5C4F7C4255A5490002F407A /* NSObject+Time.m */,
-				C5C4F7C5255A5490002F407A /* NSObject+OpenURL.h */,
-				C5C4F7C6255A5490002F407A /* NSObject+Measure.h */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
