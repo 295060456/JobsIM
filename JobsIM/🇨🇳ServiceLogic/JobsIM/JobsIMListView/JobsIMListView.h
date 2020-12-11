@@ -14,7 +14,7 @@
 #endif
 
 #import "JobsIMListTBVCell.h"
-#import "CustomGifHeader.h"
+#import "LOTAnimationMJRefreshHeader.h"
 #import "JobsIMListDataModel.h"
 #import "UIImage+YBGIF.h"
 

@@ -9,7 +9,7 @@
 #import "MJRefreshWithLottieTableViewHeader.h"
 #import "JobsIMChatInfoTBVCell.h"
 #import "JobsIMInputview.h"
-#import "CustomGifHeader.h"
+#import "LOTAnimationMJRefreshHeader.h"
 #import "JobsIMChatInfoModel.h"
 #import "TimeModel.h"
 

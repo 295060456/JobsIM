@@ -139,7 +139,7 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
         _tableView.mj_footer.hidden = NO;
         
         @weakify(self)
-        _tableView.mj_header = [CustomGifHeader headerWithRefreshingBlock:^{
+        _tableView.mj_header = [LOTAnimationMJRefreshHeader headerWithRefreshingBlock:^{
             @strongify(self)
             sleep(3);
             [self pullToRefresh];
