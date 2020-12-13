@@ -47,8 +47,7 @@
             JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
             chatInfoModel.chatTextStr = data.contentStr;
             chatInfoModel.userNameStr = data.usernameStr;
-            TimeModel *timeModel = TimeModel.new;
-            [timeModel makeSpecificTime];
+            TimeModel *timeModel = [TimeModel makeSpecificTime];
             chatInfoModel.chatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
             chatInfoModel.userIconIMG = data.userHeaderIMG;
             chatInfoModel.identification = @"我是服务器";

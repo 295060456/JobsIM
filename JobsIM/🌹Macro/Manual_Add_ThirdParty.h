@@ -13,16 +13,16 @@
 
 //NSString
 #import "NSString+Extras.h"
-#import "NSString+Time.h"
 //UIFont
 #import "UIFont+Extras.h"
 //NSObject
+#import "TimeModel.h"
+#import "NSObject+Time.h"
 #import "NSObject+Measure.h"
 #import "NSObject+Extras.h"
 #import "NSObject+Random.h"
 #import "NSObject+Shake.h"
 #import "NSObject+Sound.h"
-#import "NSObject+Time.h"
 #import "NSObject+SYSAlertController.h"
 #import "NSObject+SPAlertController.h"
 #import "NSObject+OpenURL.h"

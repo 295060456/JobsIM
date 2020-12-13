@@ -142,8 +142,7 @@ UITableViewDelegate
         
         JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
         chatInfoModel.chatTextStr = @"有内鬼，取消交易";
-        TimeModel *timeModel = TimeModel.new;
-        [timeModel makeSpecificTime];
+        TimeModel *timeModel = [TimeModel makeSpecificTime];
         chatInfoModel.chatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
         chatInfoModel.userIconIMG = requestParamsChatInfoModel.userIconIMG;//KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_2");//我自己的头像
         chatInfoModel.identification = @"我是服务器";
@@ -377,8 +376,7 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
                 
                 JobsIMChatInfoModel *chatInfoModel = JobsIMChatInfoModel.new;
                 chatInfoModel.chatTextStr = tf.text;
-                TimeModel *timeModel = TimeModel.new;
-                [timeModel makeSpecificTime];
+                TimeModel *timeModel = [TimeModel makeSpecificTime];
                 chatInfoModel.chatTextTimeStr = [NSString stringWithFormat:@"%ld:%ld:%ld",timeModel.currentHour,timeModel.currentMin,timeModel.currentSec];
                 chatInfoModel.userIconIMG = KBuddleIMG(@"⚽️PicResource", @"头像", nil, @"头像_1");//我自己的头像
                 chatInfoModel.identification = @"我是我自己";
