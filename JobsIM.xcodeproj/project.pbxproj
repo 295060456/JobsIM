@@ -38,6 +38,7 @@
 		C544BF7D2583752800C6CF2A /* MJRefreshConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BF792583752800C6CF2A /* MJRefreshConfigModel.m */; };
 		C54AAF23255E57A5000A314D /* UITableViewCell+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */; };
 		C553900325727F77008BB60F /* SocketIOTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C553900125727F77008BB60F /* SocketIOTools.m */; };
+		C56BB8B3258798860043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB8B0258798860043C977 /* UIControl+XY.m */; };
 		C5776FE2257285BA00B7DCAB /* 输入框无值@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */; };
 		C5776FE3257285BA00B7DCAB /* 输入框有值@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FDF257285BA00B7DCAB /* 输入框有值@3x.png */; };
 		C5776FE4257285BA00B7DCAB /* 输入框有值@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FE0257285BA00B7DCAB /* 输入框有值@2x.png */; };
@@ -68,10 +69,6 @@
 		C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40195255A65A6002F407A /* GCD_TimerManager.m */; };
 		C5C401A0255A65A6002F407A /* Nanosecond_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40199255A65A6002F407A /* Nanosecond_TimerManager.m */; };
 		C5C401A1255A65A6002F407A /* CADisplayLink_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4019C255A65A6002F407A /* CADisplayLink_TimerManager.m */; };
-		C5C401AD255A65CF002F407A /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C401AB255A65CF002F407A /* UIControl+XY.m */; };
-		C5C401C1255A6608002F407A /* PlaySound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C401BB255A6608002F407A /* PlaySound.m */; };
-		C5C401C3255A6608002F407A /* Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5C401BD255A6608002F407A /* Sound.wav */; };
-		C5C401C4255A6608002F407A /* SoundBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C401BE255A6608002F407A /* SoundBtn.m */; };
 		C5C401D1255A6629002F407A /* FileFolderHandleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C401D0255A6629002F407A /* FileFolderHandleTool.m */; };
 		C5C4023D255A6671002F407A /* UITabBarItem+TLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40202255A6671002F407A /* UITabBarItem+TLAnimation.m */; };
 		C5C4023E255A6671002F407A /* TabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40204255A6671002F407A /* TabBarItem.m */; };
@@ -213,11 +210,14 @@
 		C5C4F819255A5491002F407A /* NSObject+AFNReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7B3255A5490002F407A /* NSObject+AFNReachability.m */; };
 		C5C4F81A255A5491002F407A /* NSObject+SPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7B5255A5490002F407A /* NSObject+SPAlertController.m */; };
 		C5C4F81B255A5491002F407A /* NSObject+SYSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7B6255A5490002F407A /* NSObject+SYSAlertController.m */; };
-		C5C4F81C255A5491002F407A /* NSObject+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7BB255A5490002F407A /* NSObject+Sound.m */; };
 		C5C4F81D255A5491002F407A /* NSObject+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7BD255A5490002F407A /* NSObject+OpenURL.m */; };
 		C5C4F81E255A5491002F407A /* NSObject+Measure.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7BE255A5490002F407A /* NSObject+Measure.m */; };
 		C5C4F81F255A5491002F407A /* NSObject+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7C1255A5490002F407A /* NSObject+Extras.m */; };
 		C5C4F820255A5491002F407A /* NSObject+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7C2255A5490002F407A /* NSObject+Shake.m */; };
+		C5D0B7A825878D03002CA224 /* Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B7A425878D03002CA224 /* Sound.wav */; };
+		C5D0B7A925878D03002CA224 /* 带有按键音的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B7A525878D03002CA224 /* 带有按键音的按钮.md */; };
+		C5D0B7AA25878D03002CA224 /* SoundBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B7A625878D03002CA224 /* SoundBtn.m */; };
+		C5D0B7B325878D2A002CA224 /* NSObject+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B7B125878D2A002CA224 /* NSObject+Sound.m */; };
 		C5D601632586310800029AFF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D601612586310800029AFF /* BaseViewController.m */; };
 		C5D6016C2586311700029AFF /* UIViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6016B2586311700029AFF /* UIViewController+NavigationBar.m */; };
 		C5D6D93825860DFB00029AFF /* NSTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6D93725860DFB00029AFF /* NSTimerManager.m */; };
@@ -313,6 +313,9 @@
 		C553900825727FB3008BB60F /* UBLLivingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBLLivingVC.h; sourceTree = "<group>"; };
 		C553900925727FB3008BB60F /* UBLLivingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBLLivingVC.m; sourceTree = "<group>"; };
 		C5568B7E255BA79E005C1361 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C56BB8B0258798860043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
+		C56BB8B1258798860043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
+		C56BB8B2258798860043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
 		C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框无值@2x.png"; sourceTree = "<group>"; };
 		C5776FDF257285BA00B7DCAB /* 输入框有值@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框有值@3x.png"; sourceTree = "<group>"; };
 		C5776FE0257285BA00B7DCAB /* 输入框有值@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框有值@2x.png"; sourceTree = "<group>"; };
@@ -357,15 +360,6 @@
 		C5C4019A255A65A6002F407A /* Nanosecond_TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nanosecond_TimerManager.h; sourceTree = "<group>"; };
 		C5C4019C255A65A6002F407A /* CADisplayLink_TimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLink_TimerManager.m; sourceTree = "<group>"; };
 		C5C4019D255A65A6002F407A /* CADisplayLink_TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLink_TimerManager.h; sourceTree = "<group>"; };
-		C5C401A9255A65CF002F407A /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
-		C5C401AA255A65CF002F407A /* iOS小技巧：用runtime 解决UIButton 重复点击问题 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题"; sourceTree = "<group>"; };
-		C5C401AB255A65CF002F407A /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
-		C5C401BB255A6608002F407A /* PlaySound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySound.m; sourceTree = "<group>"; };
-		C5C401BC255A6608002F407A /* 带有按键音的按钮 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "带有按键音的按钮"; sourceTree = "<group>"; };
-		C5C401BD255A6608002F407A /* Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound.wav; sourceTree = "<group>"; };
-		C5C401BE255A6608002F407A /* SoundBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundBtn.m; sourceTree = "<group>"; };
-		C5C401BF255A6608002F407A /* PlaySound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaySound.h; sourceTree = "<group>"; };
-		C5C401C0255A6608002F407A /* SoundBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundBtn.h; sourceTree = "<group>"; };
 		C5C401CF255A6629002F407A /* FileFolderHandleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileFolderHandleTool.h; sourceTree = "<group>"; };
 		C5C401D0255A6629002F407A /* FileFolderHandleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileFolderHandleTool.m; sourceTree = "<group>"; };
 		C5C401FF255A6671002F407A /* TabbarControllerSysEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarControllerSysEx.h; sourceTree = "<group>"; };
@@ -635,16 +629,20 @@
 		C5C4F7B8255A5490002F407A /* NSObject+SYSAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SYSAlertController.h"; sourceTree = "<group>"; };
 		C5C4F7B9255A5490002F407A /* NSObject+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Shake.h"; sourceTree = "<group>"; };
 		C5C4F7BA255A5490002F407A /* NSObject+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extras.h"; sourceTree = "<group>"; };
-		C5C4F7BB255A5490002F407A /* NSObject+Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sound.m"; sourceTree = "<group>"; };
 		C5C4F7BD255A5490002F407A /* NSObject+OpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OpenURL.m"; sourceTree = "<group>"; };
 		C5C4F7BE255A5490002F407A /* NSObject+Measure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Measure.m"; sourceTree = "<group>"; };
 		C5C4F7BF255A5490002F407A /* NSObject+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Random.h"; sourceTree = "<group>"; };
-		C5C4F7C0255A5490002F407A /* NSObject+Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sound.h"; sourceTree = "<group>"; };
 		C5C4F7C1255A5490002F407A /* NSObject+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extras.m"; sourceTree = "<group>"; };
 		C5C4F7C2255A5490002F407A /* NSObject+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Shake.m"; sourceTree = "<group>"; };
 		C5C4F7C3255A5490002F407A /* NSObject+AFNReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AFNReachability.h"; sourceTree = "<group>"; };
 		C5C4F7C5255A5490002F407A /* NSObject+OpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OpenURL.h"; sourceTree = "<group>"; };
 		C5C4F7C6255A5490002F407A /* NSObject+Measure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Measure.h"; sourceTree = "<group>"; };
+		C5D0B7A425878D03002CA224 /* Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound.wav; sourceTree = "<group>"; };
+		C5D0B7A525878D03002CA224 /* 带有按键音的按钮.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "带有按键音的按钮.md"; sourceTree = "<group>"; };
+		C5D0B7A625878D03002CA224 /* SoundBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundBtn.m; sourceTree = "<group>"; };
+		C5D0B7A725878D03002CA224 /* SoundBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundBtn.h; sourceTree = "<group>"; };
+		C5D0B7B125878D2A002CA224 /* NSObject+Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sound.m"; sourceTree = "<group>"; };
+		C5D0B7B225878D2A002CA224 /* NSObject+Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sound.h"; sourceTree = "<group>"; };
 		C5D601612586310800029AFF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		C5D601622586310800029AFF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		C5D6016A2586311700029AFF /* UIViewController+NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBar.h"; sourceTree = "<group>"; };
@@ -1195,8 +1193,6 @@
 				C5C40277255A66D2002F407A /* Suspend */,
 				C5C401FE255A6671002F407A /* 深度拓展系统UITabBar全家桶 */,
 				C5C401CE255A6629002F407A /* 文件夹操作 */,
-				C5C401BA255A6608002F407A /* SoundBtn */,
-				C5C401A8255A65CF002F407A /* UIControl+XY */,
 				C5C4018F255A65A6002F407A /* TimerManager */,
 				C5C40188255A6588002F407A /* ECAuthorizationTools */,
 				C5C40173255A654D002F407A /* 分享控件 */,
@@ -1270,24 +1266,11 @@
 		C5C401A8255A65CF002F407A /* UIControl+XY */ = {
 			isa = PBXGroup;
 			children = (
-				C5C401AA255A65CF002F407A /* iOS小技巧：用runtime 解决UIButton 重复点击问题 */,
-				C5C401A9255A65CF002F407A /* UIControl+XY.h */,
-				C5C401AB255A65CF002F407A /* UIControl+XY.m */,
+				C56BB8B2258798860043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */,
+				C56BB8B1258798860043C977 /* UIControl+XY.h */,
+				C56BB8B0258798860043C977 /* UIControl+XY.m */,
 			);
 			path = "UIControl+XY";
-			sourceTree = "<group>";
-		};
-		C5C401BA255A6608002F407A /* SoundBtn */ = {
-			isa = PBXGroup;
-			children = (
-				C5C401BC255A6608002F407A /* 带有按键音的按钮 */,
-				C5C401BF255A6608002F407A /* PlaySound.h */,
-				C5C401BB255A6608002F407A /* PlaySound.m */,
-				C5C401BD255A6608002F407A /* Sound.wav */,
-				C5C401C0255A6608002F407A /* SoundBtn.h */,
-				C5C401BE255A6608002F407A /* SoundBtn.m */,
-			);
-			path = SoundBtn;
 			sourceTree = "<group>";
 		};
 		C5C401CE255A6629002F407A /* 文件夹操作 */ = {
@@ -1756,6 +1739,7 @@
 		C5C4F70F255A5490002F407A /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C5C401A8255A65CF002F407A /* UIControl+XY */,
 				C5C4F7A9255A5490002F407A /* CALayer */,
 				C5C4F793255A5490002F407A /* NSArray */,
 				C5C4F7B1255A5490002F407A /* NSObject */,
@@ -1825,6 +1809,7 @@
 		C5C4F72C255A5490002F407A /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				C5D0B7A325878D03002CA224 /* SoundBtn */,
 				C5C4F72E255A5490002F407A /* 高度自定义的按钮 */,
 			);
 			path = UIButton;
@@ -2159,6 +2144,17 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
+		C5D0B7A325878D03002CA224 /* SoundBtn */ = {
+			isa = PBXGroup;
+			children = (
+				C5D0B7A425878D03002CA224 /* Sound.wav */,
+				C5D0B7A525878D03002CA224 /* 带有按键音的按钮.md */,
+				C5D0B7A625878D03002CA224 /* SoundBtn.m */,
+				C5D0B7A725878D03002CA224 /* SoundBtn.h */,
+			);
+			path = SoundBtn;
+			sourceTree = "<group>";
+		};
 		C5D6C7C42585F1F900029AFF /* NSObject+AFNReachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -2225,8 +2221,8 @@
 		C5D6C8042585F23200029AFF /* NSObject+Sound */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F7C0255A5490002F407A /* NSObject+Sound.h */,
-				C5C4F7BB255A5490002F407A /* NSObject+Sound.m */,
+				C5D0B7B225878D2A002CA224 /* NSObject+Sound.h */,
+				C5D0B7B125878D2A002CA224 /* NSObject+Sound.m */,
 			);
 			path = "NSObject+Sound";
 			sourceTree = "<group>";
@@ -2460,7 +2456,6 @@
 				C5C4F7E2255A5491002F407A /* WhiteRightArrow@3x.png in Resources */,
 				C589BE8D2563D03F00323A2A /* JobsIMListView.md in Resources */,
 				C5C4024A255A6671002F407A /* upgrade.json in Resources */,
-				C5C401C3255A6608002F407A /* Sound.wav in Resources */,
 				C52C9652256408160039EBFE /* 动态头像_2 尺寸126.gif in Resources */,
 				C5C40241255A6671002F407A /* home_priase_animation.json in Resources */,
 				C531CF4B255A83BD005304F6 /* 123.json in Resources */,
@@ -2502,6 +2497,7 @@
 				C5776FE4257285BA00B7DCAB /* 输入框有值@2x.png in Resources */,
 				C531CFAA255A840B005304F6 /* 1234.json in Resources */,
 				C5C40247255A6671002F407A /* green_lottie_tab_home.json in Resources */,
+				C5D0B7A925878D03002CA224 /* 带有按键音的按钮.md in Resources */,
 				C544BF7B2583752800C6CF2A /* JsonRes.bundle in Resources */,
 				C531D023255AB570005304F6 /* 左气泡@2x.png in Resources */,
 				C5C402AB255A6881002F407A /* 启动页SLOGAN.png in Resources */,
@@ -2512,6 +2508,7 @@
 				C5776FE5257285BA00B7DCAB /* 输入框无值@3x.png in Resources */,
 				C52C9651256408160039EBFE /* 动态头像_2 尺寸84.gif in Resources */,
 				C531D024255AB570005304F6 /* 左气泡@3x.png in Resources */,
+				C5D0B7A825878D03002CA224 /* Sound.wav in Resources */,
 				C5C40246255A6671002F407A /* dingdan.json in Resources */,
 				C5C40397255A6C26002F407A /* ZZCircleProgress.bundle in Resources */,
 				C531CF4E255A83BD005304F6 /* 12345.json in Resources */,
@@ -2639,7 +2636,6 @@
 				C5C403A2255A6C26002F407A /* XHLaunchAdConfiguration.m in Sources */,
 				C5C4025E255A6671002F407A /* TLTabBarAnimation.m in Sources */,
 				C589C11A2563F75900323A2A /* JobsIMListDataModel.m in Sources */,
-				C5C401C4255A6608002F407A /* SoundBtn.m in Sources */,
 				C5D77E1E257F5F550087FC92 /* UITextField+Extend.m in Sources */,
 				C5C4023E255A6671002F407A /* TabBarItem.m in Sources */,
 				C5F8390C2560FF45005C6FDA /* JobsAdNoticeView.m in Sources */,
@@ -2653,7 +2649,6 @@
 				C5C40393255A6C26002F407A /* WMZBannerFadeLayout.m in Sources */,
 				C5C40258255A6671002F407A /* JobsPullListTBVCell.m in Sources */,
 				C5C4F80E255A5491002F407A /* NSArray+Extension.m in Sources */,
-				C5C401C1255A6608002F407A /* PlaySound.m in Sources */,
 				C5C40394255A6C26002F407A /* WMZBannerOverLayout.m in Sources */,
 				C5C4F81A255A5491002F407A /* NSObject+SPAlertController.m in Sources */,
 				C5C4F7EE255A5491002F407A /* UIView+Gradient.m in Sources */,
@@ -2699,7 +2694,6 @@
 				C5C40291255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.m in Sources */,
 				C5D77E1F257F5F550087FC92 /* JobsMagicTextField.m in Sources */,
 				C5C4025B255A6671002F407A /* TransitionAnimation.m in Sources */,
-				C5C401AD255A65CF002F407A /* UIControl+XY.m in Sources */,
 				C5C40398255A6C26002F407A /* ZZCountingLabel.m in Sources */,
 				C5C4039A255A6C26002F407A /* XHLaunchAdView.m in Sources */,
 				C5C4F80D255A5491002F407A /* UIView+JHGestureBlock.m in Sources */,
@@ -2715,10 +2709,10 @@
 				C5C4F80B255A5491002F407A /* BaseTableViewer.m in Sources */,
 				C5C4F808255A5491002F407A /* TableViewAnimationKit.m in Sources */,
 				C5C4F7FF255A5491002F407A /* UIViewController+GifImageView.m in Sources */,
-				C5C4F81C255A5491002F407A /* NSObject+Sound.m in Sources */,
 				C5C4F803255A5491002F407A /* UIViewController+TZImagePickerController.m in Sources */,
 				C5C4F806255A5491002F407A /* UIViewController+BaseVC.m in Sources */,
 				C5C40290255A67C4002F407A /* JobsIMAppDelegate+PopupView.m in Sources */,
+				C5D0B7B325878D2A002CA224 /* NSObject+Sound.m in Sources */,
 				C5D6D93825860DFB00029AFF /* NSTimerManager.m in Sources */,
 				C5C4F511255A5203002F407A /* JobsIMSceneDelegate.m in Sources */,
 				C5C402CE255A6A30002F407A /* ViewController@4.m in Sources */,
@@ -2745,6 +2739,7 @@
 				C5C4025F255A6671002F407A /* UITabBar+TLAnimation.m in Sources */,
 				C531CF4F255A83BD005304F6 /* MJRefreshComponent+Lottie.m in Sources */,
 				C5C4F7F5255A5491002F407A /* CollectionViewCell.m in Sources */,
+				C5D0B7AA25878D03002CA224 /* SoundBtn.m in Sources */,
 				C5C4F7EA255A5491002F407A /* UIView+Animation.m in Sources */,
 				C5C4F812255A5491002F407A /* LMHWaterFallLayout.m in Sources */,
 				C5C4F7F4255A5491002F407A /* UICollectionView+RegisterClass.m in Sources */,
@@ -2775,6 +2770,7 @@
 				C5D6D94625860E1500029AFF /* TimeModel.m in Sources */,
 				C5C4F7EF255A5491002F407A /* UIFont+Extras.m in Sources */,
 				C5C4F811255A5491002F407A /* ViewForTableViewFooter.m in Sources */,
+				C56BB8B3258798860043C977 /* UIControl+XY.m in Sources */,
 				C5C4F809255A5491002F407A /* UITableView+XSAnimationKit.m in Sources */,
 				C5C402C2255A6A1A002F407A /* ViewController@2.m in Sources */,
 				C5C4F7EC255A5491002F407A /* UIView+Extras.m in Sources */,

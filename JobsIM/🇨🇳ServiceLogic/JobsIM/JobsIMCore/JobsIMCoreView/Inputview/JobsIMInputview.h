@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIImage+Extras.h"
-#import "PlaySound.h"//播放自定义声音关键代码
+#import "NSObject+Sound.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

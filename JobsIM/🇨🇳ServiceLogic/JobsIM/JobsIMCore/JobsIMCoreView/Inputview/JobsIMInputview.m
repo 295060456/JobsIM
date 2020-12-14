@@ -129,8 +129,8 @@ replacementString:(NSString *)string{
             @strongify(self)
             [self.inputTextField endEditing:YES];
             if (![NSString isNullString:self.inputTextField.text]) {
-                [PlaySound playSoundEffect:@"Sound"
-                                      type:@"wav"];
+                [NSObject playSoundEffect:@"Sound"
+                                     type:@"wav"];
                 if (self.jobsIMInputviewBlock) {
                     self.jobsIMInputviewBlock(self.inputTextField);
                 }

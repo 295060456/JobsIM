@@ -7,8 +7,6 @@
 //
 
 #import "SoundBtn.h"
-#import "PlaySound.h"//播放自定义声音关键代码
-#import "UIControl+XY.h"
 
 @interface SoundBtn (){
 
@@ -21,6 +19,7 @@
 -(instancetype)init{
     if (self = [super init]) {
 //        self.backgroundColor = RandomColor;
+        
         self.uxy_acceptEventInterval = 0.5f;
     }return self;
 }
@@ -28,24 +27,12 @@
 - (void)touchesBegan:(NSSet *)touches
            withEvent:(UIEvent*)event{
     
-    [PlaySound playSoundEffect:@"Sound"
+    [NSObject playSoundEffect:@"Sound"
                           type:@"wav"];
     
     [super touchesBegan:touches
               withEvent:event];
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @end
