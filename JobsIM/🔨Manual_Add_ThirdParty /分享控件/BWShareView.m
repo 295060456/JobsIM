@@ -285,6 +285,4 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     }return _otherArray;
 }
 
-
-
 @end
