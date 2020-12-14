@@ -57,6 +57,9 @@
 		C589BEDA2563D10400323A2A /* JobsIMListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C589BED92563D10400323A2A /* JobsIMListView.m */; };
 		C589BEE02563D33900323A2A /* JobsIMListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C589BEDF2563D33900323A2A /* JobsIMListTBVCell.m */; };
 		C589C11A2563F75900323A2A /* JobsIMListDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C589C1192563F75900323A2A /* JobsIMListDataModel.m */; };
+		C595D2182587143C002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2102587143C002A4531 /* SuspendView.m */; };
+		C595D2192587143C002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2132587143C002A4531 /* SuspendBtn.m */; };
+		C595D21A2587143C002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2172587143C002A4531 /* SuspendLab.m */; };
 		C5BC5B38256155620071CEEE /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B37256155620071CEEE /* EmptyView.m */; };
 		C5C4017B255A6554002F407A /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40176255A6554002F407A /* BWItemModel.m */; };
 		C5C4017C255A6555002F407A /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40177255A6554002F407A /* BWItemCollectionViewCell.m */; };
@@ -104,9 +107,6 @@
 		C5C4025F255A6671002F407A /* UITabBar+TLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40238255A6671002F407A /* UITabBar+TLAnimation.m */; };
 		C5C40260255A6671002F407A /* UITabBar+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40239255A6671002F407A /* UITabBar+Ex.m */; };
 		C5C40261255A6671002F407A /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4023A255A6671002F407A /* CustomTabBar.m */; };
-		C5C40281255A66D2002F407A /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40279255A66D2002F407A /* SuspendBtn.m */; };
-		C5C40282255A66D2002F407A /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4027D255A66D2002F407A /* SuspendLab.m */; };
-		C5C40283255A66D2002F407A /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4027F255A66D2002F407A /* SuspendView.m */; };
 		C5C4028F255A67C4002F407A /* JobsIMAppDelegate+Func.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4028A255A67C4002F407A /* JobsIMAppDelegate+Func.m */; };
 		C5C40290255A67C4002F407A /* JobsIMAppDelegate+PopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4028B255A67C4002F407A /* JobsIMAppDelegate+PopupView.m */; };
 		C5C40291255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4028D255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.m */; };
@@ -332,6 +332,12 @@
 		C589BEDF2563D33900323A2A /* JobsIMListTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMListTBVCell.m; sourceTree = "<group>"; };
 		C589C1182563F75900323A2A /* JobsIMListDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMListDataModel.h; sourceTree = "<group>"; };
 		C589C1192563F75900323A2A /* JobsIMListDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMListDataModel.m; sourceTree = "<group>"; };
+		C595D2102587143C002A4531 /* SuspendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendView.m; sourceTree = "<group>"; };
+		C595D2112587143C002A4531 /* SuspendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendView.h; sourceTree = "<group>"; };
+		C595D2132587143C002A4531 /* SuspendBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendBtn.m; sourceTree = "<group>"; };
+		C595D2142587143C002A4531 /* SuspendBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendBtn.h; sourceTree = "<group>"; };
+		C595D2162587143C002A4531 /* SuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendLab.h; sourceTree = "<group>"; };
+		C595D2172587143C002A4531 /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
 		C5BC5B36256155620071CEEE /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
 		C5BC5B37256155620071CEEE /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
 		C5C40174255A6554002F407A /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
@@ -412,12 +418,6 @@
 		C5C4023A255A6671002F407A /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
 		C5C4023B255A6671002F407A /* UITabBar+TLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+TLAnimation.h"; sourceTree = "<group>"; };
 		C5C4023C255A6671002F407A /* UITabBar+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Ex.h"; sourceTree = "<group>"; };
-		C5C40279255A66D2002F407A /* SuspendBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendBtn.m; sourceTree = "<group>"; };
-		C5C4027A255A66D2002F407A /* SuspendBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendBtn.h; sourceTree = "<group>"; };
-		C5C4027C255A66D2002F407A /* SuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendLab.h; sourceTree = "<group>"; };
-		C5C4027D255A66D2002F407A /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
-		C5C4027F255A66D2002F407A /* SuspendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendView.m; sourceTree = "<group>"; };
-		C5C40280255A66D2002F407A /* SuspendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendView.h; sourceTree = "<group>"; };
 		C5C40289255A67C4002F407A /* JobsIMAppDelegate+Func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JobsIMAppDelegate+Func.h"; sourceTree = "<group>"; };
 		C5C4028A255A67C4002F407A /* JobsIMAppDelegate+Func.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JobsIMAppDelegate+Func.m"; sourceTree = "<group>"; };
 		C5C4028B255A67C4002F407A /* JobsIMAppDelegate+PopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JobsIMAppDelegate+PopupView.m"; sourceTree = "<group>"; };
@@ -890,6 +890,7 @@
 		C544BB67258371F300C6CF2A /* UIViewController+MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				C531CF43255A83BD005304F6 /* MJRefresh + Lottie */,
 				C544BF772583752800C6CF2A /* ConfigModel */,
 				C544BF712583752800C6CF2A /* LOTAnimationMJRefreshHeader */,
 				C544BF762583752800C6CF2A /* UIViewController+MJRefresh.h */,
@@ -1086,6 +1087,96 @@
 			path = JobsIMModel;
 			sourceTree = "<group>";
 		};
+		C595BB8A25864137002A4531 /* UIView+Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F743255A5490002F407A /* UIView+Animation.h */,
+				C5C4F73C255A5490002F407A /* UIView+Animation.m */,
+			);
+			path = "UIView+Animation";
+			sourceTree = "<group>";
+		};
+		C595BB8B2586413D002A4531 /* UIView+Chain */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F73E255A5490002F407A /* UIView+Chain.h */,
+				C5C4F739255A5490002F407A /* UIView+Chain.m */,
+			);
+			path = "UIView+Chain";
+			sourceTree = "<group>";
+		};
+		C595BB8C25864143002A4531 /* UIView+Extras */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F738255A5490002F407A /* UIView+Extras.h */,
+				C5C4F73F255A5490002F407A /* UIView+Extras.m */,
+			);
+			path = "UIView+Extras";
+			sourceTree = "<group>";
+		};
+		C595BB8D25864149002A4531 /* UIView+Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F73A255A5490002F407A /* UIView+Gradient.h */,
+				C5C4F741255A5490002F407A /* UIView+Gradient.m */,
+			);
+			path = "UIView+Gradient";
+			sourceTree = "<group>";
+		};
+		C595BB8E25864150002A4531 /* UIView+Measure */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F744255A5490002F407A /* UIView+Measure.h */,
+				C5C4F73B255A5490002F407A /* UIView+Measure.m */,
+			);
+			path = "UIView+Measure";
+			sourceTree = "<group>";
+		};
+		C595BB8F25864157002A4531 /* UIView+SuspendView */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F742255A5490002F407A /* UIView+SuspendView.h */,
+				C5C4F73D255A5490002F407A /* UIView+SuspendView.m */,
+			);
+			path = "UIView+SuspendView";
+			sourceTree = "<group>";
+		};
+		C595BB902586415E002A4531 /* UIView+ZFPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F737255A5490002F407A /* UIView+ZFPlayer.h */,
+				C5C4F740255A5490002F407A /* UIView+ZFPlayer.m */,
+			);
+			path = "UIView+ZFPlayer";
+			sourceTree = "<group>";
+		};
+		C595D20F2587143C002A4531 /* SuspendView */ = {
+			isa = PBXGroup;
+			children = (
+				C595D2102587143C002A4531 /* SuspendView.m */,
+				C595D2112587143C002A4531 /* SuspendView.h */,
+			);
+			path = SuspendView;
+			sourceTree = "<group>";
+		};
+		C595D2122587143C002A4531 /* SuspendBtn */ = {
+			isa = PBXGroup;
+			children = (
+				C595D2132587143C002A4531 /* SuspendBtn.m */,
+				C595D2142587143C002A4531 /* SuspendBtn.h */,
+			);
+			path = SuspendBtn;
+			sourceTree = "<group>";
+		};
+		C595D2152587143C002A4531 /* SuspendLab */ = {
+			isa = PBXGroup;
+			children = (
+				C595D2162587143C002A4531 /* SuspendLab.h */,
+				C595D2172587143C002A4531 /* SuspendLab.m */,
+			);
+			path = SuspendLab;
+			sourceTree = "<group>";
+		};
 		C5BC5B35256155620071CEEE /* LYEmptyView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1101,7 +1192,6 @@
 			children = (
 				C553900025727F77008BB60F /* SocketTools */,
 				C5BC5B35256155620071CEEE /* LYEmptyView */,
-				C531CF43255A83BD005304F6 /* MJRefresh + Lottie */,
 				C5C40277255A66D2002F407A /* Suspend */,
 				C5C401FE255A6671002F407A /* 深度拓展系统UITabBar全家桶 */,
 				C5C401CE255A6629002F407A /* 文件夹操作 */,
@@ -1358,38 +1448,11 @@
 		C5C40277255A66D2002F407A /* Suspend */ = {
 			isa = PBXGroup;
 			children = (
-				C5C40278255A66D2002F407A /* SuspendBtn */,
-				C5C4027B255A66D2002F407A /* SuspendLab */,
-				C5C4027E255A66D2002F407A /* SuspendView */,
+				C595D2122587143C002A4531 /* SuspendBtn */,
+				C595D2152587143C002A4531 /* SuspendLab */,
+				C595D20F2587143C002A4531 /* SuspendView */,
 			);
 			path = Suspend;
-			sourceTree = "<group>";
-		};
-		C5C40278255A66D2002F407A /* SuspendBtn */ = {
-			isa = PBXGroup;
-			children = (
-				C5C40279255A66D2002F407A /* SuspendBtn.m */,
-				C5C4027A255A66D2002F407A /* SuspendBtn.h */,
-			);
-			path = SuspendBtn;
-			sourceTree = "<group>";
-		};
-		C5C4027B255A66D2002F407A /* SuspendLab */ = {
-			isa = PBXGroup;
-			children = (
-				C5C4027C255A66D2002F407A /* SuspendLab.h */,
-				C5C4027D255A66D2002F407A /* SuspendLab.m */,
-			);
-			path = SuspendLab;
-			sourceTree = "<group>";
-		};
-		C5C4027E255A66D2002F407A /* SuspendView */ = {
-			isa = PBXGroup;
-			children = (
-				C5C4027F255A66D2002F407A /* SuspendView.m */,
-				C5C40280255A66D2002F407A /* SuspendView.h */,
-			);
-			path = SuspendView;
 			sourceTree = "<group>";
 		};
 		C5C40287255A6707002F407A /* AppDelegate */ = {
@@ -1789,20 +1852,13 @@
 		C5C4F736255A5490002F407A /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F743255A5490002F407A /* UIView+Animation.h */,
-				C5C4F73C255A5490002F407A /* UIView+Animation.m */,
-				C5C4F73E255A5490002F407A /* UIView+Chain.h */,
-				C5C4F739255A5490002F407A /* UIView+Chain.m */,
-				C5C4F738255A5490002F407A /* UIView+Extras.h */,
-				C5C4F73F255A5490002F407A /* UIView+Extras.m */,
-				C5C4F73A255A5490002F407A /* UIView+Gradient.h */,
-				C5C4F741255A5490002F407A /* UIView+Gradient.m */,
-				C5C4F744255A5490002F407A /* UIView+Measure.h */,
-				C5C4F73B255A5490002F407A /* UIView+Measure.m */,
-				C5C4F742255A5490002F407A /* UIView+SuspendView.h */,
-				C5C4F73D255A5490002F407A /* UIView+SuspendView.m */,
-				C5C4F737255A5490002F407A /* UIView+ZFPlayer.h */,
-				C5C4F740255A5490002F407A /* UIView+ZFPlayer.m */,
+				C595BB8A25864137002A4531 /* UIView+Animation */,
+				C595BB8B2586413D002A4531 /* UIView+Chain */,
+				C595BB8C25864143002A4531 /* UIView+Extras */,
+				C595BB8D25864149002A4531 /* UIView+Gradient */,
+				C595BB8E25864150002A4531 /* UIView+Measure */,
+				C595BB8F25864157002A4531 /* UIView+SuspendView */,
+				C595BB902586415E002A4531 /* UIView+ZFPlayer */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -2580,7 +2636,6 @@
 				C5C4F522255A5204002F407A /* main.m in Sources */,
 				C5C4F7E7255A5491002F407A /* UIColor+Hex.m in Sources */,
 				C5C4F7E6255A5491002F407A /* UIButton+ImageTitleSpacing.m in Sources */,
-				C5C40281255A66D2002F407A /* SuspendBtn.m in Sources */,
 				C5C403A2255A6C26002F407A /* XHLaunchAdConfiguration.m in Sources */,
 				C5C4025E255A6671002F407A /* TLTabBarAnimation.m in Sources */,
 				C589C11A2563F75900323A2A /* JobsIMListDataModel.m in Sources */,
@@ -2611,6 +2666,7 @@
 				C5C4017D255A6555002F407A /* BWShareView.m in Sources */,
 				C5C4023F255A6671002F407A /* TabBarControllerConfig.m in Sources */,
 				C5C4028F255A67C4002F407A /* JobsIMAppDelegate+Func.m in Sources */,
+				C595D2192587143C002A4531 /* SuspendBtn.m in Sources */,
 				C5C4F810255A5491002F407A /* ViewForTableViewHeader.m in Sources */,
 				C589BEE02563D33900323A2A /* JobsIMListTBVCell.m in Sources */,
 				C5C4F7D7255A5491002F407A /* UIImage+YBGIF.m in Sources */,
@@ -2619,6 +2675,7 @@
 				C5C4039D255A6C26002F407A /* XHLaunchAdConst.m in Sources */,
 				C5C40261255A6671002F407A /* CustomTabBar.m in Sources */,
 				C5C4039C255A6C26002F407A /* XHLaunchImageView.m in Sources */,
+				C595D21A2587143C002A4531 /* SuspendLab.m in Sources */,
 				C5D601632586310800029AFF /* BaseViewController.m in Sources */,
 				C5C4F7F6255A5491002F407A /* UIImageView+GIF.m in Sources */,
 				C5C4F802255A5491002F407A /* UIViewController+TZImagePickerControllerDelegate.m in Sources */,
@@ -2640,12 +2697,10 @@
 				C5C4F7DC255A5491002F407A /* UIImage+Overlay.m in Sources */,
 				C5D6016C2586311700029AFF /* UIViewController+NavigationBar.m in Sources */,
 				C5C4F816255A5491002F407A /* CALayer+Anim.m in Sources */,
-				C5C40283255A66D2002F407A /* SuspendView.m in Sources */,
 				C5C40291255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.m in Sources */,
 				C5D77E1F257F5F550087FC92 /* JobsMagicTextField.m in Sources */,
 				C5C4025B255A6671002F407A /* TransitionAnimation.m in Sources */,
 				C5C401AD255A65CF002F407A /* UIControl+XY.m in Sources */,
-				C5C40282255A66D2002F407A /* SuspendLab.m in Sources */,
 				C5C40398255A6C26002F407A /* ZZCountingLabel.m in Sources */,
 				C5C4039A255A6C26002F407A /* XHLaunchAdView.m in Sources */,
 				C5C4F80D255A5491002F407A /* UIView+JHGestureBlock.m in Sources */,
@@ -2704,6 +2759,7 @@
 				C5D77E20257F5F550087FC92 /* CJTextField.m in Sources */,
 				C5C4F7FE255A5491002F407A /* UIViewController+BRPickerView.m in Sources */,
 				C5C401A0255A65A6002F407A /* Nanosecond_TimerManager.m in Sources */,
+				C595D2182587143C002A4531 /* SuspendView.m in Sources */,
 				C5C4F7F7255A5491002F407A /* NavigationBar.m in Sources */,
 				C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */,
 				C5BC5B38256155620071CEEE /* EmptyView.m in Sources */,
