@@ -11,6 +11,8 @@
 		C5226A0D25875852004447FB /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226A0825875852004447FB /* BWItemCollectionViewCell.m */; };
 		C5226A0E25875852004447FB /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226A0A25875852004447FB /* BWShareView.m */; };
 		C5226A0F25875852004447FB /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226A0B25875852004447FB /* BWItemModel.m */; };
+		C5267C8D258A4AE50095A681 /* JobsMagicTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5267C8B258A4AE40095A681 /* JobsMagicTextField.m */; };
+		C5267E6B258A4B380095A681 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5267E6A258A4B380095A681 /* EmptyView.m */; };
 		C52C96012563FB180039EBFE /* 跳动的竖线.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FB2563FB180039EBFE /* 跳动的竖线.gif */; };
 		C52C96022563FB180039EBFE /* Bt9h.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FC2563FB180039EBFE /* Bt9h.gif */; };
 		C52C96032563FB180039EBFE /* 热度.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FD2563FB180039EBFE /* 热度.gif */; };
@@ -65,7 +67,6 @@
 		C595D2182587143C002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2102587143C002A4531 /* SuspendView.m */; };
 		C595D2192587143C002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2132587143C002A4531 /* SuspendBtn.m */; };
 		C595D21A2587143C002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2172587143C002A4531 /* SuspendLab.m */; };
-		C5BC5B38256155620071CEEE /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B37256155620071CEEE /* EmptyView.m */; };
 		C5C4018B255A6588002F407A /* ECAuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4018A255A6588002F407A /* ECAuthorizationTools.m */; };
 		C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40195255A65A6002F407A /* GCD_TimerManager.m */; };
 		C5C401A0255A65A6002F407A /* Nanosecond_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40199255A65A6002F407A /* Nanosecond_TimerManager.m */; };
@@ -147,7 +148,7 @@
 		C5C4F522255A5204002F407A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F521255A5204002F407A /* main.m */; };
 		C5C4F52C255A5204002F407A /* JobsIMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F52B255A5204002F407A /* JobsIMTests.m */; };
 		C5C4F537255A5204002F407A /* JobsIMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F536255A5204002F407A /* JobsIMUITests.m */; };
-		C5C4F706255A5418002F407A /* YBNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F6FC255A5418002F407A /* YBNotificationManager.m */; };
+		C5C4F706255A5418002F407A /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F6FC255A5418002F407A /* NotificationManager.m */; };
 		C5C4F7D7255A5491002F407A /* UIImage+YBGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F711255A5490002F407A /* UIImage+YBGIF.m */; };
 		C5C4F7D8255A5491002F407A /* UIImage+Tailor.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F713255A5490002F407A /* UIImage+Tailor.m */; };
 		C5C4F7DA255A5491002F407A /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F716255A5490002F407A /* UIImage+Extras.m */; };
@@ -227,7 +228,6 @@
 		C5D77E1C257F5F550087FC92 /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77E0D257F5F550087FC92 /* ZYTextField+HistoryDataList.m */; };
 		C5D77E1D257F5F550087FC92 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5D77E10257F5F550087FC92 /* ZYTextField.bundle */; };
 		C5D77E1E257F5F550087FC92 /* UITextField+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77E13257F5F550087FC92 /* UITextField+Extend.m */; };
-		C5D77E1F257F5F550087FC92 /* JobsMagicTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77E15257F5F550087FC92 /* JobsMagicTextField.m */; };
 		C5D77E20257F5F550087FC92 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77E18257F5F550087FC92 /* CJTextField.m */; };
 		C5F8390C2560FF45005C6FDA /* JobsAdNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F8390B2560FF45005C6FDA /* JobsAdNoticeView.m */; };
 		CE5F628AF75A6DEE5CEEA0D8 /* Pods_JobsIMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 536020E7D65D3736001C7ED1 /* Pods_JobsIMTests.framework */; };
@@ -268,6 +268,10 @@
 		C5226A0925875852004447FB /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
 		C5226A0A25875852004447FB /* BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWShareView.m; sourceTree = "<group>"; };
 		C5226A0B25875852004447FB /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
+		C5267C8B258A4AE40095A681 /* JobsMagicTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsMagicTextField.m; sourceTree = "<group>"; };
+		C5267C8C258A4AE40095A681 /* JobsMagicTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsMagicTextField.h; sourceTree = "<group>"; };
+		C5267E69258A4B380095A681 /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
+		C5267E6A258A4B380095A681 /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
 		C52C95FB2563FB180039EBFE /* 跳动的竖线.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "跳动的竖线.gif"; sourceTree = "<group>"; };
 		C52C95FC2563FB180039EBFE /* Bt9h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bt9h.gif; sourceTree = "<group>"; };
 		C52C95FD2563FB180039EBFE /* 热度.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "热度.gif"; sourceTree = "<group>"; };
@@ -315,6 +319,8 @@
 		C553900825727FB3008BB60F /* UBLLivingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBLLivingVC.h; sourceTree = "<group>"; };
 		C553900925727FB3008BB60F /* UBLLivingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBLLivingVC.m; sourceTree = "<group>"; };
 		C5568B7E255BA79E005C1361 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C558E178258A1A2B0078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
+		C558E179258A1A3B0078DB8F /* XHLaunchAd不用pod导入的情况说明.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "XHLaunchAd不用pod导入的情况说明.md"; sourceTree = "<group>"; };
 		C56BB8B0258798860043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BB8B1258798860043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C56BB8B2258798860043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
@@ -350,8 +356,6 @@
 		C595D2142587143C002A4531 /* SuspendBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendBtn.h; sourceTree = "<group>"; };
 		C595D2162587143C002A4531 /* SuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendLab.h; sourceTree = "<group>"; };
 		C595D2172587143C002A4531 /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
-		C5BC5B36256155620071CEEE /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
-		C5BC5B37256155620071CEEE /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
 		C5C40189255A6588002F407A /* ECAuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAuthorizationTools.h; sourceTree = "<group>"; };
 		C5C4018A255A6588002F407A /* ECAuthorizationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAuthorizationTools.m; sourceTree = "<group>"; };
 		C5C40190255A65A6002F407A /* TimerManager_DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager_DefineStructure.h; sourceTree = "<group>"; };
@@ -496,8 +500,8 @@
 		C5C4F6F7255A5418002F407A /* DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineStructure.h; sourceTree = "<group>"; };
 		C5C4F6F8255A5418002F407A /* Pods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pods.h; sourceTree = "<group>"; };
 		C5C4F6F9255A5418002F407A /* Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Other.h; sourceTree = "<group>"; };
-		C5C4F6FB255A5418002F407A /* YBNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBNotificationManager.h; sourceTree = "<group>"; };
-		C5C4F6FC255A5418002F407A /* YBNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBNotificationManager.m; sourceTree = "<group>"; };
+		C5C4F6FB255A5418002F407A /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationManager.h; sourceTree = "<group>"; };
+		C5C4F6FC255A5418002F407A /* NotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationManager.m; sourceTree = "<group>"; };
 		C5C4F6FD255A5418002F407A /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 		C5C4F6FE255A5418002F407A /* AABlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABlock.h; sourceTree = "<group>"; };
 		C5C4F6FF255A5418002F407A /* Manual_Add_ThirdParty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manual_Add_ThirdParty.h; sourceTree = "<group>"; };
@@ -661,8 +665,6 @@
 		C5D77E10257F5F550087FC92 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
 		C5D77E12257F5F550087FC92 /* UITextField+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extend.h"; sourceTree = "<group>"; };
 		C5D77E13257F5F550087FC92 /* UITextField+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extend.m"; sourceTree = "<group>"; };
-		C5D77E15257F5F550087FC92 /* JobsMagicTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsMagicTextField.m; sourceTree = "<group>"; };
-		C5D77E16257F5F550087FC92 /* JobsMagicTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsMagicTextField.h; sourceTree = "<group>"; };
 		C5D77E18257F5F550087FC92 /* CJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTextField.m; sourceTree = "<group>"; };
 		C5D77E19257F5F550087FC92 /* CJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTextField.h; sourceTree = "<group>"; };
 		C5F8390A2560FF45005C6FDA /* JobsAdNoticeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsAdNoticeView.h; sourceTree = "<group>"; };
@@ -718,6 +720,25 @@
 				4EB24880C956055A2469610C /* Pods-JobsIMUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5267C8A258A4AE40095A681 /* JobsMagicTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C5267C8B258A4AE40095A681 /* JobsMagicTextField.m */,
+				C5267C8C258A4AE40095A681 /* JobsMagicTextField.h */,
+			);
+			path = JobsMagicTextField;
+			sourceTree = "<group>";
+		};
+		C5267E68258A4B380095A681 /* LYEmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				C5267E69258A4B380095A681 /* EmptyView.h */,
+				C5267E6A258A4B380095A681 /* EmptyView.m */,
+			);
+			name = LYEmptyView;
+			path = "../../../../My_BaseProj/My_BaseProj/3rd/🔨Manual_Add_ThirdParty /LYEmptyView";
 			sourceTree = "<group>";
 		};
 		C52C95FA2563FB100039EBFE /* Gif */ = {
@@ -1105,6 +1126,77 @@
 			path = "NSObject+Others";
 			sourceTree = "<group>";
 		};
+		C558E109258A189C0078DB8F /* 第三方头文件管理 */ = {
+			isa = PBXGroup;
+			children = (
+				C558E111258A19010078DB8F /* 手动导入的第三方 */,
+				C558E110258A18F50078DB8F /* Pods */,
+			);
+			path = "第三方头文件管理";
+			sourceTree = "<group>";
+		};
+		C558E110258A18F50078DB8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F6F8255A5418002F407A /* Pods.h */,
+				C558E178258A1A2B0078DB8F /* PodsManual.h */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C558E111258A19010078DB8F /* 手动导入的第三方 */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F6FF255A5418002F407A /* Manual_Add_ThirdParty.h */,
+			);
+			path = "手动导入的第三方";
+			sourceTree = "<group>";
+		};
+		C558E16D258A19920078DB8F /* 各项全局定义 */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F701255A5418002F407A /* 各项宏定义 */,
+				C558E174258A19AC0078DB8F /* 其他的一些全局定义文件 */,
+				C5C4F6FA255A5418002F407A /* NotificationManager */,
+			);
+			path = "各项全局定义";
+			sourceTree = "<group>";
+		};
+		C558E174258A19AC0078DB8F /* 其他的一些全局定义文件 */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F6FE255A5418002F407A /* AABlock.h */,
+				C5C4F6FD255A5418002F407A /* APIKey.h */,
+				C5C4F6F7255A5418002F407A /* DefineStructure.h */,
+			);
+			path = "其他的一些全局定义文件";
+			sourceTree = "<group>";
+		};
+		C558E176258A1A030078DB8F /* 其他杂项 */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F6F9255A5418002F407A /* Other.h */,
+			);
+			path = "其他杂项";
+			sourceTree = "<group>";
+		};
+		C558E177258A1A0E0078DB8F /* Swift-OC桥接头文件 */ = {
+			isa = PBXGroup;
+			children = (
+				C5538FB725727F02008BB60F /* JobsIM-Bridging-Header.h */,
+			);
+			path = "Swift-OC桥接头文件";
+			sourceTree = "<group>";
+		};
+		C558EFB0258A2E1C0078DB8F /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */,
+				C5C4F70F255A5490002F407A /* BaseCustomizeUIKit */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
 		C57A2EA3255E71A4002D39FB /* 左右滑动按钮图标 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1273,24 +1365,14 @@
 			path = SuspendLab;
 			sourceTree = "<group>";
 		};
-		C5BC5B35256155620071CEEE /* LYEmptyView */ = {
-			isa = PBXGroup;
-			children = (
-				C5BC5B36256155620071CEEE /* EmptyView.h */,
-				C5BC5B37256155620071CEEE /* EmptyView.m */,
-			);
-			name = LYEmptyView;
-			path = ../../../commentList/commentList/3rd/LYEmptyView;
-			sourceTree = "<group>";
-		};
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5267E68258A4B380095A681 /* LYEmptyView */,
 				C5C40173255A654D002F407A /* 分享控件 */,
 				C5C401FE255A6671002F407A /* 深度拓展系统UITabBar全家桶 */,
 				C5C401CE255A6629002F407A /* 文件夹操作 */,
 				C5C40188255A6588002F407A /* ECAuthorizationTools */,
-				C5BC5B35256155620071CEEE /* LYEmptyView */,
 				C553900025727F77008BB60F /* SocketTools */,
 				C5C40277255A66D2002F407A /* Suspend */,
 				C5C4018F255A65A6002F407A /* TimerManager */,
@@ -1649,14 +1731,14 @@
 			path = "广告或者公示弹出框";
 			sourceTree = "<group>";
 		};
-		C5C4035E255A6C26002F407A /* Pod 不进去的 */ = {
+		C5C4035E255A6C26002F407A /* PodsManual */ = {
 			isa = PBXGroup;
 			children = (
 				C5C4035F255A6C26002F407A /* WMZBanner */,
 				C5C40372255A6C26002F407A /* ZZCircleProgress */,
 				C5C40378255A6C26002F407A /* XHLaunchAd */,
 			);
-			path = "Pod 不进去的";
+			path = PodsManual;
 			sourceTree = "<group>";
 		};
 		C5C4035F255A6C26002F407A /* WMZBanner */ = {
@@ -1684,9 +1766,9 @@
 			children = (
 				C5C40373255A6C26002F407A /* ZZCircleProgress.bundle */,
 				C5C40374255A6C26002F407A /* ZZCircleProgress.h */,
-				C5C40375255A6C26002F407A /* ZZCountingLabel.m */,
-				C5C40376255A6C26002F407A /* ZZCountingLabel.h */,
 				C5C40377255A6C26002F407A /* ZZCircleProgress.m */,
+				C5C40376255A6C26002F407A /* ZZCountingLabel.h */,
+				C5C40375255A6C26002F407A /* ZZCountingLabel.m */,
 			);
 			path = ZZCircleProgress;
 			sourceTree = "<group>";
@@ -1694,6 +1776,7 @@
 		C5C40378255A6C26002F407A /* XHLaunchAd */ = {
 			isa = PBXGroup;
 			children = (
+				C558E179258A1A3B0078DB8F /* XHLaunchAd不用pod导入的情况说明.md */,
 				C5C4037A255A6C26002F407A /* XHLaunchAd.h */,
 				C5C40384255A6C26002F407A /* XHLaunchAd.m */,
 				C5C4038A255A6C26002F407A /* XHLaunchAdButton.h */,
@@ -1723,13 +1806,14 @@
 		C5C4F500255A5203002F407A = {
 			isa = PBXGroup;
 			children = (
-				C5568B7E255BA79E005C1361 /* README.md */,
 				C5C4F50B255A5203002F407A /* JobsIM */,
 				C5C4F52A255A5204002F407A /* JobsIMTests */,
 				C5C4F535255A5204002F407A /* JobsIMUITests */,
-				C5C4F50A255A5203002F407A /* Products */,
-				8FB5CA15BA6C4924F3F21E26 /* Pods */,
 				170A748D8377272BDC7673C4 /* Frameworks */,
+				8FB5CA15BA6C4924F3F21E26 /* Pods */,
+				C5C4035E255A6C26002F407A /* PodsManual */,
+				C5C4F50A255A5203002F407A /* Products */,
+				C5568B7E255BA79E005C1361 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1747,14 +1831,11 @@
 			isa = PBXGroup;
 			children = (
 				C5C4F520255A5204002F407A /* Info.plist */,
-				C5C4F6F6255A5418002F407A /* 🌹Macro */,
-				C5C402A4255A6876002F407A /* 资源文件管理 */,
-				C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */,
-				C5C4F70A255A5454002F407A /* Others */,
 				C5C4F70E255A5484002F407A /* AppDelegate & SceneDelegate */,
-				C5C4F70F255A5490002F407A /* BaseCustomizeUIKit */,
+				C5C4F6F6255A5418002F407A /* 🌹Macro */,
+				C558EFB0258A2E1C0078DB8F /* 3rd */,
+				C5C4F70A255A5454002F407A /* Others */,
 				C5C402B4255A69BC002F407A /* 🇨🇳ServiceLogic */,
-				C5C4035E255A6C26002F407A /* Pod 不进去的 */,
 			);
 			path = JobsIM;
 			sourceTree = "<group>";
@@ -1780,27 +1861,22 @@
 		C5C4F6F6255A5418002F407A /* 🌹Macro */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F6FD255A5418002F407A /* APIKey.h */,
-				C5C4F701255A5418002F407A /* 各项宏定义 */,
-				C5C4F6FA255A5418002F407A /* Notification */,
-				C5C4F6F7255A5418002F407A /* DefineStructure.h */,
-				C5C4F6F8255A5418002F407A /* Pods.h */,
-				C5C4F6FF255A5418002F407A /* Manual_Add_ThirdParty.h */,
-				C5C4F6F9255A5418002F407A /* Other.h */,
-				C5C4F6FE255A5418002F407A /* AABlock.h */,
 				C5C4F700255A5418002F407A /* PrefixHeader.pch */,
-				C5538FB725727F02008BB60F /* JobsIM-Bridging-Header.h */,
+				C558E109258A189C0078DB8F /* 第三方头文件管理 */,
+				C558E16D258A19920078DB8F /* 各项全局定义 */,
+				C558E176258A1A030078DB8F /* 其他杂项 */,
+				C558E177258A1A0E0078DB8F /* Swift-OC桥接头文件 */,
 			);
 			path = "🌹Macro";
 			sourceTree = "<group>";
 		};
-		C5C4F6FA255A5418002F407A /* Notification */ = {
+		C5C4F6FA255A5418002F407A /* NotificationManager */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F6FB255A5418002F407A /* YBNotificationManager.h */,
-				C5C4F6FC255A5418002F407A /* YBNotificationManager.m */,
+				C5C4F6FB255A5418002F407A /* NotificationManager.h */,
+				C5C4F6FC255A5418002F407A /* NotificationManager.m */,
 			);
-			path = Notification;
+			path = NotificationManager;
 			sourceTree = "<group>";
 		};
 		C5C4F701255A5418002F407A /* 各项宏定义 */ = {
@@ -1817,6 +1893,7 @@
 		C5C4F70A255A5454002F407A /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				C5C402A4255A6876002F407A /* 资源文件管理 */,
 				C5C4F515255A5203002F407A /* Main.storyboard */,
 				C5C4F51D255A5204002F407A /* LaunchScreen.storyboard */,
 				C5C4F521255A5204002F407A /* main.m */,
@@ -2216,7 +2293,7 @@
 			children = (
 				C5D77E17257F5F550087FC92 /* CJTextField */,
 				C5D77E08257F5F550087FC92 /* HQTextField */,
-				C5D77E14257F5F550087FC92 /* JobsMagicTextField */,
+				C5267C8A258A4AE40095A681 /* JobsMagicTextField */,
 				C5D77E11257F5F550087FC92 /* UITextField+Extend */,
 				C5D77E0B257F5F550087FC92 /* ZYTextField */,
 			);
@@ -2370,16 +2447,6 @@
 				C5D77E13257F5F550087FC92 /* UITextField+Extend.m */,
 			);
 			path = "UITextField+Extend";
-			sourceTree = "<group>";
-		};
-		C5D77E14257F5F550087FC92 /* JobsMagicTextField */ = {
-			isa = PBXGroup;
-			children = (
-				C5D77E16257F5F550087FC92 /* JobsMagicTextField.h */,
-				C5D77E15257F5F550087FC92 /* JobsMagicTextField.m */,
-			);
-			name = JobsMagicTextField;
-			path = ../../../../Douyin_ZFPlayer/DouYin/BaseCustomizeUIKit/UITextField/JobsMagicTextField;
 			sourceTree = "<group>";
 		};
 		C5D77E17257F5F550087FC92 /* CJTextField */ = {
@@ -2732,7 +2799,7 @@
 				C5C4F7EE255A5491002F407A /* UIView+Gradient.m in Sources */,
 				C5C4F820255A5491002F407A /* NSObject+Shake.m in Sources */,
 				C5C4023D255A6671002F407A /* UITabBarItem+TLAnimation.m in Sources */,
-				C5C4F706255A5418002F407A /* YBNotificationManager.m in Sources */,
+				C5C4F706255A5418002F407A /* NotificationManager.m in Sources */,
 				C5C4F7D8255A5491002F407A /* UIImage+Tailor.m in Sources */,
 				C5C4F7DD255A5491002F407A /* NSObject+RichText.m in Sources */,
 				C5C4023F255A6671002F407A /* TabBarControllerConfig.m in Sources */,
@@ -2770,7 +2837,6 @@
 				C5D6016C2586311700029AFF /* UIViewController+NavigationBar.m in Sources */,
 				C5C4F816255A5491002F407A /* CALayer+Anim.m in Sources */,
 				C5C40291255A67C4002F407A /* JobsIMAppDelegate+XHLaunchAdDelegate.m in Sources */,
-				C5D77E1F257F5F550087FC92 /* JobsMagicTextField.m in Sources */,
 				C5C4025B255A6671002F407A /* TransitionAnimation.m in Sources */,
 				C5C40398255A6C26002F407A /* ZZCountingLabel.m in Sources */,
 				C5C4039A255A6C26002F407A /* XHLaunchAdView.m in Sources */,
@@ -2835,13 +2901,13 @@
 				C595D2182587143C002A4531 /* SuspendView.m in Sources */,
 				C5C4F7F7255A5491002F407A /* NavigationBar.m in Sources */,
 				C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */,
-				C5BC5B38256155620071CEEE /* EmptyView.m in Sources */,
 				C5C4F51A255A5203002F407A /* JobsIM.xcdatamodeld in Sources */,
 				C5C4F7E9255A5491002F407A /* UIView+Measure.m in Sources */,
 				C5C4F81B255A5491002F407A /* NSObject+SYSAlertController.m in Sources */,
 				C5C401D1255A6629002F407A /* FileFolderHandleTool.m in Sources */,
 				C54AAF23255E57A5000A314D /* UITableViewCell+Margin.m in Sources */,
 				C5C40259255A6671002F407A /* JobsPullListAutoSizeView.m in Sources */,
+				C5267E6B258A4B380095A681 /* EmptyView.m in Sources */,
 				C5C4F7E8255A5491002F407A /* UIView+Chain.m in Sources */,
 				C5C4F81E255A5491002F407A /* NSObject+Measure.m in Sources */,
 				C5C402E3255A6ADD002F407A /* NoticePopupView.m in Sources */,
@@ -2852,6 +2918,7 @@
 				C5C4F809255A5491002F407A /* UITableView+XSAnimationKit.m in Sources */,
 				C5C402C2255A6A1A002F407A /* ViewController@2.m in Sources */,
 				C5C4F7EC255A5491002F407A /* UIView+Extras.m in Sources */,
+				C5267C8D258A4AE50095A681 /* JobsMagicTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

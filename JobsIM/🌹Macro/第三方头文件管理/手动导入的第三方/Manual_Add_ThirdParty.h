@@ -9,8 +9,7 @@
 #ifndef Manual_Add_ThirdParty_h
 #define Manual_Add_ThirdParty_h
 
-#import "AABlock.h"
-
+#pragma mark —— BaseCustomizeUIKit
 //NSString
 #import "NSString+Extras.h"
 //UIFont
@@ -71,24 +70,14 @@
 #import "UIColor+Hex.h"
 //UIControl
 #import "UIControl+XY.h"
-
+// UIButton
+#import "UIButton+ImageTitleSpacing.h"
+// UIImage
 #import "LoadingImage.h"
 
-#import "MacroDef_Sys.h"
-#import "MacroDef_Cor.h"
-#import "MacroDef_Size.h"
-#import "MacroDef_Func.h"
-
-#import "UIButton+ImageTitleSpacing.h"
+#pragma mark —— 🔨Manual_Add_ThirdParty
 #import "NSTimerManager.h"
-#import "YBNotificationManager.h"
 #import "TXFileOperation.h"
 #import "FileFolderHandleTool.h"
-
-//Pod 不进去的
-#import "WMZBannerView.h"
-#import "XHLaunchAd.h"
-
-#import "JobsIM-Bridging-Header.h"
 
 #endif /* Manual_Add_ThirdParty_h */
