@@ -32,6 +32,7 @@
 #import "UIView+SuspendView.h"
 #import "UIView+Animation.h"
 #import "UIView+Gradient.h"
+#import "UIView+EmptyData.h"
 //UIViewController
 #import "UIViewController+BaseVC.h"
 #import "UIViewController+BackBtn.h"
@@ -47,6 +48,7 @@
 #import "UIViewController+TZImagePickerControllerDelegate.h"
 #import "UIViewController+TZLocationManager.h"
 #import "UIViewController+NavigationBar.h"
+#import "UIViewController+EmptyData.h"
 //UITableViewHeaderFooterView
 #import "ViewForTableViewFooter.h"
 #import "ViewForTableViewHeader.h"

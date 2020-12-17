@@ -218,6 +218,8 @@
 		C5D0B7A925878D03002CA224 /* 带有按键音的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B7A525878D03002CA224 /* 带有按键音的按钮.md */; };
 		C5D0B7AA25878D03002CA224 /* SoundBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B7A625878D03002CA224 /* SoundBtn.m */; };
 		C5D0B7B325878D2A002CA224 /* NSObject+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B7B125878D2A002CA224 /* NSObject+Sound.m */; };
+		C5D1BE97258B1F7900784D2F /* UIView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1BE95258B1F7900784D2F /* UIView+EmptyData.m */; };
+		C5D1BEA0258B1F8900784D2F /* UIViewController+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1BE9E258B1F8900784D2F /* UIViewController+EmptyData.m */; };
 		C5D601632586310800029AFF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D601612586310800029AFF /* BaseViewController.m */; };
 		C5D6016C2586311700029AFF /* UIViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6016B2586311700029AFF /* UIViewController+NavigationBar.m */; };
 		C5D6D93825860DFB00029AFF /* NSTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6D93725860DFB00029AFF /* NSTimerManager.m */; };
@@ -646,6 +648,10 @@
 		C5D0B7A725878D03002CA224 /* SoundBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundBtn.h; sourceTree = "<group>"; };
 		C5D0B7B125878D2A002CA224 /* NSObject+Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sound.m"; sourceTree = "<group>"; };
 		C5D0B7B225878D2A002CA224 /* NSObject+Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sound.h"; sourceTree = "<group>"; };
+		C5D1BE95258B1F7900784D2F /* UIView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmptyData.m"; sourceTree = "<group>"; };
+		C5D1BE96258B1F7900784D2F /* UIView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyData.h"; sourceTree = "<group>"; };
+		C5D1BE9E258B1F8900784D2F /* UIViewController+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EmptyData.m"; sourceTree = "<group>"; };
+		C5D1BE9F258B1F8900784D2F /* UIViewController+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EmptyData.h"; sourceTree = "<group>"; };
 		C5D601612586310800029AFF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		C5D601622586310800029AFF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		C5D6016A2586311700029AFF /* UIViewController+NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBar.h"; sourceTree = "<group>"; };
@@ -2005,6 +2011,7 @@
 		C5C4F736255A5490002F407A /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C5D1BE94258B1F7900784D2F /* UIView+EmptyData */,
 				C595BB8A25864137002A4531 /* UIView+Animation */,
 				C595BB8B2586413D002A4531 /* UIView+Chain */,
 				C595BB8C25864143002A4531 /* UIView+Extras */,
@@ -2311,6 +2318,24 @@
 			path = SoundBtn;
 			sourceTree = "<group>";
 		};
+		C5D1B9C7258B0C3800784D2F /* UIViewController+EmptyData */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1BE9F258B1F8900784D2F /* UIViewController+EmptyData.h */,
+				C5D1BE9E258B1F8900784D2F /* UIViewController+EmptyData.m */,
+			);
+			path = "UIViewController+EmptyData";
+			sourceTree = "<group>";
+		};
+		C5D1BE94258B1F7900784D2F /* UIView+EmptyData */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1BE95258B1F7900784D2F /* UIView+EmptyData.m */,
+				C5D1BE96258B1F7900784D2F /* UIView+EmptyData.h */,
+			);
+			path = "UIView+EmptyData";
+			sourceTree = "<group>";
+		};
 		C5D6C7C42585F1F900029AFF /* NSObject+AFNReachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -2465,6 +2490,7 @@
 				C544BB4A258371C400C6CF2A /* UIViewController+BaseVC */,
 				C544BB54258371CD00C6CF2A /* UIViewController+BRPickerView */,
 				C544BB5B258371D600C6CF2A /* UIViewController+BWShareView */,
+				C5D1B9C7258B0C3800784D2F /* UIViewController+EmptyData */,
 				C544BB62258371E000C6CF2A /* UIViewController+GifImageView */,
 				C544BB66258371EA00C6CF2A /* UIViewController+JPImageresizerView */,
 				C544BB67258371F300C6CF2A /* UIViewController+MJRefresh */,
@@ -2777,6 +2803,7 @@
 				C5C4F81D255A5491002F407A /* NSObject+OpenURL.m in Sources */,
 				C5C4F522255A5204002F407A /* main.m in Sources */,
 				C5C4F7E7255A5491002F407A /* UIColor+Hex.m in Sources */,
+				C5D1BEA0258B1F8900784D2F /* UIViewController+EmptyData.m in Sources */,
 				C5C4F7E6255A5491002F407A /* UIButton+ImageTitleSpacing.m in Sources */,
 				C5C403A2255A6C26002F407A /* XHLaunchAdConfiguration.m in Sources */,
 				C5C4025E255A6671002F407A /* TLTabBarAnimation.m in Sources */,
@@ -2833,6 +2860,7 @@
 				C5C4F807255A5491002F407A /* BaseNavigationVC.m in Sources */,
 				C5C4F7F8255A5491002F407A /* NSString+Extras.m in Sources */,
 				C5C4F7E3255A5491002F407A /* UITableViewCell+WhiteArrows.m in Sources */,
+				C5D1BE97258B1F7900784D2F /* UIView+EmptyData.m in Sources */,
 				C5C4F7DC255A5491002F407A /* UIImage+Overlay.m in Sources */,
 				C5D6016C2586311700029AFF /* UIViewController+NavigationBar.m in Sources */,
 				C5C4F816255A5491002F407A /* CALayer+Anim.m in Sources */,
