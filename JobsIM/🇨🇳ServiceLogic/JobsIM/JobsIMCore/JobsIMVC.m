@@ -459,7 +459,8 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
         _shareBtn.mj_h = 23;
         [_shareBtn setImage:KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"分享") forState:UIControlStateNormal];
         [_shareBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
-        [UIView cornerCutToCircleWithView:_shareBtn AndCornerRadius:23 / 2];
+        [UIView cornerCutToCircleWithView:_shareBtn
+                          andCornerRadius:23 / 2];
         [[_shareBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             NSLog(@"分享功能");
             [NSObject showSYSAlertViewTitle:@"正在研发中..."

@@ -354,7 +354,8 @@ static inline CGFloat JobsIMChatInfoTBVChatContentLabDefaultWidth(){
                     break;
             }
         }];
-        [UIView cornerCutToCircleWithView:_timeLab AndCornerRadius:20 / 2];
+        [UIView cornerCutToCircleWithView:_timeLab
+                          andCornerRadius:20 / 2];
     }return _timeLab;
 }
 

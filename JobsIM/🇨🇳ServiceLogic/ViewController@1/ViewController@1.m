@@ -88,7 +88,8 @@
         _shareBtn.mj_h = 23;
         [_shareBtn setImage:KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"PLUS") forState:UIControlStateNormal];
         [_shareBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
-        [UIView cornerCutToCircleWithView:_shareBtn AndCornerRadius:23 / 2];
+        [UIView cornerCutToCircleWithView:_shareBtn
+                          andCornerRadius:23 / 2];
         [[_shareBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             [NSObject showSYSAlertViewTitle:@"此功能尚在开发中..."
                                     message:@"敬请期待"

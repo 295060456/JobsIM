@@ -145,7 +145,8 @@ replacementString:(NSString *)string{
             make.right.equalTo(self).offset(-10);
             make.width.mas_equalTo(50);
         }];
-        [UIView cornerCutToCircleWithView:_sendBtn AndCornerRadius:3];
+        [UIView cornerCutToCircleWithView:_sendBtn
+                          andCornerRadius:3];
     }return _sendBtn;
 }
 
@@ -173,8 +174,11 @@ replacementString:(NSString *)string{
 
         [self layoutIfNeeded];
         
-        [UIView cornerCutToCircleWithView:_inputTextField AndCornerRadius:_inputTextField.mj_h / 2];
-        [UIView colourToLayerOfView:_inputTextField WithColour:kWhiteColor AndBorderWidth:1];
+        [UIView cornerCutToCircleWithView:_inputTextField
+                          andCornerRadius:_inputTextField.mj_h / 2];
+        [UIView colourToLayerOfView:_inputTextField
+                         withColour:kWhiteColor
+                     andBorderWidth:1];
     }return _inputTextField;
 }
 
