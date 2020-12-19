@@ -69,6 +69,8 @@
 		C595D2182587143C002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2102587143C002A4531 /* SuspendView.m */; };
 		C595D2192587143C002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2132587143C002A4531 /* SuspendBtn.m */; };
 		C595D21A2587143C002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2172587143C002A4531 /* SuspendLab.m */; };
+		C59A3BCE258DD1BF005F6260 /* UserDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3BCC258DD1BF005F6260 /* UserDefaultModel.m */; };
+		C59A3BCF258DD1BF005F6260 /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3BCD258DD1BF005F6260 /* UserDefaultManager.m */; };
 		C5C4018B255A6588002F407A /* ECAuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4018A255A6588002F407A /* ECAuthorizationTools.m */; };
 		C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40195255A65A6002F407A /* GCD_TimerManager.m */; };
 		C5C401A0255A65A6002F407A /* Nanosecond_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40199255A65A6002F407A /* Nanosecond_TimerManager.m */; };
@@ -363,6 +365,10 @@
 		C595D2142587143C002A4531 /* SuspendBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendBtn.h; sourceTree = "<group>"; };
 		C595D2162587143C002A4531 /* SuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendLab.h; sourceTree = "<group>"; };
 		C595D2172587143C002A4531 /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
+		C59A3BCA258DD1BF005F6260 /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
+		C59A3BCB258DD1BF005F6260 /* UserDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultModel.h; sourceTree = "<group>"; };
+		C59A3BCC258DD1BF005F6260 /* UserDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultModel.m; sourceTree = "<group>"; };
+		C59A3BCD258DD1BF005F6260 /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
 		C5C40189255A6588002F407A /* ECAuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAuthorizationTools.h; sourceTree = "<group>"; };
 		C5C4018A255A6588002F407A /* ECAuthorizationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAuthorizationTools.m; sourceTree = "<group>"; };
 		C5C40190255A65A6002F407A /* TimerManager_DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager_DefineStructure.h; sourceTree = "<group>"; };
@@ -1383,17 +1389,29 @@
 			path = SuspendLab;
 			sourceTree = "<group>";
 		};
+		C59A3BC9258DD1BF005F6260 /* UserDefaultManager */ = {
+			isa = PBXGroup;
+			children = (
+				C59A3BCA258DD1BF005F6260 /* UserDefaultManager.h */,
+				C59A3BCB258DD1BF005F6260 /* UserDefaultModel.h */,
+				C59A3BCC258DD1BF005F6260 /* UserDefaultModel.m */,
+				C59A3BCD258DD1BF005F6260 /* UserDefaultManager.m */,
+			);
+			path = UserDefaultManager;
+			sourceTree = "<group>";
+		};
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
-				C5267E68258A4B380095A681 /* LYEmptyView */,
 				C5C40173255A654D002F407A /* 分享控件 */,
 				C5C401FE255A6671002F407A /* 深度拓展系统UITabBar全家桶 */,
 				C5C401CE255A6629002F407A /* 文件夹操作 */,
 				C5C40188255A6588002F407A /* ECAuthorizationTools */,
+				C5267E68258A4B380095A681 /* LYEmptyView */,
 				C553900025727F77008BB60F /* SocketTools */,
 				C5C40277255A66D2002F407A /* Suspend */,
 				C5C4018F255A65A6002F407A /* TimerManager */,
+				C59A3BC9258DD1BF005F6260 /* UserDefaultManager */,
 			);
 			path = "🔨Manual_Add_ThirdParty ";
 			sourceTree = "<group>";
@@ -2909,6 +2927,7 @@
 				C5226A0F25875852004447FB /* BWItemModel.m in Sources */,
 				C5C403A0255A6C26002F407A /* XHLaunchAdDownloader.m in Sources */,
 				C5C4F81F255A5491002F407A /* NSObject+Extras.m in Sources */,
+				C59A3BCF258DD1BF005F6260 /* UserDefaultManager.m in Sources */,
 				C552AA1F2589DB0400A89501 /* UIImage+ScreenShot.m in Sources */,
 				C5C40390255A6C26002F407A /* WMZBannerParam.m in Sources */,
 				C544BF7D2583752800C6CF2A /* MJRefreshConfigModel.m in Sources */,
@@ -2956,6 +2975,7 @@
 				C5D6D94625860E1500029AFF /* TimeModel.m in Sources */,
 				C5C4F7EF255A5491002F407A /* UIFont+Extras.m in Sources */,
 				C5C4F811255A5491002F407A /* ViewForTableViewFooter.m in Sources */,
+				C59A3BCE258DD1BF005F6260 /* UserDefaultModel.m in Sources */,
 				C56BB8B3258798860043C977 /* UIControl+XY.m in Sources */,
 				C5C4F809255A5491002F407A /* UITableView+XSAnimationKit.m in Sources */,
 				C5C402C2255A6A1A002F407A /* ViewController@2.m in Sources */,
