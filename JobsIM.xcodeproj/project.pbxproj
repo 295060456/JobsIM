@@ -34,6 +34,8 @@
 		C5341587255A77D900DFAFE4 /* JobsIMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5341586255A77D900DFAFE4 /* JobsIMVC.m */; };
 		C5341659255A78A200DFAFE4 /* JobsIMInputview.m in Sources */ = {isa = PBXBuildFile; fileRef = C5341658255A78A200DFAFE4 /* JobsIMInputview.m */; };
 		C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */; };
+		C53D38D32598C7D700B48431 /* XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D38D02598C7D700B48431 /* XLBubbleTransition.m */; };
+		C53D38D42598C7D700B48431 /* UIViewController+XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D38D12598C7D700B48431 /* UIViewController+XLBubbleTransition.m */; };
 		C544BF7A2583752800C6CF2A /* LOTAnimationMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BF722583752800C6CF2A /* LOTAnimationMJRefreshHeader.m */; };
 		C544BF7B2583752800C6CF2A /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C544BF742583752800C6CF2A /* JsonRes.bundle */; };
 		C544BF7C2583752800C6CF2A /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BF752583752800C6CF2A /* UIViewController+MJRefresh.m */; };
@@ -305,6 +307,11 @@
 		C534165D255A7AD100DFAFE4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C534179E255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMChatInfoTBVCell.h; sourceTree = "<group>"; };
 		C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMChatInfoTBVCell.m; sourceTree = "<group>"; };
+		C53D38CE2598C7D700B48431 /* XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBubbleTransition.h; sourceTree = "<group>"; };
+		C53D38CF2598C7D700B48431 /* UIViewController+XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XLBubbleTransition.h"; sourceTree = "<group>"; };
+		C53D38D02598C7D700B48431 /* XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBubbleTransition.m; sourceTree = "<group>"; };
+		C53D38D12598C7D700B48431 /* UIViewController+XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XLBubbleTransition.m"; sourceTree = "<group>"; };
+		C53D38D22598C7D700B48431 /* 使用方法.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "使用方法.md"; sourceTree = "<group>"; };
 		C53D60EE255C2120006C290D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C544BF722583752800C6CF2A /* LOTAnimationMJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationMJRefreshHeader.m; sourceTree = "<group>"; };
 		C544BF732583752800C6CF2A /* LOTAnimationMJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationMJRefreshHeader.h; sourceTree = "<group>"; };
@@ -866,6 +873,18 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		C53D38CD2598C7D700B48431 /* UIViewController+XLBubbleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C53D38D22598C7D700B48431 /* 使用方法.md */,
+				C53D38CF2598C7D700B48431 /* UIViewController+XLBubbleTransition.h */,
+				C53D38D12598C7D700B48431 /* UIViewController+XLBubbleTransition.m */,
+				C53D38CE2598C7D700B48431 /* XLBubbleTransition.h */,
+				C53D38D02598C7D700B48431 /* XLBubbleTransition.m */,
+			);
+			path = "UIViewController+XLBubbleTransition";
+			sourceTree = "<group>";
+		};
 		C544BB3D258371BB00C6CF2A /* UIViewController+BackBtn */ = {
 			isa = PBXGroup;
 			children = (
@@ -1010,6 +1029,7 @@
 		C54FE10F2576717000937C11 /* UIViewController+Category */ = {
 			isa = PBXGroup;
 			children = (
+				C53D38CD2598C7D700B48431 /* UIViewController+XLBubbleTransition */,
 				C5C4F763255A5490002F407A /* UIViewController+JXCategory */,
 				C5D788CB257F79CF0087FC92 /* UIViewController+Others */,
 				C5C4F771255A5490002F407A /* UIViewController+TZImagePickerController */,
@@ -2852,6 +2872,7 @@
 				C5C40393255A6C26002F407A /* WMZBannerFadeLayout.m in Sources */,
 				C5C40258255A6671002F407A /* JobsPullListTBVCell.m in Sources */,
 				C5C4F80E255A5491002F407A /* NSArray+Extension.m in Sources */,
+				C53D38D32598C7D700B48431 /* XLBubbleTransition.m in Sources */,
 				C5C40394255A6C26002F407A /* WMZBannerOverLayout.m in Sources */,
 				C5C4F81A255A5491002F407A /* NSObject+SPAlertController.m in Sources */,
 				C5C4F7EE255A5491002F407A /* UIView+Gradient.m in Sources */,
@@ -2913,6 +2934,7 @@
 				C5C4F80B255A5491002F407A /* BaseTableViewer.m in Sources */,
 				C5C4F808255A5491002F407A /* TableViewAnimationKit.m in Sources */,
 				C5C4F7FF255A5491002F407A /* UIViewController+GifImageView.m in Sources */,
+				C53D38D42598C7D700B48431 /* UIViewController+XLBubbleTransition.m in Sources */,
 				C5C4F803255A5491002F407A /* UIViewController+TZImagePickerController.m in Sources */,
 				C5C4F806255A5491002F407A /* UIViewController+BaseVC.m in Sources */,
 				C5C40290255A67C4002F407A /* JobsIMAppDelegate+PopupView.m in Sources */,

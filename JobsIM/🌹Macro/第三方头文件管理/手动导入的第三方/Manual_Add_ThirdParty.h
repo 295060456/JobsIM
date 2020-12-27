@@ -49,6 +49,7 @@
 #import "UIViewController+TZLocationManager.h"
 #import "UIViewController+NavigationBar.h"
 #import "UIViewController+EmptyData.h"
+#import "UIViewController+XLBubbleTransition.h"
 //UITableViewHeaderFooterView
 #import "ViewForTableViewFooter.h"
 #import "ViewForTableViewHeader.h"
