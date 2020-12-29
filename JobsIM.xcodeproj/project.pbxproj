@@ -73,6 +73,8 @@
 		C595D21A2587143C002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2172587143C002A4531 /* SuspendLab.m */; };
 		C59A3BCE258DD1BF005F6260 /* UserDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3BCC258DD1BF005F6260 /* UserDefaultModel.m */; };
 		C59A3BCF258DD1BF005F6260 /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3BCD258DD1BF005F6260 /* UserDefaultManager.m */; };
+		C59F38EE259B3A1E00E22F9B /* JobsBitsMonitorSuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C59F38E9259B3A1E00E22F9B /* JobsBitsMonitorSuspendLab.m */; };
+		C59F38EF259B3A1E00E22F9B /* JobsBitsMonitorCore.m in Sources */ = {isa = PBXBuildFile; fileRef = C59F38EB259B3A1E00E22F9B /* JobsBitsMonitorCore.m */; };
 		C5C4018B255A6588002F407A /* ECAuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4018A255A6588002F407A /* ECAuthorizationTools.m */; };
 		C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40195255A65A6002F407A /* GCD_TimerManager.m */; };
 		C5C401A0255A65A6002F407A /* Nanosecond_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40199255A65A6002F407A /* Nanosecond_TimerManager.m */; };
@@ -376,6 +378,11 @@
 		C59A3BCB258DD1BF005F6260 /* UserDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultModel.h; sourceTree = "<group>"; };
 		C59A3BCC258DD1BF005F6260 /* UserDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultModel.m; sourceTree = "<group>"; };
 		C59A3BCD258DD1BF005F6260 /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
+		C59F38E8259B3A1E00E22F9B /* JobsBitsMonitorSuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsBitsMonitorSuspendLab.h; sourceTree = "<group>"; };
+		C59F38E9259B3A1E00E22F9B /* JobsBitsMonitorSuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsBitsMonitorSuspendLab.m; sourceTree = "<group>"; };
+		C59F38EB259B3A1E00E22F9B /* JobsBitsMonitorCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsBitsMonitorCore.m; sourceTree = "<group>"; };
+		C59F38EC259B3A1E00E22F9B /* JobsBitsMonitorCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsBitsMonitorCore.h; sourceTree = "<group>"; };
+		C59F38ED259B3A1E00E22F9B /* JobsBitsMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsBitsMonitor.h; sourceTree = "<group>"; };
 		C5C40189255A6588002F407A /* ECAuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAuthorizationTools.h; sourceTree = "<group>"; };
 		C5C4018A255A6588002F407A /* ECAuthorizationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAuthorizationTools.m; sourceTree = "<group>"; };
 		C5C40190255A65A6002F407A /* TimerManager_DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager_DefineStructure.h; sourceTree = "<group>"; };
@@ -1420,9 +1427,38 @@
 			path = UserDefaultManager;
 			sourceTree = "<group>";
 		};
+		C59F38E6259B3A1E00E22F9B /* JobsBitsMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				C59F38ED259B3A1E00E22F9B /* JobsBitsMonitor.h */,
+				C59F38EA259B3A1E00E22F9B /* JobsBitsMonitorCore */,
+				C59F38E7259B3A1E00E22F9B /* JobsBitsMonitorSuspendLab */,
+			);
+			path = JobsBitsMonitor;
+			sourceTree = "<group>";
+		};
+		C59F38E7259B3A1E00E22F9B /* JobsBitsMonitorSuspendLab */ = {
+			isa = PBXGroup;
+			children = (
+				C59F38E8259B3A1E00E22F9B /* JobsBitsMonitorSuspendLab.h */,
+				C59F38E9259B3A1E00E22F9B /* JobsBitsMonitorSuspendLab.m */,
+			);
+			path = JobsBitsMonitorSuspendLab;
+			sourceTree = "<group>";
+		};
+		C59F38EA259B3A1E00E22F9B /* JobsBitsMonitorCore */ = {
+			isa = PBXGroup;
+			children = (
+				C59F38EC259B3A1E00E22F9B /* JobsBitsMonitorCore.h */,
+				C59F38EB259B3A1E00E22F9B /* JobsBitsMonitorCore.m */,
+			);
+			path = JobsBitsMonitorCore;
+			sourceTree = "<group>";
+		};
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C59F38E6259B3A1E00E22F9B /* JobsBitsMonitor */,
 				C5C40173255A654D002F407A /* 分享控件 */,
 				C5C401FE255A6671002F407A /* 深度拓展系统UITabBar全家桶 */,
 				C5C401CE255A6629002F407A /* 文件夹操作 */,
@@ -2948,6 +2984,7 @@
 				C5C4F814255A5491002F407A /* HQCollectionViewFlowLayout.m in Sources */,
 				C5226A0F25875852004447FB /* BWItemModel.m in Sources */,
 				C5C403A0255A6C26002F407A /* XHLaunchAdDownloader.m in Sources */,
+				C59F38EF259B3A1E00E22F9B /* JobsBitsMonitorCore.m in Sources */,
 				C5C4F81F255A5491002F407A /* NSObject+Extras.m in Sources */,
 				C59A3BCF258DD1BF005F6260 /* UserDefaultManager.m in Sources */,
 				C552AA1F2589DB0400A89501 /* UIImage+ScreenShot.m in Sources */,
@@ -2971,6 +3008,7 @@
 				C5C4F812255A5491002F407A /* LMHWaterFallLayout.m in Sources */,
 				C5C4F7F4255A5491002F407A /* UICollectionView+RegisterClass.m in Sources */,
 				C5C40399255A6C26002F407A /* ZZCircleProgress.m in Sources */,
+				C59F38EE259B3A1E00E22F9B /* JobsBitsMonitorSuspendLab.m in Sources */,
 				C5D6D94525860E1500029AFF /* NSObject+Time.m in Sources */,
 				C5C4F7F9255A5491002F407A /* UIViewController+JPImageresizerView.m in Sources */,
 				C5226A0D25875852004447FB /* BWItemCollectionViewCell.m in Sources */,

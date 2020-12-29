@@ -9,6 +9,9 @@
 #import "JobsIMAppDelegate.h"
 #import "JobsIMAppDelegate+PopupView.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability-new"
+
 @interface JobsIMSceneDelegate ()
 
 @end
@@ -84,4 +87,7 @@ willConnectToSession:(UISceneSession *)session
     [_window makeKeyAndVisible];
     return _window;
 }
+
 @end
+
+#pragma clang diagnostic pop

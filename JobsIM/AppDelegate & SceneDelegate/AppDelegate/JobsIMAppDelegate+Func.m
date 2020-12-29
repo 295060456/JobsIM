@@ -9,6 +9,9 @@
 
 @implementation JobsIMAppDelegate (Func)
 
+static char *JobsIMAppDelegate_Func_bitsMonitorSuspendLab = "JobsIMAppDelegate_Func_bitsMonitorSuspendLab";
+@dynamic bitsMonitorSuspendLab;
+
 -(void)reachabilityChanged:(NSNotification *)notify{
     
 }
@@ -71,6 +74,12 @@
     [self launchAd_localVedio_custom];//视频 - 本地 - 自定义
 //    [self launchAd_networkVedio_default];//视频 - 网络 - 默认
 //    [self launchAd_networkVedio_custom];//视频 - 网络 - 自定义
+}
+#pragma mark —— 网络流量实时监控
+-(void)makeNetworkingBitsMonitor{
+#ifdef DEBUG
+    self.bitsMonitorSuspendLab.alpha = 1;
+#endif
 }
 #pragma mark —— 滴滴打车团队出的一款小工具
 -(void)makeDoraemonManagerConfigure{
@@ -336,6 +345,36 @@
 //    } failure:^(NSError *error) {
 //
 //    }];
+}
+#pragma mark SET | GET
+#pragma mark —— @property(nonatomic,strong)JobsBitsMonitorSuspendLab *bitsMonitorSuspendLab;
+-(JobsBitsMonitorSuspendLab *)bitsMonitorSuspendLab{
+    JobsBitsMonitorSuspendLab *BitsMonitorSuspendLab = objc_getAssociatedObject(self, JobsIMAppDelegate_Func_bitsMonitorSuspendLab);
+    if (!BitsMonitorSuspendLab) {
+        BitsMonitorSuspendLab = JobsBitsMonitorSuspendLab.new;
+        BitsMonitorSuspendLab.font = [UIFont systemFontOfSize:10 weight:UIFontWeightBold];
+        BitsMonitorSuspendLab.backgroundColor = KLightGrayColor;
+        BitsMonitorSuspendLab.textColor = kRedColor;
+        @weakify(self)
+        BitsMonitorSuspendLab.vc = weak_self.tabBarVC;
+        BitsMonitorSuspendLab.isAllowDrag = YES;//悬浮效果必须要的参数
+        [self.tabBarVC.view addSubview:BitsMonitorSuspendLab];
+        BitsMonitorSuspendLab.frame = CGRectMake(20,
+                                                 MAINSCREEN_HEIGHT - 200,
+                                                 80,
+                                                 30);
+        objc_setAssociatedObject(self,
+                                 JobsIMAppDelegate_Func_bitsMonitorSuspendLab,
+                                 BitsMonitorSuspendLab,
+                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }return BitsMonitorSuspendLab;
+}
+
+-(void)setBitsMonitorSuspendLab:(JobsBitsMonitorSuspendLab *)bitsMonitorSuspendLab{
+    objc_setAssociatedObject(self,
+                             JobsIMAppDelegate_Func_bitsMonitorSuspendLab,
+                             bitsMonitorSuspendLab,
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

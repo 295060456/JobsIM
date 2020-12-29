@@ -10,6 +10,9 @@
 #import "JobsIMAppDelegate+Func.h"
 #import "JobsIMAppDelegate+PopupView.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability-new"
+
 @interface JobsIMAppDelegate ()
 
 @end
@@ -201,3 +204,5 @@ didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
 }
 
 @end
+
+#pragma clang diagnostic pop
