@@ -265,9 +265,6 @@
 		C5C64ED6259DF80600FD2F99 /* 文件和文件夹@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C64EA1259DF80600FD2F99 /* 文件和文件夹@3x.png */; };
 		C5C64ED7259DF80600FD2F99 /* 定位服务@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C64EA2259DF80600FD2F99 /* 定位服务@3x.png */; };
 		C5C64ED8259DF80600FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C64EA5259DF80600FD2F99 /* ECPrivacyCheckGatherTool.m */; };
-		C5C64EEA259DF80E00FD2F99 /* UIViewController+TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C64EE3259DF80E00FD2F99 /* UIViewController+TZImagePickerController.m */; };
-		C5C64EEB259DF80E00FD2F99 /* UIViewController+TZImagePickerControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C64EE4259DF80E00FD2F99 /* UIViewController+TZImagePickerControllerDelegate.m */; };
-		C5C64EEC259DF80E00FD2F99 /* UIViewController+TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C64EE5259DF80E00FD2F99 /* UIViewController+TZLocationManager.m */; };
 		C5D0B7A825878D03002CA224 /* Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B7A425878D03002CA224 /* Sound.wav */; };
 		C5D0B7A925878D03002CA224 /* 带有按键音的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B7A525878D03002CA224 /* 带有按键音的按钮.md */; };
 		C5D0B7AA25878D03002CA224 /* SoundBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B7A625878D03002CA224 /* SoundBtn.m */; };
@@ -768,12 +765,6 @@
 		C5C64EA8259DF80600FD2F99 /* ECPrivacyCheckTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPrivacyCheckTools.h; sourceTree = "<group>"; };
 		C5C64EAA259DF80600FD2F99 /* ECPrivacyCheckTools不用pod管理的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ECPrivacyCheckTools不用pod管理的情况说明.md"; sourceTree = "<group>"; };
 		C5C64EAB259DF80600FD2F99 /* ECAuthorizationTools.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ECAuthorizationTools.md; sourceTree = "<group>"; };
-		C5C64EE1259DF80E00FD2F99 /* UIViewController+TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TZImagePickerController.h"; sourceTree = "<group>"; };
-		C5C64EE2259DF80E00FD2F99 /* UIViewController+TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TZLocationManager.h"; sourceTree = "<group>"; };
-		C5C64EE3259DF80E00FD2F99 /* UIViewController+TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TZImagePickerController.m"; sourceTree = "<group>"; };
-		C5C64EE4259DF80E00FD2F99 /* UIViewController+TZImagePickerControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TZImagePickerControllerDelegate.m"; sourceTree = "<group>"; };
-		C5C64EE5259DF80E00FD2F99 /* UIViewController+TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TZLocationManager.m"; sourceTree = "<group>"; };
-		C5C64EE6259DF80E00FD2F99 /* UIViewController+TZImagePickerControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TZImagePickerControllerDelegate.h"; sourceTree = "<group>"; };
 		C5D0B7A425878D03002CA224 /* Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound.wav; sourceTree = "<group>"; };
 		C5D0B7A525878D03002CA224 /* 带有按键音的按钮.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "带有按键音的按钮.md"; sourceTree = "<group>"; };
 		C5D0B7A625878D03002CA224 /* SoundBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundBtn.m; sourceTree = "<group>"; };
@@ -1146,7 +1137,6 @@
 				C53D38CD2598C7D700B48431 /* UIViewController+XLBubbleTransition */,
 				C5C4F763255A5490002F407A /* UIViewController+JXCategory */,
 				C5D788CB257F79CF0087FC92 /* UIViewController+Others */,
-				C5C4F771255A5490002F407A /* UIViewController+TZImagePickerController */,
 			);
 			path = "UIViewController+Category";
 			sourceTree = "<group>";
@@ -2303,19 +2293,6 @@
 			path = "UIViewController+JXCategory";
 			sourceTree = "<group>";
 		};
-		C5C4F771255A5490002F407A /* UIViewController+TZImagePickerController */ = {
-			isa = PBXGroup;
-			children = (
-				C5C64EE1259DF80E00FD2F99 /* UIViewController+TZImagePickerController.h */,
-				C5C64EE3259DF80E00FD2F99 /* UIViewController+TZImagePickerController.m */,
-				C5C64EE6259DF80E00FD2F99 /* UIViewController+TZImagePickerControllerDelegate.h */,
-				C5C64EE4259DF80E00FD2F99 /* UIViewController+TZImagePickerControllerDelegate.m */,
-				C5C64EE2259DF80E00FD2F99 /* UIViewController+TZLocationManager.h */,
-				C5C64EE5259DF80E00FD2F99 /* UIViewController+TZLocationManager.m */,
-			);
-			path = "UIViewController+TZImagePickerController";
-			sourceTree = "<group>";
-		};
 		C5C4F77E255A5490002F407A /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -3119,7 +3096,6 @@
 				C5C4F7EB255A5491002F407A /* UIView+SuspendView.m in Sources */,
 				C57A2ED2255EA22D002D39FB /* MGSwipeButtonModel.m in Sources */,
 				C5C4F815255A5491002F407A /* CALayer+Transition.m in Sources */,
-				C5C64EEB259DF80E00FD2F99 /* UIViewController+TZImagePickerControllerDelegate.m in Sources */,
 				C5C64EB8259DF80600FD2F99 /* ECPrivacyCheckHealth.m in Sources */,
 				C5C4F81D255A5491002F407A /* NSObject+OpenURL.m in Sources */,
 				C5C4F522255A5204002F407A /* main.m in Sources */,
@@ -3176,7 +3152,6 @@
 				C5C4F7F3255A5491002F407A /* CollectionView.m in Sources */,
 				C5C64EB1259DF80600FD2F99 /* ECPrivacyCheckFilesAndFolders.m in Sources */,
 				C589BEDA2563D10400323A2A /* JobsIMListView.m in Sources */,
-				C5C64EEC259DF80E00FD2F99 /* UIViewController+TZLocationManager.m in Sources */,
 				C5C4F7DB255A5491002F407A /* UIImage+SYS.m in Sources */,
 				C5460E0C258C8ECB0008928C /* ZYTextField.m in Sources */,
 				C5460E03258C8EBC0008928C /* UIView+AOP.m in Sources */,
@@ -3261,7 +3236,6 @@
 				C5C4F7FE255A5491002F407A /* UIViewController+BRPickerView.m in Sources */,
 				C5C401A0255A65A6002F407A /* Nanosecond_TimerManager.m in Sources */,
 				C595D2182587143C002A4531 /* SuspendView.m in Sources */,
-				C5C64EEA259DF80E00FD2F99 /* UIViewController+TZImagePickerController.m in Sources */,
 				C5C4F7F7255A5491002F407A /* NavigationBar.m in Sources */,
 				C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */,
 				C5C4F51A255A5203002F407A /* JobsIM.xcdatamodeld in Sources */,

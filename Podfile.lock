@@ -105,7 +105,6 @@ PODS:
   - SZTextView (1.3.0)
   - TFPopup (1.3.0)
   - TXFileOperation (1.0)
-  - TZImagePickerController (3.5.8)
   - WHToast (0.0.7)
 
 DEPENDENCIES:
@@ -140,7 +139,6 @@ DEPENDENCIES:
   - SZTextView
   - TFPopup
   - TXFileOperation
-  - TZImagePickerController
   - WHToast
 
 SPEC REPOS:
@@ -180,7 +178,6 @@ SPEC REPOS:
     - SZTextView
     - TFPopup
     - TXFileOperation
-    - TZImagePickerController
     - WHToast
 
 SPEC CHECKSUMS:
@@ -219,9 +216,8 @@ SPEC CHECKSUMS:
   SZTextView: 094dc6acc9beec537685c545d6e3e0d4975174e1
   TFPopup: e1396132337290244668fdd8a7faf8ff461c481b
   TXFileOperation: 99bc7e3763678fdea8e8c407e2b87fb18038385f
-  TZImagePickerController: 7fd9702897ef8c0b7c951e5463f4bcf398296f9e
   WHToast: 11a17a3f09f5f733e32bd6f3338919a448cbb719
 
-PODFILE CHECKSUM: 81995fa7c408cd836f8f4900692543f31f91339d
+PODFILE CHECKSUM: 4f0242d6f26cc965ad0f6d9c0196bf25f153167a
 
 COCOAPODS: 1.10.0
