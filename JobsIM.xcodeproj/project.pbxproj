@@ -10,6 +10,7 @@
 		0BF2B17691723C46D2B1A387 /* Pods_JobsIMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745E1CA9B85CE188599E6061 /* Pods_JobsIMTests.framework */; };
 		200BAB0C1F3E4CD223040998 /* Pods_JobsIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6201BCF2BE09176745E0DFD7 /* Pods_JobsIM.framework */; };
 		C4884241E9DCCF7C5201E00B /* Pods_JobsIMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F92EF6AFAB6E34D34FA3454 /* Pods_JobsIMUITests.framework */; };
+		C51574BB25A3509E0074D945 /* UIView+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C51574BA25A3509E0074D945 /* UIView+Gesture.m */; };
 		C5226A0D25875852004447FB /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226A0825875852004447FB /* BWItemCollectionViewCell.m */; };
 		C5226A0E25875852004447FB /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226A0A25875852004447FB /* BWShareView.m */; };
 		C5226A0F25875852004447FB /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226A0B25875852004447FB /* BWItemModel.m */; };
@@ -313,6 +314,8 @@
 		80D11A612063D7C5462C8452 /* Pods-JobsIMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsIMUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobsIMUITests/Pods-JobsIMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA9D7507C4474892D07BD74 /* Pods-JobsIMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsIMTests.release.xcconfig"; path = "Target Support Files/Pods-JobsIMTests/Pods-JobsIMTests.release.xcconfig"; sourceTree = "<group>"; };
 		C14DBBA91B303DE4604152DA /* Pods-JobsIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsIM.debug.xcconfig"; path = "Target Support Files/Pods-JobsIM/Pods-JobsIM.debug.xcconfig"; sourceTree = "<group>"; };
+		C51574B925A3509E0074D945 /* UIView+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gesture.h"; sourceTree = "<group>"; };
+		C51574BA25A3509E0074D945 /* UIView+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gesture.m"; sourceTree = "<group>"; };
 		C5226A0525875852004447FB /* BWItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemModel.h; sourceTree = "<group>"; };
 		C5226A0625875852004447FB /* BWItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemCollectionViewCell.h; sourceTree = "<group>"; };
 		C5226A0725875852004447FB /* 分享控件的用法.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "分享控件的用法.md"; sourceTree = "<group>"; };
@@ -853,6 +856,15 @@
 				37659343CB5A59B2E1EA5040 /* Pods-JobsIMUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C51574B825A3509E0074D945 /* UIView+Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				C51574B925A3509E0074D945 /* UIView+Gesture.h */,
+				C51574BA25A3509E0074D945 /* UIView+Gesture.m */,
+			);
+			path = "UIView+Gesture";
 			sourceTree = "<group>";
 		};
 		C5267C8A258A4AE40095A681 /* JobsMagicTextField */ = {
@@ -2200,6 +2212,7 @@
 		C5C4F736255A5490002F407A /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C51574B825A3509E0074D945 /* UIView+Gesture */,
 				C595BB8A25864137002A4531 /* UIView+Animation */,
 				C5460E00258C8EBC0008928C /* UIView+AOP */,
 				C595BB8B2586413D002A4531 /* UIView+Chain */,
@@ -3192,6 +3205,7 @@
 				C5C4025B255A6671002F407A /* TransitionAnimation.m in Sources */,
 				C5C40398255A6C26002F407A /* ZZCountingLabel.m in Sources */,
 				C5C4039A255A6C26002F407A /* XHLaunchAdView.m in Sources */,
+				C51574BB25A3509E0074D945 /* UIView+Gesture.m in Sources */,
 				C5C4F80D255A5491002F407A /* UIView+JHGestureBlock.m in Sources */,
 				C5C4F800255A5491002F407A /* UIViewController+BackBtn.m in Sources */,
 				C5C64EAC259DF80600FD2F99 /* ECPrivacyCheckMicrophone.m in Sources */,
