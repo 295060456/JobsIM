@@ -469,9 +469,10 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
                                 btnTitleArr:@[@"好的"]
                              alertBtnAction:@[@""]
                                    targetVC:self
-                               alertVCBlock:^(id data) {
-                //DIY
-            }];
+                                     funcVC:nil
+                                   animated:YES
+                               alertVCBlock:nil
+                            completionBlock:nil];
         }];
     }return _shareBtn;
 }
