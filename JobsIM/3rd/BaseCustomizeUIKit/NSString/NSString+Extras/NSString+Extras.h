@@ -39,6 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString *)emojiEncodeStr:(NSString *)str;
 //解码emoji
 +(NSString *)emojiDecodeStr:(NSString *)str;
+// 读取本地JSON文件
++(NSDictionary *)readLocalFileWithName:(NSString *)name;
 //JSON 转 NSDictionary
 +(NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
 // NSDictionary 转 json字符串方法//==[dic mj_JSONString]
@@ -67,6 +69,15 @@ NS_ASSUME_NONNULL_BEGIN
                                                   effectString:(NSString *_Nonnull)effectString
                                                           font:(UIFont *_Nullable)font
                                   boundingRectWithHeight_Width:(CGFloat)Height_Width;
+
+// 如果字符串为null 那么不走isEqualToString，无法比较都是空的情况
++(BOOL)isEqualStrA:(NSString *)stringA
+              strB:(NSString *)stringB;
+
+// 根据字体大小 和宽度计算文字的高
++(float)textHitWithStirng:(NSString*)stingS
+                     font:(float)font
+                     widt:(float)wid;
 
 @end
 

@@ -42,11 +42,13 @@ def appCommon
   pod 'MJRefresh' # https://github.com/CoderMJLee/MJRefresh NO_SMP
   pod 'MJExtension' # https://github.com/CoderMJLee/MJExtension NO_SMP
   pod 'SDWebImage' # https://github.com/SDWebImage/SDWebImage YES_SMP
+  pod 'YYImage'
 #  pod 'YYKit' # https://github.com/ibireme/YYKit NO_SMP
   end
 ## GK一族
 def gk
   pod 'GKNavigationBar' # https://github.com/QuintGao/GKNavigationBar NO_SMP
+  pod 'GKPhotoBrowser' # https://github.com/QuintGao/GKPhotoBrowser iOS仿微信、今日头条等图片浏览器 
   end
 ## JX一族
 def jx

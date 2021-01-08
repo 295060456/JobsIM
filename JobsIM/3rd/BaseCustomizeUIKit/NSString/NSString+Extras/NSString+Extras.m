@@ -56,8 +56,7 @@
     SuppressWdeprecatedDeclarationsWarning(return [NSURL URLWithString:(NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
                                                                                                                                              (CFStringRef)urlStr,
                                                                                                                                              (CFStringRef)@"!$&'()*+,-./:;=?@_~%#[]",
-                                                                                                                                             NULL,
-                                                                                                                                             kCFStringEncodingUTF8))]);
+                                                                                                                                             NULL,kCFStringEncodingUTF8))]);
 }
 //替换相关的字符为暂位符 example
 +(NSString *)numberSuitScanf:(NSString*)number{
@@ -126,6 +125,15 @@
     NSString *emojiText = [[NSString alloc] initWithData:jsonData
                                                 encoding:NSNonLossyASCIIStringEncoding];
     return emojiText;
+}
+// 读取本地JSON文件
++(NSDictionary *)readLocalFileWithName:(NSString *)name{
+    // 获取文件路径
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"json"];
+    // 将文件数据化
+    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+    // 对数据进行JSON格式化并返回字典形式
+    return [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
 }
 //JSON 转 NSDictionary
 +(NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString{
@@ -292,130 +300,6 @@
     }
 }
 #warning —— 以下待考证真伪及其严谨性
-#pragma mark —— 绘制AttributeString 与 NSTextAttachment不同大小颜色
-+ (NSMutableAttributedString *)attributedReverseStringWithString:(NSString *)string
-                                                     stringColor:(UIColor*)scolor
-                                                      stringFont:(UIFont*)sFont
-                                                       subString:(NSString *)subString
-                                                  subStringColor:(UIColor*)subStringcolor
-                                                   subStringFont:(UIFont*)subStringFont
-                                                   numInSubColor:(UIColor*)numInSubColor
-                                                    numInSubFont:(UIFont*)numInSubFont{
-    NSMutableAttributedString *attributedStr=[[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@", string]];
-    NSDictionary * attributes = @{ NSFontAttributeName:sFont,NSForegroundColorAttributeName:scolor};
-    [attributedStr setAttributes:attributes range:NSMakeRange(0,attributedStr.length)];
-    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:@"([0-9]\\d*\\.?\\d*)" options:0 error:NULL];//)个
-    NSArray<NSTextCheckingResult *> *ranges = [regular matchesInString:subString options:0 range:NSMakeRange(0, [subString length])];
-    NSDictionary * subAttributes = @{NSFontAttributeName:subStringFont,NSForegroundColorAttributeName:subStringcolor};
-    NSMutableAttributedString *subAttributedStr = [[NSMutableAttributedString alloc] initWithString:subString attributes:subAttributes];
-    for (int i = 0; i < ranges.count; i++) {
-        [subAttributedStr setAttributes:@{NSForegroundColorAttributeName : numInSubColor,NSFontAttributeName:numInSubFont} range:ranges[i].range];
-    }
-    [subAttributedStr appendAttributedString:attributedStr];
-    return subAttributedStr;
-}
-
-+ (NSMutableAttributedString *)attributedStringWithString:(NSString *)string
-                                              stringColor:(UIColor*)scolor
-                                               stringFont:(UIFont*)sFont
-                                                subString:(NSString *)subString
-                                           subStringColor:(UIColor*)subStringcolor
-                                            subStringFont:(UIFont*)subStringFont
-                                            numInSubColor:(UIColor*)numInSubColor
-                                             numInSubFont:(UIFont*)numInSubFont{
-    NSMutableAttributedString *attributedStr=[[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@", string]];
-    NSDictionary * attributes = @{ NSFontAttributeName:sFont,NSForegroundColorAttributeName:scolor};
-    [attributedStr setAttributes:attributes range:NSMakeRange(0,attributedStr.length)];
-    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:@"([0-9]\\d*\\.?\\d*)" options:0 error:NULL];//)个
-    NSArray<NSTextCheckingResult *> *ranges = [regular matchesInString:subString options:0 range:NSMakeRange(0, [subString length])];
-    NSDictionary * subAttributes = @{NSFontAttributeName:subStringFont,NSForegroundColorAttributeName:subStringcolor};
-    NSMutableAttributedString *subAttributedStr = [[NSMutableAttributedString alloc] initWithString:subString attributes:subAttributes];
-    for (int i = 0; i < ranges.count; i++) {
-        [subAttributedStr setAttributes:@{NSForegroundColorAttributeName : numInSubColor,NSFontAttributeName:numInSubFont} range:ranges[i].range];
-    }
-    [attributedStr appendAttributedString:subAttributedStr];
-    return attributedStr;
-}
-
-+ (NSMutableAttributedString *)attributedStringWithString:(NSString *)string
-                                              stringColor:(UIColor*)scolor
-                                               stringFont:(UIFont*)sFont
-                                                subString:(NSString *)subString
-                                           subStringColor:(UIColor*)subStringcolor
-                                            subStringFont:(UIFont*)subStringFont{
-    NSMutableAttributedString *attributedStr=[[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@", string]];
-    NSDictionary * attributes = @{ NSFontAttributeName:sFont,NSForegroundColorAttributeName:scolor};
-    [attributedStr setAttributes:attributes range:NSMakeRange(0,attributedStr.length)];
-
-    NSMutableAttributedString *subAttributedStr=[[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@", subString]];
-    NSDictionary * subAttributes = @{NSFontAttributeName:subStringFont,NSForegroundColorAttributeName:subStringcolor};
-    [subAttributedStr setAttributes:subAttributes range:NSMakeRange(0,subAttributedStr.length)];
-    
-    [attributedStr appendAttributedString:subAttributedStr];
-    return attributedStr;
-}
-
-+ (NSMutableAttributedString *)attributedStringWithString:(NSString *)string
-                                              stringColor:(UIColor*)scolor
-                                               stringFont:(UIFont*)sFont
-                                                subString:(NSString *)subString
-                                           subStringColor:(UIColor*)subStringcolor
-                                            subStringFont:(UIFont*)subStringFont
-                                  subStringUnderlineColor:(UIColor*)underlineColor{
-    NSMutableAttributedString *attributedStr=[[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@", string]];
-    NSDictionary * attributes = @{ NSFontAttributeName:sFont,NSForegroundColorAttributeName:scolor};
-    [attributedStr setAttributes:attributes range:NSMakeRange(0,attributedStr.length)];
-    
-    
-    NSMutableAttributedString *subAttributedStr=[[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@", subString]];
-    NSDictionary * subAttributes = @{NSFontAttributeName:subStringFont,NSForegroundColorAttributeName:subStringcolor,NSUnderlineStyleAttributeName:@1,NSUnderlineColorAttributeName:underlineColor};
-    [subAttributedStr setAttributes:subAttributes range:NSMakeRange(0,subAttributedStr.length)];
-    
-    [attributedStr appendAttributedString:subAttributedStr];
-    return attributedStr;
-}
-
-+ (NSMutableAttributedString *)attributedStringWithString:(NSString *)string
-                                              stringColor:(UIColor*)scolor
-                                                    image:(UIImage *)image{
-    NSMutableAttributedString *attributedStr=[[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@ ", string]];
-    NSDictionary * attributes = @{ NSFontAttributeName:[UIFont systemFontOfSize:15],NSForegroundColorAttributeName:scolor};
-    [attributedStr setAttributes:attributes range:NSMakeRange(0,attributedStr.length)];
-    
-    NSTextAttachment *attachment=[[NSTextAttachment alloc] initWithData:nil ofType:nil];
-    attachment.image=image;
-    attachment.bounds=CGRectMake(0,-8 , image.size.width, image.size.height);
-    NSAttributedString *imageStr=[NSAttributedString attributedStringWithAttachment:attachment];
-
-    [attributedStr insertAttributedString:imageStr atIndex:0];
-    return attributedStr;
-}
-
-+ (NSMutableAttributedString *)attributedStringWithString:(NSString *)string
-                                              stringColor:(UIColor*)scolor
-                                                    image:(UIImage *)image
-                                    isImgPositionOnlyLeft:(BOOL)isOnlyLeft{
-    NSMutableAttributedString *attributedStr=[[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"  %@  ", string]];
-    NSDictionary * attributes = @{ NSFontAttributeName:[UIFont systemFontOfSize:15],NSForegroundColorAttributeName:scolor};
-    [attributedStr setAttributes:attributes range:NSMakeRange(0,attributedStr.length)];
-    
-    NSTextAttachment *attachment=[[NSTextAttachment alloc] initWithData:nil ofType:nil];
-    attachment.image=image;
-    attachment.bounds=CGRectMake(0,-8 , image.size.width, image.size.height);
-    NSAttributedString *imageStr=[NSAttributedString attributedStringWithAttachment:attachment];
-    
-    NSTextAttachment *attachment0=[[NSTextAttachment alloc] initWithData:nil ofType:nil];
-    UIImage *image0 = [UIImage imageWithCGImage:image.CGImage scale:1.0 orientation:UIImageOrientationUpMirrored];
-    attachment0.image=isOnlyLeft?image:image0;
-    attachment0.bounds=CGRectMake(0,isOnlyLeft?-2:3, image.size.width, image.size.height);
-    NSAttributedString *imageStr0=[NSAttributedString attributedStringWithAttachment:attachment0];
-    
-    [attributedStr insertAttributedString:imageStr0 atIndex:0];
-    
-    if(!isOnlyLeft)[attributedStr insertAttributedString:imageStr atIndex:attributedStr.length];
-    
-    return attributedStr;
-}
 //是否是系统自带九宫格输入 yes-是 no-不是
 + (BOOL)isNineKeyBoard:(NSString *)string {
     NSString *other = @"➋➌➍➎➏➐➑➒";
@@ -565,8 +449,35 @@
                                 endRange.location - startRange.location - startRange.length);
     return [self substringWithRange:range];
 }
+// 如果字符串为null 那么不走isEqualToString，无法比较都是空的情况
++(BOOL)isEqualStrA:(NSString *)stringA
+              strB:(NSString *)stringB{
+    if ([NSString isNullString:stringA] && [NSString isNullString:stringB]) {//双方都是null
+        return YES;
+    }else{
+        return [stringA isEqualToString:stringB];
+    }
+}
 
-
+// 根据字体大小 和宽度计算文字的高
++(float)textHitWithStirng:(NSString*)stingS
+                     font:(float)font
+                     widt:(float)wid{
+    if (!font) {
+        font = 14.0;
+    }
+    if (!stingS) {
+        stingS = @"";
+    }
+    if (!wid || wid == 0.0) {
+        wid = 20;
+    }
+    CGRect rect=[stingS boundingRectWithSize:CGSizeMake(wid, MAXFLOAT)
+                                     options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin
+                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font]}
+                                     context:nil];
+    return rect.size.height;
+}
 
 
 @end
