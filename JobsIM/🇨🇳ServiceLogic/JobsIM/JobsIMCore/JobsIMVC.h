@@ -6,7 +6,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MJRefreshWithLottieTableViewHeader.h"
 #import "JobsIMChatInfoTBVCell.h"
 #import "JobsIMInputview.h"
 #import "LOTAnimationMJRefreshHeader.h"
