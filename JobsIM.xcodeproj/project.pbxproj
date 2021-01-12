@@ -42,6 +42,7 @@
 		C54AAF23255E57A5000A314D /* UITableViewCell+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */; };
 		C552AA1F2589DB0400A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552AA1D2589DB0400A89501 /* UIImage+ScreenShot.m */; };
 		C553900325727F77008BB60F /* SocketIOTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C553900125727F77008BB60F /* SocketIOTools.m */; };
+		C55BF51325AC8F5700A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF51225AC8F5700A8347F /* TabbarVC.m */; };
 		C565CAFA25A437EB00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */; };
 		C5676280259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627C259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C5676281259F12C1006905A9 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627F259F12C1006905A9 /* CollectionViewCell.m */; };
@@ -114,7 +115,6 @@
 		C5C40253255A6671002F407A /* green_lottie_tab_discover.json in Resources */ = {isa = PBXBuildFile; fileRef = C5C4021D255A6671002F407A /* green_lottie_tab_discover.json */; };
 		C5C40254255A6671002F407A /* record_change.json in Resources */ = {isa = PBXBuildFile; fileRef = C5C4021E255A6671002F407A /* record_change.json */; };
 		C5C40255255A6671002F407A /* tab_message_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = C5C4021F255A6671002F407A /* tab_message_animate.json */; };
-		C5C40256255A6671002F407A /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40222255A6671002F407A /* TabbarVC.m */; };
 		C5C40258255A6671002F407A /* JobsPullListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40228255A6671002F407A /* JobsPullListTBVCell.m */; };
 		C5C40259255A6671002F407A /* JobsPullListAutoSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4022A255A6671002F407A /* JobsPullListAutoSizeView.m */; };
 		C5C4025B255A6671002F407A /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4022D255A6671002F407A /* TransitionAnimation.m */; };
@@ -385,6 +385,9 @@
 		C5568B7E255BA79E005C1361 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C558E178258A1A2B0078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
 		C558E179258A1A3B0078DB8F /* XHLaunchAd不用pod导入的情况说明.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "XHLaunchAd不用pod导入的情况说明.md"; sourceTree = "<group>"; };
+		C55BF51125AC8F5700A8347F /* TabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
+		C55BF51225AC8F5700A8347F /* TabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
+		C55BF51725AC8F6300A8347F /* TabBarControllerConstruction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConstruction.h; sourceTree = "<group>"; };
 		C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
 		C565CAF825A437EB00848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
 		C565CAF925A437EB00848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
@@ -496,8 +499,6 @@
 		C5C4021D255A6671002F407A /* green_lottie_tab_discover.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_discover.json; sourceTree = "<group>"; };
 		C5C4021E255A6671002F407A /* record_change.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = record_change.json; sourceTree = "<group>"; };
 		C5C4021F255A6671002F407A /* tab_message_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_message_animate.json; sourceTree = "<group>"; };
-		C5C40221255A6671002F407A /* TabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
-		C5C40222255A6671002F407A /* TabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
 		C5C40226255A6671002F407A /* JobsPullListAutoSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsPullListAutoSizeView.h; sourceTree = "<group>"; };
 		C5C40228255A6671002F407A /* JobsPullListTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsPullListTBVCell.m; sourceTree = "<group>"; };
 		C5C40229255A6671002F407A /* JobsPullListTBVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsPullListTBVCell.h; sourceTree = "<group>"; };
@@ -1764,6 +1765,7 @@
 		C5C40205255A6671002F407A /* 全局配置文件 */ = {
 			isa = PBXGroup;
 			children = (
+				C55BF51725AC8F6300A8347F /* TabBarControllerConstruction.h */,
 				C5C40206255A6671002F407A /* TabBarControllerConfig.h */,
 				C5C40207255A6671002F407A /* TabBarControllerConfig.m */,
 			);
@@ -1810,8 +1812,8 @@
 		C5C40220255A6671002F407A /* UITabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				C5C40221255A6671002F407A /* TabbarVC.h */,
-				C5C40222255A6671002F407A /* TabbarVC.m */,
+				C55BF51125AC8F5700A8347F /* TabbarVC.h */,
+				C55BF51225AC8F5700A8347F /* TabbarVC.m */,
 			);
 			path = UITabBarController;
 			sourceTree = "<group>";
@@ -3249,7 +3251,6 @@
 				C5A4427025ABFBBB000F0CD2 /* JXCategoryTimelineView.m in Sources */,
 				C5C4023E255A6671002F407A /* TabBarItem.m in Sources */,
 				C5F8390C2560FF45005C6FDA /* JobsAdNoticeView.m in Sources */,
-				C5C40256255A6671002F407A /* TabbarVC.m in Sources */,
 				C5C4F7F0255A5491002F407A /* DeleteSystemUITabBarButton.m in Sources */,
 				C5341659255A78A200DFAFE4 /* JobsIMInputview.m in Sources */,
 				C531D018255AA728005304F6 /* JobsIMChatInfoModel.m in Sources */,
@@ -3342,6 +3343,7 @@
 				C5C402CE255A6A30002F407A /* ViewController@4.m in Sources */,
 				C5A4426E25ABFBBB000F0CD2 /* JXCategoryTitleBackgroundCell.m in Sources */,
 				C5C4039F255A6C26002F407A /* XHLaunchAdController.m in Sources */,
+				C55BF51325AC8F5700A8347F /* TabbarVC.m in Sources */,
 				C5C4F80C255A5491002F407A /* UITableView+WWFoldableTableView.m in Sources */,
 				C5C4F80F255A5491002F407A /* NSArray+Extend.m in Sources */,
 				C5CF13E225AC7D4200381935 /* LYLUnicode.m in Sources */,
