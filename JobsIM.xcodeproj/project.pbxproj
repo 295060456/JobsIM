@@ -43,6 +43,7 @@
 		C552AA1F2589DB0400A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552AA1D2589DB0400A89501 /* UIImage+ScreenShot.m */; };
 		C553900325727F77008BB60F /* SocketIOTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C553900125727F77008BB60F /* SocketIOTools.m */; };
 		C55BF51325AC8F5700A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF51225AC8F5700A8347F /* TabbarVC.m */; };
+		C55FE8C725B4250C00D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE8C525B4250C00D8C30D /* UIView+MJRefresh.m */; };
 		C565CAFA25A437EB00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */; };
 		C5676280259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627C259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C5676281259F12C1006905A9 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627F259F12C1006905A9 /* CollectionViewCell.m */; };
@@ -388,6 +389,8 @@
 		C55BF51125AC8F5700A8347F /* TabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
 		C55BF51225AC8F5700A8347F /* TabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
 		C55BF51725AC8F6300A8347F /* TabBarControllerConstruction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConstruction.h; sourceTree = "<group>"; };
+		C55FE8C525B4250C00D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
+		C55FE8C625B4250C00D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
 		C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
 		C565CAF825A437EB00848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
 		C565CAF925A437EB00848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
@@ -1363,6 +1366,15 @@
 			path = 3rd;
 			sourceTree = "<group>";
 		};
+		C55FE8C425B4250C00D8C30D /* UIView+MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C55FE8C625B4250C00D8C30D /* UIView+MJRefresh.h */,
+				C55FE8C525B4250C00D8C30D /* UIView+MJRefresh.m */,
+			);
+			path = "UIView+MJRefresh";
+			sourceTree = "<group>";
+		};
 		C565CAF625A437EB00848134 /* TwoVerticalArrangementLabsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2285,15 +2297,16 @@
 		C5C4F736255A5490002F407A /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C51574B825A3509E0074D945 /* UIView+Gesture */,
 				C595BB8A25864137002A4531 /* UIView+Animation */,
 				C5460E00258C8EBC0008928C /* UIView+AOP */,
 				C595BB8B2586413D002A4531 /* UIView+Chain */,
 				C5D1BE94258B1F7900784D2F /* UIView+EmptyData */,
 				C595BB8C25864143002A4531 /* UIView+Extras */,
+				C51574B825A3509E0074D945 /* UIView+Gesture */,
 				C595BB8D25864149002A4531 /* UIView+Gradient */,
 				C5529EDD2589CE0900A89501 /* UIView+JHGestureBlock */,
 				C595BB8E25864150002A4531 /* UIView+Measure */,
+				C55FE8C425B4250C00D8C30D /* UIView+MJRefresh */,
 				C595BB8F25864157002A4531 /* UIView+SuspendView */,
 				C595BB902586415E002A4531 /* UIView+ZFPlayer */,
 			);
@@ -3296,6 +3309,7 @@
 				C5C4F7F3255A5491002F407A /* CollectionView.m in Sources */,
 				C5C64EB1259DF80600FD2F99 /* ECPrivacyCheckFilesAndFolders.m in Sources */,
 				C589BEDA2563D10400323A2A /* JobsIMListView.m in Sources */,
+				C55FE8C725B4250C00D8C30D /* UIView+MJRefresh.m in Sources */,
 				C5C4F7DB255A5491002F407A /* UIImage+SYS.m in Sources */,
 				C5DF421425A8995100E91985 /* UIViewController+MJRefresh.m in Sources */,
 				C5460E0C258C8ECB0008928C /* ZYTextField.m in Sources */,
