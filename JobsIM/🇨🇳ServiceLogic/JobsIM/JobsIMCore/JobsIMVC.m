@@ -95,18 +95,6 @@ UITableViewDelegate
     self.tableView.pagingEnabled = YES;
 //    [self.mj_footer endRefreshingWithNoMoreData];
 }
-
--(void)keyboard{
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillChangeFrameNotification:)
-                                                 name:UIKeyboardWillChangeFrameNotification
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardDidChangeFrameNotification:)
-                                                 name:UIKeyboardDidChangeFrameNotification
-                                               object:nil];
-}
 //键盘 弹出 和 收回 走这个方法
 -(void)keyboardWillChangeFrameNotification:(NSNotification *)notification{
     NSDictionary *userInfo = notification.userInfo;
@@ -114,7 +102,6 @@ UITableViewDelegate
     CGRect endFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     CGFloat KeyboardOffsetY = beginFrame.origin.y - endFrame.origin.y;// 正则抬起 ，负值下降
     NSLog(@"KeyboardOffsetY = %f",KeyboardOffsetY);
-    NSLog(@"BottomSafeAreaHeight = %f",BottomSafeAreaHeight());
  
     if (KeyboardOffsetY > 0) {
         NSLog(@"键盘抬起");

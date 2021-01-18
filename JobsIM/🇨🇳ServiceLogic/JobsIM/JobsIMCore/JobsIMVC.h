@@ -11,6 +11,7 @@
 #import "LOTAnimationMJRefreshHeader.h"
 #import "JobsIMChatInfoModel.h"
 #import "TimeModel.h"
+#import "BaseViewController.h"
 
 #if __has_include(<MGSwipeTableCell/MGSwipeTableCell.h>)
 #import <MGSwipeTableCell/MGSwipeTableCell.h>
@@ -20,7 +21,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JobsIMVC : UIViewController
+@interface JobsIMVC : BaseViewController
 
 @end
 
