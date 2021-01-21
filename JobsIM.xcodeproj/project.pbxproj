@@ -220,7 +220,7 @@
 		C5C4F814255A5491002F407A /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7A7255A5490002F407A /* HQCollectionViewFlowLayout.m */; };
 		C5C4F815255A5491002F407A /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7AA255A5490002F407A /* CALayer+Transition.m */; };
 		C5C4F816255A5491002F407A /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7AB255A5490002F407A /* CALayer+Anim.m */; };
-		C5C4F817255A5491002F407A /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7B0255A5490002F407A /* CollectionReusableView.m */; };
+		C5C4F817255A5491002F407A /* BaseCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7B0255A5490002F407A /* BaseCollectionReusableView.m */; };
 		C5C4F818255A5491002F407A /* NSObject+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7B2255A5490002F407A /* NSObject+Random.m */; };
 		C5C4F819255A5491002F407A /* NSObject+AFNReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7B3255A5490002F407A /* NSObject+AFNReachability.m */; };
 		C5C4F81D255A5491002F407A /* NSObject+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F7BD255A5490002F407A /* NSObject+OpenURL.m */; };
@@ -720,8 +720,8 @@
 		C5C4F7AB255A5490002F407A /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
 		C5C4F7AC255A5490002F407A /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
 		C5C4F7AD255A5490002F407A /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
-		C5C4F7AF255A5490002F407A /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
-		C5C4F7B0255A5490002F407A /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
+		C5C4F7AF255A5490002F407A /* BaseCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionReusableView.h; sourceTree = "<group>"; };
+		C5C4F7B0255A5490002F407A /* BaseCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionReusableView.m; sourceTree = "<group>"; };
 		C5C4F7B2255A5490002F407A /* NSObject+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Random.m"; sourceTree = "<group>"; };
 		C5C4F7B3255A5490002F407A /* NSObject+AFNReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AFNReachability.m"; sourceTree = "<group>"; };
 		C5C4F7B9255A5490002F407A /* NSObject+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Shake.h"; sourceTree = "<group>"; };
@@ -2558,8 +2558,8 @@
 		C5C4F7AE255A5490002F407A /* UICollectionReusableView 用作基类 */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F7AF255A5490002F407A /* CollectionReusableView.h */,
-				C5C4F7B0255A5490002F407A /* CollectionReusableView.m */,
+				C5C4F7AF255A5490002F407A /* BaseCollectionReusableView.h */,
+				C5C4F7B0255A5490002F407A /* BaseCollectionReusableView.m */,
 			);
 			path = "UICollectionReusableView 用作基类";
 			sourceTree = "<group>";
@@ -3329,7 +3329,7 @@
 				C5460E0C258C8ECB0008928C /* ZYTextField.m in Sources */,
 				C5460E03258C8EBC0008928C /* UIView+AOP.m in Sources */,
 				C5C402C8255A6A26002F407A /* ViewController@3.m in Sources */,
-				C5C4F817255A5491002F407A /* CollectionReusableView.m in Sources */,
+				C5C4F817255A5491002F407A /* BaseCollectionReusableView.m in Sources */,
 				C5D77E1A257F5F550087FC92 /* HQTextField.m in Sources */,
 				C5C4F7DE255A5491002F407A /* UILabel+Extra.m in Sources */,
 				C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */,
