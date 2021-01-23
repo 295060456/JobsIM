@@ -48,6 +48,7 @@
 		C5676280259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627C259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C5676281259F12C1006905A9 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627F259F12C1006905A9 /* BaseCollectionViewCell.m */; };
 		C56BB8B3258798860043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB8B0258798860043C977 /* UIControl+XY.m */; };
+		C572952F25BB0A2700726419 /* UIView+BackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C572952D25BB0A2700726419 /* UIView+BackgroundImage.m */; };
 		C5776FE2257285BA00B7DCAB /* 输入框无值@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */; };
 		C5776FE3257285BA00B7DCAB /* 输入框有值@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FDF257285BA00B7DCAB /* 输入框有值@3x.png */; };
 		C5776FE4257285BA00B7DCAB /* 输入框有值@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FE0257285BA00B7DCAB /* 输入框有值@2x.png */; };
@@ -402,6 +403,8 @@
 		C56BB8B0258798860043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BB8B1258798860043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C56BB8B2258798860043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
+		C572952D25BB0A2700726419 /* UIView+BackgroundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BackgroundImage.m"; sourceTree = "<group>"; };
+		C572952E25BB0A2700726419 /* UIView+BackgroundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BackgroundImage.h"; sourceTree = "<group>"; };
 		C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框无值@2x.png"; sourceTree = "<group>"; };
 		C5776FDF257285BA00B7DCAB /* 输入框有值@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框有值@3x.png"; sourceTree = "<group>"; };
 		C5776FE0257285BA00B7DCAB /* 输入框有值@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框有值@2x.png"; sourceTree = "<group>"; };
@@ -1388,6 +1391,15 @@
 			path = TwoVerticalArrangementLabsView;
 			sourceTree = "<group>";
 		};
+		C572952C25BB0A2700726419 /* UIView+BackgroundImage */ = {
+			isa = PBXGroup;
+			children = (
+				C572952D25BB0A2700726419 /* UIView+BackgroundImage.m */,
+				C572952E25BB0A2700726419 /* UIView+BackgroundImage.h */,
+			);
+			path = "UIView+BackgroundImage";
+			sourceTree = "<group>";
+		};
 		C57A2EA3255E71A4002D39FB /* 左右滑动按钮图标 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2310,6 +2322,7 @@
 		C5C4F736255A5490002F407A /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C572952C25BB0A2700726419 /* UIView+BackgroundImage */,
 				C595BB8A25864137002A4531 /* UIView+Animation */,
 				C5460E00258C8EBC0008928C /* UIView+AOP */,
 				C595BB8B2586413D002A4531 /* UIView+Chain */,
@@ -3404,6 +3417,7 @@
 				C5226A0D25875852004447FB /* BWItemCollectionViewCell.m in Sources */,
 				C5C4039E255A6C26002F407A /* XHLaunchAd.m in Sources */,
 				C5C64EB5259DF80600FD2F99 /* ECPrivacyCheckMediaAndAppleMusic.m in Sources */,
+				C572952F25BB0A2700726419 /* UIView+BackgroundImage.m in Sources */,
 				C5C40392255A6C26002F407A /* WMZBannerControl.m in Sources */,
 				C5C4F813255A5491002F407A /* KFZShopCatoryFlowLayput.m in Sources */,
 				C5C4F7FC255A5491002F407A /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */,
