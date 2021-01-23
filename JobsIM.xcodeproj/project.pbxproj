@@ -191,7 +191,7 @@
 		C5C4F7EF255A5491002F407A /* UIFont+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F747255A5490002F407A /* UIFont+Extras.m */; };
 		C5C4F7F0255A5491002F407A /* DeleteSystemUITabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F74A255A5490002F407A /* DeleteSystemUITabBarButton.m */; };
 		C5C4F7F1255A5491002F407A /* 移除 系统自带的 UITabBarButton in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F74C255A5490002F407A /* 移除 系统自带的 UITabBarButton */; };
-		C5C4F7F3255A5491002F407A /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F751255A5490002F407A /* CollectionView.m */; };
+		C5C4F7F3255A5491002F407A /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F751255A5490002F407A /* BaseCollectionView.m */; };
 		C5C4F7F4255A5491002F407A /* UICollectionView+RegisterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F752255A5490002F407A /* UICollectionView+RegisterClass.m */; };
 		C5C4F7F6255A5491002F407A /* UIImageView+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F757255A5490002F407A /* UIImageView+GIF.m */; };
 		C5C4F7F7255A5491002F407A /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F75A255A5490002F407A /* NavigationBar.m */; };
@@ -662,9 +662,9 @@
 		C5C4F74A255A5490002F407A /* DeleteSystemUITabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteSystemUITabBarButton.m; sourceTree = "<group>"; };
 		C5C4F74B255A5490002F407A /* DeleteSystemUITabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteSystemUITabBarButton.h; sourceTree = "<group>"; };
 		C5C4F74C255A5490002F407A /* 移除 系统自带的 UITabBarButton */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "移除 系统自带的 UITabBarButton"; sourceTree = "<group>"; };
-		C5C4F74F255A5490002F407A /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		C5C4F74F255A5490002F407A /* BaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionView.h; sourceTree = "<group>"; };
 		C5C4F750255A5490002F407A /* UICollectionView+RegisterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+RegisterClass.h"; sourceTree = "<group>"; };
-		C5C4F751255A5490002F407A /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
+		C5C4F751255A5490002F407A /* BaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionView.m; sourceTree = "<group>"; };
 		C5C4F752255A5490002F407A /* UICollectionView+RegisterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+RegisterClass.m"; sourceTree = "<group>"; };
 		C5C4F757255A5490002F407A /* UIImageView+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GIF.m"; sourceTree = "<group>"; };
 		C5C4F758255A5490002F407A /* UIImageView+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GIF.h"; sourceTree = "<group>"; };
@@ -2370,8 +2370,8 @@
 			isa = PBXGroup;
 			children = (
 				C552AA4A2589DB7D00A89501 /* 我为什么要这么做.md */,
-				C5C4F74F255A5490002F407A /* CollectionView.h */,
-				C5C4F751255A5490002F407A /* CollectionView.m */,
+				C5C4F74F255A5490002F407A /* BaseCollectionView.h */,
+				C5C4F751255A5490002F407A /* BaseCollectionView.m */,
 				C5C4F750255A5490002F407A /* UICollectionView+RegisterClass.h */,
 				C5C4F752255A5490002F407A /* UICollectionView+RegisterClass.m */,
 			);
@@ -3333,7 +3333,7 @@
 				C5C64EAD259DF80600FD2F99 /* ECPrivacyCheckHomeKit.m in Sources */,
 				C5C4F7DA255A5491002F407A /* UIImage+Extras.m in Sources */,
 				C5C401A1255A65A6002F407A /* CADisplayLink_TimerManager.m in Sources */,
-				C5C4F7F3255A5491002F407A /* CollectionView.m in Sources */,
+				C5C4F7F3255A5491002F407A /* BaseCollectionView.m in Sources */,
 				C5C64EB1259DF80600FD2F99 /* ECPrivacyCheckFilesAndFolders.m in Sources */,
 				C589BEDA2563D10400323A2A /* JobsIMListView.m in Sources */,
 				C55FE8C725B4250C00D8C30D /* UIView+MJRefresh.m in Sources */,
