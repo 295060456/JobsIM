@@ -24,8 +24,6 @@
 		C52C96062563FB180039EBFE /* GIF大图.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C96002563FB180039EBFE /* GIF大图.gif */; };
 		C52C9651256408160039EBFE /* 动态头像_2 尺寸84.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C964F256408160039EBFE /* 动态头像_2 尺寸84.gif */; };
 		C52C9652256408160039EBFE /* 动态头像_2 尺寸126.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C9650256408160039EBFE /* 动态头像_2 尺寸126.gif */; };
-		C52F98FD25A6D9A200924990 /* NSObject+SPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52F98FA25A6D9A200924990 /* NSObject+SPAlertController.m */; };
-		C52F98FE25A6D9A200924990 /* NSObject+SYSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52F98FB25A6D9A200924990 /* NSObject+SYSAlertController.m */; };
 		C531D018255AA728005304F6 /* JobsIMChatInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C531D017255AA728005304F6 /* JobsIMChatInfoModel.m */; };
 		C531D021255AB570005304F6 /* 右气泡@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C531D01D255AB56F005304F6 /* 右气泡@2x.png */; };
 		C531D022255AB570005304F6 /* 右气泡@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C531D01E255AB56F005304F6 /* 右气泡@3x.png */; };
@@ -89,6 +87,8 @@
 		C5A4427125ABFBBB000F0CD2 /* JXCategoryTimelineCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4426425ABFBBB000F0CD2 /* JXCategoryTimelineCellModel.m */; };
 		C5A4427225ABFBBB000F0CD2 /* JXCategoryTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4426525ABFBBB000F0CD2 /* JXCategoryTimelineCell.m */; };
 		C5A4427325ABFBBB000F0CD2 /* WHToast+DDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4426A25ABFBBB000F0CD2 /* WHToast+DDToast.m */; };
+		C5A96CBF25BD3424000077BC /* NSObject+SPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A96CBB25BD3424000077BC /* NSObject+SPAlertController.m */; };
+		C5A96CC025BD3424000077BC /* NSObject+SYSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A96CBE25BD3424000077BC /* NSObject+SYSAlertController.m */; };
 		C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40195255A65A6002F407A /* GCD_TimerManager.m */; };
 		C5C401A0255A65A6002F407A /* Nanosecond_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40199255A65A6002F407A /* Nanosecond_TimerManager.m */; };
 		C5C401A1255A65A6002F407A /* CADisplayLink_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4019C255A65A6002F407A /* CADisplayLink_TimerManager.m */; };
@@ -346,10 +346,6 @@
 		C52C96002563FB180039EBFE /* GIF大图.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "GIF大图.gif"; sourceTree = "<group>"; };
 		C52C964F256408160039EBFE /* 动态头像_2 尺寸84.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "动态头像_2 尺寸84.gif"; sourceTree = "<group>"; };
 		C52C9650256408160039EBFE /* 动态头像_2 尺寸126.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "动态头像_2 尺寸126.gif"; sourceTree = "<group>"; };
-		C52F98F925A6D9A200924990 /* NSObject+SYSAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SYSAlertController.h"; sourceTree = "<group>"; };
-		C52F98FA25A6D9A200924990 /* NSObject+SPAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPAlertController.m"; sourceTree = "<group>"; };
-		C52F98FB25A6D9A200924990 /* NSObject+SYSAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SYSAlertController.m"; sourceTree = "<group>"; };
-		C52F98FC25A6D9A200924990 /* NSObject+SPAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPAlertController.h"; sourceTree = "<group>"; };
 		C531D016255AA728005304F6 /* JobsIMChatInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMChatInfoModel.h; sourceTree = "<group>"; };
 		C531D017255AA728005304F6 /* JobsIMChatInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMChatInfoModel.m; sourceTree = "<group>"; };
 		C531D01D255AB56F005304F6 /* 右气泡@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "右气泡@2x.png"; sourceTree = "<group>"; };
@@ -469,6 +465,10 @@
 		C5A4426825ABFBBB000F0CD2 /* JXCategoryTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTimelineCell.h; sourceTree = "<group>"; };
 		C5A4426A25ABFBBB000F0CD2 /* WHToast+DDToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WHToast+DDToast.m"; sourceTree = "<group>"; };
 		C5A4426B25ABFBBB000F0CD2 /* WHToast+DDToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WHToast+DDToast.h"; sourceTree = "<group>"; };
+		C5A96CBB25BD3424000077BC /* NSObject+SPAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPAlertController.m"; sourceTree = "<group>"; };
+		C5A96CBC25BD3424000077BC /* NSObject+SYSAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SYSAlertController.h"; sourceTree = "<group>"; };
+		C5A96CBD25BD3424000077BC /* NSObject+SPAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPAlertController.h"; sourceTree = "<group>"; };
+		C5A96CBE25BD3424000077BC /* NSObject+SYSAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SYSAlertController.m"; sourceTree = "<group>"; };
 		C5C40190255A65A6002F407A /* TimerManager_DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager_DefineStructure.h; sourceTree = "<group>"; };
 		C5C40195255A65A6002F407A /* GCD_TimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCD_TimerManager.m; sourceTree = "<group>"; };
 		C5C40196255A65A6002F407A /* GCD_TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD_TimerManager.h; sourceTree = "<group>"; };
@@ -2592,10 +2592,10 @@
 		C5C4F7B4255A5490002F407A /* NSObject+Alert */ = {
 			isa = PBXGroup;
 			children = (
-				C52F98FC25A6D9A200924990 /* NSObject+SPAlertController.h */,
-				C52F98FA25A6D9A200924990 /* NSObject+SPAlertController.m */,
-				C52F98F925A6D9A200924990 /* NSObject+SYSAlertController.h */,
-				C52F98FB25A6D9A200924990 /* NSObject+SYSAlertController.m */,
+				C5A96CBD25BD3424000077BC /* NSObject+SPAlertController.h */,
+				C5A96CBB25BD3424000077BC /* NSObject+SPAlertController.m */,
+				C5A96CBC25BD3424000077BC /* NSObject+SYSAlertController.h */,
+				C5A96CBE25BD3424000077BC /* NSObject+SYSAlertController.m */,
 			);
 			path = "NSObject+Alert";
 			sourceTree = "<group>";
@@ -3295,6 +3295,7 @@
 				C531D018255AA728005304F6 /* JobsIMChatInfoModel.m in Sources */,
 				C5C402BC255A6A11002F407A /* ViewController@1.m in Sources */,
 				C5C4F819255A5491002F407A /* NSObject+AFNReachability.m in Sources */,
+				C5A96CBF25BD3424000077BC /* NSObject+SPAlertController.m in Sources */,
 				C5C64EB4259DF80600FD2F99 /* ECPrivacyCheckMotionAndFitness.m in Sources */,
 				C5C4F7FB255A5491002F407A /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
 				C5676281259F12C1006905A9 /* BaseCollectionViewCell.m in Sources */,
@@ -3305,7 +3306,6 @@
 				C53D38D32598C7D700B48431 /* XLBubbleTransition.m in Sources */,
 				C5A4426D25ABFBBB000F0CD2 /* JXCategoryTitleBackgroundCellModel.m in Sources */,
 				C5C40394255A6C26002F407A /* WMZBannerOverLayout.m in Sources */,
-				C52F98FD25A6D9A200924990 /* NSObject+SPAlertController.m in Sources */,
 				C5C4F7EE255A5491002F407A /* UIView+Gradient.m in Sources */,
 				C5C4F820255A5491002F407A /* NSObject+Shake.m in Sources */,
 				C5C4023D255A6671002F407A /* UITabBarItem+TLAnimation.m in Sources */,
@@ -3430,7 +3430,6 @@
 				C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */,
 				C5C4F51A255A5203002F407A /* JobsIM.xcdatamodeld in Sources */,
 				C5C4F7E9255A5491002F407A /* UIView+Measure.m in Sources */,
-				C52F98FE25A6D9A200924990 /* NSObject+SYSAlertController.m in Sources */,
 				C5DF421525A8995100E91985 /* MJRefreshConfigModel.m in Sources */,
 				C53C9D1525A1CFB00007F58F /* NSObject+DataSave.m in Sources */,
 				C5C401D1255A6629002F407A /* FileFolderHandleTool.m in Sources */,
@@ -3450,6 +3449,7 @@
 				C5C4F7EF255A5491002F407A /* UIFont+Extras.m in Sources */,
 				C5C4F811255A5491002F407A /* ViewForTableViewFooter.m in Sources */,
 				C59A3BCE258DD1BF005F6260 /* UserDefaultModel.m in Sources */,
+				C5A96CC025BD3424000077BC /* NSObject+SYSAlertController.m in Sources */,
 				C56BB8B3258798860043C977 /* UIControl+XY.m in Sources */,
 				C5C4F809255A5491002F407A /* UITableView+XSAnimationKit.m in Sources */,
 				C5C402C2255A6A1A002F407A /* ViewController@2.m in Sources */,
