@@ -39,13 +39,37 @@
     [super drawRect:rect];
     
 }
-//
-//-(void)richElementsWithCustomView:(MKDataBlock)marqueeViewBlock{
-//    if (marqueeViewBlock) {
-//        marqueeViewBlock(self.contentView);
-//    }
-//}
 
+-(void)richElementsWithModel:(JobsMarqueeConfig *_Nullable)marqueeConfig
+                  customView:(MKDataBlock)marqueeViewBlock{
+    if (marqueeViewBlock) {
+        marqueeViewBlock(self.contentView);
+    }
+    self.keyFrame.duration = marqueeConfig.duration;
+    switch (marqueeConfig.direction) {
+        case JobsMarqueeDirectionStyleTop:{
+            self.keyFrame.keyPath = @"transform.translation.y";
+            self.keyFrame.values = @[@(self.height),@(0)];
+        }break;
+        case JobsMarqueeDirectionStyleDown:{
+            self.keyFrame.keyPath = @"transform.translation.y";
+            self.keyFrame.values = @[@(0), @(self.height)];
+        }break;
+        case JobsMarqueeDirectionStyleLeft:{
+            self.keyFrame.keyPath = @"transform.translation.x";
+            self.keyFrame.values = @[@(self.width),@(0)];
+        }break;
+        case JobsMarqueeDirectionStyleRight:{
+            self.keyFrame.keyPath = @"transform.translation.x";
+            self.keyFrame.values = @[@(0), @(self.width)];
+        }break;
+            
+        default:
+            break;
+    }
+    [self.contentView.layer addAnimation:self.keyFrame
+                                 forKey:@"keyFrame"];
+}
 
 -(void)richElementsWithModel:(JobsMarqueeConfig *_Nullable)marqueeConfig{
     

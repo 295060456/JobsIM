@@ -29,6 +29,9 @@ typedef enum : NSInteger {
 
 -(void)richElementsWithModel:(JobsMarqueeConfig *_Nullable)model;
 
+-(void)richElementsWithModel:(JobsMarqueeConfig *_Nullable)marqueeConfig
+                  customView:(MKDataBlock)marqueeViewBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END
