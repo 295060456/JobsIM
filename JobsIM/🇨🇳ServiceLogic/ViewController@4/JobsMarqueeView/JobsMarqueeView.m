@@ -39,6 +39,13 @@
     [super drawRect:rect];
     
 }
+//
+//-(void)richElementsWithCustomView:(MKDataBlock)marqueeViewBlock{
+//    if (marqueeViewBlock) {
+//        marqueeViewBlock(self.contentView);
+//    }
+//}
+
 
 -(void)richElementsWithModel:(JobsMarqueeConfig *_Nullable)marqueeConfig{
     
@@ -47,25 +54,23 @@
     self.contentLab.text = marqueeConfig.contentText;
     self.contentLab.font = marqueeConfig.font;
     [self.contentLab sizeToFit];
-
-    CGFloat sizeHeight = CGRectGetHeight(self.contentLab.frame);
     
     switch (marqueeConfig.direction) {
         case JobsMarqueeDirectionStyleTop:{
             self.keyFrame.keyPath = @"transform.translation.y";
-            self.keyFrame.values = @[@(sizeHeight),@(0)];
+            self.keyFrame.values = @[@(self.height),@(0)];
         }break;
         case JobsMarqueeDirectionStyleDown:{
             self.keyFrame.keyPath = @"transform.translation.y";
-            self.keyFrame.values = @[@(0), @(sizeHeight)];
+            self.keyFrame.values = @[@(0), @(self.height)];
         }break;
         case JobsMarqueeDirectionStyleLeft:{
             self.keyFrame.keyPath = @"transform.translation.x";
-            self.keyFrame.values = @[@(self.bounds.size.width),@(0)];
+            self.keyFrame.values = @[@(self.width),@(0)];
         }break;
         case JobsMarqueeDirectionStyleRight:{
             self.keyFrame.keyPath = @"transform.translation.x";
-            self.keyFrame.values = @[@(0), @(self.bounds.size.width)];
+            self.keyFrame.values = @[@(0), @(self.width)];
         }break;
             
         default:
