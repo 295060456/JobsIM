@@ -7,6 +7,8 @@
 
 #import "ViewController@4.h"
 
+#import "JobsMarqueeView.h"
+
 @interface ViewController_4 ()
 
 @end
@@ -20,6 +22,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = RandomColor;
+    
+    JobsMarqueeConfig *marqueeConfig = JobsMarqueeConfig.new;
+    marqueeConfig.contentText = @"hahahah";
+    marqueeConfig.duration = 2;
+    marqueeConfig.font = [UIFont systemFontOfSize:10 weight:UIFontWeightRegular];
+//    marqueeConfig.direction = JobsMarqueeDirectionStyleTop;
+//    marqueeConfig.direction = JobsMarqueeDirectionStyleDown;
+//    marqueeConfig.direction = JobsMarqueeDirectionStyleLeft;
+    marqueeConfig.direction = JobsMarqueeDirectionStyleRight;
+    
+    JobsMarqueeView *textView = [[JobsMarqueeView alloc] initWithFrame:CGRectMake(30, 500, self.view.bounds.size.width-60, 20)];
+    textView.backgroundColor = kRedColor;
+    [textView richElementsWithModel:marqueeConfig];
+    
+    [self.view addSubview:textView];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{

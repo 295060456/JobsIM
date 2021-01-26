@@ -35,6 +35,7 @@
 		C53C9D1525A1CFB00007F58F /* NSObject+DataSave.m in Sources */ = {isa = PBXBuildFile; fileRef = C53C9D1325A1CFB00007F58F /* NSObject+DataSave.m */; };
 		C53D38D32598C7D700B48431 /* XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D38D02598C7D700B48431 /* XLBubbleTransition.m */; };
 		C53D38D42598C7D700B48431 /* UIViewController+XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D38D12598C7D700B48431 /* UIViewController+XLBubbleTransition.m */; };
+		C545429025C0355800D97557 /* JobsMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C545428F25C0355800D97557 /* JobsMarqueeView.m */; };
 		C5460E03258C8EBC0008928C /* UIView+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460E01258C8EBC0008928C /* UIView+AOP.m */; };
 		C5460E0C258C8ECB0008928C /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460E0A258C8ECB0008928C /* ZYTextField.m */; };
 		C54AAF23255E57A5000A314D /* UITableViewCell+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */; };
@@ -370,6 +371,8 @@
 		C53D38D12598C7D700B48431 /* UIViewController+XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XLBubbleTransition.m"; sourceTree = "<group>"; };
 		C53D38D22598C7D700B48431 /* 使用方法.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "使用方法.md"; sourceTree = "<group>"; };
 		C53D60EE255C2120006C290D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C545428E25C0355800D97557 /* JobsMarqueeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsMarqueeView.h; sourceTree = "<group>"; };
+		C545428F25C0355800D97557 /* JobsMarqueeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsMarqueeView.m; sourceTree = "<group>"; };
 		C5460E01258C8EBC0008928C /* UIView+AOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AOP.m"; sourceTree = "<group>"; };
 		C5460E02258C8EBC0008928C /* UIView+AOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AOP.h"; sourceTree = "<group>"; };
 		C5460E0A258C8ECB0008928C /* ZYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
@@ -1127,6 +1130,15 @@
 				C5C4F768255A5490002F407A /* UIViewController+Shake.m */,
 			);
 			path = "UIViewController+Shake";
+			sourceTree = "<group>";
+		};
+		C545423425C0350200D97557 /* JobsMarqueeView */ = {
+			isa = PBXGroup;
+			children = (
+				C545428E25C0355800D97557 /* JobsMarqueeView.h */,
+				C545428F25C0355800D97557 /* JobsMarqueeView.m */,
+			);
+			path = JobsMarqueeView;
 			sourceTree = "<group>";
 		};
 		C5460E00258C8EBC0008928C /* UIView+AOP */ = {
@@ -2068,6 +2080,7 @@
 			children = (
 				C5C402CC255A6A30002F407A /* ViewController@4.h */,
 				C5C402CD255A6A30002F407A /* ViewController@4.m */,
+				C545423425C0350200D97557 /* JobsMarqueeView */,
 			);
 			path = "ViewController@4";
 			sourceTree = "<group>";
@@ -3452,6 +3465,7 @@
 				C5C4F818255A5491002F407A /* NSObject+Random.m in Sources */,
 				C5C403A1255A6C26002F407A /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 				C5C4F7FA255A5491002F407A /* UIViewController+BWShareView.m in Sources */,
+				C545429025C0355800D97557 /* JobsMarqueeView.m in Sources */,
 				C5C402D4255A6A3B002F407A /* ViewController@5.m in Sources */,
 				C5C4025F255A6671002F407A /* UITabBar+TLAnimation.m in Sources */,
 				C558DE9025BEAD6700FC6CA5 /* TestTBVCell.m in Sources */,
