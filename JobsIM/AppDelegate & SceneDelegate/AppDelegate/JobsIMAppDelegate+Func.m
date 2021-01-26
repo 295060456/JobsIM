@@ -15,6 +15,11 @@ static char *JobsIMAppDelegate_Func_bitsMonitorSuspendLab = "JobsIMAppDelegate_F
 -(void)reachabilityChanged:(NSNotification *)notify{
     
 }
+#pragma mark —— 全局配置 TABAnimated
+-(void)makeTABAnimatedConfigure{
+    [[TABAnimated sharedAnimated] initWithOnlySkeleton];
+    [TABAnimated sharedAnimated].openLog = YES;
+}
 #pragma mark —— 全局配置键盘
 -(void)makeIQKeyboardManagerConfigure{
     IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager]; // 获取类库的单例变量

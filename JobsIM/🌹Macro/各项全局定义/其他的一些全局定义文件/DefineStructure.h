@@ -13,6 +13,9 @@
 /*
  这个类只放置用户自定义的定义的枚举值
  */
-
+typedef enum : NSInteger {
+    EarningsRank = 0,//收益排行
+    ProduceRank//创作排行
+} RankStyle;
 
 #endif /* DefineStructure_h */

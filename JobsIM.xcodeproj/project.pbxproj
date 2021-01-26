@@ -40,6 +40,9 @@
 		C54AAF23255E57A5000A314D /* UITableViewCell+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */; };
 		C552AA1F2589DB0400A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552AA1D2589DB0400A89501 /* UIImage+ScreenShot.m */; };
 		C553900325727F77008BB60F /* SocketIOTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C553900125727F77008BB60F /* SocketIOTools.m */; };
+		C558DE9025BEAD6700FC6CA5 /* TestTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C558DE8F25BEAD6700FC6CA5 /* TestTBVCell.m */; };
+		C558DE9925BEAEED00FC6CA5 /* MKRankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C558DE9725BEAEED00FC6CA5 /* MKRankModel.m */; };
+		C558DEA225BEAF7B00FC6CA5 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C558DEA025BEAF7B00FC6CA5 /* BaseModel.m */; };
 		C55BF51325AC8F5700A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF51225AC8F5700A8347F /* TabbarVC.m */; };
 		C55FE8C725B4250C00D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE8C525B4250C00D8C30D /* UIView+MJRefresh.m */; };
 		C565CAFA25A437EB00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */; };
@@ -382,6 +385,12 @@
 		C553900825727FB3008BB60F /* UBLLivingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBLLivingVC.h; sourceTree = "<group>"; };
 		C553900925727FB3008BB60F /* UBLLivingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBLLivingVC.m; sourceTree = "<group>"; };
 		C5568B7E255BA79E005C1361 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C558DE8E25BEAD6700FC6CA5 /* TestTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTBVCell.h; sourceTree = "<group>"; };
+		C558DE8F25BEAD6700FC6CA5 /* TestTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTBVCell.m; sourceTree = "<group>"; };
+		C558DE9725BEAEED00FC6CA5 /* MKRankModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRankModel.m; sourceTree = "<group>"; };
+		C558DE9825BEAEED00FC6CA5 /* MKRankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRankModel.h; sourceTree = "<group>"; };
+		C558DEA025BEAF7B00FC6CA5 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		C558DEA125BEAF7B00FC6CA5 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		C558E178258A1A2B0078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
 		C558E179258A1A3B0078DB8F /* XHLaunchAd不用pod导入的情况说明.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "XHLaunchAd不用pod导入的情况说明.md"; sourceTree = "<group>"; };
 		C55BF51125AC8F5700A8347F /* TabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
@@ -1301,6 +1310,41 @@
 			path = "NSObject+Others";
 			sourceTree = "<group>";
 		};
+		C558DE9D25BEAF6500FC6CA5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C558DE9E25BEAF6900FC6CA5 /* 数据模型层 */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C558DE9E25BEAF6900FC6CA5 /* 数据模型层 */ = {
+			isa = PBXGroup;
+			children = (
+				C558DE9F25BEAF7B00FC6CA5 /* BaseModel */,
+				C558DEA625BEAF8000FC6CA5 /* MKRankModel */,
+			);
+			path = "数据模型层";
+			sourceTree = "<group>";
+		};
+		C558DE9F25BEAF7B00FC6CA5 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				C558DEA025BEAF7B00FC6CA5 /* BaseModel.m */,
+				C558DEA125BEAF7B00FC6CA5 /* BaseModel.h */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		C558DEA625BEAF8000FC6CA5 /* MKRankModel */ = {
+			isa = PBXGroup;
+			children = (
+				C558DE9825BEAEED00FC6CA5 /* MKRankModel.h */,
+				C558DE9725BEAEED00FC6CA5 /* MKRankModel.m */,
+			);
+			path = MKRankModel;
+			sourceTree = "<group>";
+		};
 		C558E109258A189C0078DB8F /* 第三方头文件管理 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1978,6 +2022,7 @@
 		C5C402B4255A69BC002F407A /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
+				C558DE9D25BEAF6500FC6CA5 /* Common */,
 				C589BEE52563D39C00323A2A /* JobsIM */,
 				C5C402E0255A6ADD002F407A /* 广告或者公示弹出框 */,
 				C5C402B5255A69DF002F407A /* ViewController@1 */,
@@ -2012,6 +2057,8 @@
 			children = (
 				C5C402C6255A6A26002F407A /* ViewController@3.h */,
 				C5C402C7255A6A26002F407A /* ViewController@3.m */,
+				C558DE8E25BEAD6700FC6CA5 /* TestTBVCell.h */,
+				C558DE8F25BEAD6700FC6CA5 /* TestTBVCell.m */,
 			);
 			path = "ViewController@3";
 			sourceTree = "<group>";
@@ -3352,6 +3399,7 @@
 				C5C4F7F8255A5491002F407A /* NSString+Extras.m in Sources */,
 				C5C4F7E3255A5491002F407A /* UITableViewCell+WhiteArrows.m in Sources */,
 				C5D1BE97258B1F7900784D2F /* UIView+EmptyData.m in Sources */,
+				C558DEA225BEAF7B00FC6CA5 /* BaseModel.m in Sources */,
 				C5C4F7DC255A5491002F407A /* UIImage+Overlay.m in Sources */,
 				C5D6016C2586311700029AFF /* UIViewController+NavigationBar.m in Sources */,
 				C5C4F816255A5491002F407A /* CALayer+Anim.m in Sources */,
@@ -3406,6 +3454,7 @@
 				C5C4F7FA255A5491002F407A /* UIViewController+BWShareView.m in Sources */,
 				C5C402D4255A6A3B002F407A /* ViewController@5.m in Sources */,
 				C5C4025F255A6671002F407A /* UITabBar+TLAnimation.m in Sources */,
+				C558DE9025BEAD6700FC6CA5 /* TestTBVCell.m in Sources */,
 				C5D0B7AA25878D03002CA224 /* SoundBtn.m in Sources */,
 				C5C4F7EA255A5491002F407A /* UIView+Animation.m in Sources */,
 				C5C4F812255A5491002F407A /* LMHWaterFallLayout.m in Sources */,
@@ -3453,6 +3502,7 @@
 				C56BB8B3258798860043C977 /* UIControl+XY.m in Sources */,
 				C5C4F809255A5491002F407A /* UITableView+XSAnimationKit.m in Sources */,
 				C5C402C2255A6A1A002F407A /* ViewController@2.m in Sources */,
+				C558DE9925BEAEED00FC6CA5 /* MKRankModel.m in Sources */,
 				C5C4F7EC255A5491002F407A /* UIView+Extras.m in Sources */,
 				C5267C8D258A4AE50095A681 /* JobsMagicTextField.m in Sources */,
 			);
@@ -3642,6 +3692,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -3665,6 +3716,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "JobsIM/🇨🇳ServiceLogic/JobsIM-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

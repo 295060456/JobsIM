@@ -163,6 +163,12 @@
 #import "FBShimmering.h"
 #endif
 
+#if __has_include(<TABAnimated/TABAnimated.h>)
+#import <TABAnimated/TABAnimated.h>
+#else
+#import "TABAnimated.h"
+#endif
+
 #pragma mark —— WebSocket
 // for TCP
 #if __has_include(<GCDWebServer/GCDAsyncSocket.h>)
