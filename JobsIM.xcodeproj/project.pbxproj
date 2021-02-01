@@ -83,6 +83,8 @@
 		C5676280259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627C259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C5676281259F12C1006905A9 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627F259F12C1006905A9 /* BaseCollectionViewCell.m */; };
 		C56BB8B3258798860043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB8B0258798860043C977 /* UIControl+XY.m */; };
+		C56D87EF25C82304001960CD /* UIColor+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D87EA25C82304001960CD /* UIColor+Gradient.m */; };
+		C56D87F025C82304001960CD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D87ED25C82304001960CD /* UIColor+Hex.m */; };
 		C572952F25BB0A2700726419 /* UIView+BackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C572952D25BB0A2700726419 /* UIView+BackgroundImage.m */; };
 		C5776FE2257285BA00B7DCAB /* 输入框无值@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */; };
 		C5776FE3257285BA00B7DCAB /* 输入框有值@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FDF257285BA00B7DCAB /* 输入框有值@3x.png */; };
@@ -218,7 +220,6 @@
 		C5C4F7E3255A5491002F407A /* UITableViewCell+WhiteArrows.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F72A255A5490002F407A /* UITableViewCell+WhiteArrows.m */; };
 		C5C4F7E5255A5491002F407A /* 高度自定义的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = C5C4F730255A5490002F407A /* 高度自定义的按钮.md */; };
 		C5C4F7E6255A5491002F407A /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F731255A5490002F407A /* UIButton+ImageTitleSpacing.m */; };
-		C5C4F7E7255A5491002F407A /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F734255A5490002F407A /* UIColor+Hex.m */; };
 		C5C4F7E8255A5491002F407A /* UIView+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F739255A5490002F407A /* UIView+Chain.m */; };
 		C5C4F7E9255A5491002F407A /* UIView+Measure.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F73B255A5490002F407A /* UIView+Measure.m */; };
 		C5C4F7EA255A5491002F407A /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F73C255A5490002F407A /* UIView+Animation.m */; };
@@ -513,6 +514,10 @@
 		C56BB8B0258798860043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BB8B1258798860043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C56BB8B2258798860043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
+		C56D87EA25C82304001960CD /* UIColor+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Gradient.m"; sourceTree = "<group>"; };
+		C56D87EB25C82304001960CD /* UIColor+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Gradient.h"; sourceTree = "<group>"; };
+		C56D87ED25C82304001960CD /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		C56D87EE25C82304001960CD /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		C572952D25BB0A2700726419 /* UIView+BackgroundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BackgroundImage.m"; sourceTree = "<group>"; };
 		C572952E25BB0A2700726419 /* UIView+BackgroundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BackgroundImage.h"; sourceTree = "<group>"; };
 		C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框无值@2x.png"; sourceTree = "<group>"; };
@@ -755,8 +760,6 @@
 		C5C4F72F255A5490002F407A /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
 		C5C4F730255A5490002F407A /* 高度自定义的按钮.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
 		C5C4F731255A5490002F407A /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
-		C5C4F734255A5490002F407A /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
-		C5C4F735255A5490002F407A /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		C5C4F737255A5490002F407A /* UIView+ZFPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZFPlayer.h"; sourceTree = "<group>"; };
 		C5C4F738255A5490002F407A /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
 		C5C4F739255A5490002F407A /* UIView+Chain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Chain.m"; sourceTree = "<group>"; };
@@ -1838,6 +1841,24 @@
 			path = TwoVerticalArrangementLabsView;
 			sourceTree = "<group>";
 		};
+		C56D87E925C82304001960CD /* UIColor+Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				C56D87EA25C82304001960CD /* UIColor+Gradient.m */,
+				C56D87EB25C82304001960CD /* UIColor+Gradient.h */,
+			);
+			path = "UIColor+Gradient";
+			sourceTree = "<group>";
+		};
+		C56D87EC25C82304001960CD /* UIColor+Hex */ = {
+			isa = PBXGroup;
+			children = (
+				C56D87ED25C82304001960CD /* UIColor+Hex.m */,
+				C56D87EE25C82304001960CD /* UIColor+Hex.h */,
+			);
+			path = "UIColor+Hex";
+			sourceTree = "<group>";
+		};
 		C572952C25BB0A2700726419 /* UIView+BackgroundImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -2767,8 +2788,8 @@
 		C5C4F733255A5490002F407A /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F735255A5490002F407A /* UIColor+Hex.h */,
-				C5C4F734255A5490002F407A /* UIColor+Hex.m */,
+				C56D87E925C82304001960CD /* UIColor+Gradient */,
+				C56D87EC25C82304001960CD /* UIColor+Hex */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -3736,13 +3757,13 @@
 				C5A4427325ABFBBB000F0CD2 /* WHToast+DDToast.m in Sources */,
 				C5C4F81D255A5491002F407A /* NSObject+OpenURL.m in Sources */,
 				C5C4F522255A5204002F407A /* main.m in Sources */,
-				C5C4F7E7255A5491002F407A /* UIColor+Hex.m in Sources */,
 				C5D1BEA0258B1F8900784D2F /* UIViewController+EmptyData.m in Sources */,
 				C5C4F7E6255A5491002F407A /* UIButton+ImageTitleSpacing.m in Sources */,
 				C5C64EB9259DF80600FD2F99 /* ECPrivacyCheckReminders.m in Sources */,
 				C5C403A2255A6C26002F407A /* XHLaunchAdConfiguration.m in Sources */,
 				C562DB5D25C7C40E004D1AEA /* UIView+ViewController.m in Sources */,
 				C5C4025E255A6671002F407A /* TLTabBarAnimation.m in Sources */,
+				C56D87EF25C82304001960CD /* UIColor+Gradient.m in Sources */,
 				C589C11A2563F75900323A2A /* JobsIMListDataModel.m in Sources */,
 				C5A4426C25ABFBBB000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */,
 				C5512FE925C68253007BCA82 /* NetworkingAPI+CommentApi.m in Sources */,
@@ -3913,6 +3934,7 @@
 				C5C4F7F7255A5491002F407A /* NavigationBar.m in Sources */,
 				C5512FE825C68253007BCA82 /* NetworkingAPI+BankCardApi.m in Sources */,
 				C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */,
+				C56D87F025C82304001960CD /* UIColor+Hex.m in Sources */,
 				C5C4F51A255A5203002F407A /* JobsIM.xcdatamodeld in Sources */,
 				C5512FE725C68253007BCA82 /* NetworkingAPI+EarnApi.m in Sources */,
 				C5C4F7E9255A5491002F407A /* UIView+Measure.m in Sources */,
