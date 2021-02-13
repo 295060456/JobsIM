@@ -80,6 +80,7 @@
 		C55FE8C725B4250C00D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE8C525B4250C00D8C30D /* UIView+MJRefresh.m */; };
 		C562DB5D25C7C40E004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DB5C25C7C40E004D1AEA /* UIView+ViewController.m */; };
 		C565CAFA25A437EB00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */; };
+		C567302F25D77963008ABAF9 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C567302E25D77963008ABAF9 /* BaseView.m */; };
 		C5676280259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627C259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C5676281259F12C1006905A9 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627F259F12C1006905A9 /* BaseCollectionViewCell.m */; };
 		C56BB8B3258798860043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB8B0258798860043C977 /* UIControl+XY.m */; };
@@ -507,6 +508,8 @@
 		C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
 		C565CAF825A437EB00848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
 		C565CAF925A437EB00848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
+		C567302D25D77963008ABAF9 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		C567302E25D77963008ABAF9 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		C567627C259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+ShakeAnimation.m"; sourceTree = "<group>"; };
 		C567627D259F12C1006905A9 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
 		C567627E259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+ShakeAnimation.h"; sourceTree = "<group>"; };
@@ -1841,6 +1844,36 @@
 			path = TwoVerticalArrangementLabsView;
 			sourceTree = "<group>";
 		};
+		C567301C25D77954008ABAF9 /* UIView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C562DB5425C7C3D0004D1AEA /* UIView+ViewController */,
+				C572952C25BB0A2700726419 /* UIView+BackgroundImage */,
+				C595BB8A25864137002A4531 /* UIView+Animation */,
+				C5460E00258C8EBC0008928C /* UIView+AOP */,
+				C595BB8B2586413D002A4531 /* UIView+Chain */,
+				C5D1BE94258B1F7900784D2F /* UIView+EmptyData */,
+				C595BB8C25864143002A4531 /* UIView+Extras */,
+				C51574B825A3509E0074D945 /* UIView+Gesture */,
+				C595BB8D25864149002A4531 /* UIView+Gradient */,
+				C5529EDD2589CE0900A89501 /* UIView+JHGestureBlock */,
+				C595BB8E25864150002A4531 /* UIView+Measure */,
+				C55FE8C425B4250C00D8C30D /* UIView+MJRefresh */,
+				C595BB8F25864157002A4531 /* UIView+SuspendView */,
+				C595BB902586415E002A4531 /* UIView+ZFPlayer */,
+			);
+			path = "UIView+Category";
+			sourceTree = "<group>";
+		};
+		C567302925D7795E008ABAF9 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				C567302D25D77963008ABAF9 /* BaseView.h */,
+				C567302E25D77963008ABAF9 /* BaseView.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
 		C56D87E925C82304001960CD /* UIColor+Gradient */ = {
 			isa = PBXGroup;
 			children = (
@@ -2797,20 +2830,8 @@
 		C5C4F736255A5490002F407A /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C562DB5425C7C3D0004D1AEA /* UIView+ViewController */,
-				C572952C25BB0A2700726419 /* UIView+BackgroundImage */,
-				C595BB8A25864137002A4531 /* UIView+Animation */,
-				C5460E00258C8EBC0008928C /* UIView+AOP */,
-				C595BB8B2586413D002A4531 /* UIView+Chain */,
-				C5D1BE94258B1F7900784D2F /* UIView+EmptyData */,
-				C595BB8C25864143002A4531 /* UIView+Extras */,
-				C51574B825A3509E0074D945 /* UIView+Gesture */,
-				C595BB8D25864149002A4531 /* UIView+Gradient */,
-				C5529EDD2589CE0900A89501 /* UIView+JHGestureBlock */,
-				C595BB8E25864150002A4531 /* UIView+Measure */,
-				C55FE8C425B4250C00D8C30D /* UIView+MJRefresh */,
-				C595BB8F25864157002A4531 /* UIView+SuspendView */,
-				C595BB902586415E002A4531 /* UIView+ZFPlayer */,
+				C567302925D7795E008ABAF9 /* BaseView */,
+				C567301C25D77954008ABAF9 /* UIView+Category */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -3871,6 +3892,7 @@
 				C5C4F806255A5491002F407A /* UIViewController+BaseVC.m in Sources */,
 				C5C40290255A67C4002F407A /* JobsIMAppDelegate+PopupView.m in Sources */,
 				C5D0B7B325878D2A002CA224 /* NSObject+Sound.m in Sources */,
+				C567302F25D77963008ABAF9 /* BaseView.m in Sources */,
 				C5C64ED8259DF80600FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */,
 				C5D6D93825860DFB00029AFF /* NSTimerManager.m in Sources */,
 				C5C4F511255A5203002F407A /* JobsIMSceneDelegate.m in Sources */,
