@@ -112,6 +112,7 @@
 		C589BEE02563D33900323A2A /* JobsIMListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C589BEDF2563D33900323A2A /* JobsIMListTBVCell.m */; };
 		C589C11A2563F75900323A2A /* JobsIMListDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C589C1192563F75900323A2A /* JobsIMListDataModel.m */; };
 		C58D933C25B80C2800414ACB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D933A25B80C2800414ACB /* BaseTableViewCell.m */; };
+		C59431AF25E7AA36003BCA91 /* UITextView+IndicateWordLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = C59431AC25E7AA36003BCA91 /* UITextView+IndicateWordLimit.m */; };
 		C595D2182587143C002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2102587143C002A4531 /* SuspendView.m */; };
 		C595D2192587143C002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2132587143C002A4531 /* SuspendBtn.m */; };
 		C595D21A2587143C002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2172587143C002A4531 /* SuspendLab.m */; };
@@ -556,6 +557,9 @@
 		C589C1192563F75900323A2A /* JobsIMListDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMListDataModel.m; sourceTree = "<group>"; };
 		C58D933A25B80C2800414ACB /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		C58D933B25B80C2800414ACB /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		C59431AC25E7AA36003BCA91 /* UITextView+IndicateWordLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+IndicateWordLimit.m"; sourceTree = "<group>"; };
+		C59431AD25E7AA36003BCA91 /* UITextView+IndicateWordLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+IndicateWordLimit.h"; sourceTree = "<group>"; };
+		C59431AE25E7AA36003BCA91 /* UITextView+IndicateWordLimit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UITextView+IndicateWordLimit.png"; sourceTree = "<group>"; };
 		C595D2102587143C002A4531 /* SuspendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendView.m; sourceTree = "<group>"; };
 		C595D2112587143C002A4531 /* SuspendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendView.h; sourceTree = "<group>"; };
 		C595D2132587143C002A4531 /* SuspendBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendBtn.m; sourceTree = "<group>"; };
@@ -2009,6 +2013,16 @@
 			path = BaseTableViewCell;
 			sourceTree = "<group>";
 		};
+		C59431AB25E7AA36003BCA91 /* UITextView+IndicateWordLimit */ = {
+			isa = PBXGroup;
+			children = (
+				C59431AD25E7AA36003BCA91 /* UITextView+IndicateWordLimit.h */,
+				C59431AC25E7AA36003BCA91 /* UITextView+IndicateWordLimit.m */,
+				C59431AE25E7AA36003BCA91 /* UITextView+IndicateWordLimit.png */,
+			);
+			path = "UITextView+IndicateWordLimit";
+			sourceTree = "<group>";
+		};
 		C595BB8A25864137002A4531 /* UIView+Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -2781,6 +2795,7 @@
 				C5C4F723255A5490002F407A /* UITableViewCell */,
 				C5C4F798255A5490002F407A /* UITableViewHeaderFooterView */,
 				C5C4F7C7255A5490002F407A /* UITextField */,
+				C59431AB25E7AA36003BCA91 /* UITextView+IndicateWordLimit */,
 				C5C4F736255A5490002F407A /* UIView */,
 				C5C4F75F255A5490002F407A /* UIViewController */,
 			);
@@ -3991,6 +4006,7 @@
 				C54AAF23255E57A5000A314D /* UITableViewCell+Margin.m in Sources */,
 				C5C40259255A6671002F407A /* JobsPullListAutoSizeView.m in Sources */,
 				C5A4427225ABFBBB000F0CD2 /* JXCategoryTimelineCell.m in Sources */,
+				C59431AF25E7AA36003BCA91 /* UITextView+IndicateWordLimit.m in Sources */,
 				C5512FEF25C68253007BCA82 /* NetworkingAPI+StatisticsApi.m in Sources */,
 				C5C64EAF259DF80600FD2F99 /* ECPrivacyCheckCamera.m in Sources */,
 				C5C64EB7259DF80600FD2F99 /* ECPrivacyCheckContacts.m in Sources */,
