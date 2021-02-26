@@ -365,7 +365,7 @@ static char *JobsIMAppDelegate_Func_bitsMonitorSuspendLab = "JobsIMAppDelegate_F
         BitsMonitorSuspendLab.isAllowDrag = YES;//悬浮效果必须要的参数
         [self.tabBarVC.view addSubview:BitsMonitorSuspendLab];
         BitsMonitorSuspendLab.frame = CGRectMake(20,
-                                                 MAINSCREEN_HEIGHT - 200,
+                                                 SCREEN_HEIGHT - 200,
                                                  80,
                                                  30);
         objc_setAssociatedObject(self,

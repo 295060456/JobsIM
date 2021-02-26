@@ -197,8 +197,8 @@ didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
 -(NoticePopupView *)popupView{
     if (!_popupView) {
         _popupView = NoticePopupView.new;
-        _popupView.mj_h = MAINSCREEN_HEIGHT * 2 / 3;
-        _popupView.mj_w = MAINSCREEN_WIDTH - 12 * 2;
+        _popupView.mj_h = SCREEN_HEIGHT * 2 / 3;
+        _popupView.mj_w = SCREEN_WIDTH - 12 * 2;
         [_popupView richElementsInViewWithModel:nil];
     }return _popupView;
 }

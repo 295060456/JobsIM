@@ -31,7 +31,7 @@
 }
 
 -(CGSize)makeSize{
-    return CGSizeMake(MAINSCREEN_WIDTH, 30);
+    return CGSizeMake(SCREEN_WIDTH, 30);
 }
 #pragma mark —— lazyLoad
 -(UILabel *)adNoticeLab{

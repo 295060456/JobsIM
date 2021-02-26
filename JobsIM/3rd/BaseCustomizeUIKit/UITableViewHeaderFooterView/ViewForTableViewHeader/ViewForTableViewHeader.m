@@ -1,15 +1,15 @@
 //
-//  ViewForTableViewHeader.m
+//  ViewForTableViewFooter.m
 //  UBallLive
 //
 //  Created by Jobs on 2020/10/27.
 //
 
-#import "ViewForTableViewHeader.h"
+#import "ViewForTableViewFooter.h"
 
 @interface ViewForTableViewHeader ()
 
-@property(nonatomic,copy)MKDataBlock _Nullable viewForTableViewHeaderBlock;
+@property(nonatomic,copy)MKDataBlock _Nullable viewForTableViewFooterBlock;
 
 @end
 
@@ -21,23 +21,23 @@
     }return self;
 }
 
--(void)richElementsInCellWithModel:(id _Nullable)model{
+-(void)richElementsInViewWithModel:(id _Nullable)model{
     
 }
 
 +(CGFloat)heightWithModel:(id _Nullable)model{
-    return 0;
+    return 0.0f;
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
-    if (self.viewForTableViewHeaderBlock) {
-        self.viewForTableViewHeaderBlock(@1);
+    if (self.viewForTableViewFooterBlock) {
+        self.viewForTableViewFooterBlock(@1);
     }
 }
 
--(void)actionBlockViewForTableViewHeader:(MKDataBlock _Nullable)viewForTableViewHeaderBlock{
-    self.viewForTableViewHeaderBlock = viewForTableViewHeaderBlock;
+-(void)actionBlockViewForTableViewFooter:(MKDataBlock _Nullable)viewForTableViewFooterBlock{
+    self.viewForTableViewFooterBlock = viewForTableViewFooterBlock;
 }
 
 @end

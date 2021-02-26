@@ -84,6 +84,8 @@
 		C5676280259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627C259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C5676281259F12C1006905A9 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C567627F259F12C1006905A9 /* BaseCollectionViewCell.m */; };
 		C56BB8B3258798860043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB8B0258798860043C977 /* UIControl+XY.m */; };
+		C56BB98D25E90698001E1E69 /* UIView+CallBackInfoByBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB98C25E90698001E1E69 /* UIView+CallBackInfoByBlock.m */; };
+		C56BB99425E906A2001E1E69 /* UIViewController+CallBackInfoByBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB99325E906A2001E1E69 /* UIViewController+CallBackInfoByBlock.m */; };
 		C56D87EF25C82304001960CD /* UIColor+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D87EA25C82304001960CD /* UIColor+Gradient.m */; };
 		C56D87F025C82304001960CD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D87ED25C82304001960CD /* UIColor+Hex.m */; };
 		C572952F25BB0A2700726419 /* UIView+BackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C572952D25BB0A2700726419 /* UIView+BackgroundImage.m */; };
@@ -519,6 +521,10 @@
 		C56BB8B0258798860043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BB8B1258798860043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C56BB8B2258798860043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
+		C56BB98B25E90698001E1E69 /* UIView+CallBackInfoByBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CallBackInfoByBlock.h"; sourceTree = "<group>"; };
+		C56BB98C25E90698001E1E69 /* UIView+CallBackInfoByBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CallBackInfoByBlock.m"; sourceTree = "<group>"; };
+		C56BB99225E906A2001E1E69 /* UIViewController+CallBackInfoByBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CallBackInfoByBlock.h"; sourceTree = "<group>"; };
+		C56BB99325E906A2001E1E69 /* UIViewController+CallBackInfoByBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CallBackInfoByBlock.m"; sourceTree = "<group>"; };
 		C56D87EA25C82304001960CD /* UIColor+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Gradient.m"; sourceTree = "<group>"; };
 		C56D87EB25C82304001960CD /* UIColor+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Gradient.h"; sourceTree = "<group>"; };
 		C56D87ED25C82304001960CD /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
@@ -1307,9 +1313,10 @@
 		C54FE10F2576717000937C11 /* UIViewController+Category */ = {
 			isa = PBXGroup;
 			children = (
-				C53D38CD2598C7D700B48431 /* UIViewController+XLBubbleTransition */,
+				C56BB99125E906A2001E1E69 /* UIViewController+CallBackInfoByBlock */,
 				C5C4F763255A5490002F407A /* UIViewController+JXCategory */,
 				C5D788CB257F79CF0087FC92 /* UIViewController+Others */,
+				C53D38CD2598C7D700B48431 /* UIViewController+XLBubbleTransition */,
 			);
 			path = "UIViewController+Category";
 			sourceTree = "<group>";
@@ -1854,10 +1861,10 @@
 		C567301C25D77954008ABAF9 /* UIView+Category */ = {
 			isa = PBXGroup;
 			children = (
-				C562DB5425C7C3D0004D1AEA /* UIView+ViewController */,
-				C572952C25BB0A2700726419 /* UIView+BackgroundImage */,
 				C595BB8A25864137002A4531 /* UIView+Animation */,
 				C5460E00258C8EBC0008928C /* UIView+AOP */,
+				C572952C25BB0A2700726419 /* UIView+BackgroundImage */,
+				C56BB98A25E90698001E1E69 /* UIView+CallBackInfoByBlock */,
 				C595BB8B2586413D002A4531 /* UIView+Chain */,
 				C5D1BE94258B1F7900784D2F /* UIView+EmptyData */,
 				C595BB8C25864143002A4531 /* UIView+Extras */,
@@ -1867,6 +1874,7 @@
 				C595BB8E25864150002A4531 /* UIView+Measure */,
 				C55FE8C425B4250C00D8C30D /* UIView+MJRefresh */,
 				C595BB8F25864157002A4531 /* UIView+SuspendView */,
+				C562DB5425C7C3D0004D1AEA /* UIView+ViewController */,
 				C595BB902586415E002A4531 /* UIView+ZFPlayer */,
 			);
 			path = "UIView+Category";
@@ -1879,6 +1887,24 @@
 				C567302E25D77963008ABAF9 /* BaseView.m */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		C56BB98A25E90698001E1E69 /* UIView+CallBackInfoByBlock */ = {
+			isa = PBXGroup;
+			children = (
+				C56BB98B25E90698001E1E69 /* UIView+CallBackInfoByBlock.h */,
+				C56BB98C25E90698001E1E69 /* UIView+CallBackInfoByBlock.m */,
+			);
+			path = "UIView+CallBackInfoByBlock";
+			sourceTree = "<group>";
+		};
+		C56BB99125E906A2001E1E69 /* UIViewController+CallBackInfoByBlock */ = {
+			isa = PBXGroup;
+			children = (
+				C56BB99225E906A2001E1E69 /* UIViewController+CallBackInfoByBlock.h */,
+				C56BB99325E906A2001E1E69 /* UIViewController+CallBackInfoByBlock.m */,
+			);
+			path = "UIViewController+CallBackInfoByBlock";
 			sourceTree = "<group>";
 		};
 		C56D87E925C82304001960CD /* UIColor+Gradient */ = {
@@ -3040,8 +3066,8 @@
 		C5C4F799255A5490002F407A /* ViewForTableViewHeader */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F79A255A5490002F407A /* ViewForTableViewHeader.m */,
 				C5C4F79B255A5490002F407A /* ViewForTableViewHeader.h */,
+				C5C4F79A255A5490002F407A /* ViewForTableViewHeader.m */,
 			);
 			path = ViewForTableViewHeader;
 			sourceTree = "<group>";
@@ -3049,8 +3075,8 @@
 		C5C4F79C255A5490002F407A /* ViewForTableViewFooter */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F79D255A5490002F407A /* ViewForTableViewFooter.m */,
 				C5C4F79E255A5490002F407A /* ViewForTableViewFooter.h */,
+				C5C4F79D255A5490002F407A /* ViewForTableViewFooter.m */,
 			);
 			path = ViewForTableViewFooter;
 			sourceTree = "<group>";
@@ -3893,7 +3919,9 @@
 				C5C4F7DE255A5491002F407A /* UILabel+Extra.m in Sources */,
 				C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */,
 				C565CAFA25A437EB00848134 /* TwoVerticalArrangementLabsView.m in Sources */,
+				C56BB99425E906A2001E1E69 /* UIViewController+CallBackInfoByBlock.m in Sources */,
 				C5C4F807255A5491002F407A /* BaseNavigationVC.m in Sources */,
+				C56BB98D25E90698001E1E69 /* UIView+CallBackInfoByBlock.m in Sources */,
 				C5676280259F12C1006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */,
 				C5C4F7F8255A5491002F407A /* NSString+Extras.m in Sources */,
 				C5C4F7E3255A5491002F407A /* UITableViewCell+WhiteArrows.m in Sources */,
