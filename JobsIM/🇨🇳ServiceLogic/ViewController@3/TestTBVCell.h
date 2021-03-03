@@ -6,7 +6,6 @@
 //
 
 #import "BaseTableViewCell.h"
-#import "MKRankModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

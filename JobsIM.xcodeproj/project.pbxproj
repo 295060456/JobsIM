@@ -376,6 +376,7 @@
 		C5226A0925875852004447FB /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
 		C5226A0A25875852004447FB /* BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWShareView.m; sourceTree = "<group>"; };
 		C5226A0B25875852004447FB /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
+		C5264E2F25EF5F3600C8AB2B /* JobsIMModelHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMModelHeader.h; sourceTree = "<group>"; };
 		C5267C8B258A4AE40095A681 /* JobsMagicTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsMagicTextField.m; sourceTree = "<group>"; };
 		C5267C8C258A4AE40095A681 /* JobsMagicTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsMagicTextField.h; sourceTree = "<group>"; };
 		C5267E69258A4B380095A681 /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
@@ -1820,25 +1821,26 @@
 			isa = PBXGroup;
 			children = (
 				C5512FA525C68241007BCA82 /* 网络请求 */,
-				C558DE9E25BEAF6900FC6CA5 /* 数据模型层 */,
+				C558DE9E25BEAF6900FC6CA5 /* 🇨🇳数据模型层(此文件夹存放全局的所有Model) */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		C558DE9E25BEAF6900FC6CA5 /* 数据模型层 */ = {
+		C558DE9E25BEAF6900FC6CA5 /* 🇨🇳数据模型层(此文件夹存放全局的所有Model) */ = {
 			isa = PBXGroup;
 			children = (
+				C5264E2F25EF5F3600C8AB2B /* JobsIMModelHeader.h */,
 				C558DE9F25BEAF7B00FC6CA5 /* BaseModel */,
 				C558DEA625BEAF8000FC6CA5 /* MKRankModel */,
 			);
-			path = "数据模型层";
+			path = "🇨🇳数据模型层(此文件夹存放全局的所有Model)";
 			sourceTree = "<group>";
 		};
 		C558DE9F25BEAF7B00FC6CA5 /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				C558DEA025BEAF7B00FC6CA5 /* BaseModel.m */,
 				C558DEA125BEAF7B00FC6CA5 /* BaseModel.h */,
+				C558DEA025BEAF7B00FC6CA5 /* BaseModel.m */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";

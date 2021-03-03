@@ -22,4 +22,6 @@
 #import "JobsIMSceneDelegate.h"
 #import "JobsIMAppDelegate.h"
 
+#import "JobsIMModelHeader.h"// 🇨🇳数据模型层(此文件夹存放全局的所有Model)
+
 #endif /* Other_h */
