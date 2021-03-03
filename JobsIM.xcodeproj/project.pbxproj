@@ -420,6 +420,7 @@
 		C5460E0B258C8ECB0008928C /* ZYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
 		C54AAF21255E57A5000A314D /* UITableViewCell+Margin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Margin.h"; sourceTree = "<group>"; };
 		C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Margin.m"; sourceTree = "<group>"; };
+		C54C620C25EFC29B007DD043 /* DDCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCacheTool.h; sourceTree = "<group>"; };
 		C54C88A325C553710054F53F /* MacroDef_App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_App.h; sourceTree = "<group>"; };
 		C5512F8C25C681F4007BCA82 /* ZWPullMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuModel.h; sourceTree = "<group>"; };
 		C5512F8D25C681F4007BCA82 /* ZWPullMenuConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuConfig.h; sourceTree = "<group>"; };
@@ -1396,6 +1397,14 @@
 			path = "自定义右侧小箭头图标";
 			sourceTree = "<group>";
 		};
+		C54C620B25EFC29B007DD043 /* 清除缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				C54C620C25EFC29B007DD043 /* DDCacheTool.h */,
+			);
+			path = "清除缓存";
+			sourceTree = "<group>";
+		};
 		C54FE10E2576716700937C11 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -2331,6 +2340,7 @@
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C54C620B25EFC29B007DD043 /* 清除缓存 */,
 				C551300225C685B8007BCA82 /* 网络请求框架 */,
 				C5CF13DE25AC7D4200381935 /* LYLUnicode */,
 				C5A4377925AAF79B000F0CD2 /* 手势滑动返回 */,
