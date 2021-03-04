@@ -668,7 +668,7 @@
     if (self){
         self.contentView.backgroundColor = [UIColor whiteColor];
         self.label = [UILabel new];
-        self.label.font = [UIFont systemFontOfSize:17.0];
+        self.label.font = [UIFont systemFontOfSize:17.0 weight:UIFontWeightRegular];
         self.label.textColor = [UIColor redColor];
         [self.contentView addSubview:self.label];
         self.label.frame = CGRectMake(10, 0, frame.size.width-20, frame.size.height);

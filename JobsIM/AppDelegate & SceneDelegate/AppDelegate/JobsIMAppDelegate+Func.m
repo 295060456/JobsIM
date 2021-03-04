@@ -40,7 +40,7 @@ static char *JobsIMAppDelegate_Func_bitsMonitorSuspendLab = "JobsIMAppDelegate_F
         // 导航栏标题颜色
         configure.titleColor = kWhiteColor;
         // 导航栏标题字体
-        configure.titleFont = [UIFont systemFontOfSize:18.0f];
+        configure.titleFont = [UIFont systemFontOfSize:18.0f weight:UIFontWeightRegular];
         // 导航栏返回按钮样式
         configure.backStyle = GKNavigationBarBackStyleBlack;
         // 导航栏左右item间距
