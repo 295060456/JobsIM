@@ -73,6 +73,8 @@
 		C551301725C685BE007BCA82 /* NSString+ZBUTF8Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C551300D25C685BE007BCA82 /* NSString+ZBUTF8Encoding.m */; };
 		C552AA1F2589DB0400A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552AA1D2589DB0400A89501 /* UIImage+ScreenShot.m */; };
 		C553900325727F77008BB60F /* SocketIOTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C553900125727F77008BB60F /* SocketIOTools.m */; };
+		C5542B1F25F32480002D1CA6 /* CheckMemFreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5542B1E25F32480002D1CA6 /* CheckMemFreeVC.m */; };
+		C554464225F37D40002D1CA6 /* UIViewController+TFPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = C554464125F37D40002D1CA6 /* UIViewController+TFPopup.m */; };
 		C558DE9025BEAD6700FC6CA5 /* TestTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C558DE8F25BEAD6700FC6CA5 /* TestTBVCell.m */; };
 		C558DE9925BEAEED00FC6CA5 /* MKRankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C558DE9725BEAEED00FC6CA5 /* MKRankModel.m */; };
 		C558DEA225BEAF7B00FC6CA5 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C558DEA025BEAF7B00FC6CA5 /* BaseModel.m */; };
@@ -494,6 +496,10 @@
 		C553900225727F77008BB60F /* SocketIOTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTools.h; sourceTree = "<group>"; };
 		C553900825727FB3008BB60F /* UBLLivingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBLLivingVC.h; sourceTree = "<group>"; };
 		C553900925727FB3008BB60F /* UBLLivingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBLLivingVC.m; sourceTree = "<group>"; };
+		C5542B1D25F32480002D1CA6 /* CheckMemFreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckMemFreeVC.h; sourceTree = "<group>"; };
+		C5542B1E25F32480002D1CA6 /* CheckMemFreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckMemFreeVC.m; sourceTree = "<group>"; };
+		C554464025F37D40002D1CA6 /* UIViewController+TFPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TFPopup.h"; sourceTree = "<group>"; };
+		C554464125F37D40002D1CA6 /* UIViewController+TFPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TFPopup.m"; sourceTree = "<group>"; };
 		C5568B7E255BA79E005C1361 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C558DE8E25BEAD6700FC6CA5 /* TestTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTBVCell.h; sourceTree = "<group>"; };
 		C558DE8F25BEAD6700FC6CA5 /* TestTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTBVCell.m; sourceTree = "<group>"; };
@@ -1811,6 +1817,24 @@
 			path = "使用范例";
 			sourceTree = "<group>";
 		};
+		C5542B1C25F32480002D1CA6 /* CheckMemFreeVC */ = {
+			isa = PBXGroup;
+			children = (
+				C5542B1D25F32480002D1CA6 /* CheckMemFreeVC.h */,
+				C5542B1E25F32480002D1CA6 /* CheckMemFreeVC.m */,
+			);
+			path = CheckMemFreeVC;
+			sourceTree = "<group>";
+		};
+		C554463F25F37D40002D1CA6 /* UIViewController+TFPopup */ = {
+			isa = PBXGroup;
+			children = (
+				C554464025F37D40002D1CA6 /* UIViewController+TFPopup.h */,
+				C554464125F37D40002D1CA6 /* UIViewController+TFPopup.m */,
+			);
+			path = "UIViewController+TFPopup";
+			sourceTree = "<group>";
+		};
 		C555631C2580A438004DB33A /* NSObject+Others */ = {
 			isa = PBXGroup;
 			children = (
@@ -2340,6 +2364,7 @@
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5542B1C25F32480002D1CA6 /* CheckMemFreeVC */,
 				C54C620B25EFC29B007DD043 /* 清除缓存 */,
 				C551300225C685B8007BCA82 /* 网络请求框架 */,
 				C5CF13DE25AC7D4200381935 /* LYLUnicode */,
@@ -3551,6 +3576,7 @@
 		C5D788CB257F79CF0087FC92 /* UIViewController+Others */ = {
 			isa = PBXGroup;
 			children = (
+				C554463F25F37D40002D1CA6 /* UIViewController+TFPopup */,
 				C544BB3D258371BB00C6CF2A /* UIViewController+BackBtn */,
 				C544BB4A258371C400C6CF2A /* UIViewController+BaseVC */,
 				C544BB54258371CD00C6CF2A /* UIViewController+BRPickerView */,
@@ -3955,6 +3981,7 @@
 				C5512F9825C681F4007BCA82 /* ZWPullMenuCell.m in Sources */,
 				C551301625C685BE007BCA82 /* ZBCacheManager.m in Sources */,
 				C5512F9725C681F4007BCA82 /* ZWPullMenuView.m in Sources */,
+				C5542B1F25F32480002D1CA6 /* CheckMemFreeVC.m in Sources */,
 				C5676281259F12C1006905A9 /* BaseCollectionViewCell.m in Sources */,
 				C551301525C685BE007BCA82 /* ZBRequestManager.m in Sources */,
 				C5C40393255A6C26002F407A /* WMZBannerFadeLayout.m in Sources */,
@@ -4055,6 +4082,7 @@
 				C5C4F814255A5491002F407A /* HQCollectionViewFlowLayout.m in Sources */,
 				C5226A0F25875852004447FB /* BWItemModel.m in Sources */,
 				C5C403A0255A6C26002F407A /* XHLaunchAdDownloader.m in Sources */,
+				C554464225F37D40002D1CA6 /* UIViewController+TFPopup.m in Sources */,
 				C59F38EF259B3A1E00E22F9B /* JobsBitsMonitorCore.m in Sources */,
 				C5C4F81F255A5491002F407A /* NSObject+Extras.m in Sources */,
 				C59A3BCF258DD1BF005F6260 /* UserDefaultManager.m in Sources */,
