@@ -442,24 +442,27 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
 -(UIButton *)shareBtn{
     if (!_shareBtn) {
         _shareBtn = UIButton.new;
-        _shareBtn.mj_w = 23;
-        _shareBtn.mj_h = 23;
+        _shareBtn.mj_w = KWidth(23);
+        _shareBtn.mj_h = KWidth(23);
         [_shareBtn setImage:KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"分享") forState:UIControlStateNormal];
         [_shareBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
         [UIView cornerCutToCircleWithView:_shareBtn
                           andCornerRadius:23 / 2];
-        [[_shareBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [[_shareBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIButton * _Nullable x) {
             NSLog(@"分享功能");
-            [NSObject showSYSAlertViewTitle:@"正在研发中..."
-                                    message:@"敬请期待"
-                            isSeparateStyle:NO
-                                btnTitleArr:@[@"好的"]
-                             alertBtnAction:@[@""]
-                                   targetVC:self
-                                     funcInWhere:nil
-                                   animated:YES
-                               alertVCBlock:nil
-                            completionBlock:nil];
+            SYSAlertControllerConfig *config = SYSAlertControllerConfig.new;
+            config.title = @"正在研发中...";
+            config.message = @"敬请期待";
+            config.isSeparateStyle = NO;
+            config.btnTitleArr = @[@"好的"];
+            config.alertBtnActionArr = @[@""];
+            config.targetVC = self;
+            config.funcInWhere = self;
+            config.animated = YES;
+            
+            [NSObject showSYSAlertViewConfig:config
+                                alertVCBlock:nil
+                             completionBlock:nil];
         }];
     }return _shareBtn;
 }

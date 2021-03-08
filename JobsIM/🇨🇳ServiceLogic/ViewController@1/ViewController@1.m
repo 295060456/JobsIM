@@ -90,15 +90,19 @@
         [_shareBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
         [UIView cornerCutToCircleWithView:_shareBtn
                           andCornerRadius:23 / 2];
-        [[_shareBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-            [NSObject showSYSAlertViewTitle:@"此功能尚在开发中..."
-                                    message:@"敬请期待"
-                            isSeparateStyle:NO
-                                btnTitleArr:@[@"好的"]
-                             alertBtnAction:@[@""]
-                                   targetVC:self
-                                     funcInWhere:nil
-                                   animated:YES
+        [[_shareBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIButton * _Nullable x) {
+            
+            SYSAlertControllerConfig *config = SYSAlertControllerConfig.new;
+            config.title = @"此功能尚在开发中...";
+            config.message = @"敬请期待";
+            config.isSeparateStyle = NO;
+            config.btnTitleArr = @[@"好的"];
+            config.alertBtnActionArr = @[@""];
+            config.targetVC = self;
+            config.funcInWhere = self;
+            config.animated = YES;
+            
+            [NSObject showSYSAlertViewConfig:config
                                alertVCBlock:nil
                             completionBlock:nil];
         }];
