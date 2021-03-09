@@ -64,7 +64,7 @@
                 richLabelFontModel.range = NSMakeRange(0, title_1_Model.dataString.length);
                 
                 RichLabelTextCorModel *richLabelTextCorModel = RichLabelTextCorModel.new;
-                richLabelTextCorModel.cor = RGBCOLOR(89,86,122);
+                richLabelTextCorModel.cor = COLOR_RGB(89,86,122);
                 richLabelTextCorModel.range = NSMakeRange(0, title_1_Model.dataString.length);
                 
                 title_1_Model.richLabelFontModel = richLabelFontModel;
@@ -79,7 +79,7 @@
                 richLabelFontModel.range = NSMakeRange(title_1_Model.dataString.length, title_2_Model.dataString.length);
                 
                 RichLabelTextCorModel *richLabelTextCorModel = RichLabelTextCorModel.new;
-                richLabelTextCorModel.cor = RGBCOLOR(255, 0, 0);
+                richLabelTextCorModel.cor = COLOR_RGB(255, 0, 0);
                 richLabelTextCorModel.range = NSMakeRange(title_1_Model.dataString.length, title_2_Model.dataString.length);
                 
                 
@@ -105,7 +105,7 @@
                 richLabelFontModel.range = NSMakeRange(0, title_1_Model.dataString.length);
                 
                 RichLabelTextCorModel *richLabelTextCorModel = RichLabelTextCorModel.new;
-                richLabelTextCorModel.cor = RGBCOLOR(89,86,122);
+                richLabelTextCorModel.cor = COLOR_RGB(89,86,122);
                 richLabelTextCorModel.range = NSMakeRange(0, title_1_Model.dataString.length);
                 
                 title_1_Model.richLabelFontModel = richLabelFontModel;
@@ -120,7 +120,7 @@
                 richLabelFontModel.range = NSMakeRange(title_1_Model.dataString.length, title_2_Model.dataString.length);
                 
                 RichLabelTextCorModel *richLabelTextCorModel = RichLabelTextCorModel.new;
-                richLabelTextCorModel.cor = RGBCOLOR(255, 0, 0);
+                richLabelTextCorModel.cor = COLOR_RGB(255, 0, 0);
                 richLabelTextCorModel.range = NSMakeRange(title_1_Model.dataString.length, title_2_Model.dataString.length);
                 
                 
@@ -206,7 +206,7 @@
     if (!_titleLab) {
         _titleLab = UILabel.new;
         _titleLab.font = [UIFont systemFontOfSize:16 weight:UIFontWeightBold];
-        _titleLab.textColor = RGBCOLOR(46, 51, 77);
+        _titleLab.textColor = COLOR_RGB(46, 51, 77);
         [self.contentView addSubview:_titleLab];
         [_titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.userHeaderIMGV.mas_right).offset(10.5);

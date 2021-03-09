@@ -154,12 +154,12 @@
         MGSwipeButtonModel *model_2 = MGSwipeButtonModel.new;
         model_2.titleStr = @"L2";
         model_2.IconIMG = KIMG(@"Fav");
-        model_2.bgCor = COLOR_RGB(0, 0x99, 0xcc, 1);
+        model_2.bgCor = COLOR_RGBA(0, 0x99, 0xcc, 1);
         
         MGSwipeButtonModel *model_3 = MGSwipeButtonModel.new;
         model_3.titleStr = @"L3";
         model_3.IconIMG = KIMG(@"Menu");
-        model_3.bgCor = COLOR_RGB(0.59, 0.29, 0.08, 1);
+        model_3.bgCor = COLOR_RGBA(0.59, 0.29, 0.08, 1);
         
         [_leftBtnMutArr addObject:model_1];
         [_leftBtnMutArr addObject:model_2];
