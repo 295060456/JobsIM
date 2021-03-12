@@ -79,6 +79,7 @@
 		C558DE9925BEAEED00FC6CA5 /* MKRankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C558DE9725BEAEED00FC6CA5 /* MKRankModel.m */; };
 		C558DEA225BEAF7B00FC6CA5 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C558DEA025BEAF7B00FC6CA5 /* BaseModel.m */; };
 		C55BF51325AC8F5700A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF51225AC8F5700A8347F /* TabbarVC.m */; };
+		C55E0AEB25F9C9E100716A9B /* UICollectionViewCell+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E0AEA25F9C9E100716A9B /* UICollectionViewCell+Default.m */; };
 		C55FE8C725B4250C00D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE8C525B4250C00D8C30D /* UIView+MJRefresh.m */; };
 		C562DB5D25C7C40E004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DB5C25C7C40E004D1AEA /* UIView+ViewController.m */; };
 		C565CAFA25A437EB00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */; };
@@ -512,6 +513,9 @@
 		C55BF51125AC8F5700A8347F /* TabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
 		C55BF51225AC8F5700A8347F /* TabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
 		C55BF51725AC8F6300A8347F /* TabBarControllerConstruction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConstruction.h; sourceTree = "<group>"; };
+		C55E0AE925F9C9E100716A9B /* UICollectionViewCell+Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Default.h"; sourceTree = "<group>"; };
+		C55E0AEA25F9C9E100716A9B /* UICollectionViewCell+Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Default.m"; sourceTree = "<group>"; };
+		C55E285C25FB272200716A9B /* MacroDef_SysWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_SysWarning.h; sourceTree = "<group>"; };
 		C55FE8C525B4250C00D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
 		C55FE8C625B4250C00D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
 		C562DB5B25C7C40E004D1AEA /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
@@ -1958,6 +1962,65 @@
 			path = 3rd;
 			sourceTree = "<group>";
 		};
+		C55E0AE725F9C9D700716A9B /* UICollectionViewCell+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C55E0AE825F9C9E100716A9B /* UICollectionViewCell+Default */,
+				C542D30725EB772000D776D8 /* UICollectionViewCell+ShakeAnimation */,
+			);
+			path = "UICollectionViewCell+Category";
+			sourceTree = "<group>";
+		};
+		C55E0AE825F9C9E100716A9B /* UICollectionViewCell+Default */ = {
+			isa = PBXGroup;
+			children = (
+				C55E0AE925F9C9E100716A9B /* UICollectionViewCell+Default.h */,
+				C55E0AEA25F9C9E100716A9B /* UICollectionViewCell+Default.m */,
+			);
+			path = "UICollectionViewCell+Default";
+			sourceTree = "<group>";
+		};
+		C55E283625FB26F500716A9B /* MacroDef_App */ = {
+			isa = PBXGroup;
+			children = (
+				C54C88A325C553710054F53F /* MacroDef_App.h */,
+			);
+			path = MacroDef_App;
+			sourceTree = "<group>";
+		};
+		C55E283D25FB26F900716A9B /* MacroDef_Cor */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F702255A5418002F407A /* MacroDef_Cor.h */,
+			);
+			path = MacroDef_Cor;
+			sourceTree = "<group>";
+		};
+		C55E284425FB270000716A9B /* MacroDef_Func */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F704255A5418002F407A /* MacroDef_Func.h */,
+			);
+			path = MacroDef_Func;
+			sourceTree = "<group>";
+		};
+		C55E284E25FB270700716A9B /* MacroDef_Size */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F703255A5418002F407A /* MacroDef_Size.h */,
+			);
+			path = MacroDef_Size;
+			sourceTree = "<group>";
+		};
+		C55E285225FB270C00716A9B /* MacroDef_Sys */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F705255A5418002F407A /* MacroDef_Sys.h */,
+				C55E285C25FB272200716A9B /* MacroDef_SysWarning.h */,
+			);
+			path = MacroDef_Sys;
+			sourceTree = "<group>";
+		};
 		C55FE8C425B4250C00D8C30D /* UIView+MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -2886,11 +2949,11 @@
 		C5C4F701255A5418002F407A /* 各项宏定义 */ = {
 			isa = PBXGroup;
 			children = (
-				C54C88A325C553710054F53F /* MacroDef_App.h */,
-				C5C4F702255A5418002F407A /* MacroDef_Cor.h */,
-				C5C4F704255A5418002F407A /* MacroDef_Func.h */,
-				C5C4F703255A5418002F407A /* MacroDef_Size.h */,
-				C5C4F705255A5418002F407A /* MacroDef_Sys.h */,
+				C55E283625FB26F500716A9B /* MacroDef_App */,
+				C55E283D25FB26F900716A9B /* MacroDef_Cor */,
+				C55E284425FB270000716A9B /* MacroDef_Func */,
+				C55E284E25FB270700716A9B /* MacroDef_Size */,
+				C55E285225FB270C00716A9B /* MacroDef_Sys */,
 			);
 			path = "各项宏定义";
 			sourceTree = "<group>";
@@ -3057,7 +3120,7 @@
 			isa = PBXGroup;
 			children = (
 				C542D30625EB771A00D776D8 /* BaseCollectionViewCell */,
-				C542D30725EB772000D776D8 /* UICollectionViewCell+ShakeAnimation */,
+				C55E0AE725F9C9D700716A9B /* UICollectionViewCell+Category */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -4089,6 +4152,7 @@
 				C552AA1F2589DB0400A89501 /* UIImage+ScreenShot.m in Sources */,
 				C5C40390255A6C26002F407A /* WMZBannerParam.m in Sources */,
 				C5512F9625C681F4007BCA82 /* ZWPullMenuModel.m in Sources */,
+				C55E0AEB25F9C9E100716A9B /* UICollectionViewCell+Default.m in Sources */,
 				C553900325727F77008BB60F /* SocketIOTools.m in Sources */,
 				C5C4025C255A6671002F407A /* TransitionController.m in Sources */,
 				C5512FF825C68253007BCA82 /* DataManager.m in Sources */,
