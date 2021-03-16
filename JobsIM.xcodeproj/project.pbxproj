@@ -81,6 +81,7 @@
 		C55BF51325AC8F5700A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF51225AC8F5700A8347F /* TabbarVC.m */; };
 		C55E0AEB25F9C9E100716A9B /* UICollectionViewCell+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E0AEA25F9C9E100716A9B /* UICollectionViewCell+Default.m */; };
 		C55FE8C725B4250C00D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE8C525B4250C00D8C30D /* UIView+MJRefresh.m */; };
+		C5618F8626008E9600D4546E /* UITextView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C5618F8526008E9600D4546E /* UITextView+Extend.m */; };
 		C562DB5D25C7C40E004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DB5C25C7C40E004D1AEA /* UIView+ViewController.m */; };
 		C565CAFA25A437EB00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */; };
 		C567302F25D77963008ABAF9 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C567302E25D77963008ABAF9 /* BaseView.m */; };
@@ -518,6 +519,8 @@
 		C55E285C25FB272200716A9B /* MacroDef_SysWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_SysWarning.h; sourceTree = "<group>"; };
 		C55FE8C525B4250C00D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
 		C55FE8C625B4250C00D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
+		C5618F8426008E9600D4546E /* UITextView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extend.h"; sourceTree = "<group>"; };
+		C5618F8526008E9600D4546E /* UITextView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extend.m"; sourceTree = "<group>"; };
 		C562DB5B25C7C40E004D1AEA /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		C562DB5C25C7C40E004D1AEA /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
@@ -1269,7 +1272,7 @@
 		C542D30C25EB778100D776D8 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
-				C59431AB25E7AA36003BCA91 /* UITextView+IndicateWordLimit */,
+				C5618F8226008E8D00D4546E /* UITextView+Category */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
@@ -2028,6 +2031,24 @@
 				C55FE8C525B4250C00D8C30D /* UIView+MJRefresh.m */,
 			);
 			path = "UIView+MJRefresh";
+			sourceTree = "<group>";
+		};
+		C5618F8226008E8D00D4546E /* UITextView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C5618F8326008E9600D4546E /* UITextView+Extend */,
+				C59431AB25E7AA36003BCA91 /* UITextView+IndicateWordLimit */,
+			);
+			path = "UITextView+Category";
+			sourceTree = "<group>";
+		};
+		C5618F8326008E9600D4546E /* UITextView+Extend */ = {
+			isa = PBXGroup;
+			children = (
+				C5618F8426008E9600D4546E /* UITextView+Extend.h */,
+				C5618F8526008E9600D4546E /* UITextView+Extend.m */,
+			);
+			path = "UITextView+Extend";
 			sourceTree = "<group>";
 		};
 		C562DB5425C7C3D0004D1AEA /* UIView+ViewController */ = {
@@ -4123,6 +4144,7 @@
 				C5C4F50E255A5203002F407A /* JobsIMAppDelegate.m in Sources */,
 				C5C40391255A6C26002F407A /* WMZBannerView.m in Sources */,
 				C5C4F7FD255A5491002F407A /* UIViewController+Shake.m in Sources */,
+				C5618F8626008E9600D4546E /* UITextView+Extend.m in Sources */,
 				C5C4F80B255A5491002F407A /* BaseTableView.m in Sources */,
 				C5C4F808255A5491002F407A /* TableViewAnimationKit.m in Sources */,
 				C5C4F7FF255A5491002F407A /* UIViewController+GifImageView.m in Sources */,
