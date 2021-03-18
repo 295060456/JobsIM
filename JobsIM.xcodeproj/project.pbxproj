@@ -426,6 +426,7 @@
 		C54AAF22255E57A5000A314D /* UITableViewCell+Margin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Margin.m"; sourceTree = "<group>"; };
 		C54C620C25EFC29B007DD043 /* DDCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCacheTool.h; sourceTree = "<group>"; };
 		C54C88A325C553710054F53F /* MacroDef_App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_App.h; sourceTree = "<group>"; };
+		C550B65B2603671500A81441 /* 安全区域.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "安全区域.png"; sourceTree = "<group>"; };
 		C5512F8C25C681F4007BCA82 /* ZWPullMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuModel.h; sourceTree = "<group>"; };
 		C5512F8D25C681F4007BCA82 /* ZWPullMenuConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuConfig.h; sourceTree = "<group>"; };
 		C5512F8E25C681F4007BCA82 /* ZWPullMenuConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWPullMenuConfig.m; sourceTree = "<group>"; };
@@ -2010,6 +2011,7 @@
 		C55E284E25FB270700716A9B /* MacroDef_Size */ = {
 			isa = PBXGroup;
 			children = (
+				C550B65B2603671500A81441 /* 安全区域.png */,
 				C5C4F703255A5418002F407A /* MacroDef_Size.h */,
 			);
 			path = MacroDef_Size;

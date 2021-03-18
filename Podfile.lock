@@ -27,18 +27,18 @@ PODS:
   - BRPickerView/StringPickerView (2.7.3):
     - BRPickerView/Base
   - CocoaAsyncSocket (7.6.5)
-  - DoraemonKit (3.0.6):
-    - DoraemonKit/Core (= 3.0.6)
-  - DoraemonKit/Core (3.0.6):
+  - DoraemonKit (3.0.7):
+    - DoraemonKit/Core (= 3.0.7)
+  - DoraemonKit/Core (3.0.7):
     - FMDB
     - GCDWebServer
     - GCDWebServer/WebDAV
     - GCDWebServer/WebUploader
   - FBRetainCycleDetector (0.1.4)
-  - FLAnimatedImage (1.0.12)
+  - FLAnimatedImage (1.0.15)
   - "FLAnimatedImageView+RGWrapper (1.0.0)":
     - FLAnimatedImage
-  - FLEX (4.3.0)
+  - FLEX (4.4.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -49,15 +49,15 @@ PODS:
     - GCDWebServer/Core
   - GCDWebServer/WebUploader (3.5.4):
     - GCDWebServer/Core
-  - GKNavigationBar (1.4.0):
-    - GKNavigationBar/GestureHandle (= 1.4.0)
-    - GKNavigationBar/NavigationBar (= 1.4.0)
-  - GKNavigationBar/GestureHandle (1.4.0)
-  - GKNavigationBar/NavigationBar (1.4.0)
-  - GKPhotoBrowser (2.1.4):
-    - GKPhotoBrowser/SD (= 2.1.4)
-  - GKPhotoBrowser/Core (2.1.4)
-  - GKPhotoBrowser/SD (2.1.4):
+  - GKNavigationBar (1.5.1):
+    - GKNavigationBar/GestureHandle (= 1.5.1)
+    - GKNavigationBar/NavigationBar (= 1.5.1)
+  - GKNavigationBar/GestureHandle (1.5.1)
+  - GKNavigationBar/NavigationBar (1.5.1)
+  - GKPhotoBrowser (2.1.7):
+    - GKPhotoBrowser/SD (= 2.1.7)
+  - GKPhotoBrowser/Core (2.1.7)
+  - GKPhotoBrowser/SD (2.1.7):
     - GKPhotoBrowser/Core
     - SDWebImage (~> 5.0)
   - IQKeyboardManager (6.5.6)
@@ -86,7 +86,7 @@ PODS:
   - LYEmptyView (1.3.1)
   - Masonry (1.1.0)
   - MGSwipeTableCell (1.6.11)
-  - MJExtension (3.2.2)
+  - MJExtension (3.2.4)
   - MJRefresh (3.5.0)
   - MQTTClient (0.15.3):
     - MQTTClient/Core (= 0.15.3)
@@ -100,16 +100,16 @@ PODS:
   - Reachability (3.2)
   - ReactiveObjC (3.1.1)
   - RQShineLabel (0.1.3)
-  - SDWebImage (5.10.2):
-    - SDWebImage/Core (= 5.10.2)
-  - SDWebImage/Core (5.10.2)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
   - Shimmer (1.0.2)
   - Socket.IO-Client-Swift (15.2.0):
     - Starscream (~> 3.1)
   - SPAlertController (4.0.0)
   - Starscream (3.1.1)
   - SZTextView (1.3.0)
-  - TABAnimated (2.5.1)
+  - TABAnimated (2.5.2)
   - TFPopup (1.3.0)
   - TXFileOperation (1.0)
   - WHToast (0.0.7)
@@ -200,15 +200,15 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   BRPickerView: 9cc11880ac79c4872d081ccb88f306224c1501d7
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
-  DoraemonKit: 919709427c30af94e265532a879ac41797d296d1
+  DoraemonKit: 32fb97f3aa82efa133111d193080ca5462cef135
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
-  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FLAnimatedImage: dd3db277b17e909ec3c7fd41adfce79b321d960e
   "FLAnimatedImageView+RGWrapper": 01f3dc52abf32abf2cd854b442864d679a41465c
-  FLEX: 58820af8881284bdd44e36141c607b8199cca45d
+  FLEX: 0592c011c6dfbfdb94a5e24f2d4a9dbff0c6026d
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
-  GKNavigationBar: fe87990bde3fb2b7ece3f81014c6d4bc654bef06
-  GKPhotoBrowser: 1f7c0bdd21fc617f1c7cd18d15f26488abf0f973
+  GKNavigationBar: ad873d71b3c0760f800c1a50e877ed012ba8f650
+  GKPhotoBrowser: c03c9db2f586d8982782a89244cd9f5a4453030c
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JJException: da7c64ccf29d9938a4075378a7e9a29db7383c37
   JPImageresizerView: 34f4a1f2d2196ddf148443f26dc4c4a41cca5b06
@@ -218,20 +218,20 @@ SPEC CHECKSUMS:
   LYEmptyView: b6d418cfa38b78df0cf243f9a9c25ccbdc399922
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
-  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
+  MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
   PPBadgeView: b50a223638970fd0781e8753250385864b6dd2fe
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   RQShineLabel: ae66343d6c779a8efdf61241734ddcec5d79d351
-  SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
   SPAlertController: b245d7a5e17d612da051f2612aca3703f21d108f
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SZTextView: 094dc6acc9beec537685c545d6e3e0d4975174e1
-  TABAnimated: f0bfba5c5c7d279b43cda503d9a5328e7e9891c8
+  TABAnimated: 3b7052d52db11e7b28cbea34777445356837a718
   TFPopup: e1396132337290244668fdd8a7faf8ff461c481b
   TXFileOperation: 99bc7e3763678fdea8e8c407e2b87fb18038385f
   WHToast: 11a17a3f09f5f733e32bd6f3338919a448cbb719
