@@ -625,6 +625,7 @@
 		C5A96CBC25BD3424000077BC /* NSObject+SYSAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SYSAlertController.h"; sourceTree = "<group>"; };
 		C5A96CBD25BD3424000077BC /* NSObject+SPAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPAlertController.h"; sourceTree = "<group>"; };
 		C5A96CBE25BD3424000077BC /* NSObject+SYSAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SYSAlertController.m"; sourceTree = "<group>"; };
+		C5B7B670260998AF00BFF168 /* UICollectionViewFlowLayout.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UICollectionViewFlowLayout.md; sourceTree = "<group>"; };
 		C5C40190255A65A6002F407A /* TimerManager_DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager_DefineStructure.h; sourceTree = "<group>"; };
 		C5C40195255A65A6002F407A /* GCD_TimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCD_TimerManager.m; sourceTree = "<group>"; };
 		C5C40196255A65A6002F407A /* GCD_TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD_TimerManager.h; sourceTree = "<group>"; };
@@ -3379,6 +3380,7 @@
 		C5C4F79F255A5490002F407A /* UICollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				C5B7B670260998AF00BFF168 /* UICollectionViewFlowLayout.md */,
 				C51F6C482608571100953C10 /* BaseCollectionViewFlowLayout */,
 			);
 			path = UICollectionViewFlowLayout;
