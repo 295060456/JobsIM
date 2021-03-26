@@ -336,6 +336,8 @@
 		C5D77E1D257F5F550087FC92 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5D77E10257F5F550087FC92 /* ZYTextField.bundle */; };
 		C5D77E1E257F5F550087FC92 /* UITextField+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77E13257F5F550087FC92 /* UITextField+Extend.m */; };
 		C5D77E20257F5F550087FC92 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77E18257F5F550087FC92 /* CJTextField.m */; };
+		C5D8D11B260CC3DC00BDAF76 /* toastLoading.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5D8D11A260CC3DC00BDAF76 /* toastLoading.gif */; };
+		C5D8D67A260CC83600BDAF76 /* NSObject+DefConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D8D678260CC83600BDAF76 /* NSObject+DefConfig.m */; };
 		C5DF421425A8995100E91985 /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF420825A8995100E91985 /* UIViewController+MJRefresh.m */; };
 		C5DF421525A8995100E91985 /* MJRefreshConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF420B25A8995100E91985 /* MJRefreshConfigModel.m */; };
 		C5DF421625A8995100E91985 /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5DF420C25A8995100E91985 /* JsonRes.bundle */; };
@@ -987,6 +989,9 @@
 		C5D77E13257F5F550087FC92 /* UITextField+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extend.m"; sourceTree = "<group>"; };
 		C5D77E18257F5F550087FC92 /* CJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTextField.m; sourceTree = "<group>"; };
 		C5D77E19257F5F550087FC92 /* CJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTextField.h; sourceTree = "<group>"; };
+		C5D8D11A260CC3DC00BDAF76 /* toastLoading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = toastLoading.gif; sourceTree = "<group>"; };
+		C5D8D678260CC83600BDAF76 /* NSObject+DefConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DefConfig.m"; sourceTree = "<group>"; };
+		C5D8D679260CC83600BDAF76 /* NSObject+DefConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DefConfig.h"; sourceTree = "<group>"; };
 		C5DF420825A8995100E91985 /* UIViewController+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJRefresh.m"; sourceTree = "<group>"; };
 		C5DF420A25A8995100E91985 /* MJRefreshConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConfigModel.h; sourceTree = "<group>"; };
 		C5DF420B25A8995100E91985 /* MJRefreshConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConfigModel.m; sourceTree = "<group>"; };
@@ -2556,6 +2561,7 @@
 		C5A4426925ABFBBB000F0CD2 /* WHToast */ = {
 			isa = PBXGroup;
 			children = (
+				C5D8D11A260CC3DC00BDAF76 /* toastLoading.gif */,
 				C5A4426A25ABFBBB000F0CD2 /* WHToast+DDToast.m */,
 				C5A4426B25ABFBBB000F0CD2 /* WHToast+DDToast.h */,
 			);
@@ -3433,6 +3439,7 @@
 		C5C4F7B1255A5490002F407A /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				C5D8D677260CC83600BDAF76 /* NSObject+DefConfig */,
 				C5D6D94225860E1500029AFF /* NSObject (Time) */,
 				C5C4F7B4255A5490002F407A /* NSObject+Alert */,
 				C56BD56625E9388F001E1E69 /* NSObject+CallBackInfoByBlock */,
@@ -3771,6 +3778,15 @@
 			path = "UIViewController+Others";
 			sourceTree = "<group>";
 		};
+		C5D8D677260CC83600BDAF76 /* NSObject+DefConfig */ = {
+			isa = PBXGroup;
+			children = (
+				C5D8D678260CC83600BDAF76 /* NSObject+DefConfig.m */,
+				C5D8D679260CC83600BDAF76 /* NSObject+DefConfig.h */,
+			);
+			path = "NSObject+DefConfig";
+			sourceTree = "<group>";
+		};
 		C5DF420925A8995100E91985 /* ConfigModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -3982,6 +3998,7 @@
 				C5DF421625A8995100E91985 /* JsonRes.bundle in Resources */,
 				C57A2EC8255E8AD3002D39FB /* Class@2x.png in Resources */,
 				C5C40255255A6671002F407A /* tab_message_animate.json in Resources */,
+				C5D8D11B260CC3DC00BDAF76 /* toastLoading.gif in Resources */,
 				C52C96062563FB180039EBFE /* GIF大图.gif in Resources */,
 				C5C4024C255A6671002F407A /* 社区.json in Resources */,
 				C5C402AA255A6881002F407A /* 启动页0922一版横版.jpg in Resources */,
@@ -4151,6 +4168,7 @@
 				C5F8390C2560FF45005C6FDA /* JobsAdNoticeView.m in Sources */,
 				C5C4F7F0255A5491002F407A /* DeleteSystemUITabBarButton.m in Sources */,
 				C5341659255A78A200DFAFE4 /* JobsIMInputview.m in Sources */,
+				C5D8D67A260CC83600BDAF76 /* NSObject+DefConfig.m in Sources */,
 				C531D018255AA728005304F6 /* JobsIMChatInfoModel.m in Sources */,
 				C5C402BC255A6A11002F407A /* ViewController@1.m in Sources */,
 				C5C4F819255A5491002F407A /* NSObject+AFNReachability.m in Sources */,
