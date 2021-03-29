@@ -75,7 +75,7 @@ UITableViewDelegate
 ///下拉刷新
 -(void)pullToRefresh{
     NSLog(@"下拉刷新");
-    [self.tableView.mj_header endRefreshing];
+    [self endRefreshing:self.tableView];
 //
 }
 ///上拉加载更多
@@ -93,7 +93,7 @@ UITableViewDelegate
     self.tableView.mj_footer.state = MJRefreshStateIdle;
     self.tableView.mj_footer.hidden = YES;
     self.tableView.pagingEnabled = YES;
-//    [self.mj_footer endRefreshingWithNoMoreData];
+    [self endRefreshingWithNoMoreData:self.tableView];
 }
 //键盘 弹出 和 收回 走这个方法
 -(void)keyboardWillChangeFrameNotification:(NSNotification *)notification{

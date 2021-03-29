@@ -9,10 +9,11 @@
 #import "NSObject+Sound.h"
 #import "UIImage+Extras.h"
 #import "ZYTextField.h"
+#import "JobsAdNoticeView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JobsIMInputview : UIView
+@interface JobsIMInputview : UIView<UITextFieldDelegate>
 
 @property(nonatomic,strong)ZYTextField *inputTextField;
 

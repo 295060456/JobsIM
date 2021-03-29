@@ -68,7 +68,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 -(void)swipeTableCellWillBeginSwiping:(nonnull MGSwipeTableCell *)cell{
     [NSObject feedbackGenerator];//震动反馈
 }
-
 // 点击了第几个滑动出现的按钮？
 -(BOOL)swipeTableCell:(MGSwipeTableCell *)cell
   tappedButtonAtIndex:(NSInteger)index
@@ -85,7 +84,7 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
 ///下拉刷新
 -(void)pullToRefresh{
     NSLog(@"下拉刷新");
-    [self.tableView.mj_header endRefreshing];
+    [self endRefreshing:self.tableView];
 //
 }
 ///上拉加载更多

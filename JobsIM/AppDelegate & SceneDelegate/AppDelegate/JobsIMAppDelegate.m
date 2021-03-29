@@ -69,7 +69,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     if (HDDeviceSystemVersion.floatValue < 13.0) {
         self.window.alpha = 1;
-        [[JobsIMAppDelegate sharedInstance] Popupview];// 弹出框
+//        [[JobsIMAppDelegate sharedInstance] Popupview];// 弹出框
     }return YES;
 }
 //系统版本低于iOS13.0的设备

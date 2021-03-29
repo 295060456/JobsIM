@@ -7,9 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "JobsIMVC.h"
-#import "JobsIMListView.h"
-#import "JobsIMChatInfoModel.h"
+#import "JobsIMComponent.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
