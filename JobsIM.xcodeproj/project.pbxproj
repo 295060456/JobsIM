@@ -2331,14 +2331,14 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		C589BEE52563D39C00323A2A /* JobsIM */ = {
+		C589BEE52563D39C00323A2A /* JobsIMComponent */ = {
 			isa = PBXGroup;
 			children = (
 				C589BEE62563D3C200323A2A /* JobsIMModel */,
 				C589BE8B2563D02400323A2A /* JobsIMListView */,
 				C5341607255A784A00DFAFE4 /* JobsIMCore */,
 			);
-			path = JobsIM;
+			path = JobsIMComponent;
 			sourceTree = "<group>";
 		};
 		C589BEE62563D3C200323A2A /* JobsIMModel */ = {
@@ -2869,7 +2869,7 @@
 			isa = PBXGroup;
 			children = (
 				C558DE9D25BEAF6500FC6CA5 /* Common */,
-				C589BEE52563D39C00323A2A /* JobsIM */,
+				C589BEE52563D39C00323A2A /* JobsIMComponent */,
 				C5C402E0255A6ADD002F407A /* 广告或者公示弹出框 */,
 				C5C402B5255A69DF002F407A /* ViewController@1 */,
 				C5C402B6255A69E8002F407A /* ViewController@2 */,
