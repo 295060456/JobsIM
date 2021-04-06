@@ -33,6 +33,7 @@
 		C5341659255A78A200DFAFE4 /* JobsIMInputview.m in Sources */ = {isa = PBXBuildFile; fileRef = C5341658255A78A200DFAFE4 /* JobsIMInputview.m */; };
 		C53417A0255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */; };
 		C53C9D1525A1CFB00007F58F /* NSObject+DataSave.m in Sources */ = {isa = PBXBuildFile; fileRef = C53C9D1325A1CFB00007F58F /* NSObject+DataSave.m */; };
+		C53CAD94261C4D6800AC1891 /* NSObject+AppTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CAD91261C4D6800AC1891 /* NSObject+AppTools.m */; };
 		C53D38D32598C7D700B48431 /* XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D38D02598C7D700B48431 /* XLBubbleTransition.m */; };
 		C53D38D42598C7D700B48431 /* UIViewController+XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D38D12598C7D700B48431 /* UIViewController+XLBubbleTransition.m */; };
 		C545429025C0355800D97557 /* JobsMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C545428F25C0355800D97557 /* JobsMarqueeView.m */; };
@@ -414,6 +415,9 @@
 		C534179F255A7F9B00DFAFE4 /* JobsIMChatInfoTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsIMChatInfoTBVCell.m; sourceTree = "<group>"; };
 		C53C9D1325A1CFB00007F58F /* NSObject+DataSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DataSave.m"; sourceTree = "<group>"; };
 		C53C9D1425A1CFB00007F58F /* NSObject+DataSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DataSave.h"; sourceTree = "<group>"; };
+		C53CAD91261C4D6800AC1891 /* NSObject+AppTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AppTools.m"; sourceTree = "<group>"; };
+		C53CAD92261C4D6800AC1891 /* NSObject+AppTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AppTools.h"; sourceTree = "<group>"; };
+		C53CAD93261C4D6800AC1891 /* 此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md"; sourceTree = "<group>"; };
 		C53D38CE2598C7D700B48431 /* XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBubbleTransition.h; sourceTree = "<group>"; };
 		C53D38CF2598C7D700B48431 /* UIViewController+XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XLBubbleTransition.h"; sourceTree = "<group>"; };
 		C53D38D02598C7D700B48431 /* XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBubbleTransition.m; sourceTree = "<group>"; };
@@ -1282,6 +1286,16 @@
 			path = "NSObject+DataSave";
 			sourceTree = "<group>";
 		};
+		C53CAD90261C4D6800AC1891 /* NSObject+AppTools */ = {
+			isa = PBXGroup;
+			children = (
+				C53CAD93261C4D6800AC1891 /* 此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md */,
+				C53CAD92261C4D6800AC1891 /* NSObject+AppTools.h */,
+				C53CAD91261C4D6800AC1891 /* NSObject+AppTools.m */,
+			);
+			path = "NSObject+AppTools";
+			sourceTree = "<group>";
+		};
 		C53D38CD2598C7D700B48431 /* UIViewController+XLBubbleTransition */ = {
 			isa = PBXGroup;
 			children = (
@@ -1974,8 +1988,9 @@
 		C558DE9D25BEAF6500FC6CA5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				C5512FA525C68241007BCA82 /* 网络请求 */,
 				C558DE9E25BEAF6900FC6CA5 /* 🇨🇳数据模型层(此文件夹存放全局的所有Model) */,
+				C5512FA525C68241007BCA82 /* 网络请求 */,
+				C53CAD90261C4D6800AC1891 /* NSObject+AppTools */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -4215,6 +4230,7 @@
 				C5C4F7E6255A5491002F407A /* UIButton+ImageTitleSpacing.m in Sources */,
 				C5C64EB9259DF80600FD2F99 /* ECPrivacyCheckReminders.m in Sources */,
 				C5C403A2255A6C26002F407A /* XHLaunchAdConfiguration.m in Sources */,
+				C53CAD94261C4D6800AC1891 /* NSObject+AppTools.m in Sources */,
 				C562DB5D25C7C40E004D1AEA /* UIView+ViewController.m in Sources */,
 				C5C4025E255A6671002F407A /* TLTabBarAnimation.m in Sources */,
 				C56D87EF25C82304001960CD /* UIColor+Gradient.m in Sources */,
