@@ -136,6 +136,7 @@
 		C5A4427125ABFBBB000F0CD2 /* JXCategoryTimelineCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4426425ABFBBB000F0CD2 /* JXCategoryTimelineCellModel.m */; };
 		C5A4427225ABFBBB000F0CD2 /* JXCategoryTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4426525ABFBBB000F0CD2 /* JXCategoryTimelineCell.m */; };
 		C5A4427325ABFBBB000F0CD2 /* WHToast+DDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4426A25ABFBBB000F0CD2 /* WHToast+DDToast.m */; };
+		C5A4F3D226218C0500DF959C /* UITableView+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4F3D126218C0500DF959C /* UITableView+Expand.m */; };
 		C5A96CBF25BD3424000077BC /* NSObject+SPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A96CBB25BD3424000077BC /* NSObject+SPAlertController.m */; };
 		C5A96CC025BD3424000077BC /* NSObject+SYSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A96CBE25BD3424000077BC /* NSObject+SYSAlertController.m */; };
 		C5C4019F255A65A6002F407A /* GCD_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40195255A65A6002F407A /* GCD_TimerManager.m */; };
@@ -629,6 +630,8 @@
 		C5A4426825ABFBBB000F0CD2 /* JXCategoryTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTimelineCell.h; sourceTree = "<group>"; };
 		C5A4426A25ABFBBB000F0CD2 /* WHToast+DDToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WHToast+DDToast.m"; sourceTree = "<group>"; };
 		C5A4426B25ABFBBB000F0CD2 /* WHToast+DDToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WHToast+DDToast.h"; sourceTree = "<group>"; };
+		C5A4F3D026218C0500DF959C /* UITableView+Expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Expand.h"; sourceTree = "<group>"; };
+		C5A4F3D126218C0500DF959C /* UITableView+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Expand.m"; sourceTree = "<group>"; };
 		C5A96CBB25BD3424000077BC /* NSObject+SPAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPAlertController.m"; sourceTree = "<group>"; };
 		C5A96CBC25BD3424000077BC /* NSObject+SYSAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SYSAlertController.h"; sourceTree = "<group>"; };
 		C5A96CBD25BD3424000077BC /* NSObject+SPAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPAlertController.h"; sourceTree = "<group>"; };
@@ -1104,20 +1107,21 @@
 			path = "UIImage+Category";
 			sourceTree = "<group>";
 		};
-		C51F709126085A2300953C10 /* TableView+Category */ = {
+		C51F709126085A2300953C10 /* UITableView+Category */ = {
 			isa = PBXGroup;
 			children = (
 				C5C4F782255A5490002F407A /* TableViewAnimationKit */,
 				C5C4F78D255A5490002F407A /* UITableView 折叠功能 */,
+				C5A4F3CF26218C0500DF959C /* UITableView+Expand */,
 			);
-			path = "TableView+Category";
+			path = "UITableView+Category";
 			sourceTree = "<group>";
 		};
 		C51F709226085A3000953C10 /* BaseTableView */ = {
 			isa = PBXGroup;
 			children = (
-				C5C4F78A255A5490002F407A /* BaseTableView.h */,
 				C5C4F78B255A5490002F407A /* 专治UITableView相应链断裂 */,
+				C5C4F78A255A5490002F407A /* BaseTableView.h */,
 				C5C4F78C255A5490002F407A /* BaseTableView.m */,
 			);
 			path = BaseTableView;
@@ -2638,6 +2642,15 @@
 			path = WHToast;
 			sourceTree = "<group>";
 		};
+		C5A4F3CF26218C0500DF959C /* UITableView+Expand */ = {
+			isa = PBXGroup;
+			children = (
+				C5A4F3D026218C0500DF959C /* UITableView+Expand.h */,
+				C5A4F3D126218C0500DF959C /* UITableView+Expand.m */,
+			);
+			path = "UITableView+Expand";
+			sourceTree = "<group>";
+		};
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
@@ -3388,7 +3401,7 @@
 			isa = PBXGroup;
 			children = (
 				C51F709226085A3000953C10 /* BaseTableView */,
-				C51F709126085A2300953C10 /* TableView+Category */,
+				C51F709126085A2300953C10 /* UITableView+Category */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -4415,6 +4428,7 @@
 				C56D87F025C82304001960CD /* UIColor+Hex.m in Sources */,
 				C5C4F51A255A5203002F407A /* JobsIM.xcdatamodeld in Sources */,
 				C5512FE725C68253007BCA82 /* NetworkingAPI+EarnApi.m in Sources */,
+				C5A4F3D226218C0500DF959C /* UITableView+Expand.m in Sources */,
 				C5C4F7E9255A5491002F407A /* UIView+Measure.m in Sources */,
 				C5DF421525A8995100E91985 /* MJRefreshConfigModel.m in Sources */,
 				C53C9D1525A1CFB00007F58F /* NSObject+DataSave.m in Sources */,
