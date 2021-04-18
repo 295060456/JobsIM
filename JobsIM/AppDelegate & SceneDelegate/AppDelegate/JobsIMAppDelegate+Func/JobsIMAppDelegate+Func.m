@@ -9,8 +9,12 @@
 
 @implementation JobsIMAppDelegate (Func)
 
+#if DEBUG
+
 static char *JobsIMAppDelegate_Func_bitsMonitorSuspendLab = "JobsIMAppDelegate_Func_bitsMonitorSuspendLab";
 @dynamic bitsMonitorSuspendLab;
+
+#endif
 
 -(void)reachabilityChanged:(NSNotification *)notify{
     
@@ -352,6 +356,9 @@ static char *JobsIMAppDelegate_Func_bitsMonitorSuspendLab = "JobsIMAppDelegate_F
 //    }];
 }
 #pragma mark SET | GET
+
+#if DEBUG
+
 #pragma mark —— @property(nonatomic,strong)JobsBitsMonitorSuspendLab *bitsMonitorSuspendLab;
 -(JobsBitsMonitorSuspendLab *)bitsMonitorSuspendLab{
     JobsBitsMonitorSuspendLab *BitsMonitorSuspendLab = objc_getAssociatedObject(self, JobsIMAppDelegate_Func_bitsMonitorSuspendLab);
@@ -381,5 +388,7 @@ static char *JobsIMAppDelegate_Func_bitsMonitorSuspendLab = "JobsIMAppDelegate_F
                              bitsMonitorSuspendLab,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+
+#endif
 
 @end

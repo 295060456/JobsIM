@@ -40,8 +40,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JobsIMAppDelegate (Func)
-
+#if DEBUG
 @property(nonatomic,strong)JobsBitsMonitorSuspendLab *bitsMonitorSuspendLab;
+#endif
 
 #pragma mark —— 全局配置 TABAnimated
 -(void)makeTABAnimatedConfigure;
