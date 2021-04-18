@@ -15,7 +15,6 @@
 		C5226A0E25875852004447FB /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226A0A25875852004447FB /* BWShareView.m */; };
 		C5226A0F25875852004447FB /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226A0B25875852004447FB /* BWItemModel.m */; };
 		C5267C8D258A4AE50095A681 /* JobsMagicTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5267C8B258A4AE40095A681 /* JobsMagicTextField.m */; };
-		C5267E6B258A4B380095A681 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5267E6A258A4B380095A681 /* EmptyView.m */; };
 		C52C96012563FB180039EBFE /* 跳动的竖线.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FB2563FB180039EBFE /* 跳动的竖线.gif */; };
 		C52C96022563FB180039EBFE /* Bt9h.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FC2563FB180039EBFE /* Bt9h.gif */; };
 		C52C96032563FB180039EBFE /* 热度.gif in Resources */ = {isa = PBXBuildFile; fileRef = C52C95FD2563FB180039EBFE /* 热度.gif */; };
@@ -140,6 +139,7 @@
 		C5A4F3D226218C0500DF959C /* UITableView+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4F3D126218C0500DF959C /* UITableView+Expand.m */; };
 		C5A96CBF25BD3424000077BC /* NSObject+SPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A96CBB25BD3424000077BC /* NSObject+SPAlertController.m */; };
 		C5A96CC025BD3424000077BC /* NSObject+SYSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A96CBE25BD3424000077BC /* NSObject+SYSAlertController.m */; };
+		C5B92DEC262C0BCC003EDB52 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B92DEB262C0BCC003EDB52 /* EmptyView.m */; };
 		C5C401A0255A65A6002F407A /* Nanosecond_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C40199255A65A6002F407A /* Nanosecond_TimerManager.m */; };
 		C5C401A1255A65A6002F407A /* CADisplayLink_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4019C255A65A6002F407A /* CADisplayLink_TimerManager.m */; };
 		C5C401D1255A6629002F407A /* FileFolderHandleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C401D0255A6629002F407A /* FileFolderHandleTool.m */; };
@@ -391,8 +391,6 @@
 		C5264E2F25EF5F3600C8AB2B /* JobsIMModelHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsIMModelHeader.h; sourceTree = "<group>"; };
 		C5267C8B258A4AE40095A681 /* JobsMagicTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsMagicTextField.m; sourceTree = "<group>"; };
 		C5267C8C258A4AE40095A681 /* JobsMagicTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsMagicTextField.h; sourceTree = "<group>"; };
-		C5267E69258A4B380095A681 /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
-		C5267E6A258A4B380095A681 /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
 		C52C95FB2563FB180039EBFE /* 跳动的竖线.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "跳动的竖线.gif"; sourceTree = "<group>"; };
 		C52C95FC2563FB180039EBFE /* Bt9h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bt9h.gif; sourceTree = "<group>"; };
 		C52C95FD2563FB180039EBFE /* 热度.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "热度.gif"; sourceTree = "<group>"; };
@@ -639,6 +637,8 @@
 		C5A96CBD25BD3424000077BC /* NSObject+SPAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPAlertController.h"; sourceTree = "<group>"; };
 		C5A96CBE25BD3424000077BC /* NSObject+SYSAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SYSAlertController.m"; sourceTree = "<group>"; };
 		C5B7B670260998AF00BFF168 /* UICollectionViewFlowLayout.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UICollectionViewFlowLayout.md; sourceTree = "<group>"; };
+		C5B92DEA262C0BCC003EDB52 /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
+		C5B92DEB262C0BCC003EDB52 /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
 		C5C40190255A65A6002F407A /* TimerManager_DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager_DefineStructure.h; sourceTree = "<group>"; };
 		C5C40197255A65A6002F407A /* TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager.h; sourceTree = "<group>"; };
 		C5C40199255A65A6002F407A /* Nanosecond_TimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nanosecond_TimerManager.m; sourceTree = "<group>"; };
@@ -1181,16 +1181,6 @@
 				C5267C8C258A4AE40095A681 /* JobsMagicTextField.h */,
 			);
 			path = JobsMagicTextField;
-			sourceTree = "<group>";
-		};
-		C5267E68258A4B380095A681 /* LYEmptyView */ = {
-			isa = PBXGroup;
-			children = (
-				C5267E69258A4B380095A681 /* EmptyView.h */,
-				C5267E6A258A4B380095A681 /* EmptyView.m */,
-			);
-			name = LYEmptyView;
-			path = "../../../../My_BaseProj/My_BaseProj/3rd/🔨Manual_Add_ThirdParty /LYEmptyView";
 			sourceTree = "<group>";
 		};
 		C52C95FA2563FB100039EBFE /* Gif */ = {
@@ -2678,22 +2668,31 @@
 			path = "UITableView+Expand";
 			sourceTree = "<group>";
 		};
+		C5B92DE9262C0BCC003EDB52 /* LYEmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				C5B92DEA262C0BCC003EDB52 /* EmptyView.h */,
+				C5B92DEB262C0BCC003EDB52 /* EmptyView.m */,
+			);
+			path = LYEmptyView;
+			sourceTree = "<group>";
+		};
 		C5C40172255A6544002F407A /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
-				C5542B1C25F32480002D1CA6 /* CheckMemFreeVC */,
-				C54C620B25EFC29B007DD043 /* 清除缓存 */,
-				C551300225C685B8007BCA82 /* 网络请求框架 */,
-				C5A4377925AAF79B000F0CD2 /* 手势滑动返回 */,
-				C565CAF625A437EB00848134 /* TwoVerticalArrangementLabsView */,
-				C59F38E6259B3A1E00E22F9B /* JobsBitsMonitor */,
 				C5C40173255A654D002F407A /* 分享控件 */,
+				C54C620B25EFC29B007DD043 /* 清除缓存 */,
 				C5C401FE255A6671002F407A /* 深度拓展系统UITabBar全家桶 */,
+				C5A4377925AAF79B000F0CD2 /* 手势滑动返回 */,
+				C551300225C685B8007BCA82 /* 网络请求框架 */,
 				C5C401CE255A6629002F407A /* 文件夹操作 */,
-				C5267E68258A4B380095A681 /* LYEmptyView */,
+				C5542B1C25F32480002D1CA6 /* CheckMemFreeVC */,
+				C59F38E6259B3A1E00E22F9B /* JobsBitsMonitor */,
+				C5B92DE9262C0BCC003EDB52 /* LYEmptyView */,
 				C553900025727F77008BB60F /* SocketTools */,
 				C5C40277255A66D2002F407A /* Suspend */,
 				C5C4018F255A65A6002F407A /* TimerManager */,
+				C565CAF625A437EB00848134 /* TwoVerticalArrangementLabsView */,
 				C59A3BC9258DD1BF005F6260 /* UserDefaultManager */,
 			);
 			path = "🔨Manual_Add_ThirdParty ";
@@ -4445,6 +4444,7 @@
 				C5C4F51A255A5203002F407A /* JobsIM.xcdatamodeld in Sources */,
 				C5512FE725C68253007BCA82 /* NetworkingAPI+EarnApi.m in Sources */,
 				C5A4F3D226218C0500DF959C /* UITableView+Expand.m in Sources */,
+				C5B92DEC262C0BCC003EDB52 /* EmptyView.m in Sources */,
 				C5C4F7E9255A5491002F407A /* UIView+Measure.m in Sources */,
 				C5DF421525A8995100E91985 /* MJRefreshConfigModel.m in Sources */,
 				C53C9D1525A1CFB00007F58F /* NSObject+DataSave.m in Sources */,
@@ -4459,7 +4459,6 @@
 				C5512FEF25C68253007BCA82 /* NetworkingAPI+StatisticsApi.m in Sources */,
 				C5C64EAF259DF80600FD2F99 /* ECPrivacyCheckCamera.m in Sources */,
 				C5C64EB7259DF80600FD2F99 /* ECPrivacyCheckContacts.m in Sources */,
-				C5267E6B258A4B380095A681 /* EmptyView.m in Sources */,
 				C56BD56925E9388F001E1E69 /* NSObject+CallBackInfoByBlock.m in Sources */,
 				C5DF421825A8995100E91985 /* LOTAnimationMJRefreshHeader.m in Sources */,
 				C5C4F7E8255A5491002F407A /* UIView+Chain.m in Sources */,
