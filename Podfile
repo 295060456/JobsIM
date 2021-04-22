@@ -86,6 +86,13 @@ def func
   pod 'lottie-ios', '~> 2.5.3' # 这是OC终极版本
   pod 'TABAnimated'
   end
+# 视频播放框架
+def video
+  pod 'ZFPlayer'
+  pod 'ZFPlayer/ControlView'
+  pod 'ZFPlayer/AVPlayer'
+  pod 'ZFPlayer/ijkplayer'
+end
 
 # 基础的公共配置
 def cocoPodsConfig
@@ -122,5 +129,6 @@ target 'JobsIM' do
   appCommon # 几乎每个App都会用到的
   ui # UI相关
   func # 一些功能性
+  video #视频播放框架
   cocoPodsConfig # 基础的公共配置
 end
