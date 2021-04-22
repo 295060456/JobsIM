@@ -360,6 +360,7 @@
 		C5C64ED8259DF80600FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C64EA5259DF80600FD2F99 /* ECPrivacyCheckGatherTool.m */; };
 		C5D6D93825860DFB00029AFF /* NSTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6D93725860DFB00029AFF /* NSTimerManager.m */; };
 		C5D8D11B260CC3DC00BDAF76 /* toastLoading.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5D8D11A260CC3DC00BDAF76 /* toastLoading.gif */; };
+		C5EA12A526311FC100155822 /* UILabel+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EA12A326311FC100155822 /* UILabel+Gesture.m */; };
 		C5F8390C2560FF45005C6FDA /* JobsAdNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F8390B2560FF45005C6FDA /* JobsAdNoticeView.m */; };
 /* End PBXBuildFile section */
 
@@ -1038,6 +1039,9 @@
 		C5D6D93625860DFB00029AFF /* NSTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerManager.h; sourceTree = "<group>"; };
 		C5D6D93725860DFB00029AFF /* NSTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerManager.m; sourceTree = "<group>"; };
 		C5D8D11A260CC3DC00BDAF76 /* toastLoading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = toastLoading.gif; sourceTree = "<group>"; };
+		C5EA12A326311FC100155822 /* UILabel+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Gesture.m"; sourceTree = "<group>"; };
+		C5EA12A426311FC100155822 /* UILabel+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Gesture.h"; sourceTree = "<group>"; };
+		C5EA171E2631223F00155822 /* JobsBaseCustomizeUIKitCoreHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsBaseCustomizeUIKitCoreHeader.h; sourceTree = "<group>"; };
 		C5F8390A2560FF45005C6FDA /* JobsAdNoticeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsAdNoticeView.h; sourceTree = "<group>"; };
 		C5F8390B2560FF45005C6FDA /* JobsAdNoticeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsAdNoticeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1595,6 +1599,7 @@
 			isa = PBXGroup;
 			children = (
 				C5C4F6FF255A5418002F407A /* Manual_Add_ThirdParty.h */,
+				C5EA171E2631223F00155822 /* JobsBaseCustomizeUIKitCoreHeader.h */,
 			);
 			path = "手动导入的第三方";
 			sourceTree = "<group>";
@@ -1922,6 +1927,7 @@
 			isa = PBXGroup;
 			children = (
 				C58D6597263042ED00966F5F /* UILabel+Extra */,
+				C5EA12A226311FC100155822 /* UILabel+Gesture */,
 			);
 			path = "UILabel+Category";
 			sourceTree = "<group>";
@@ -4070,6 +4076,15 @@
 			path = NSTimerManager;
 			sourceTree = "<group>";
 		};
+		C5EA12A226311FC100155822 /* UILabel+Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				C5EA12A326311FC100155822 /* UILabel+Gesture.m */,
+				C5EA12A426311FC100155822 /* UILabel+Gesture.h */,
+			);
+			path = "UILabel+Gesture";
+			sourceTree = "<group>";
+		};
 		C5F839092560FF07005C6FDA /* AdNoticeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -4601,6 +4616,7 @@
 				C5512FE625C68253007BCA82 /* NSObject+URLManager.m in Sources */,
 				C58D670B263042ED00966F5F /* BaseTableViewCell.m in Sources */,
 				C58D673D263042EE00966F5F /* XLBubbleTransition.m in Sources */,
+				C5EA12A526311FC100155822 /* UILabel+Gesture.m in Sources */,
 				C5C402D4255A6A3B002F407A /* ViewController@5.m in Sources */,
 				C58D6752263042EE00966F5F /* UITableView+Expand.m in Sources */,
 				C5C4025F255A6671002F407A /* UITabBar+TLAnimation.m in Sources */,
