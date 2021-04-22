@@ -216,6 +216,7 @@
 		C58D6778263042EE00966F5F /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D66FA263042ED00966F5F /* ZYTextField+HistoryDataList.m */; };
 		C58D6779263042EE00966F5F /* JobsMagicTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D66FE263042ED00966F5F /* JobsMagicTextField.m */; };
 		C58D68652630440F00966F5F /* CustomZFPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D68632630440F00966F5F /* CustomZFPlayerControlView.m */; };
+		C58E926126312F3B00D1EDB8 /* UIButton+DataBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = C58E926026312F3B00D1EDB8 /* UIButton+DataBinding.m */; };
 		C595D2182587143C002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2102587143C002A4531 /* SuspendView.m */; };
 		C595D2192587143C002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2132587143C002A4531 /* SuspendBtn.m */; };
 		C595D21A2587143C002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2172587143C002A4531 /* SuspendLab.m */; };
@@ -785,6 +786,8 @@
 		C58D66FF263042ED00966F5F /* JobsMagicTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsMagicTextField.h; sourceTree = "<group>"; };
 		C58D68632630440F00966F5F /* CustomZFPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomZFPlayerControlView.m; sourceTree = "<group>"; };
 		C58D68642630440F00966F5F /* CustomZFPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomZFPlayerControlView.h; sourceTree = "<group>"; };
+		C58E925F26312F3B00D1EDB8 /* UIButton+DataBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DataBinding.h"; sourceTree = "<group>"; };
+		C58E926026312F3B00D1EDB8 /* UIButton+DataBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DataBinding.m"; sourceTree = "<group>"; };
 		C595D2102587143C002A4531 /* SuspendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendView.m; sourceTree = "<group>"; };
 		C595D2112587143C002A4531 /* SuspendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendView.h; sourceTree = "<group>"; };
 		C595D2132587143C002A4531 /* SuspendBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendBtn.m; sourceTree = "<group>"; };
@@ -1993,9 +1996,10 @@
 			children = (
 				C58D65A8263042ED00966F5F /* 高度自定义的按钮 */,
 				C58D65AC263042ED00966F5F /* 高仿抖音点赞动画 */,
-				C58D65B0263042ED00966F5F /* UIButton+Timer */,
-				C58D65B7263042ED00966F5F /* SoundBtn */,
 				C58D65BC263042ED00966F5F /* 高仿iOS长按删除+抖动 */,
+				C58D65B7263042ED00966F5F /* SoundBtn */,
+				C58E925E26312F3B00D1EDB8 /* UIButton+DataBinding */,
+				C58D65B0263042ED00966F5F /* UIButton+Timer */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -3260,6 +3264,15 @@
 				C58D68642630440F00966F5F /* CustomZFPlayerControlView.h */,
 			);
 			path = "播放器控制层";
+			sourceTree = "<group>";
+		};
+		C58E925E26312F3B00D1EDB8 /* UIButton+DataBinding */ = {
+			isa = PBXGroup;
+			children = (
+				C58E925F26312F3B00D1EDB8 /* UIButton+DataBinding.h */,
+				C58E926026312F3B00D1EDB8 /* UIButton+DataBinding.m */,
+			);
+			path = "UIButton+DataBinding";
 			sourceTree = "<group>";
 		};
 		C591688A2612009E00E0B187 /* JobsIMAppDelegate+Func */ = {
@@ -4570,6 +4583,7 @@
 				C58D6705263042ED00966F5F /* UIImage+Overlay.m in Sources */,
 				C5C40290255A67C4002F407A /* JobsIMAppDelegate+PopupView.m in Sources */,
 				C58D6732263042EE00966F5F /* BaseCollectionView.m in Sources */,
+				C58E926126312F3B00D1EDB8 /* UIButton+DataBinding.m in Sources */,
 				C5C64ED8259DF80600FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */,
 				C5D6D93825860DFB00029AFF /* NSTimerManager.m in Sources */,
 				C5C4F511255A5203002F407A /* JobsIMSceneDelegate.m in Sources */,
