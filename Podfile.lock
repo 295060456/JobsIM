@@ -80,6 +80,7 @@ PODS:
     - JJException/Main
     - JJException/Swizzle
   - JJException/Swizzle (0.2.9)
+  - JobsGlobleDef (1.0.0)
   - JPImageresizerView (1.8.0)
   - JXCategoryView (1.5.8)
   - JXPagingView/Pager (2.0.13)
@@ -140,6 +141,7 @@ DEPENDENCIES:
   - GKPhotoBrowser
   - IQKeyboardManager
   - JJException
+  - JobsGlobleDef
   - JPImageresizerView
   - JXCategoryView
   - JXPagingView/Pager
@@ -186,6 +188,7 @@ SPEC REPOS:
     - IJKMediaFramework
     - IQKeyboardManager
     - JJException
+    - JobsGlobleDef
     - JPImageresizerView
     - JXCategoryView
     - JXPagingView
@@ -229,6 +232,7 @@ SPEC CHECKSUMS:
   IJKMediaFramework: f1119f6324c96bc4654f3045a5beaa95ba0596c0
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JJException: da7c64ccf29d9938a4075378a7e9a29db7383c37
+  JobsGlobleDef: 46a851206c10dc3baaf248d6f283aac4dc7fb186
   JPImageresizerView: 3bca9bc1c373695e376f9391e265338b8f171e5b
   JXCategoryView: 778a620f76070d6598fd8d7239991b8da8326170
   JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
@@ -256,6 +260,6 @@ SPEC CHECKSUMS:
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   ZFPlayer: f88787c815f7b0801279c42f131a89e2823e669e
 
-PODFILE CHECKSUM: 30d8993478e4ff163e782df4d61a0d7e0dd0387e
+PODFILE CHECKSUM: 8437f5964e33aa15f0c3cda73ce1010e6b477c40
 
 COCOAPODS: 1.10.1
