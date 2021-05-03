@@ -22,7 +22,7 @@ def debugPods
 #  pod 'CocoaDebug' # https://github.com/CocoaDebug/CocoaDebug NO_SMP
   pod 'FLEX'  # https://github.com/Flipboard/FLEX 调试界面相关插件 NO_SMP
   pod 'JJException' # https://github.com/jezzmemo/JJException 保护App,一般常见的问题不会导致闪退，增强App的健壮性，同时会将错误抛出来，根据每个App自身的日志渠道记录 NO_SMP
-  pod 'FBRetainCycleDetector' # https://github.com/facebook/FBRetainCycleDetector
+#  pod 'FBRetainCycleDetector' # https://github.com/facebook/FBRetainCycleDetector
   end
 def longConnection
   pod 'CocoaAsyncSocket' # https://github.com/robbiehanson/CocoaAsyncSocket WebSocket的OC框架

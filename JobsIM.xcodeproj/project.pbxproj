@@ -64,6 +64,7 @@
 		C551301525C685BE007BCA82 /* ZBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C551300925C685BE007BCA82 /* ZBRequestManager.m */; };
 		C551301625C685BE007BCA82 /* ZBCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C551300B25C685BE007BCA82 /* ZBCacheManager.m */; };
 		C551301725C685BE007BCA82 /* NSString+ZBUTF8Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C551300D25C685BE007BCA82 /* NSString+ZBUTF8Encoding.m */; };
+		C551360E26400BFF00089A4C /* DDResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C551360C26400BFF00089A4C /* DDResponseModel.m */; };
 		C553900325727F77008BB60F /* SocketIOTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C553900125727F77008BB60F /* SocketIOTools.m */; };
 		C5542B1F25F32480002D1CA6 /* CheckMemFreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5542B1E25F32480002D1CA6 /* CheckMemFreeVC.m */; };
 		C558DE9025BEAD6700FC6CA5 /* TestTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C558DE8F25BEAD6700FC6CA5 /* TestTBVCell.m */; };
@@ -501,6 +502,8 @@
 		C551300F25C685BE007BCA82 /* ZBRequestEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBRequestEngine.h; sourceTree = "<group>"; };
 		C551301025C685BE007BCA82 /* ZBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBNetworking.h; sourceTree = "<group>"; };
 		C551301125C685BE007BCA82 /* ZBCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBCacheManager.h; sourceTree = "<group>"; };
+		C551360C26400BFF00089A4C /* DDResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDResponseModel.m; sourceTree = "<group>"; };
+		C551360D26400BFF00089A4C /* DDResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDResponseModel.h; sourceTree = "<group>"; };
 		C5538FB725727F02008BB60F /* JobsIM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JobsIM-Bridging-Header.h"; sourceTree = "<group>"; };
 		C553900125727F77008BB60F /* SocketIOTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTools.m; sourceTree = "<group>"; };
 		C553900225727F77008BB60F /* SocketIOTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTools.h; sourceTree = "<group>"; };
@@ -1514,6 +1517,15 @@
 			path = ZBNetworking;
 			sourceTree = "<group>";
 		};
+		C551360B26400BFF00089A4C /* DDResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				C551360D26400BFF00089A4C /* DDResponseModel.h */,
+				C551360C26400BFF00089A4C /* DDResponseModel.m */,
+			);
+			path = DDResponseModel;
+			sourceTree = "<group>";
+		};
 		C553900025727F77008BB60F /* SocketTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -1557,6 +1569,7 @@
 			children = (
 				C5264E2F25EF5F3600C8AB2B /* JobsIMModelHeader.h */,
 				C558DE9F25BEAF7B00FC6CA5 /* BaseModel */,
+				C551360B26400BFF00089A4C /* DDResponseModel */,
 				C558DEA625BEAF8000FC6CA5 /* MKRankModel */,
 			);
 			path = "🇨🇳数据模型层(此文件夹存放全局的所有Model)";
@@ -4667,6 +4680,7 @@
 				C58D6769263042EE00966F5F /* NSObject+Sound.m in Sources */,
 				C5C401D1255A6629002F407A /* FileFolderHandleTool.m in Sources */,
 				C58D6776263042EE00966F5F /* ZYTextField.m in Sources */,
+				C551360E26400BFF00089A4C /* DDResponseModel.m in Sources */,
 				C58D6773263042EE00966F5F /* UITextField+Extend.m in Sources */,
 				C5512FF425C68253007BCA82 /* NetworkingAPI+UserInfoApi.m in Sources */,
 				C551301725C685BE007BCA82 /* NSString+ZBUTF8Encoding.m in Sources */,

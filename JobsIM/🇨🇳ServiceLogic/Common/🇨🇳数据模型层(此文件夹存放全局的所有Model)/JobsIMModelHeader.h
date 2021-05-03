@@ -10,5 +10,6 @@
 
 #import "BaseModel.h"
 #import "MKRankModel.h"
+#import "DDResponseModel.h"
 
 #endif /* JobsIMModelHeader_h */
