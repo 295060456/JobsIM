@@ -74,6 +74,7 @@
 		C558DEA225BEAF7B00FC6CA5 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C558DEA025BEAF7B00FC6CA5 /* BaseModel.m */; };
 		C55BF51325AC8F5700A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF51225AC8F5700A8347F /* TabbarVC.m */; };
 		C565CAFA25A437EB00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */; };
+		C576867E2674AB2000379F34 /* DDRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = C576867D2674AB2000379F34 /* DDRecord.m */; };
 		C5776FE2257285BA00B7DCAB /* 输入框无值@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */; };
 		C5776FE3257285BA00B7DCAB /* 输入框有值@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FDF257285BA00B7DCAB /* 输入框有值@3x.png */; };
 		C5776FE4257285BA00B7DCAB /* 输入框有值@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5776FE0257285BA00B7DCAB /* 输入框有值@2x.png */; };
@@ -534,6 +535,8 @@
 		C565CAF725A437EB00848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
 		C565CAF825A437EB00848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
 		C565CAF925A437EB00848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
+		C576867C2674AB2000379F34 /* DDRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRecord.h; sourceTree = "<group>"; };
+		C576867D2674AB2000379F34 /* DDRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRecord.m; sourceTree = "<group>"; };
 		C5776FDE257285BA00B7DCAB /* 输入框无值@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框无值@2x.png"; sourceTree = "<group>"; };
 		C5776FDF257285BA00B7DCAB /* 输入框有值@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框有值@3x.png"; sourceTree = "<group>"; };
 		C5776FE0257285BA00B7DCAB /* 输入框有值@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框有值@2x.png"; sourceTree = "<group>"; };
@@ -1771,6 +1774,15 @@
 				C565CAF925A437EB00848134 /* TwoVerticalArrangementLabsView.png */,
 			);
 			path = TwoVerticalArrangementLabsView;
+			sourceTree = "<group>";
+		};
+		C576867B2674AB2000379F34 /* DDRecord */ = {
+			isa = PBXGroup;
+			children = (
+				C576867C2674AB2000379F34 /* DDRecord.h */,
+				C576867D2674AB2000379F34 /* DDRecord.m */,
+			);
+			path = DDRecord;
 			sourceTree = "<group>";
 		};
 		C57A2EA3255E71A4002D39FB /* 左右滑动按钮图标 */ = {
@@ -3061,6 +3073,7 @@
 		C58D66B4263042ED00966F5F /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				C576867B2674AB2000379F34 /* DDRecord */,
 				C58D66DB263042ED00966F5F /* NSObject (Time) */,
 				C58D66B5263042ED00966F5F /* NSObject+Alert */,
 				C58D66E1263042ED00966F5F /* NSObject+CallBackInfoByBlock */,
@@ -4587,6 +4600,7 @@
 				C551301625C685BE007BCA82 /* ZBCacheManager.m in Sources */,
 				C5512F9725C681F4007BCA82 /* ZWPullMenuView.m in Sources */,
 				C53618F126669BA8005D5168 /* URLManagerModel.m in Sources */,
+				C576867E2674AB2000379F34 /* DDRecord.m in Sources */,
 				C58D6733263042EE00966F5F /* UICollectionView+RegisterClass.m in Sources */,
 				C5542B1F25F32480002D1CA6 /* CheckMemFreeVC.m in Sources */,
 				C551301525C685BE007BCA82 /* ZBRequestManager.m in Sources */,
