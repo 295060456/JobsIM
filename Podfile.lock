@@ -34,7 +34,7 @@ PODS:
     - GCDWebServer
     - GCDWebServer/WebDAV
     - GCDWebServer/WebUploader
-  - FLAnimatedImage (1.0.15)
+  - FLAnimatedImage (1.0.16)
   - "FLAnimatedImageView+RGWrapper (1.0.0)":
     - FLAnimatedImage
   - FLEX (4.4.1)
@@ -48,15 +48,15 @@ PODS:
     - GCDWebServer/Core
   - GCDWebServer/WebUploader (3.5.4):
     - GCDWebServer/Core
-  - GKNavigationBar (1.5.2):
-    - GKNavigationBar/GestureHandle (= 1.5.2)
-    - GKNavigationBar/NavigationBar (= 1.5.2)
-  - GKNavigationBar/GestureHandle (1.5.2)
-  - GKNavigationBar/NavigationBar (1.5.2)
-  - GKPhotoBrowser (2.1.9):
-    - GKPhotoBrowser/SD (= 2.1.9)
-  - GKPhotoBrowser/Core (2.1.9)
-  - GKPhotoBrowser/SD (2.1.9):
+  - GKNavigationBar (1.5.8):
+    - GKNavigationBar/GestureHandle (= 1.5.8)
+    - GKNavigationBar/NavigationBar (= 1.5.8)
+  - GKNavigationBar/GestureHandle (1.5.8)
+  - GKNavigationBar/NavigationBar (1.5.8)
+  - GKPhotoBrowser (2.3.1):
+    - GKPhotoBrowser/SD (= 2.3.1)
+  - GKPhotoBrowser/Core (2.3.1)
+  - GKPhotoBrowser/SD (2.3.1):
     - GKPhotoBrowser/Core
     - SDWebImage (~> 5.0)
   - IJKMediaFramework (0.1.5)
@@ -80,15 +80,15 @@ PODS:
     - JJException/Swizzle
   - JJException/Swizzle (0.2.9)
   - JobsGlobleDef (1.0.0)
-  - JPImageresizerView (1.8.0)
-  - JXCategoryView (1.5.8)
-  - JXPagingView/Pager (2.0.13)
+  - JPImageresizerView (1.8.3)
+  - JXCategoryView (1.5.9)
+  - JXPagingView/Pager (2.1.0)
   - lottie-ios (2.5.3)
   - LYEmptyView (1.3.1)
   - Masonry (1.1.0)
   - MGSwipeTableCell (1.6.11)
   - MJExtension (3.2.4)
-  - MJRefresh (3.5.0)
+  - MJRefresh (3.6.1)
   - MQTTClient (0.15.3):
     - MQTTClient/Core (= 0.15.3)
   - MQTTClient/Core (0.15.3):
@@ -101,16 +101,16 @@ PODS:
   - Reachability (3.2)
   - ReactiveObjC (3.1.1)
   - RQShineLabel (1.0.0)
-  - SDWebImage (5.11.0):
-    - SDWebImage/Core (= 5.11.0)
-  - SDWebImage/Core (5.11.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - Shimmer (1.0.2)
   - Socket.IO-Client-Swift (15.2.0):
     - Starscream (~> 3.1)
   - SPAlertController (4.0.0)
   - Starscream (3.1.1)
   - SZTextView (1.3.0)
-  - TABAnimated (2.5.4)
+  - TABAnimated (2.5.7)
   - TFPopup (1.4.1)
   - TXFileOperation (1.0)
   - WHToast (0.0.7)
@@ -218,38 +218,38 @@ SPEC CHECKSUMS:
   BRPickerView: 9cc11880ac79c4872d081ccb88f306224c1501d7
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoraemonKit: 32fb97f3aa82efa133111d193080ca5462cef135
-  FLAnimatedImage: dd3db277b17e909ec3c7fd41adfce79b321d960e
+  FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
   "FLAnimatedImageView+RGWrapper": 01f3dc52abf32abf2cd854b442864d679a41465c
   FLEX: 7ca2c8cd3a435ff501ff6d2f2141e9bdc934eaab
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
-  GKNavigationBar: 2b86f29aa7fafbda874247529d9fa50a8f7813b7
-  GKPhotoBrowser: c45231edd9ec79f031c412c646af46419d997c97
+  GKNavigationBar: f5b028f6c7705c996d6fbd20a3eda2dd070ba41f
+  GKPhotoBrowser: 3b87e4370b1e7bf83af5e6977d6d5db2be650eef
   IJKMediaFramework: f1119f6324c96bc4654f3045a5beaa95ba0596c0
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JJException: da7c64ccf29d9938a4075378a7e9a29db7383c37
   JobsGlobleDef: 46a851206c10dc3baaf248d6f283aac4dc7fb186
-  JPImageresizerView: 3bca9bc1c373695e376f9391e265338b8f171e5b
-  JXCategoryView: 778a620f76070d6598fd8d7239991b8da8326170
-  JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
+  JPImageresizerView: 1eb5934ddf786dd8b26a83465599f1abb06112ab
+  JXCategoryView: 2ef9ecfd3735158d009ce02d1f29811aa822da65
+  JXPagingView: ef48a5a2392252c68db7999de38f4761a2707e2a
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   LYEmptyView: b6d418cfa38b78df0cf243f9a9c25ccbdc399922
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
   MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
-  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  MJRefresh: d2c1970d1cf6e77fcfcdfe76c943dfab8dbfa5c1
   MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
   PPBadgeView: b50a223638970fd0781e8753250385864b6dd2fe
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   RQShineLabel: 17457abf7250d1220ddd99bc61323d57563344cd
-  SDWebImage: 7acbb57630ac7db4a495547fb73916ff3e432f6b
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
   SPAlertController: b245d7a5e17d612da051f2612aca3703f21d108f
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SZTextView: 094dc6acc9beec537685c545d6e3e0d4975174e1
-  TABAnimated: 82d934375ac3034ef4165e2a008413739355f19c
+  TABAnimated: fa165d5f4052c1070782f80f0a428fc82b6831e1
   TFPopup: 20c6d028b7255d67ada764b70f9f622c1a22c7e2
   TXFileOperation: 99bc7e3763678fdea8e8c407e2b87fb18038385f
   WHToast: 11a17a3f09f5f733e32bd6f3338919a448cbb719
