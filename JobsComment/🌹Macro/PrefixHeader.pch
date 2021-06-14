@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  Shooting
+//
+//  Created by Jobs on 2020/8/17.
+//  Copyright © 2020 Jobs. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#pragma mark —— 系统SDK
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <objc/runtime.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CoreTelephony/CTCarrier.h>
+#import <QuartzCore/QuartzCore.h>
+#import <VideoToolbox/VideoToolbox.h>//FFmpeg 需要
+#import <CoreData/CoreData.h>
+#import <Photos/Photos.h>
+
+#pragma mark —— 第三方头文件管理
+/// Pods
+#import "Pods.h"
+#import "PodsManual.h"
+/// 手动导入的第三方
+#import "Manual_Add_ThirdParty.h"
+
+#pragma mark —— 各项全局定义
+/// 各项宏定义
+#import "MacroDef_App.h"
+#import "MacroDef_Cor.h"
+#import "MacroDef_Size.h"
+#import "MacroDef_Func.h"
+#import "MacroDef_Sys.h"
+/// 其他的一些全局定义文件
+#import "AABlock.h"
+#import "APIKey.h"
+#import "DefineStructure.h"
+/// NotificationManager
+#import "NotificationManager.h"
+
+#pragma mark —— 其他杂项
+#import "Other.h"
+
+#pragma mark —— Swift-OC桥接头文件
+#import "JobsComment-Bridging-Header.h"
+
+
+#endif /* PrefixHeader_pch */
